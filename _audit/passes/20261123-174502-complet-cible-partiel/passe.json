@@ -1,0 +1,17 @@
+{
+ "id": "20261123-174502-complet-cible-partiel",
+ "date": "2026-11-23T17:51:25.266Z",
+ "niveau": "complet",
+ "pages": "/,/chi-siamo,/shop,/prodotti",
+ "etapes": [
+  "fichiers",
+  "mesures",
+  "films"
+ ],
+ "version": "2",
+ "echecs": 0,
+ "aRegarder": 4,
+ "nonLances": 0,
+ "manquants": 0,
+ "statut": "complet"
+}

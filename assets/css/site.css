@@ -562,3 +562,106 @@ html:not(.js) .introvabile { min-height: calc(100svh - 150px); }
 .introvabile h1 em { color: var(--accent); }
 .introvabile .sopra { color: var(--accent); }
 .introvabile .bouton--contour { color: var(--pietra); }
+
+/* ---------- v2 : jeux et finitions ---------- */
+/* Aperçus flous sous les images d'ouverture : au retour arrière, on passe du flou au net, jamais par une case vide. */
+.apertura-media picture { background: url(data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAABQBQCdASoYAB4APu1oq1AppaOiqA1RMB2JYwCdMswBqfxEXGbuvRXOHcg8T7yqCMz3RQAA/u/Bl1xSr5hpLSW5MU+g0c0RywIyYxBWOPTzegA4gnxhE6yFxcMdeh120ZBw6iDnzZTbY2o8fiLmzs23fSQAAA==) center / cover; }
+.banda-media picture { background: url(data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAwCdASoYAAoAPu1iqk2ppaQiMAgBMB2JYwCsACHTkP57MC5qKAAA/uetjLY4O+hAgFIa8mscLPYjDQEOqiv6LSey5IYzlbUh4jaQAAA=) center / cover; }
+@media (max-width: 760px) and (orientation: portrait) { .banda-media picture { background-image: url(data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAACQBACdASoYAB4APu1qrU6ppiSiMAgBMB2JZQC0NCHcVIRgdJ5y5elrBq77FgAA/u++ia5zri9NrGUjHEvHNBe2cqOXpfd3nqWsQ7fViySZZzwKkuHckPPL3xUd0CZoisMKilsREEa0rAocDrQu7HsM8AAAAA==); } }
+.contatti-media picture { background: url(data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABwBQCdASoYAB4APu1wrVIppiQiqAqpMB2JZQC7Mxs9uCd/z5QgxML6xoHVJmxoFJRGn3AAAP7FKqUAxJ6hAu1RYjjz2JbQ3rAEMLu07ZKLVfXJvb25CSdy5oFVzCJv42AfEwznRJF9GJDio4AAAA==) center / cover; }
+.introvabile-media picture { background: url(data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAwCdASoYAA4APu1kqU2ppaQiMAgBMB2JYwCdACHaFLXRn7A2ZqQAAP7nKP6XOgU9VDTrzVqJuur2NLa2y+lg/2Rzm8Nr+q9/lVbnVqILibLkJJfmQzIPAAA=) center / cover; }
+.archivio-media picture { background: url(data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAABQBQCdASoYABgAPu1oqk8ppiOiMBgIATAdiUAXBgtAY3Z2jN1RUZG/EVf8167Jqq7JgAAA30TSlGuEW+whxb16ebEaB5sgWTMdizf15VYNxYgDLRae5VVb0PwGnyTGVxQu/U9HyHuLzgfn157fPTx7u9wVqZLTrvI8IERR+SwAFgAA) center / cover; }
+
+/* Mot du titre qui se remplit d'huile (pages intérieures) */
+.olio-mot { position: relative; display: inline-block; color: var(--verde); }
+.olio-mot::after { content: attr(data-testo); position: absolute; inset: 0; background: linear-gradient(180deg, #e9c449 0%, #c99d1b 50%, #8f7d12 100%); -webkit-background-clip: text; background-clip: text; color: transparent; clip-path: var(--vague, inset(100% 0 0 0)); pointer-events: none; }
+.introvabile .olio-mot { color: var(--accent); }
+.introvabile .olio-mot::after { background-image: linear-gradient(180deg, #fff6b8 0%, #f6d64a 55%, #e2b512 100%); }
+html:not(.js) .olio-mot::after, html.secours .olio-mot::after { clip-path: inset(22% 0 0 0); }
+
+/* Panier de l'en-tête : l'huile monte jusqu'à la livraison offerte */
+.carrello-vaso { position: absolute; inset: 0; border-radius: 50%; overflow: hidden; }
+.carrello-olio { position: absolute; left: 0; right: 0; bottom: 0; height: calc(var(--livello, 0) * 100%); background: linear-gradient(180deg, #d8ae2a, #a98612); transition: height .9s cubic-bezier(.22, 1, .36, 1); }
+.carrello-bottone svg { position: relative; z-index: 1; }
+.carrello-bottone.carrello--pieno { color: var(--inchiostro); }
+.carrello-bottone.carrello--pieno .carrello-olio { background: var(--accent); }
+.carrello-bottone .pet-compte { z-index: 2; }
+
+/* Bouton « Aggiunto ✓ » */
+.bouton.aggiunto { background: var(--verde-scuro); color: var(--pietra); }
+
+/* Cartes produit : photo qui s'approche au survol */
+.prodotto-media img { transition: transform .7s cubic-bezier(.22, 1, .36, 1); }
+@media (hover: hover) and (pointer: fine) {
+  .prodotto:hover .prodotto-media img { transform: scale(1.06); }
+  .prodotto { transition: box-shadow .4s; }
+  .prodotto:hover { box-shadow: 0 22px 40px -26px rgba(34, 41, 26, .55); }
+}
+
+/* Calculateur des cartons */
+.pro-griglia { align-items: start; }
+.pro-altri { margin: 1.6em 0 0; }
+.calcolo { background: var(--oliva-2); border-radius: 24px; padding: clamp(20px, 3vw, 36px); }
+.calcolo-domanda { font-family: var(--police-titres); font-size: clamp(1.3rem, 1.1rem + .6vw, 1.7rem); margin: 0 0 16px; }
+.calcolo-scelte { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.calcolo-scelta { display: grid; gap: 2px; justify-items: start; min-height: 64px; padding: 10px 14px; border-radius: 16px; border: 2px solid color-mix(in srgb, var(--pietra) 30%, transparent); background: transparent; color: var(--pietra); text-align: left; font-weight: 600; }
+.calcolo-scelta strong { font-family: var(--police-titres); font-weight: 400; font-size: 1.6rem; line-height: 1.1; }
+.calcolo-scelta small { font-size: .875rem; opacity: .85; }
+.calcolo-scelta[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--inchiostro); }
+.calcolo-bottiglie { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 8px 6px; margin: 22px 0 18px; max-width: 540px; }
+.calcolo-bottiglia svg { display: block; width: 100%; height: auto; max-height: 64px; }
+.calcolo-bottiglia path { fill: color-mix(in srgb, var(--pietra) 14%, var(--oliva-2)); stroke: color-mix(in srgb, var(--pietra) 35%, transparent); stroke-width: 1.2; transition: fill .35s; }
+.calcolo-bottiglia rect { fill: transparent; transition: fill .35s; }
+.calcolo-bottiglia.accesa path { fill: #1d220f; stroke: var(--accent); }
+.calcolo-bottiglia.accesa rect { fill: var(--accent); }
+.calcolo-risultato { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 0 0 12px; }
+.calcolo-risultato div { padding-top: 10px; border-top: 1px solid color-mix(in srgb, var(--pietra) 25%, transparent); }
+.calcolo-risultato dt { font-size: .875rem; color: color-mix(in srgb, var(--pietra) 82%, var(--oliva)); }
+.calcolo-risultato dd { margin: 0; font-family: var(--police-titres); font-size: clamp(1.2rem, 1rem + .7vw, 1.6rem); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.calcolo-risultato div:last-child dd { color: var(--accent); }
+.calcolo-nota { font-size: .875rem; color: color-mix(in srgb, var(--pietra) 82%, var(--oliva)); }
+@media (max-width: 760px) { .calcolo-risultato { grid-template-columns: minmax(0, 1fr); } .calcolo-risultato div { display: flex; justify-content: space-between; align-items: baseline; } .calcolo-scelta { padding: 10px; } }
+
+/* Les six mois des olives */
+.mesi { margin-bottom: 1.2em; }
+.mesi-fila { list-style: none; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; padding: 0; margin: 0 0 12px; max-width: 360px; }
+.mese { display: grid; place-items: center; aspect-ratio: 1; border-radius: 50%; border: 2px solid color-mix(in srgb, var(--pietra) 35%, transparent); font-family: var(--police-titres); font-size: 1.2rem; color: color-mix(in srgb, var(--pietra) 70%, var(--oliva)); }
+.mese.acceso { background: var(--accent); border-color: var(--accent); color: var(--inchiostro); }
+.mesi-testo { margin: 0; }
+.mesi-testo strong { font-family: var(--police-titres); font-weight: 400; font-size: 1.5rem; color: var(--accent); }
+
+/* Carte : la goutte du trajet */
+.mappa-goccia path { fill: var(--accent); stroke: var(--oliva); stroke-width: 2; }
+
+/* Contact : Giacomo répond */
+.risponde { display: flex; align-items: center; gap: 16px; margin-top: 1.6em; }
+.risponde-foto { flex: none; width: 88px; aspect-ratio: 1; border-radius: 50%; }
+.risponde p { margin: 0; }
+.risponde strong { font-family: var(--police-titres); font-weight: 400; font-size: 1.3rem; }
+
+/* Shop : quantités */
+.quantita-media { aspect-ratio: 4 / 5; width: min(240px, 60%); margin-top: 24px; }
+.carrello-bottone.carrello--pieno .pet-compte { background: var(--inchiostro); color: var(--pietra); }
+
+/* v2 : premiers écrans des petits formats */
+@media (max-width: 760px) and (max-height: 700px) {
+  .archivio-titolo { font-size: 2.3rem; }
+  .archivio-testo > p:not(.sopra):not(.archivio-azioni) { display: none; }
+}
+@media (max-height: 500px) and (min-width: 761px) { .archivio-titolo { font-size: 2.1rem; } .apertura-archivio { padding-top: calc(var(--entete-h) + 8px); } }
+@media (max-width: 380px) { .shop-azioni .bouton--contour { display: none; } }
+@media (max-height: 620px) and (min-width: 761px) {
+  .shop-titolo { font-size: clamp(2.4rem, 9vh, 3.4rem); }
+  .shop-testo > p:not(.shop-azioni):not(.sopra) { display: none; }
+}
+/* Retour arrière ou avant : l'huile est déjà dans les mots et les ouvertures ont leur couleur avant le décodage des images. */
+html[data-arrivee="retour"] .olio-mot::after { clip-path: inset(26% 0 0 0); }
+html[data-arrivee="retour"] .olio-parola:not(.olio-mot)::after { clip-path: inset(20% 0 0 0); }
+.apertura-media { background-color: #99896d; }
+.banda-media { background-color: #82795f; }
+.contatti-media { background-color: #857966; }
+.introvabile-media { background-color: #9e9686; }
+.archivio-media picture { background-color: #8b8286; }
+@media (max-width: 380px) and (max-height: 700px) { .shop-titolo { font-size: 2.05rem; } .apertura-shop .sopra { margin-bottom: .8em; } }
+
+.freccia--chiara { color: var(--accent); }

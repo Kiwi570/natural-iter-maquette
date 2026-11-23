@@ -12,7 +12,7 @@ export default (c) => {
 <section class="apertura-titolo-banda" id="inizio">
   <div class="conteneur banda-testa">
     <p class="sopra" data-anime="gsap">${c.t('prodotti.apertura.sopra')}</p>
-    <h1 class="banda-titolo" data-anime="gsap"><span data-iris-centre>${c.tb('prodotti.apertura.titolo')}</span></h1>
+    <h1 class="banda-titolo" data-anime="gsap" data-grille="typo fil"><span data-iris-centre>${c.tb('prodotti.apertura.titolo')}</span></h1>
     <div class="banda-lato" data-anime="gsap">
       <p>${c.t('prodotti.apertura.testo')}</p>
       <p class="banda-azioni">${c.lien('shop', { classe: 'bouton', texte: c.t('accueil.apertura.azione'), attrs: 'data-action-principale' })}<span class="apertura-info" data-info-cle><span class="punto-giallo" aria-hidden="true"></span>${c.t('commun.spedizione')}</span></p>
@@ -62,7 +62,10 @@ export default (c) => {
       <h2 data-anime="lignes">${c.tb('prodotti.olive.titolo')}</h2>
     </div>
     <div class="sezione-testa-lato">
-      <p class="numero-grande numero-grande--chiaro" data-anime><strong data-compteur="6">6</strong><span>${c.t('prodotti.olive.mesi')}</span></p>
+      <div class="mesi" data-effet="mesi">
+        <ol class="mesi-fila" aria-hidden="true">${[1, 2, 3, 4, 5, 6].map((n) => html`<li class="mese"><span>${n}</span></li>`)}</ol>
+        <p class="mesi-testo"><strong>${c.t('prodotti.olive.almeno')}</strong> ${c.t('prodotti.olive.mesi')}</p>
+      </div>
       <p data-anime>${c.t('prodotti.olive.testo')}</p>
     </div>
   </div>

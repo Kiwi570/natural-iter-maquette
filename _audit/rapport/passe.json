@@ -1,15 +1,17 @@
 {
- "id": "20261123-170914-complet-cible-partiel",
- "date": "2026-11-23T17:11:24.668Z",
+ "id": "20261123-175656-complet-cible-partiel",
+ "date": "2026-11-23T18:00:10.614Z",
  "niveau": "complet",
- "pages": "/,/chi-siamo",
+ "pages": "/",
  "etapes": [
   "fichiers",
-  "mesures"
+  "mesures",
+  "mouvement",
+  "parcours"
  ],
- "version": "1",
+ "version": "2",
  "echecs": 0,
- "aRegarder": 1,
+ "aRegarder": 0,
  "nonLances": 0,
  "manquants": 0,
  "statut": "complet"

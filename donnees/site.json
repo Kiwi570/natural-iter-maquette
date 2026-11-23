@@ -3,11 +3,28 @@
   "nomComplet": "Natural-Iter di Bassanini Giacomo",
   "adresse": "https://natural-iter-maquette.vercel.app",
   "siteActuel": "www.natural-iter.ch",
-  "version": 1,
-  "langues": ["it"],
-  "navigation": ["accueil", "prodotti", "chi-siamo", "shop", "contatti"],
-  "actionEntete": { "page": "shop" },
-  "couleurs": { "fond": "#f4eee2", "texte": "#22291a", "voile": "#2c3420", "ouverture": "#2c3420", "menu": "#2c3420", "theme": "#f4eee2" },
+  "version": 2,
+  "langues": [
+    "it"
+  ],
+  "navigation": [
+    "accueil",
+    "prodotti",
+    "chi-siamo",
+    "shop",
+    "contatti"
+  ],
+  "actionEntete": {
+    "page": "shop"
+  },
+  "couleurs": {
+    "fond": "#f4eee2",
+    "texte": "#22291a",
+    "voile": "#2c3420",
+    "ouverture": "#2c3420",
+    "menu": "#2c3420",
+    "theme": "#f4eee2"
+  },
   "formeVoile": "vague",
   "contact": {
     "telephone": "+41 79 703 78 05",
@@ -22,7 +39,10 @@
     "facebook": "https://www.facebook.com/profile.php?id=61551024487038",
     "waldmuus": "https://www.facebook.com/Linfa-di-betulla-Waldmuus-2101944556770735/"
   },
-  "polices": ["/assets/fonts/young-serif-400.woff2", "/assets/fonts/figtree-400.woff2"],
+  "polices": [
+    "/assets/fonts/young-serif-400.woff2",
+    "/assets/fonts/figtree-400.woff2"
+  ],
   "imagePartage": "olio-75-800.webp",
   "curseur": false
 }

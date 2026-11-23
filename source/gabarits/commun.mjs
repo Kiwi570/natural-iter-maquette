@@ -59,7 +59,7 @@ function entete(c) {
     </nav>
     <div class="entete-actions">
       <a class="bouton bouton--entete" href="${c.url(c.site.actionEntete.page)}" data-libelle="${c.libelle(c.site.actionEntete.page)}">${c.t('commun.actionEntete')}</a>
-      <button type="button" class="carrello-bottone" data-panier-ouvrir data-envol-cible aria-label="${c.s('commun.carrello')}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.3 11.1a2 2 0 0 1-2 1.9H8.3a2 2 0 0 1-2-1.9Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="pet-compte est-vide" data-panier-compte>0</span></button>
+      <button type="button" class="carrello-bottone" data-panier-ouvrir data-envol-cible aria-label="${c.s('commun.carrello')}"><span class="carrello-vaso" aria-hidden="true"><span class="carrello-olio"></span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.3 11.1a2 2 0 0 1-2 1.9H8.3a2 2 0 0 1-2-1.9Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="pet-compte est-vide" data-panier-compte>0</span></button>
       <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="${c.s('commun.menu')}" data-libelle-fermer="${c.s('commun.fermer')}"><span data-libelle-bouton>${c.t('commun.menu')}</span></button>
       <a class="menu-sansjs" href="#menu" data-menu-lien>${c.t('commun.menu')}</a>
     </div>
@@ -124,7 +124,7 @@ function barre(c) {
   const a = c.site.actionEntete;
   return html`<div data-barre-fixe>
   <a class="bouton bouton--contour" href="tel:${c.site.contact.telephoneLien}">${c.t('commun.appeler')}</a>
-  ${a ? html`<a class="bouton" href="${c.url(a.page, a.ancre || '')}" data-libelle="${c.libelle(a.page)}">${c.t('commun.actionBarra')}</a>` : ''}
+  ${c.page.cle === 'shop' ? html`<button type="button" class="bouton" data-panier-ouvrir>${c.t('commun.carrello')}</button>` : a ? html`<a class="bouton" href="${c.url(a.page, a.ancre || '')}" data-libelle="${c.libelle(a.page)}">${c.t('commun.actionBarra')}</a>` : ''}
 </div>`;
 }
 

@@ -9,7 +9,7 @@ export default (c) => {
   const tappe = [
     { k: 't1', img: 'grok/potatura' },
     { k: 't2', img: 'jurg-2000' },
-    { k: 't3', img: null },
+    { k: 't3', img: 'gamma' },
     { k: 't4', img: 'uliveto-reti' },
   ];
   return html`
@@ -17,7 +17,7 @@ export default (c) => {
   <div class="conteneur archivio-griglia">
     <div class="archivio-testo">
       <p class="sopra" data-anime="gsap">${c.t('chi.apertura.sopra')}</p>
-      <h1 class="archivio-titolo" data-anime="gsap">${c.tb('chi.apertura.titolo')}</h1>
+      <h1 class="archivio-titolo" data-anime="gsap" data-grille="typo fil">${c.tb('chi.apertura.titolo')}</h1>
       <p data-anime="gsap">${c.t('chi.apertura.testo')}</p>
       <p class="archivio-azioni" data-anime="gsap">${c.lien('prodotti', { classe: 'bouton', texte: c.t('chi.apertura.azione'), attrs: 'data-action-principale' })}<span class="apertura-info" data-info-cle><span class="punto-giallo" aria-hidden="true"></span>${c.t('chi.apertura.info')}</span></p>
     </div>

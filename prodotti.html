@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="it" data-v="1" data-pagina="prodotti">
+<html lang="it" data-v="2" data-pagina="prodotti">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,15 +35,15 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/young-serif-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/figtree-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/modules.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/modules.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#f4eee2">
 <link rel="icon" href="/assets/images/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -78,7 +78,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     </nav>
     <div class="entete-actions">
       <a class="bouton bouton--entete" href="/shop" data-libelle="Shop">Acquista</a>
-      <button type="button" class="carrello-bottone" data-panier-ouvrir data-envol-cible aria-label="Carrello"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.3 11.1a2 2 0 0 1-2 1.9H8.3a2 2 0 0 1-2-1.9Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="pet-compte est-vide" data-panier-compte>0</span></button>
+      <button type="button" class="carrello-bottone" data-panier-ouvrir data-envol-cible aria-label="Carrello"><span class="carrello-vaso" aria-hidden="true"><span class="carrello-olio"></span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.3 11.1a2 2 0 0 1-2 1.9H8.3a2 2 0 0 1-2-1.9Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="pet-compte est-vide" data-panier-compte>0</span></button>
       <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Chiudi"><span data-libelle-bouton>Menu</span></button>
       <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
     </div>
@@ -110,9 +110,9 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <section class="apertura-titolo-banda" id="inizio">
   <div class="conteneur banda-testa">
     <p class="sopra" data-anime="gsap">I prodotti</p>
-    <h1 class="banda-titolo" data-anime="gsap"><span data-iris-centre>Dall'oliva <em>all'olio</em></span></h1>
+    <h1 class="banda-titolo" data-anime="gsap" data-grille="typo fil"><span data-iris-centre>Dall’oliva <em>all’olio</em></span></h1>
     <div class="banda-lato" data-anime="gsap">
-      <p>Olio extravergine, olive da tavola e paté da un&#39;unica oliva, la taggiasca del Ponente Ligure. E dal bosco ticinese, linfa di betulla e aglio orsino bio.</p>
+      <p>Olio extravergine, olive da tavola e paté da un’unica oliva, la taggiasca del Ponente Ligure. E dal bosco ticinese, linfa di betulla e aglio orsino bio.</p>
       <p class="banda-azioni"><a href="/shop" class="bouton" data-libelle="Shop" data-action-principale>Vai allo shop</a><span class="apertura-info" data-info-cle><span class="punto-giallo" aria-hidden="true"></span>Spedizione gratuita in Svizzera da CHF 150</span></p>
     </div>
   </div>
@@ -125,7 +125,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <section class="sezione olio-sezione" id="olio">
   <div class="conteneur olio-griglia">
     <div class="olio-testo">
-      <p class="sopra" data-anime>L&#39;olio extravergine</p>
+      <p class="sopra" data-anime>L’olio extravergine</p>
       <h2 data-anime="lignes">Armonioso, leggermente <em>fruttato</em></h2>
       <p data-anime>Estratto poche ore dopo la raccolta con soli metodi meccanici a freddo, filtrato subito e conservato in vetro scuro. È un olio molto profumato, fruttato e armonioso, con poca amarezza.</p>
       <ul class="gusto" data-anime="cascade">
@@ -147,13 +147,13 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <div class="conteneur limone-griglia">
     <figure class="media limone-media" data-grok data-anime="rideau" style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/grok/limoni-1600.webp" srcset="/assets/images/grok/limoni-1024.webp 1024w, /assets/images/grok/limoni-1168.webp 1168w, /assets/images/grok/limoni-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 36vw" alt="Limoni liguri freschi con foglie e rametti d&#39;ulivo" width="1600" height="2000" loading="lazy" decoding="async">
+    <img src="/assets/images/grok/limoni-1600.webp" srcset="/assets/images/grok/limoni-1024.webp 1024w, /assets/images/grok/limoni-1168.webp 1168w, /assets/images/grok/limoni-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 36vw" alt="Limoni liguri freschi con foglie e rametti d’ulivo" width="1600" height="2000" loading="lazy" decoding="async">
   </picture><figcaption class="mention-ia">Illustrazione generata</figcaption>
 </figure>
     <div class="limone-testo">
-      <p class="sopra" data-anime>L&#39;olio al limone</p>
+      <p class="sopra" data-anime>L’olio al limone</p>
       <h2 data-anime="lignes">Olive e limoni, <em>moliti insieme</em></h2>
-      <p data-anime>Olive fresche e limoni freschi di Liguria passano insieme nel frantoio: il profumo del limone nasce con l&#39;olio.</p>
+      <p data-anime>Olive fresche e limoni freschi di Liguria passano insieme nel frantoio: il profumo del limone nasce con l’olio.</p>
     </div>
     <div data-anime="cascade" class="limone-prodotto"><article class="prodotto " id="p-olio-limone" data-panier-produit data-categoria="olio" data-prezzo="22" data-nome="Olio al limone 25 cl">
   <figure class="media prodotto-media" style="--cadrage:50% 50%">
@@ -180,8 +180,11 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <h2 data-anime="lignes">Almeno sei mesi <em>di pazienza</em></h2>
     </div>
     <div class="sezione-testa-lato">
-      <p class="numero-grande numero-grande--chiaro" data-anime><strong data-compteur="6">6</strong><span>mesi di fermentazione, come minimo</span></p>
-      <p data-anime>Le olive vengono deamarizzate e fermentate per almeno sei mesi, poi aromatizzate con le erbe in salamoia. Si trovano intere in salamoia, snocciolate sott&#39;olio o in paté.</p>
+      <div class="mesi" data-effet="mesi">
+        <ol class="mesi-fila" aria-hidden="true"><li class="mese"><span>1</span></li><li class="mese"><span>2</span></li><li class="mese"><span>3</span></li><li class="mese"><span>4</span></li><li class="mese"><span>5</span></li><li class="mese"><span>6</span></li></ol>
+        <p class="mesi-testo"><strong>Almeno 6 mesi</strong> di fermentazione prima di arrivare in tavola</p>
+      </div>
+      <p data-anime>Le olive vengono deamarizzate e fermentate per almeno sei mesi, poi aromatizzate con le erbe in salamoia. Si trovano intere in salamoia, snocciolate sott’olio o in paté.</p>
     </div>
   </div>
   <div class="conteneur olive-griglia">
@@ -217,7 +220,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <p class="prodotto-sopra"><span>Olive e paté</span></p>
     <h3 class="prodotto-nome">Olive taggiasche snocciolate in olio</h3>
     <p class="prodotto-formato">180 g</p>
-    <p class="prodotto-descr">Snocciolate e conservate sott&#39;olio, pronte per l&#39;aperitivo o la pasta.</p>
+    <p class="prodotto-descr">Snocciolate e conservate sott’olio, pronte per l’aperitivo o la pasta.</p>
     <div class="prodotto-riga">
       <p class="prodotto-prezzo" data-prix>CHF 15.00</p>
       <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="olive-snocciolate" data-nom="Olive taggiasche snocciolate in olio 180 g" data-prix="15" aria-label="Aggiungi Olive taggiasche snocciolate in olio 180 g">Aggiungi</button>

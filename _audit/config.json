@@ -1,6 +1,24 @@
 {
   "siteActuel": "www.natural-iter.ch",
-  "pagesTypes": ["/", "/prodotti", "/chi-siamo", "/shop", "/contatti"],
-  "effets": ["olio-titolo", "muretto", "termometro", "bottiglia-soglia", "banda", "archivio", "bottiglia-vetrina"],
-  "grille": { "dispenses": {} }
+  "pagesTypes": [
+    "/",
+    "/prodotti",
+    "/chi-siamo",
+    "/shop",
+    "/contatti"
+  ],
+  "effets": [
+    "archivio",
+    "banda",
+    "bottiglia-soglia",
+    "bottiglia-vetrina",
+    "cartoni",
+    "mesi",
+    "muretto",
+    "olio-titolo",
+    "termometro"
+  ],
+  "grille": {
+    "dispenses": {}
+  }
 }

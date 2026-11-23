@@ -5,6 +5,7 @@ Adresse de la maquette : https://natural-iter-maquette.vercel.app (non indexée 
 
 Direction « Le fasce » : pierre de Ligurie, olive, jaune Natural-Iter (logo et étiquettes) ; Young Serif et Figtree.
 Pages : accueil, Prodotti, Chi siamo, Shop (catalogue filtrable, panier, buono regalo), Contatti, 404. Site en italien.
+Version 2 : un mot de chaque grand titre se remplit d'huile (et clapote sous la souris ou le doigt), le panier de l'en-tête se remplit jusqu'à la livraison offerte, calculateur des cartons pour les professionnels, mois de fermentation, goutte sur le trajet Ligurie–Tessin, « Ti risponde Giacomo ».
 
 ## Ce que le client doit fournir (à compléter)
 

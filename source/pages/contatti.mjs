@@ -13,7 +13,7 @@ export default (c) => {
   <div class="conteneur contatti-griglia">
     <div class="contatti-testo">
       <p class="sopra" data-anime="gsap">${c.t('contatti.apertura.sopra')}</p>
-      <h1 class="contatti-titolo" data-anime="gsap">${c.tb('contatti.apertura.titolo')}</h1>
+      <h1 class="contatti-titolo" data-anime="gsap" data-grille="typo fil">${c.tb('contatti.apertura.titolo')}</h1>
       <p data-anime="gsap">${c.t('contatti.apertura.testo')}</p>
       <dl class="recapiti" data-anime="gsap">
         <div data-info-cle><dt>${c.t('contatti.apertura.telefono')}</dt><dd><a href="tel:${k.telephoneLien}" data-action-principale>${k.telephone}</a></dd></div>
@@ -44,6 +44,10 @@ export default (c) => {
     <div class="scrivici-testo">
       <h2 data-anime="lignes">${c.tb('contatti.modulo.titolo')}</h2>
       <p data-anime>${c.t('contatti.modulo.testo')}</p>
+      <div class="risponde" data-anime>
+        ${c.media({ nom: 'giacomo', alt: c.s('chi.giacomo.alt'), classe: 'risponde-foto', sizes: '96px' })}
+        <p><strong>${c.t('contatti.modulo.risponde')}</strong><br>${c.t('contatti.modulo.lingue')}</p>
+      </div>
       <div class="pro-riquadro" data-anime>
         <h3>${c.t('contatti.pro.titolo')}</h3>
         <p>${c.t('contatti.pro.testo')}</p>

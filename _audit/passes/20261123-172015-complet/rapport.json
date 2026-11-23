@@ -1,0 +1,322 @@
+{
+  "echecs": [
+    {
+      "niveau": "echec",
+      "controle": "premier écran : information clé hors de l’écran",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/chi-siamo",
+      "taille": "320×568",
+      "mode": "normal",
+      "selecteur": "div.conteneur.archivio-griglia > div.archivio-testo:nth-of-type(1) > p.archivio-azioni:nth-of-type(3) > span.apertura-info « Dal Ponente Ligure a Mendrisio »",
+      "lieux": [
+        "320×568 normal",
+        "844×390 normal",
+        "320×568 sansWebgl",
+        "844×390 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "premier écran : information clé hors de l’écran",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/shop",
+      "taille": "320×568",
+      "mode": "normal",
+      "selecteur": "section#inizio > div.conteneur.shop-griglia > div.soglia:nth-of-type(2) > p.soglia-cifra:nth-of-type(2) « CHF 150 »",
+      "lieux": [
+        "320×568 normal",
+        "320×568 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "premier écran : bouton principal hors de l’écran",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/shop",
+      "taille": "1000×560",
+      "mode": "normal",
+      "selecteur": "div.conteneur.shop-griglia > div.shop-testo:nth-of-type(1) > p.shop-azioni:nth-of-type(3) > a.bouton:nth-of-type(1) « Vedi i prodotti »",
+      "lieux": [
+        "1000×560 normal",
+        "1000×560 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "retour avant : image isolée différente (flash)",
+      "detail": "à 50 ms (films/retour-avant-390.png)",
+      "etape": "films",
+      "page": "/prodotti",
+      "taille": "390×844",
+      "mode": "retour avant",
+      "lieux": [
+        "390×844 retour avant"
+      ]
+    }
+  ],
+  "aRegarder": [
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#professionisti « PER RISTORANTI, ALBERGHI E GRANDI QUANTITÀ Cartoni »",
+      "lieux": [
+        "390×844 normal",
+        "375×667 normal",
+        "320×568 normal",
+        "844×390 normal",
+        "1024×768 normal",
+        "768×1024 normal",
+        "1000×560 normal",
+        "1280×720 normal",
+        "1366×768 normal",
+        "1440×900 normal",
+        "1728×1000 normal",
+        "1920×1080 normal",
+        "320×568 sansJs",
+        "2560×1440 normal",
+        "375×667 sansJs",
+        "390×844 sansJs",
+        "320×568 sansWebgl",
+        "844×390 sansJs",
+        "375×667 sansWebgl",
+        "768×1024 sansJs",
+        "390×844 sansWebgl",
+        "1024×768 sansJs",
+        "844×390 sansWebgl",
+        "768×1024 sansWebgl",
+        "1000×560 sansJs",
+        "1024×768 sansWebgl",
+        "1280×720 sansJs",
+        "1366×768 sansJs",
+        "1000×560 sansWebgl",
+        "1440×900 sansJs",
+        "1280×720 sansWebgl",
+        "1728×1000 sansJs",
+        "1366×768 sansWebgl",
+        "1920×1080 sansJs",
+        "1440×900 sansWebgl",
+        "2560×1440 sansJs",
+        "1728×1000 sansWebgl",
+        "1920×1080 sansWebgl",
+        "2560×1440 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/prodotti",
+      "taille": "320×568",
+      "mode": "normal",
+      "selecteur": "section#senza « Senza ingredienti artificiali Tutti i prodotti Nat »",
+      "lieux": [
+        "320×568 normal",
+        "375×667 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "768×1024 normal",
+        "1024×768 normal",
+        "1000×560 normal",
+        "1280×720 normal",
+        "1366×768 normal",
+        "1440×900 normal",
+        "1728×1000 normal",
+        "1920×1080 normal",
+        "320×568 sansJs",
+        "375×667 sansJs",
+        "2560×1440 normal",
+        "390×844 sansJs",
+        "320×568 sansWebgl",
+        "844×390 sansJs",
+        "375×667 sansWebgl",
+        "768×1024 sansJs",
+        "390×844 sansWebgl",
+        "1024×768 sansJs",
+        "844×390 sansWebgl",
+        "1000×560 sansJs",
+        "768×1024 sansWebgl",
+        "1280×720 sansJs",
+        "1024×768 sansWebgl",
+        "1366×768 sansJs",
+        "1000×560 sansWebgl",
+        "1440×900 sansJs",
+        "1280×720 sansWebgl",
+        "1366×768 sansWebgl",
+        "1728×1000 sansJs",
+        "1920×1080 sansJs",
+        "1440×900 sansWebgl",
+        "2560×1440 sansJs",
+        "1728×1000 sansWebgl",
+        "1920×1080 sansWebgl",
+        "2560×1440 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "section sans visuel",
+      "detail": "une belle photo ou un visuel animé quand le contenu s’y prête ; une section de texte peut rester typographique (v11)",
+      "etape": "mesures",
+      "page": "/shop",
+      "taille": "320×568",
+      "mode": "normal",
+      "selecteur": "section#inizio « SHOP Lo shop di Natural-Iter Vedi i prodotti Buono »",
+      "lieux": [
+        "320×568 normal",
+        "375×667 normal",
+        "320×568 sansJs",
+        "375×667 sansJs",
+        "320×568 sansWebgl",
+        "375×667 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "retour avant : changement brusque",
+      "detail": "à 150 ms (différence 24 %) (films/retour-avant-1366.png)",
+      "etape": "films",
+      "page": "/prodotti",
+      "taille": "1366×768",
+      "mode": "retour avant",
+      "lieux": [
+        "1366×768 retour avant"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "rechargement au milieu de la page",
+      "detail": "écran différent à la même position après rechargement (5.9 %), voir comparaisons/rechargement-contatti-*.png",
+      "etape": "parcours",
+      "page": "/contatti",
+      "taille": "1366×768",
+      "lieux": [
+        "1366×768"
+      ]
+    }
+  ],
+  "nonLances": [
+    {
+      "controle": "Safari (WebKit)",
+      "raison": "WebKit ne peut pas s’installer ici : vérification à faire dans Safari sur le Mac (liste dans le rapport)",
+      "etape": "safari"
+    }
+  ],
+  "oks": {
+    "vercel.json": 1,
+    ".vercelignore": 1,
+    "robots.txt": 1,
+    "numéro de version": 1,
+    "langues": 1,
+    "grille wouahou": 7,
+    "mesures": 234,
+    "balayage": 5,
+    "films d’ouverture": 10,
+    "films de transition": 10,
+    "bords de l’écran": 6,
+    "intro accélérable et passable": 7,
+    "menu": 1,
+    "clavier": 6,
+    "liens et boutons": 6,
+    "liens profonds": 6,
+    "liens vers la page en cours": 5,
+    "changements de hauteur": 4,
+    "fluidité": 10,
+    "défilement selon l’appareil": 5,
+    "mouvement": 10,
+    "effets du plan": 9,
+    "souris immobile": 1,
+    "vitesse": 5,
+    "captures": 1
+  },
+  "infos": [
+    "Numéro de version des fichiers : ?v=2",
+    "Journal v2 : 1 étape(s) notée(s), 9 min de travail pour 15 min de budget, 0 min d’attente de l’utilisateur.",
+    "Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés.",
+    "Ouverture / (1366×768) : 2738 ms depuis le premier octet",
+    "Ouverture /chi-siamo (1366×768) : 2495 ms depuis le premier octet",
+    "Ouverture /contatti (1366×768) : 2449 ms depuis le premier octet",
+    "Ouverture /prodotti (1366×768) : 2640 ms depuis le premier octet",
+    "Ouverture /shop (1366×768) : 2515 ms depuis le premier octet",
+    "Ouverture / (390×844) : 2729 ms depuis le premier octet",
+    "Ouverture /chi-siamo (390×844) : 2554 ms depuis le premier octet",
+    "Ouverture /contatti (390×844) : 2430 ms depuis le premier octet",
+    "film de l'ouverture /contatti 390×844 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Ouverture /prodotti (390×844) : 2677 ms depuis le premier octet",
+    "Ouverture /shop (390×844) : 2509 ms depuis le premier octet",
+    "Bords de l’écran : 414 images d’intro, 14 de voile et 210 de menu jugées (panneau immobile couvrant tout l’écran), barre de défilement classique de 15 px.",
+    "Changements de hauteur /shop : aucun effet ScrollTrigger, rien à recalculer.",
+    "Aucun parcours propre au projet (_audit/parcours.mjs) : filtres, calculateurs, panier, réservation, fenêtres testés seulement par les contrôles généraux.",
+    "Tient dans l'écran / : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /chi-siamo : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /contatti : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /prodotti : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /shop : aucune section épinglée ou plein écran.",
+    "Fluidité / 1366×768 (molette) : 0 % d'images lentes sur 429, tâche la plus longue 0 ms",
+    "Fluidité /chi-siamo 1366×768 (molette) : 0 % d'images lentes sur 288, tâche la plus longue 0 ms",
+    "Fluidité /contatti 1366×768 (molette) : 0 % d'images lentes sur 181, tâche la plus longue 0 ms",
+    "Fluidité /prodotti 1366×768 (molette) : 0 % d'images lentes sur 282, tâche la plus longue 0 ms",
+    "Fluidité /shop 1366×768 (molette) : 0 % d'images lentes sur 324, tâche la plus longue 0 ms",
+    "Fluidité / 390×844 (doigt) : 0 % d'images lentes sur 1420, tâche la plus longue 0 ms",
+    "Fluidité /chi-siamo 390×844 (doigt) : 0 % d'images lentes sur 1412, tâche la plus longue 0 ms",
+    "Fluidité /contatti 390×844 (doigt) : 0 % d'images lentes sur 1382, tâche la plus longue 0 ms",
+    "Fluidité /prodotti 390×844 (doigt) : 0 % d'images lentes sur 1421, tâche la plus longue 0 ms",
+    "Fluidité /shop 390×844 (doigt) : 0 % d'images lentes sur 1410, tâche la plus longue 0 ms",
+    "Vitesse / : 0.76 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /chi-siamo : 0.50 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /contatti : 0.35 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /prodotti : 0.36 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /shop : 0.65 s de calcul au chargement (téléphone ralenti)."
+  ],
+  "grille": [
+    {
+      "cle": "manipuler",
+      "nom": "1. L’effet signature se manipule",
+      "statut": "présent",
+      "detail": "accueil"
+    },
+    {
+      "cle": "intro",
+      "nom": "2. L’intro devient la page",
+      "statut": "présent",
+      "detail": "objet d’ouverture sur 5 page(s), versObjet dans l’intro"
+    },
+    {
+      "cle": "voile",
+      "nom": "3. La transition reprend le motif",
+      "statut": "présent",
+      "detail": "voile en vague"
+    },
+    {
+      "cle": "fil",
+      "nom": "4. Quelque chose relie les sections et les pages",
+      "statut": "présent",
+      "detail": "sur les 5 page(s)"
+    },
+    {
+      "cle": "typo",
+      "nom": "5. Un titre fait l’événement sur chaque page",
+      "statut": "présent",
+      "detail": "sur les 5 page(s)"
+    },
+    {
+      "cle": "scene",
+      "nom": "6. La scène est un geste du métier",
+      "statut": "sans objet",
+      "detail": "aucune scène épinglée marquée ni galerie générique"
+    },
+    {
+      "cle": "retour",
+      "nom": "7. L’action principale a un retour physique",
+      "statut": "présent",
+      "detail": "sur /"
+    }
+  ]
+}

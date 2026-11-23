@@ -6,44 +6,139 @@
    - bottiglia-soglia : la bouteille de la boutique se remplit avec le total du panier, jusqu'à CHF 150 ;
    - banda, archivio  : ouvertures des pages Prodotti et Chi siamo (bandeau qui s'ouvre, photo d'archive qui se pose).
    Modules de la bibliothèque : panier en tiroir (toutes les pages), catalogue à filtres et carte cadeau (shop), frise (chi siamo). */
-import { demarrer, boucle, versObjet, quand } from './socle/index.js?v=1';
+import { demarrer, boucle, versObjet, quand } from './socle/index.js?v=2';
 
 const gsap = window.gsap;
 const ST = window.ScrollTrigger;
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const pagina = document.documentElement.dataset.pagina;
+const SOGLIA = 150;
 
-/* ---------- Huile dans le mot (olio-titolo) ---------- */
-const olio = { el: null, livello: 0, finale: 0.8, inclinazione: 0, versione: 0, attivo: false };
-function onda(t) {
+/* ---------- Huile dans les mots (olio-titolo) ----------
+   Le mot « taggiasco » de l'accueil et le mot en couleur du titre de chaque page se remplissent d'huile dorée.
+   La surface ondule, penche selon la vitesse de défilement et clapote quand la souris ou le doigt passe dessus. */
+const olii = [];
+function onda(o, t) {
   const n = 26, pts = [];
-  const base = (1 - olio.livello) * 100;
+  const base = (1 - o.livello) * 100;
   for (let i = 0; i <= n; i++) {
     const x = -4 + (108 * i) / n;
-    const y = base + Math.sin(i * 0.7 + t * 2.1) * 1.5 + Math.sin(i * 0.31 - t * 1.3) * 1.1 + olio.inclinazione * ((x - 50) / 50);
+    const y = base + Math.sin(i * 0.7 + t * 2.1) * 1.5 + Math.sin(i * 0.31 - t * 1.3) * 1.1 + o.inclinazione * ((x - 50) / 50)
+      + o.onde * Math.sin(i * 0.9 - t * 9) * Math.exp(-Math.abs(x - o.puntoX) / 30);
     pts.push(`${x.toFixed(1)}% ${y.toFixed(2)}%`);
   }
   return `polygon(-4% 140%, ${pts.join(', ')}, 104% 140%)`;
 }
 function preparaOlio() {
-  olio.el = $('.olio-parola');
-  if (!olio.el) return;
-  let ultimoY = window.scrollY, tempo = 0;
-  boucle(olio.el, (dt, t) => {
-    tempo = t;
-    /* Le liquide penche selon la vitesse de défilement, puis revient à plat (ressort amorti). */
-    const y = window.scrollY, v = (y - ultimoY) / Math.max(dt, 0.001); ultimoY = y;
-    const voluto = Math.max(-7, Math.min(7, v / 260));
-    olio.inclinazione += (voluto - olio.inclinazione) * Math.min(1, dt * 6);
-    olio.el.style.setProperty('--vague', onda(tempo));
-  });
+  /* Mot en couleur du titre des pages intérieures : il devient un mot à remplir. */
+  for (const em of $$('main > section:first-child h1 em')) {
+    em.classList.add('olio-parola', 'olio-mot');
+    em.dataset.testo = em.textContent;
+    em.setAttribute('data-effet', 'olio-titolo');
+    em.setAttribute('data-grille', 'typo fil');
+  }
+  for (const el of $$('.olio-parola')) {
+    const o = { el, livello: 0, finale: el.classList.contains('olio-mot') ? 0.74 : 0.8, inclinazione: 0, onde: 0, puntoX: 50, ultimoX: null };
+    olii.push(o);
+    let ultimoY = window.scrollY;
+    /* Le doigt ou la souris qui passe sur le mot fait clapoter l'huile à cet endroit ; à l'arrêt, elle se calme. */
+    el.addEventListener('pointermove', (e) => {
+      const r = el.getBoundingClientRect();
+      const x = ((e.clientX - r.left) / Math.max(1, r.width)) * 100;
+      if (o.ultimoX !== null) o.onde = Math.min(6, o.onde + Math.abs(x - o.ultimoX) * 0.18);
+      o.puntoX = x; o.ultimoX = x;
+    });
+    el.addEventListener('pointerleave', () => { o.ultimoX = null; });
+    boucle(el, (dt, t) => {
+      const y = window.scrollY, v = (y - ultimoY) / Math.max(dt, 0.001); ultimoY = y;
+      const voluto = Math.max(-7, Math.min(7, v / 260));
+      o.inclinazione += (voluto - o.inclinazione) * Math.min(1, dt * 6);
+      o.onde *= Math.exp(-dt * 2.2);
+      el.style.setProperty('--vague', onda(o, t));
+    });
+  }
 }
 function riempi(duree = 1.3) {
-  if (!olio.el || !gsap) return;
-  gsap.fromTo(olio, { livello: 0 }, { livello: olio.finale, duration: duree, ease: 'power2.out', overwrite: true });
+  if (!gsap) return;
+  olii.forEach((o, i) => gsap.fromTo(o, { livello: 0 }, { livello: o.finale, duration: duree, delay: i * 0.08, ease: 'power2.out', overwrite: true }));
 }
-function olioFinale() { if (olio.el) { olio.livello = olio.finale; olio.el.style.setProperty('--vague', onda(0)); } }
+function olioFinale() { olii.forEach((o) => { o.livello = o.finale; o.el.style.setProperty('--vague', onda(o, 0)); }); }
+
+/* ---------- Panier de l'en-tête qui se remplit d'huile jusqu'à la livraison offerte ---------- */
+function preparaCarrello() {
+  const bott = $('.carrello-bottone');
+  if (!bott) return;
+  const aggiorna = () => {
+    const tot = totaleCarrello();
+    bott.style.setProperty('--livello', Math.min(1, tot / SOGLIA).toFixed(3));
+    bott.classList.toggle('carrello--pieno', tot >= SOGLIA);
+  };
+  aggiorna();
+  window.addEventListener('storage', (e) => { if (e.key === 'natural-iter-carrello') aggiorna(); });
+  const compte = $('[data-panier-compte]', bott);
+  if (compte) new MutationObserver(aggiorna).observe(compte, { childList: true, characterData: true, subtree: true });
+  /* « Aggiunto ✓ » sur le bouton pendant que la pastille s'envole vers le panier. */
+  document.addEventListener('click', (e) => {
+    const b = e.target.closest('[data-panier-ajouter]');
+    if (!b || b.classList.contains('aggiunto')) return;
+    const prima = b.textContent;
+    b.style.minWidth = b.offsetWidth + 'px';
+    b.classList.add('aggiunto'); b.textContent = 'Aggiunto ✓';
+    setTimeout(() => { b.classList.remove('aggiunto'); b.textContent = prima; b.style.minWidth = ''; }, 1700);
+  }, true);
+}
+
+/* ---------- Calculateur des cartons (accueil, professionnels) ---------- */
+function preparaCartoni() {
+  const box = $('[data-cartoni]');
+  if (!box) return;
+  const scelte = $$('[data-cartoni-scelta]', box), bottiglie = $$('.calcolo-bottiglia', box);
+  const out = { prezzo: $('[data-cartoni-prezzo]', box), unita: $('[data-cartoni-unita]', box), risparmio: $('[data-cartoni-risparmio]', box) };
+  const agg = $('[data-panier-ajouter]', box);
+  const chf = (n) => 'CHF\u00a0' + n.toFixed(2);
+  const scegli = (b, anima = true) => {
+    scelte.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    const n = +b.dataset.bottiglie, prezzo = +b.dataset.prezzo, singola = +box.dataset.singola;
+    out.prezzo.textContent = chf(prezzo);
+    out.unita.textContent = chf(prezzo / n);
+    out.risparmio.textContent = chf(n * singola - prezzo);
+    if (agg) { agg.dataset.panierAjouter = b.dataset.id; agg.dataset.nom = b.dataset.nome; agg.dataset.prix = String(prezzo); agg.setAttribute('aria-label', 'Aggiungi ' + b.dataset.nome); }
+    bottiglie.forEach((bt, i) => {
+      const accesa = i < n;
+      if (bt.classList.contains('accesa') === accesa) return;
+      bt.classList.toggle('accesa', accesa);
+      if (gsap && anima && accesa) gsap.fromTo(bt, { y: -14, scale: 0.6 }, { y: 0, scale: 1, duration: 0.5, ease: 'back.out(2.2)', delay: (i % 6) * 0.04 + Math.floor(i / 6) * 0.12 });
+    });
+  };
+  scelte.forEach((b) => b.addEventListener('click', () => scegli(b)));
+  scegli(scelte.find((b) => b.getAttribute('aria-pressed') === 'true') || scelte[0], false);
+  if (gsap && ST) gsap.fromTo($$('.calcolo-bottiglia', box), { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, stagger: 0.03, ease: 'power2.out', scrollTrigger: { trigger: box, start: 'top 85%', once: true } });
+}
+
+/* ---------- Les six mois des olives (Prodotti) ---------- */
+function preparaMesi() {
+  const box = $('[data-effet="mesi"]');
+  if (!box || !ST) return;
+  const mesi = $$('.mese', box);
+  ST.create({ trigger: box, start: 'top 85%', end: 'top 35%', scrub: true, invalidateOnRefresh: true,
+    onUpdate: (st) => { const n = Math.round(st.progress * mesi.length); mesi.forEach((m, i) => m.classList.toggle('acceso', i < n)); } });
+}
+
+/* ---------- La goutte qui fait le trajet Ponente Ligure → Mendrisio (cartes) ---------- */
+function preparaTragitto() {
+  if (!ST) return;
+  for (const svg of $$('.mappa')) {
+    const percorso = $('.mappa-percorso', svg), goccia = $('.mappa-goccia', svg);
+    if (!percorso || !goccia) continue;
+    let punti = [];
+    const misura = () => { const L = percorso.getTotalLength(); punti = Array.from({ length: 61 }, (_, i) => percorso.getPointAtLength((L * i) / 60)); };
+    misura();
+    const metti = (p) => { const q = punti[Math.round(Math.min(1, Math.max(0, p)) * 60)]; if (q) goccia.setAttribute('transform', `translate(${q.x.toFixed(1)} ${q.y.toFixed(1)})`); };
+    metti(0);
+    ST.create({ trigger: svg, start: 'clamp(top 85%)', end: 'clamp(bottom 45%)', scrub: 0.5, onRefresh: misura, onUpdate: (st) => metti(st.progress * 1.6) });
+  }
+}
 
 /* ---------- Muret qui se construit (muretto) ---------- */
 const muretti = [];
@@ -76,7 +171,6 @@ function preparaTermometro() {
 }
 
 /* ---------- Bouteille-jauge de la boutique (bottiglia-soglia) ---------- */
-const SOGLIA = 150;
 function totaleCarrello() {
   try { const m = JSON.parse(localStorage.getItem('natural-iter-carrello') || 'null'); return m && Array.isArray(m.lignes) ? m.lignes.reduce((t, l) => t + l.prix * l.qte, 0) / 100 : 0; } catch { return 0; }
 }
@@ -208,6 +302,10 @@ demarrer({
     preparaSoglia();
     preparaAperture();
     preparaVetrina();
+    preparaCarrello();
+    preparaCartoni();
+    preparaMesi();
+    preparaTragitto();
   },
   /* Intro (moins de 3 s) : le panneau olive et le logo, une goutte d'huile tombe, glisse jusqu'à l'objet d'ouverture
      de la page (le mot « taggiasco » sur l'accueil) et le panneau s'ouvre depuis elle ; puis le mot se remplit (hors timeline). */

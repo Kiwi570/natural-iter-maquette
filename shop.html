@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="it" data-v="1" data-pagina="shop">
+<html lang="it" data-v="2" data-pagina="shop">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,15 +35,15 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/young-serif-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/figtree-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/modules.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/modules.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#f4eee2">
 <link rel="icon" href="/assets/images/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -78,7 +78,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     </nav>
     <div class="entete-actions">
       <a class="bouton bouton--entete" href="/shop" data-libelle="Shop">Acquista</a>
-      <button type="button" class="carrello-bottone" data-panier-ouvrir data-envol-cible aria-label="Carrello"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.3 11.1a2 2 0 0 1-2 1.9H8.3a2 2 0 0 1-2-1.9Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="pet-compte est-vide" data-panier-compte>0</span></button>
+      <button type="button" class="carrello-bottone" data-panier-ouvrir data-envol-cible aria-label="Carrello"><span class="carrello-vaso" aria-hidden="true"><span class="carrello-olio"></span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.3 11.1a2 2 0 0 1-2 1.9H8.3a2 2 0 0 1-2-1.9Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="pet-compte est-vide" data-panier-compte>0</span></button>
       <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Chiudi"><span data-libelle-bouton>Menu</span></button>
       <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
     </div>
@@ -111,14 +111,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <div class="conteneur shop-griglia">
     <div class="shop-testo">
       <p class="sopra" data-anime="gsap">Shop</p>
-      <h1 class="shop-titolo" data-anime="gsap">Lo shop di <em>Natural-Iter</em></h1>
+      <h1 class="shop-titolo" data-anime="gsap" data-grille="typo fil">Lo shop di <em>Natural-Iter</em></h1>
       <p data-anime="gsap">Olio, olive, paté e i prodotti del bosco ticinese. Per quantità diverse da quelle proposte, chiamaci o scrivici: per le confezioni multiple ci sono prezzi speciali.</p>
       <p class="shop-azioni" data-anime="gsap"><a class="bouton" href="#catalogo" data-action-principale data-sans-transition>Vedi i prodotti</a><a href="/shop#buono-regalo" class="bouton bouton--contour" data-libelle="Shop">Buono regalo</a></p>
     </div>
     <div class="soglia" data-anime="gsap">
       <p class="soglia-sopra">Spedizione gratuita in Svizzera da</p>
       <p class="soglia-cifra" data-info-cle><span class="soglia-valuta">CHF</span> 150</p>
-      <div class="soglia-bottiglia" data-iris-centre data-effet="bottiglia-soglia" role="img" aria-label="Bottiglia che si riempie con il totale del carrello, fino alla spedizione gratuita">
+      <div class="soglia-bottiglia" data-iris-centre data-effet="bottiglia-soglia" data-visuel role="img" aria-label="Bottiglia che si riempie con il totale del carrello, fino alla spedizione gratuita">
         <svg viewBox="0 0 520 150" aria-hidden="true" focusable="false">
           <defs>
             <clipPath id="sagoma"><path d="M18 40 Q18 22 36 22 L330 22 Q362 22 384 44 L402 58 L470 58 Q482 58 482 66 L482 84 Q482 92 470 92 L402 92 L384 106 Q362 128 330 128 L36 128 Q18 128 18 110 Z"/></clipPath>
@@ -228,7 +228,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <p class="prodotto-sopra"><span>Olive e paté</span></p>
     <h3 class="prodotto-nome">Olive taggiasche snocciolate in olio</h3>
     <p class="prodotto-formato">180 g</p>
-    <p class="prodotto-descr">Snocciolate e conservate sott&#39;olio, pronte per l&#39;aperitivo o la pasta.</p>
+    <p class="prodotto-descr">Snocciolate e conservate sott’olio, pronte per l’aperitivo o la pasta.</p>
     <div class="prodotto-riga">
       <p class="prodotto-prezzo" data-prix>CHF 15.00</p>
       <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="olive-snocciolate" data-nom="Olive taggiasche snocciolate in olio 180 g" data-prix="15" aria-label="Aggiungi Olive taggiasche snocciolate in olio 180 g">Aggiungi</button>
@@ -436,7 +436,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <p class="prodotto-sopra"><span class="prodotto-etichetta">Natale</span><span>Regali e dolci</span></p>
     <h3 class="prodotto-nome">Panettone al cioccolato bianco 30 %</h3>
     <p class="prodotto-formato">800 g o 1600 g</p>
-    <p class="prodotto-descr">Fatto in esclusiva per Natural-Iter da un maestro pasticcere ticinese, con il 30 % di cioccolato bianco nell&#39;impasto. In vendita da novembre a febbraio.</p>
+    <p class="prodotto-descr">Fatto in esclusiva per Natural-Iter da un maestro pasticcere ticinese, con il 30 % di cioccolato bianco nell’impasto. In vendita da novembre a febbraio.</p>
     <div class="prodotto-riga">
       <p class="prodotto-prezzo" data-prix><small>da</small> CHF 67.50 <s aria-label="invece di CHF 72.00">CHF 72.00</s></p>
       <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="panettone" data-nom="Panettone al cioccolato bianco 30 % 800 g o 1600 g" data-prix="67.5" aria-label="Aggiungi Panettone al cioccolato bianco 30 % 800 g o 1600 g">Aggiungi</button>
@@ -452,7 +452,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <p class="prodotto-sopra"><span>Regali e dolci</span></p>
     <h3 class="prodotto-nome">Anisbrötli</h3>
     <p class="prodotto-formato">450 o 700</p>
-    <p class="prodotto-descr">Biscotti all&#39;anice della tradizione svizzera.</p>
+    <p class="prodotto-descr">Biscotti all’anice della tradizione svizzera.</p>
     <div class="prodotto-riga">
       <p class="prodotto-prezzo" data-prix><small>da</small> CHF 12.50</p>
       <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="anisbrotli" data-nom="Anisbrötli 450 o 700" data-prix="12.5" aria-label="Aggiungi Anisbrötli 450 o 700">Aggiungi</button>
@@ -481,7 +481,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </section>
 <section class="sezione quantita fondo-oliva" id="quantita">
   <div class="conteneur quantita-griglia">
-    <h2 data-anime="lignes">Quantità diverse? <em>Scrivici</em></h2>
+    <div class="quantita-testa">
+      <h2 data-anime="lignes">Quantità diverse? <em>Scrivici</em></h2>
+      <figure class="media quantita-media" data-anime="rideau" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/latta-5-1600.webp" srcset="/assets/images/latta-5-800.webp 800w, /assets/images/latta-5-1600.webp 1600w" sizes="(max-width: 760px) 60vw, 22vw" alt="Latta da 5 litri e fusto da 25 litri di olio extravergine taggiasco" width="1600" height="2001" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
     <div>
       <p data-anime>Per quantità diverse da quelle dello shop, per i listini della ristorazione o per un ordine da consegnare: offriamo prezzi speciali per le confezioni multiple.</p>
       <p class="finale-azioni" data-anime><a href="/contatti?sujet=quantita#scrivici" class="bouton" data-libelle="Contatti">Scrivici</a><a class="bouton bouton--contour-chiaro" href="tel:+41797037805">Chiama +41 79 703 78 05</a></p>
@@ -493,7 +500,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <div class="ccq__tete">
       <p class="sopra" data-anime>Buono regalo</p>
       <h2 id="ccq-titre" data-anime="lignes">Un regalo che sa <em>di Liguria</em></h2>
-      <p data-anime>Il buono regalo digitale di Natural-Iter: scegli l&#39;importo, da CHF 25 a CHF 200 o un importo libero, e aggiungi un messaggio.</p>
+      <p data-anime>Il buono regalo digitale di Natural-Iter: scegli l’importo, da CHF 25 a CHF 200 o un importo libero, e aggiungi un messaggio.</p>
     </div>
     <div class="ccq__scene" aria-hidden="true" data-effet="buono">
       <div class="ccq__plateau"><div class="ccq__paquet"><div class="ccq__carte">
@@ -566,7 +573,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </footer>
 <div data-barre-fixe>
   <a class="bouton bouton--contour" href="tel:+41797037805">Chiama</a>
-  <a class="bouton" href="/shop" data-libelle="Shop">Shop</a>
+  <button type="button" class="bouton" data-panier-ouvrir>Carrello</button>
 </div>
 <div data-module="panier-en-tiroir" data-panier-tiroir>
   <script type="application/json" data-panier-reglages>{"devise":"CHF","seuil_livraison":150,"frais_livraison":null,"tva":null,"cle":"natural-iter-carrello","prefixe":"NI"}</script>

@@ -69,6 +69,7 @@ export function mappa({ etichette, compatta = false } = {}) {
     <path data-fx-trait d="M428 122 C 418 92 398 62 368 34"/><path data-fx-trait d="M436 120 C 462 84 502 56 548 36"/><path data-fx-trait d="M422 126 C 378 104 318 84 258 64"/>
   </g>
   <circle class="mappa-punto" cx="150" cy="404" r="9"/><circle class="mappa-punto mappa-punto--casa" cx="424" cy="134" r="10"/>
+  <g class="mappa-goccia" transform="translate(150 404)"><path d="M0 -22 C 0 -22 -11 -8 -11 0 a11 11 0 0 0 22 0 C 11 -8 0 -22 0 -22 Z"/></g>
   <text class="mappa-testo" x="40" y="380">${e.ponente}</text>
   <text class="mappa-testo mappa-testo--piccolo mappa-testo--mare" x="300" y="410">${e.mare}</text>
   <text class="mappa-testo" x="444" y="170">${e.mendrisio}</text>

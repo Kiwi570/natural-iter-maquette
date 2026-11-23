@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="it" data-v="1" data-pagina="accueil">
+<html lang="it" data-v="2" data-pagina="accueil">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,15 +35,15 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/young-serif-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/figtree-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/modules.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/modules.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#f4eee2">
 <link rel="icon" href="/assets/images/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -78,7 +78,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     </nav>
     <div class="entete-actions">
       <a class="bouton bouton--entete" href="/shop" data-libelle="Shop">Acquista</a>
-      <button type="button" class="carrello-bottone" data-panier-ouvrir data-envol-cible aria-label="Carrello"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.3 11.1a2 2 0 0 1-2 1.9H8.3a2 2 0 0 1-2-1.9Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="pet-compte est-vide" data-panier-compte>0</span></button>
+      <button type="button" class="carrello-bottone" data-panier-ouvrir data-envol-cible aria-label="Carrello"><span class="carrello-vaso" aria-hidden="true"><span class="carrello-olio"></span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.3 11.1a2 2 0 0 1-2 1.9H8.3a2 2 0 0 1-2-1.9Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="pet-compte est-vide" data-panier-compte>0</span></button>
       <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Chiudi"><span data-libelle-bouton>Menu</span></button>
       <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
     </div>
@@ -112,7 +112,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <p class="sopra" data-anime="gsap">Olio extravergine · Ponente Ligure</p>
     <h1 class="apertura-titolo">
       <span class="apertura-riga">Olio</span>
-      <span class="olio-parola" data-iris-centre data-effet="olio-titolo" data-testo="taggiasco">taggiasco</span>
+      <span class="olio-parola" data-iris-centre data-effet="olio-titolo" data-grille="typo fil" data-testo="taggiasco">taggiasco</span>
       <span class="apertura-sotto">dalle fasce liguri alla tavola svizzera</span>
     </h1>
     <p class="apertura-intro" data-anime="gsap">Olive raccolte in parte ancora acerbe e molite a freddo poche ore dopo la raccolta, sotto i 25 °C. Un olio armonioso, leggermente fruttato, poco amaro.</p>
@@ -263,9 +263,9 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </figure>
     </div>
     <div class="taggiasca-testo">
-      <p class="sopra" data-anime>L&#39;oliva taggiasca</p>
+      <p class="sopra" data-anime>L’oliva taggiasca</p>
       <h2 data-anime="lignes">Piccola, coltivata <em>sulle fasce</em></h2>
-      <p data-anime>La taggiasca cresce nel Ponente Ligure, la parte occidentale della Liguria che guarda il mare. È un&#39;oliva dal frutto piccolo, coltivata da sempre su terrazze strette sostenute da muretti a secco, dove quasi tutto il lavoro si fa a mano.</p>
+      <p data-anime>La taggiasca cresce nel Ponente Ligure, la parte occidentale della Liguria che guarda il mare. È un’oliva dal frutto piccolo, coltivata da sempre su terrazze strette sostenute da muretti a secco, dove quasi tutto il lavoro si fa a mano.</p>
       <ul class="fatti" data-anime="cascade">
         <li><strong>Ponente Ligure</strong><span>La riviera di ponente, tra il mare e le colline.</span></li>
         <li><strong>Fasce e muretti a secco</strong><span>Terrazze strappate al pendio, pietra su pietra.</span></li>
@@ -278,12 +278,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <section class="sezione filiera fondo-oliva" id="filiera">
   <div class="conteneur sezione-testa">
     <div>
-      <p class="sopra" data-anime>Dall&#39;oliva alla bottiglia</p>
-      <h2 data-anime="lignes">Poche ore tra l'albero e il <em>frantoio</em></h2>
+      <p class="sopra" data-anime>Dall’oliva alla bottiglia</p>
+      <h2 data-anime="lignes">Poche ore tra l’albero e il <em>frantoio</em></h2>
     </div>
-    <p class="sezione-testa-lato" data-anime>«Nella nostra produzione viene messa la qualità prima di tutto»: ogni passaggio serve a conservare il profumo dell&#39;oliva.</p>
+    <p class="sezione-testa-lato" data-anime>«Nella nostra produzione viene messa la qualità prima di tutto»: ogni passaggio serve a conservare il profumo dell’oliva.</p>
   </div>
-  <ol class="conteneur passi" data-anime="cascade" tabindex="0" aria-label="Dall&#39;oliva alla bottiglia">
+  <ol class="conteneur passi" data-anime="cascade" tabindex="0" aria-label="Dall’oliva alla bottiglia">
     <li class="passo">
       <figure class="media passo-media" data-grok style="--cadrage:50% 50%">
   <picture>
@@ -295,10 +295,10 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <li class="passo">
       <figure class="media passo-media" data-grok style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/grok/frantoio-1600.webp" srcset="/assets/images/grok/frantoio-1024.webp 1024w, /assets/images/grok/frantoio-1168.webp 1168w, /assets/images/grok/frantoio-1600.webp 1600w" sizes="(max-width: 760px) 80vw, 24vw" alt="Olio appena estratto che scende in una vasca d&#39;acciaio" width="1600" height="2000" loading="lazy" decoding="async">
+    <img src="/assets/images/grok/frantoio-1600.webp" srcset="/assets/images/grok/frantoio-1024.webp 1024w, /assets/images/grok/frantoio-1168.webp 1168w, /assets/images/grok/frantoio-1600.webp 1600w" sizes="(max-width: 760px) 80vw, 24vw" alt="Olio appena estratto che scende in una vasca d’acciaio" width="1600" height="2000" loading="lazy" decoding="async">
   </picture><figcaption class="mention-ia">Illustrazione generata</figcaption>
 </figure>
-      <p class="passo-numero">02</p><h3>Subito al frantoio</h3><p>L&#39;olio viene estratto poche ore dopo la raccolta, solo con metodi meccanici.</p>
+      <p class="passo-numero">02</p><h3>Subito al frantoio</h3><p>L’olio viene estratto poche ore dopo la raccolta, solo con metodi meccanici.</p>
     </li>
     <li class="passo passo--termometro">
       <div class="passo-media passo-disegno" data-visuel data-effet="termometro"><svg class="termometro" viewBox="0 0 120 300" aria-hidden="true" focusable="false">
@@ -323,7 +323,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <img src="/assets/images/olio-25-1600.webp" srcset="/assets/images/olio-25-800.webp 800w, /assets/images/olio-25-1600.webp 1600w" sizes="(max-width: 760px) 80vw, 24vw" alt="Bottiglia da 25 cl di olio extravergine taggiasco" width="1600" height="2001" loading="lazy" decoding="async">
   </picture>
 </figure>
-      <p class="passo-numero">04</p><h3>Filtrato, in vetro scuro</h3><p>Filtrato subito dopo l&#39;estrazione e imbottigliato in vetro scuro, al riparo dalla luce.</p>
+      <p class="passo-numero">04</p><h3>Filtrato, in vetro scuro</h3><p>Filtrato subito dopo l’estrazione e imbottigliato in vetro scuro, al riparo dalla luce.</p>
     </li>
   </ol>
   <p class="conteneur filiera-link" data-anime><a href="/prodotti" class="bouton bouton--contour-chiaro" data-libelle="Prodotti">Come nascono olio e olive</a></p>
@@ -331,14 +331,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <section class="sezione bosco" id="bosco">
   <figure class="media bosco-fondo" data-grok data-fx="parallaxe" data-fx-force="12" style="--cadrage:50% 50%">
   <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/bosco-mobile-640.webp 640w, /assets/images/grok/bosco-mobile-1080.webp 1080w" sizes="100vw">
-    <img src="/assets/images/grok/bosco-1280.webp" srcset="/assets/images/grok/bosco-640.webp 640w, /assets/images/grok/bosco-1280.webp 1280w, /assets/images/grok/bosco-1920.webp 1920w" sizes="100vw" alt="Bosco di betulle in Ticino all&#39;inizio della primavera, aglio orsino in fiore" width="1280" height="720" loading="lazy" decoding="async">
+    <img src="/assets/images/grok/bosco-1280.webp" srcset="/assets/images/grok/bosco-640.webp 640w, /assets/images/grok/bosco-1280.webp 1280w, /assets/images/grok/bosco-1920.webp 1920w" sizes="100vw" alt="Bosco di betulle in Ticino all’inizio della primavera, aglio orsino in fiore" width="1280" height="720" loading="lazy" decoding="async">
   </picture><figcaption class="mention-ia">Illustrazione generata</figcaption>
 </figure>
   <div class="conteneur bosco-griglia">
     <div class="bosco-pannello">
       <p class="sopra" data-anime>Dal bosco ticinese · Waldmuus</p>
       <h2 data-anime="lignes">Linfa di betulla e aglio orsino, <em>raccolti</em> nel bosco</h2>
-      <p data-anime>Accanto all&#39;olio, Giacomo produce alimenti biologici da raccolta selvatica certificata Bio Suisse, con il marchio Waldmuus: la linfa di betulla dei boschi di Miglieglia e l&#39;aglio orsino in olio e Sel des Alpes.</p>
+      <p data-anime>Accanto all’olio, Giacomo produce alimenti biologici da raccolta selvatica certificata Bio Suisse, con il marchio Waldmuus: la linfa di betulla dei boschi di Miglieglia e l’aglio orsino in olio e Sel des Alpes.</p>
       <p class="bio-bollino" data-anime><span>Bio Suisse</span>Raccolta selvatica certificata</p>
     </div>
     <div class="bosco-prodotti" data-anime="cascade">
@@ -387,11 +387,11 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <div class="stagione-testo" data-panier-produit>
       <p class="sopra" data-anime>In questo periodo · Natale</p>
       <h2 data-anime="lignes">Il panettone al <em>cioccolato bianco</em></h2>
-      <p data-anime>Una storia lunga trent&#39;anni: un panettone nato per essere condiviso e regalato, preparato per vent&#39;anni da un maestro pasticcere solo per questa famiglia. Oggi un nuovo maestro ne ha raccolto l&#39;eredità, in esclusiva per Natural-Iter: il panettone a Natale, la colomba a Pasqua.</p>
+      <p data-anime>Una storia lunga trent’anni: un panettone nato per essere condiviso e regalato, preparato per vent’anni da un maestro pasticcere solo per questa famiglia. Oggi un nuovo maestro ne ha raccolto l’eredità, in esclusiva per Natural-Iter: il panettone a Natale, la colomba a Pasqua.</p>
       <ul class="stagione-punti" data-anime="cascade">
-        <li>Il 30 % del peso è cioccolato bianco, lavorato direttamente nell&#39;impasto.</li>
+        <li>Il 30 % del peso è cioccolato bianco, lavorato direttamente nell’impasto.</li>
         <li>In vendita al dettaglio da novembre a febbraio, nei formati da 800 g e 1600 g.</li>
-        <li>Sconto del 15 % da 2 pezzi e del 20 % da 3; oltre 10 panettoni, su ordinazione tutto l&#39;anno.</li>
+        <li>Sconto del 15 % da 2 pezzi e del 20 % da 3; oltre 10 panettoni, su ordinazione tutto l’anno.</li>
       </ul>
       <div class="stagione-acquisto" data-anime>
         <p class="prodotto-prezzo prodotto-prezzo--grande" data-prix><small>da</small> CHF 67.50 <s aria-label="invece di CHF 72.00">CHF 72.00</s></p>
@@ -410,15 +410,15 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </figure>
       <figure class="media storia-foto-2" data-superpose data-fx="vitesse" data-fx-force="4" style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/jurg-2000-1600.webp" srcset="/assets/images/jurg-2000-1024.webp 1024w, /assets/images/jurg-2000-1168.webp 1168w, /assets/images/jurg-2000-1600.webp 1600w" sizes="(max-width: 760px) 56vw, 22vw" alt="Jürg all&#39;inizio degli anni Duemila, accanto ai fusti" width="1600" height="1067" loading="lazy" decoding="async">
+    <img src="/assets/images/jurg-2000-1600.webp" srcset="/assets/images/jurg-2000-1024.webp 1024w, /assets/images/jurg-2000-1168.webp 1168w, /assets/images/jurg-2000-1600.webp 1600w" sizes="(max-width: 760px) 56vw, 22vw" alt="Jürg all’inizio degli anni Duemila, accanto ai fusti" width="1600" height="1067" loading="lazy" decoding="async">
   </picture><figcaption class="media-legende">Jürg, inizio anni Duemila</figcaption>
 </figure>
     </div>
     <div class="storia-testo">
       <p class="sopra" data-anime>La nostra storia</p>
       <h2 data-anime="lignes">Da Jürg a Giacomo, <em>la stessa strada</em></h2>
-      <p data-anime>Negli anni Ottanta Jürg Raz, maestro elementare dell&#39;Oberland bernese, si trasferisce in Liguria a vent&#39;anni. Compra uliveti abbandonati nel Ponente Ligure e li riporta in produzione: muretti a secco, potature, raccolte.</p>
-      <p data-anime>Dalla fine degli anni Novanta porta i suoi prodotti in Svizzera, ad alberghi e ristoranti di alto livello. Nel 2021 affida l&#39;azienda all&#39;amico di lunga data Giacomo Bassanini, che oggi fa la spola tra Liguria e Ticino.</p>
+      <p data-anime>Negli anni Ottanta Jürg Raz, maestro elementare dell’Oberland bernese, si trasferisce in Liguria a vent’anni. Compra uliveti abbandonati nel Ponente Ligure e li riporta in produzione: muretti a secco, potature, raccolte.</p>
+      <p data-anime>Dalla fine degli anni Novanta porta i suoi prodotti in Svizzera, ad alberghi e ristoranti di alto livello. Nel 2021 affida l’azienda all’amico di lunga data Giacomo Bassanini, che oggi fa la spola tra Liguria e Ticino.</p>
       <p class="numero-grande" data-anime><span>più di</span><strong data-compteur="40">40</strong><span>anni di lavoro</span></p>
       <p data-anime><a href="/chi-siamo" class="bouton bouton--contour" data-libelle="Chi siamo">Leggi la nostra storia</a></p>
     </div>
@@ -431,20 +431,34 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <h2 data-anime="lignes">Cartoni, latte e <em>formati da cucina</em></h2>
       <p data-anime>Dalla fine degli anni Novanta Natural-Iter rifornisce alberghi e ristoranti; oggi Giacomo consegna regolarmente in tutta la Svizzera. Per i listini e per quantità diverse da quelle dello shop, scrivici.</p>
       <p data-anime><a href="/contatti?sujet=professionisti#scrivici" class="bouton" data-libelle="Contatti">Chiedi il listino</a></p>
+      <p class="pro-altri" data-anime>Latte da 5 e 25 litri, olive e paté da 1,5 a 3,5 kg. <a href="/shop?categoria=grandi#catalogo" class="freccia freccia--chiara" data-libelle="Shop">Tutti i grandi formati</a></p>
     </div>
-    <ul class="pro-formati" data-anime="cascade">
-      <li><span class="pro-formato">6 × 75 cl</span><span class="pro-nome">Cartone di olio taggiasco</span><span class="pro-prezzo">CHF 204.00</span></li><li><span class="pro-formato">12 × 75 cl</span><span class="pro-nome">Due cartoni di olio taggiasco</span><span class="pro-prezzo">CHF 396.00</span></li><li><span class="pro-formato">18 × 75 cl</span><span class="pro-nome">Tre cartoni di olio taggiasco</span><span class="pro-prezzo">CHF 576.00</span></li><li><span class="pro-formato">5 L</span><span class="pro-nome">Latta di olio extravergine taggiasco</span><span class="pro-prezzo">CHF 200.00</span></li><li><span class="pro-formato">25 L</span><span class="pro-nome">Latta di olio extravergine taggiasco</span><span class="pro-prezzo">CHF 900.00</span></li><li><span class="pro-formato">3,5 kg</span><span class="pro-nome">Olive taggiasche in salamoia</span><span class="pro-prezzo">CHF 66.00</span></li>
-    </ul>
+    <div class="calcolo" data-cartoni data-singola="49" data-grille="manipuler" data-panier-produit>
+      <p class="calcolo-domanda" id="calcolo-domanda">Quanti cartoni da 6 bottiglie da 75 cl?</p>
+      <div class="calcolo-scelte" role="group" aria-labelledby="calcolo-domanda">
+        <button type="button" class="calcolo-scelta" data-cartoni-scelta data-id="cartone-6" data-bottiglie="6" data-prezzo="204" data-nome="Cartone di olio taggiasco 6 × 75 cl" aria-pressed="true"><strong>1</strong> cartone<small>6 bottiglie</small></button><button type="button" class="calcolo-scelta" data-cartoni-scelta data-id="cartone-12" data-bottiglie="12" data-prezzo="396" data-nome="Due cartoni di olio taggiasco 12 × 75 cl" aria-pressed="false"><strong>2</strong> cartoni<small>12 bottiglie</small></button><button type="button" class="calcolo-scelta" data-cartoni-scelta data-id="cartone-18" data-bottiglie="18" data-prezzo="576" data-nome="Tre cartoni di olio taggiasco 18 × 75 cl" aria-pressed="false"><strong>3</strong> cartoni<small>18 bottiglie</small></button>
+      </div>
+      <div class="calcolo-bottiglie" data-effet="cartoni" data-visuel aria-hidden="true">
+        <span class="calcolo-bottiglia accesa"><svg viewBox="0 0 20 52"><path d="M7 1h6v7c0 2 4 4 4 9v31a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V17c0-5 4-7 4-9Z"/><rect x="4.5" y="24" width="11" height="13" rx="1"/></svg></span><span class="calcolo-bottiglia accesa"><svg viewBox="0 0 20 52"><path d="M7 1h6v7c0 2 4 4 4 9v31a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V17c0-5 4-7 4-9Z"/><rect x="4.5" y="24" width="11" height="13" rx="1"/></svg></span><span class="calcolo-bottiglia accesa"><svg viewBox="0 0 20 52"><path d="M7 1h6v7c0 2 4 4 4 9v31a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V17c0-5 4-7 4-9Z"/><rect x="4.5" y="24" width="11" height="13" rx="1"/></svg></span><span class="calcolo-bottiglia accesa"><svg viewBox="0 0 20 52"><path d="M7 1h6v7c0 2 4 4 4 9v31a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V17c0-5 4-7 4-9Z"/><rect x="4.5" y="24" width="11" height="13" rx="1"/></svg></span><span class="calcolo-bottiglia accesa"><svg viewBox="0 0 20 52"><path d="M7 1h6v7c0 2 4 4 4 9v31a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V17c0-5 4-7 4-9Z"/><rect x="4.5" y="24" width="11" height="13" rx="1"/></svg></span><span class="calcolo-bottiglia accesa"><svg viewBox="0 0 20 52"><path d="M7 1h6v7c0 2 4 4 4 9v31a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V17c0-5 4-7 4-9Z"/><rect x="4.5" y="24" width="11" height="13" rx="1"/></svg></span><span class="calcolo-bottiglia"><svg viewBox="0 0 20 52"><path d="M7 1h6v7c0 2 4 4 4 9v31a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V17c0-5 4-7 4-9Z"/><rect x="4.5" y="24" width="11" height="13" rx="1"/></svg></span><span class="calcolo-bottiglia"><svg viewBox="0 0 20 52"><path d="M7 1h6v7c0 2 4 4 4 9v31a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V17c0-5 4-7 4-9Z"/><rect x="4.5" y="24" width="11" height="13" rx="1"/></svg></span><span class="calcolo-bottiglia"><svg viewBox="0 0 20 52"><path d="M7 1h6v7c0 2 4 4 4 9v31a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V17c0-5 4-7 4-9Z"/><rect x="4.5" y="24" width="11" height="13" rx="1"/></svg></span><span class="calcolo-bottiglia"><svg viewBox="0 0 20 52"><path d="M7 1h6v7c0 2 4 4 4 9v31a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V17c0-5 4-7 4-9Z"/><rect x="4.5" y="24" width="11" height="13" rx="1"/></svg></span><span class="calcolo-bottiglia"><svg viewBox="0 0 20 52"><path d="M7 1h6v7c0 2 4 4 4 9v31a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V17c0-5 4-7 4-9Z"/><rect x="4.5" y="24" width="11" height="13" rx="1"/></svg></span><span class="calcolo-bottiglia"><svg viewBox="0 0 20 52"><path d="M7 1h6v7c0 2 4 4 4 9v31a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V17c0-5 4-7 4-9Z"/><rect x="4.5" y="24" width="11" height="13" rx="1"/></svg></span><span class="calcolo-bottiglia"><svg viewBox="0 0 20 52"><path d="M7 1h6v7c0 2 4 4 4 9v31a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V17c0-5 4-7 4-9Z"/><rect x="4.5" y="24" width="11" height="13" rx="1"/></svg></span><span class="calcolo-bottiglia"><svg viewBox="0 0 20 52"><path d="M7 1h6v7c0 2 4 4 4 9v31a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V17c0-5 4-7 4-9Z"/><rect x="4.5" y="24" width="11" height="13" rx="1"/></svg></span><span class="calcolo-bottiglia"><svg viewBox="0 0 20 52"><path d="M7 1h6v7c0 2 4 4 4 9v31a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V17c0-5 4-7 4-9Z"/><rect x="4.5" y="24" width="11" height="13" rx="1"/></svg></span><span class="calcolo-bottiglia"><svg viewBox="0 0 20 52"><path d="M7 1h6v7c0 2 4 4 4 9v31a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V17c0-5 4-7 4-9Z"/><rect x="4.5" y="24" width="11" height="13" rx="1"/></svg></span><span class="calcolo-bottiglia"><svg viewBox="0 0 20 52"><path d="M7 1h6v7c0 2 4 4 4 9v31a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V17c0-5 4-7 4-9Z"/><rect x="4.5" y="24" width="11" height="13" rx="1"/></svg></span><span class="calcolo-bottiglia"><svg viewBox="0 0 20 52"><path d="M7 1h6v7c0 2 4 4 4 9v31a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V17c0-5 4-7 4-9Z"/><rect x="4.5" y="24" width="11" height="13" rx="1"/></svg></span>
+      </div>
+      <dl class="calcolo-risultato" aria-live="polite">
+        <div><dt>Totale</dt><dd data-cartoni-prezzo data-prix>CHF 204.00</dd></div>
+        <div><dt>A bottiglia</dt><dd data-cartoni-unita>CHF 34.00</dd></div>
+        <div><dt>Risparmi</dt><dd data-cartoni-risparmio>CHF 90.00</dd></div>
+      </dl>
+      <p class="calcolo-nota">Risparmio calcolato rispetto allo stesso numero di bottiglie da 75 cl comprate singolarmente nello shop (CHF 49.00 l’una).</p>
+      <button type="button" class="bouton" data-panier-ajouter="cartone-6" data-nom="Cartone di olio taggiasco 6 × 75 cl" data-prix="204" data-image="/assets/images/cartone-6-800.webp" data-grille="retour" aria-label="Aggiungi Cartone di olio taggiasco 6 × 75 cl">Aggiungi</button>
+    </div>
   </div>
   <div class="conteneur buono-striscia" data-anime>
-    <p><strong>Buono regalo.</strong> Da CHF 25 a CHF 200, o l&#39;importo che preferisci.</p>
+    <p><strong>Buono regalo.</strong> Da CHF 25 a CHF 200, o l’importo che preferisci.</p>
     <a href="/shop#buono-regalo" class="bouton bouton--contour-chiaro" data-libelle="Shop">Componi il buono</a>
   </div>
 </section>
 <section class="sezione finale" id="finale">
   <figure class="media finale-fondo" data-grok data-fx="parallaxe" data-fx-force="10" style="--cadrage:50% 50%">
   <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/tavola-mobile-640.webp 640w, /assets/images/grok/tavola-mobile-1080.webp 1080w" sizes="100vw">
-    <img src="/assets/images/grok/tavola-1280.webp" srcset="/assets/images/grok/tavola-640.webp 640w, /assets/images/grok/tavola-1280.webp 1280w, /assets/images/grok/tavola-1920.webp 1920w" sizes="100vw" alt="Tavola in pietra con pane, una ciotola d&#39;olio e limoni" width="1280" height="720" loading="lazy" decoding="async">
+    <img src="/assets/images/grok/tavola-1280.webp" srcset="/assets/images/grok/tavola-640.webp 640w, /assets/images/grok/tavola-1280.webp 1280w, /assets/images/grok/tavola-1920.webp 1920w" sizes="100vw" alt="Tavola in pietra con pane, una ciotola d’olio e limoni" width="1280" height="720" loading="lazy" decoding="async">
   </picture><figcaption class="mention-ia">Illustrazione generata</figcaption>
 </figure>
   <div class="conteneur finale-pannello"><div class="finale-carta">

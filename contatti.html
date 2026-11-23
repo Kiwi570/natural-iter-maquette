@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="it" data-v="1" data-pagina="contatti">
+<html lang="it" data-v="2" data-pagina="contatti">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,15 +35,15 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/young-serif-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/figtree-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/modules.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/modules.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#f4eee2">
 <link rel="icon" href="/assets/images/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -78,7 +78,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     </nav>
     <div class="entete-actions">
       <a class="bouton bouton--entete" href="/shop" data-libelle="Shop">Acquista</a>
-      <button type="button" class="carrello-bottone" data-panier-ouvrir data-envol-cible aria-label="Carrello"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.3 11.1a2 2 0 0 1-2 1.9H8.3a2 2 0 0 1-2-1.9Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="pet-compte est-vide" data-panier-compte>0</span></button>
+      <button type="button" class="carrello-bottone" data-panier-ouvrir data-envol-cible aria-label="Carrello"><span class="carrello-vaso" aria-hidden="true"><span class="carrello-olio"></span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.3 11.1a2 2 0 0 1-2 1.9H8.3a2 2 0 0 1-2-1.9Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="pet-compte est-vide" data-panier-compte>0</span></button>
       <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Chiudi"><span data-libelle-bouton>Menu</span></button>
       <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
     </div>
@@ -111,7 +111,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <div class="conteneur contatti-griglia">
     <div class="contatti-testo">
       <p class="sopra" data-anime="gsap">Contatti</p>
-      <h1 class="contatti-titolo" data-anime="gsap">Scrivici o <em>chiamaci</em></h1>
+      <h1 class="contatti-titolo" data-anime="gsap" data-grille="typo fil">Scrivici o <em>chiamaci</em></h1>
       <p data-anime="gsap">Per un ordine, una quantità speciale, un listino per la ristorazione o una semplice domanda.</p>
       <dl class="recapiti" data-anime="gsap">
         <div data-info-cle><dt>Telefono</dt><dd><a href="tel:+41797037805" data-action-principale>+41 79 703 78 05</a></dd></div>
@@ -139,6 +139,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <path data-fx-trait d="M428 122 C 418 92 398 62 368 34"/><path data-fx-trait d="M436 120 C 462 84 502 56 548 36"/><path data-fx-trait d="M422 126 C 378 104 318 84 258 64"/>
   </g>
   <circle class="mappa-punto" cx="150" cy="404" r="9"/><circle class="mappa-punto mappa-punto--casa" cx="424" cy="134" r="10"/>
+  <g class="mappa-goccia" transform="translate(150 404)"><path d="M0 -22 C 0 -22 -11 -8 -11 0 a11 11 0 0 0 22 0 C 11 -8 0 -22 0 -22 Z"/></g>
   <text class="mappa-testo" x="40" y="380">Ponente Ligure</text>
   <text class="mappa-testo mappa-testo--piccolo mappa-testo--mare" x="300" y="410">Mar Ligure</text>
   <text class="mappa-testo" x="444" y="170">Mendrisio</text>
@@ -158,7 +159,15 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <div class="conteneur scrivici-griglia">
     <div class="scrivici-testo">
       <h2 data-anime="lignes">Il tuo <em>messaggio</em></h2>
-      <p data-anime>Compila il modulo, oppure chiamaci o mandaci un&#39;e-mail.</p>
+      <p data-anime>Compila il modulo, oppure chiamaci o mandaci un’e-mail.</p>
+      <div class="risponde" data-anime>
+        <figure class="media risponde-foto" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/giacomo-480.webp" srcset="/assets/images/giacomo-480.webp 480w" sizes="96px" alt="Giacomo Bassanini" width="480" height="480" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <p><strong>Ti risponde Giacomo</strong><br>In italiano, tedesco, francese, inglese o spagnolo.</p>
+      </div>
       <div class="pro-riquadro" data-anime>
         <h3>Per ristoranti e alberghi</h3>
         <p>Listini prezzi e ordini di grandi quantità su richiesta: cartoni da 6 bottiglie, latte da 5 e 25 litri, olive e paté in formato da cucina.</p>

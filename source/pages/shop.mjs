@@ -13,14 +13,14 @@ export default (c) => {
   <div class="conteneur shop-griglia">
     <div class="shop-testo">
       <p class="sopra" data-anime="gsap">${c.t('shop.apertura.sopra')}</p>
-      <h1 class="shop-titolo" data-anime="gsap">${c.tb('shop.apertura.titolo')}</h1>
+      <h1 class="shop-titolo" data-anime="gsap" data-grille="typo fil">${c.tb('shop.apertura.titolo')}</h1>
       <p data-anime="gsap">${c.t('shop.apertura.testo')}</p>
       <p class="shop-azioni" data-anime="gsap"><a class="bouton" href="#catalogo" data-action-principale data-sans-transition>${c.t('shop.apertura.azione')}</a>${c.lien('shop', { ancre: 'buono-regalo', classe: 'bouton bouton--contour', texte: c.t('commun.buono') })}</p>
     </div>
     <div class="soglia" data-anime="gsap">
       <p class="soglia-sopra">${c.t('shop.soglia.sopra')}</p>
       <p class="soglia-cifra" data-info-cle><span class="soglia-valuta">CHF</span> 150</p>
-      <div class="soglia-bottiglia" data-iris-centre data-effet="bottiglia-soglia" role="img" aria-label="${c.s('shop.soglia.aria')}">
+      <div class="soglia-bottiglia" data-iris-centre data-effet="bottiglia-soglia" data-visuel role="img" aria-label="${c.s('shop.soglia.aria')}">
         <svg viewBox="0 0 520 150" aria-hidden="true" focusable="false">
           <defs>
             <clipPath id="sagoma"><path d="M18 40 Q18 22 36 22 L330 22 Q362 22 384 44 L402 58 L470 58 Q482 58 482 66 L482 84 Q482 92 470 92 L402 92 L384 106 Q362 128 330 128 L36 128 Q18 128 18 110 Z"/></clipPath>
@@ -65,7 +65,10 @@ export default (c) => {
 
 <section class="sezione quantita fondo-oliva" id="quantita">
   <div class="conteneur quantita-griglia">
-    <h2 data-anime="lignes">${c.tb('shop.quantita.titolo')}</h2>
+    <div class="quantita-testa">
+      <h2 data-anime="lignes">${c.tb('shop.quantita.titolo')}</h2>
+      ${c.media({ nom: 'latta-5', alt: c.s('shop.quantita.alt'), classe: 'quantita-media', sizes: '(max-width: 760px) 60vw, 22vw', attrs: 'data-anime="rideau"' })}
+    </div>
     <div>
       <p data-anime>${c.t('shop.quantita.testo')}</p>
       <p class="finale-azioni" data-anime>${c.lien('contatti', { params: 'sujet=quantita', ancre: 'scrivici', classe: 'bouton', texte: c.t('shop.quantita.azione') })}<a class="bouton bouton--contour-chiaro" href="tel:${c.site.contact.telephoneLien}">${c.t('commun.appeler')} ${c.site.contact.telephone}</a></p>

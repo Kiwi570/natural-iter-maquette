@@ -18,7 +18,7 @@ export default (c) => {
     <p class="sopra" data-anime="gsap">${c.t('accueil.apertura.sopra')}</p>
     <h1 class="apertura-titolo">
       <span class="apertura-riga">${c.t('accueil.apertura.riga1')}</span>
-      <span class="olio-parola" data-iris-centre data-effet="olio-titolo" data-testo="${c.s('accueil.apertura.parola')}">${c.t('accueil.apertura.parola')}</span>
+      <span class="olio-parola" data-iris-centre data-effet="olio-titolo" data-grille="typo fil" data-testo="${c.s('accueil.apertura.parola')}">${c.t('accueil.apertura.parola')}</span>
       <span class="apertura-sotto">${c.t('accueil.apertura.riga2')}</span>
     </h1>
     <p class="apertura-intro" data-anime="gsap">${c.t('accueil.apertura.testo')}</p>
@@ -171,10 +171,24 @@ export default (c) => {
       <h2 data-anime="lignes">${c.tb('accueil.pro.titolo')}</h2>
       <p data-anime>${c.t('accueil.pro.testo')}</p>
       <p data-anime>${c.lien('contatti', { params: 'sujet=professionisti', ancre: 'scrivici', classe: 'bouton', texte: c.t('accueil.pro.azione') })}</p>
+      <p class="pro-altri" data-anime>${c.t('accueil.pro.altri')} ${c.lien('shop', { ancre: 'catalogo', params: 'categoria=grandi', classe: 'freccia freccia--chiara', texte: c.t('accueil.pro.altriLink') })}</p>
     </div>
-    <ul class="pro-formati" data-anime="cascade">
-      ${['cartone-6', 'cartone-12', 'cartone-18', 'latta-5', 'latta-25', 'salamoia-3500'].map((id) => { const p = trova(id); return html`<li><span class="pro-formato">${p.formato}</span><span class="pro-nome">${p.nome}</span><span class="pro-prezzo">${chf(p.prezzo)}</span></li>`; })}
-    </ul>
+    <div class="calcolo" data-cartoni data-singola="${trova('olio-75').prezzo}" data-grille="manipuler" data-panier-produit>
+      <p class="calcolo-domanda" id="calcolo-domanda">${c.t('accueil.pro.domanda')}</p>
+      <div class="calcolo-scelte" role="group" aria-labelledby="calcolo-domanda">
+        ${[['cartone-6', 6], ['cartone-12', 12], ['cartone-18', 18]].map(([id, n], i) => { const p = trova(id); return html`<button type="button" class="calcolo-scelta" data-cartoni-scelta data-id="${id}" data-bottiglie="${n}" data-prezzo="${p.prezzo}" data-nome="${p.nome} ${p.formato}" aria-pressed="${i === 0 ? 'true' : 'false'}"><strong>${i + 1}</strong> ${c.t(i ? 'accueil.pro.cartoni' : 'accueil.pro.cartone')}<small>${n} ${c.t('accueil.pro.bottiglie')}</small></button>`; })}
+      </div>
+      <div class="calcolo-bottiglie" data-effet="cartoni" data-visuel aria-hidden="true">
+        ${Array.from({ length: 18 }, (_, i) => html`<span class="calcolo-bottiglia${i < 6 ? ' accesa' : ''}"><svg viewBox="0 0 20 52"><path d="M7 1h6v7c0 2 4 4 4 9v31a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V17c0-5 4-7 4-9Z"/><rect x="4.5" y="24" width="11" height="13" rx="1"/></svg></span>`)}
+      </div>
+      <dl class="calcolo-risultato" aria-live="polite">
+        <div><dt>${c.t('accueil.pro.totale')}</dt><dd data-cartoni-prezzo data-prix>${chf(trova('cartone-6').prezzo)}</dd></div>
+        <div><dt>${c.t('accueil.pro.unita')}</dt><dd data-cartoni-unita>${chf(trova('cartone-6').prezzo / 6)}</dd></div>
+        <div><dt>${c.t('accueil.pro.risparmio')}</dt><dd data-cartoni-risparmio>${chf(6 * trova('olio-75').prezzo - trova('cartone-6').prezzo)}</dd></div>
+      </dl>
+      <p class="calcolo-nota">${c.t('accueil.pro.nota')}</p>
+      <button type="button" class="bouton" data-panier-ajouter="cartone-6" data-nom="${trova('cartone-6').nome} ${trova('cartone-6').formato}" data-prix="${trova('cartone-6').prezzo}" data-image="/assets/images/cartone-6-800.webp" data-grille="retour" aria-label="${c.s('commun.aggiungi')} ${trova('cartone-6').nome} ${trova('cartone-6').formato}">${c.t('commun.aggiungi')}</button>
+    </div>
   </div>
   <div class="conteneur buono-striscia" data-anime>
     <p><strong>${c.t('accueil.pro.buonoTitolo')}</strong> ${c.t('accueil.pro.buonoTesto')}</p>

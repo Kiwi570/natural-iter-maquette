@@ -1,0 +1,49 @@
+… fichiers
+  fait en 0 s
+… grille
+  fait en 33 s
+… mesures
+  13/234
+  37/234
+  63/234
+  90/234
+  119/234
+  142/234
+  166/234
+  193/234
+  209/234
+  234/234
+  fait en 303 s
+… mesures:balayage
+  fait en 47 s
+… films
+  fait en 151 s
+… bords
+  fait en 70 s
+… parcours:intro
+  fait en 58 s
+… parcours:menu
+  fait en 4 s
+… parcours:liens
+  fait en 106 s
+… parcours:hauteur
+  fait en 36 s
+… parcours:projet
+  fait en 0 s
+… ecran
+  fait en 13 s
+… fluidite
+  fait en 183 s
+… mouvement
+  fait en 97 s
+… vitesse
+  fait en 21 s
+… captures
+  fait en 147 s
+… safari
+  fait en 0 s
+
+Échecs : 4 · À regarder : 5 · Non lancé : 1
+Relancer seulement ce qui a échoué : node _audit/audit.mjs --complet --pages=/,/chi-siamo,/shop,/prodotti --seulement=fichiers,mesures,films
+Rapport : /home/claude/natural-iter/natural-iter-maquette/_audit/rapport/rapport.md (passe 20261123-172015-complet)
+CODE 1

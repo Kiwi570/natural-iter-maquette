@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="it" data-v="1" data-pagina="chi-siamo">
+<html lang="it" data-v="2" data-pagina="chi-siamo">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,15 +35,15 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/young-serif-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/figtree-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/modules.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/modules.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#f4eee2">
 <link rel="icon" href="/assets/images/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -78,7 +78,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     </nav>
     <div class="entete-actions">
       <a class="bouton bouton--entete" href="/shop" data-libelle="Shop">Acquista</a>
-      <button type="button" class="carrello-bottone" data-panier-ouvrir data-envol-cible aria-label="Carrello"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.3 11.1a2 2 0 0 1-2 1.9H8.3a2 2 0 0 1-2-1.9Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="pet-compte est-vide" data-panier-compte>0</span></button>
+      <button type="button" class="carrello-bottone" data-panier-ouvrir data-envol-cible aria-label="Carrello"><span class="carrello-vaso" aria-hidden="true"><span class="carrello-olio"></span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.3 11.1a2 2 0 0 1-2 1.9H8.3a2 2 0 0 1-2-1.9Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="pet-compte est-vide" data-panier-compte>0</span></button>
       <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Chiudi"><span data-libelle-bouton>Menu</span></button>
       <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
     </div>
@@ -111,7 +111,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <div class="conteneur archivio-griglia">
     <div class="archivio-testo">
       <p class="sopra" data-anime="gsap">Chi siamo</p>
-      <h1 class="archivio-titolo" data-anime="gsap">Più di quarant'anni <em>sulle fasce</em></h1>
+      <h1 class="archivio-titolo" data-anime="gsap" data-grille="typo fil">Più di quarant’anni <em>sulle fasce</em></h1>
       <p data-anime="gsap">Natural-Iter nasce dal lavoro di Jürg Raz sugli uliveti del Ponente Ligure. Dal 2021 la porta avanti Giacomo Bassanini, tra la Liguria e il Ticino.</p>
       <p class="archivio-azioni" data-anime="gsap"><a href="/prodotti" class="bouton" data-libelle="Prodotti" data-action-principale>Scopri i prodotti</a><span class="apertura-info" data-info-cle><span class="punto-giallo" aria-hidden="true"></span>Dal Ponente Ligure a Mendrisio</span></p>
     </div>
@@ -136,25 +136,29 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <ol class="conteneur frt__frise">
     <svg class="frt__trait" viewBox="0 0 4 100" preserveAspectRatio="none" aria-hidden="true"><path d="M2 0 L2 100"/></svg>
     <li class="frt__etape">
-      <p class="frt__annee">Anni &#39;80</p>
-      <div class="frt__corps"><h3>Jürg in Liguria</h3><p>A vent&#39;anni Jürg Raz, maestro elementare dell&#39;Oberland bernese, si trasferisce in Liguria. Compra uliveti abbandonati nel Ponente Ligure e li riporta in produzione, ricostruendo muretti a secco e potando gli alberi.</p></div>
+      <p class="frt__annee">Anni ’80</p>
+      <div class="frt__corps"><h3>Jürg in Liguria</h3><p>A vent’anni Jürg Raz, maestro elementare dell’Oberland bernese, si trasferisce in Liguria. Compra uliveti abbandonati nel Ponente Ligure e li riporta in produzione, ricostruendo muretti a secco e potando gli alberi.</p></div>
       <div class="frt__visuel"><figure class="media frt__media" data-grok style="--cadrage:50% 50%">
   <picture>
     <img src="/assets/images/grok/potatura-800.webp" srcset="/assets/images/grok/potatura-640.webp 640w, /assets/images/grok/potatura-800.webp 800w" sizes="(max-width: 760px) 80vw, 24vw" alt="Rami potati ai piedi di un vecchio ulivo, un muretto in ricostruzione" width="800" height="600" loading="lazy" decoding="async">
   </picture><figcaption class="mention-ia">Illustrazione generata</figcaption>
 </figure></div>
     </li><li class="frt__etape">
-      <p class="frt__annee">Fine anni &#39;90</p>
+      <p class="frt__annee">Fine anni ’90</p>
       <div class="frt__corps"><h3>Il ritorno in Svizzera</h3><p>Jürg torna in Svizzera per vendere i suoi prodotti e conquista in poco tempo alberghi e ristoranti di alto livello.</p></div>
       <div class="frt__visuel"><figure class="media frt__media" style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/jurg-2000-1600.webp" srcset="/assets/images/jurg-2000-1024.webp 1024w, /assets/images/jurg-2000-1168.webp 1168w, /assets/images/jurg-2000-1600.webp 1600w" sizes="(max-width: 760px) 80vw, 24vw" alt="Jürg all&#39;inizio degli anni Duemila, accanto ai fusti" width="1600" height="1067" loading="lazy" decoding="async">
+    <img src="/assets/images/jurg-2000-1600.webp" srcset="/assets/images/jurg-2000-1024.webp 1024w, /assets/images/jurg-2000-1168.webp 1168w, /assets/images/jurg-2000-1600.webp 1600w" sizes="(max-width: 760px) 80vw, 24vw" alt="Jürg all’inizio degli anni Duemila, accanto ai fusti" width="1600" height="1067" loading="lazy" decoding="async">
   </picture>
 </figure></div>
     </li><li class="frt__etape">
       <p class="frt__annee">2021</p>
-      <div class="frt__corps"><h3>Il passaggio a Giacomo</h3><p>Dopo più di quarant&#39;anni di lavoro Jürg va in pensione e affida l&#39;azienda all&#39;amico di lunga data Giacomo Bassanini, che la rileva nell&#39;ottobre 2021.</p></div>
-      <div class="frt__visuel frt__visuel--testo" data-visuel><p>Ottobre 2021</p></div>
+      <div class="frt__corps"><h3>Il passaggio a Giacomo</h3><p>Dopo più di quarant’anni di lavoro Jürg va in pensione e affida l’azienda all’amico di lunga data Giacomo Bassanini, che la rileva nell’ottobre 2021.</p></div>
+      <div class="frt__visuel"><figure class="media frt__media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/gamma-800.webp" srcset="/assets/images/gamma-640.webp 640w, /assets/images/gamma-800.webp 800w" sizes="(max-width: 760px) 80vw, 24vw" alt="La gamma Natural-Iter su un tavolo al tramonto" width="800" height="600" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
     </li><li class="frt__etape">
       <p class="frt__annee">Oggi</p>
       <div class="frt__corps"><h3>Tra Liguria e Ticino</h3><p>Giacomo fa la spola tra la Liguria e il Ticino, dove ha la base logistica, e consegna regolarmente in tutta la Svizzera.</p></div>
@@ -178,7 +182,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <div class="giacomo-testo">
       <p class="sopra" data-anime>Il successore</p>
       <h2 data-anime="lignes">Giacomo Bassanini, <em>chimico</em> di formazione</h2>
-      <p data-anime>Chimico, ha lavorato nell&#39;industria farmaceutica e poi insegnato per undici anni in una scuola professionale. Nell&#39;ottobre 2021 ha rilevato Natural-Iter.</p>
+      <p data-anime>Chimico, ha lavorato nell’industria farmaceutica e poi insegnato per undici anni in una scuola professionale. Nell’ottobre 2021 ha rilevato Natural-Iter.</p>
       <p data-anime>Vive in Ticino, dove ha sede la logistica, e con il marchio Waldmuus raccoglie linfa di betulla e aglio orsino. Parla e scrive cinque lingue: puoi scrivergli nella tua.</p>
       <ul class="lingue" data-anime="cascade" aria-label="Lingue parlate da Giacomo">
         <li lang="it">Italiano</li><li lang="de">Deutsch</li><li lang="fr">Français</li><li lang="en">English</li><li lang="es">Español</li>
@@ -209,6 +213,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <path data-fx-trait d="M428 122 C 418 92 398 62 368 34"/><path data-fx-trait d="M436 120 C 462 84 502 56 548 36"/><path data-fx-trait d="M422 126 C 378 104 318 84 258 64"/>
   </g>
   <circle class="mappa-punto" cx="150" cy="404" r="9"/><circle class="mappa-punto mappa-punto--casa" cx="424" cy="134" r="10"/>
+  <g class="mappa-goccia" transform="translate(150 404)"><path d="M0 -22 C 0 -22 -11 -8 -11 0 a11 11 0 0 0 22 0 C 11 -8 0 -22 0 -22 Z"/></g>
   <text class="mappa-testo" x="40" y="380">Ponente Ligure</text>
   <text class="mappa-testo mappa-testo--piccolo mappa-testo--mare" x="300" y="410">Mar Ligure</text>
   <text class="mappa-testo" x="444" y="170">Mendrisio</text>
@@ -221,7 +226,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </section>
 <section class="sezione fine-pagina" id="fine">
   <div class="conteneur fine-griglia">
-    <h2 data-anime="lignes">Il lavoro di quarant'anni, <em>a casa tua</em></h2>
+    <h2 data-anime="lignes">Il lavoro di quarant’anni, <em>a casa tua</em></h2>
     <div>
       <p data-anime>Olio, olive e paté, linfa di betulla e aglio orsino: tutto si ordina online, con spedizione gratuita in Svizzera da CHF 150.</p>
       <p class="finale-azioni" data-anime><a href="/shop" class="bouton" data-libelle="Shop">Vai allo shop</a><a href="/contatti" class="bouton bouton--contour" data-libelle="Contatti">Scrivici</a></p>

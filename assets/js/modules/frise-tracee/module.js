@@ -1,6 +1,6 @@
 // Frise tracée et compteurs : les chiffres montent à leur arrivée (largeur finale réservée),
 // puis le trait de la frise se dessine au rythme du défilement ; chaque étape s'allume quand le trait l'atteint.
-import { pret } from '../socle/socle.js?v=1';
+import { pret } from '../socle/socle.js?v=2';
 
 /**
  * @param {HTMLElement} root  section.frt
