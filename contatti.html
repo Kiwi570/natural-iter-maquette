@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="it" data-v="1" data-pagina="contatti">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contatti · Natural-Iter, Mendrisio</title>
+<meta name="description" content="Telefono, e-mail e indirizzo di Natural-Iter a Mendrisio. Listini per ristoranti e alberghi, quantità speciali, buoni regalo.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://natural-iter-maquette.vercel.app/contatti">
+<style>:root{--fond:#f4eee2;--texte:#22291a;--voile-fond:#2c3420;--ouverture-fond:#2c3420;--menu-fond:#2c3420}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/young-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/modules.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f4eee2">
+<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Natural-Iter">
+<meta property="og:locale" content="it_CH">
+<meta property="og:title" content="Contatti · Natural-Iter, Mendrisio">
+<meta property="og:description" content="Telefono, e-mail e indirizzo di Natural-Iter a Mendrisio. Listini per ristoranti e alberghi, quantità speciali, buoni regalo.">
+<meta property="og:url" content="https://natural-iter-maquette.vercel.app/contatti">
+<meta property="og:image" content="https://natural-iter-maquette.vercel.app/assets/partage/contatti-it.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Colline del Mendrisiotto al tramonto">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Store","name":"Natural-Iter di Bassanini Giacomo","url":"https://natural-iter-maquette.vercel.app/","telephone":"+41797037805","email":"naturaliter@outlook.com","address":{"@type":"PostalAddress","streetAddress":"Via Vignalunga 7","postalCode":"6850","addressLocality":"Mendrisio","addressRegion":"TI","addressCountry":"CH"},"founder":"Jürg Raz","employee":{"@type":"Person","name":"Giacomo Bassanini"},"sameAs":["https://www.instagram.com/natural_iter/","https://www.facebook.com/profile.php?id=61551024487038"],"description":"Olio extravergine e olive taggiasche del Ponente Ligure; linfa di betulla e aglio orsino bio da raccolta selvatica certificata Bio Suisse (Waldmuus)."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="vague" aria-hidden="true"><svg class="voile-vague voile-vague--haut" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120 C 240 20 480 20 720 70 S 1200 130 1440 40 V 120 H 0 Z"/></svg><svg class="voile-vague voile-vague--bas" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 C 240 100 480 100 720 50 S 1200 -10 1440 80 V 0 H 0 Z"/></svg><div class="voile-contenu"><img src="/assets/images/logo-240.webp" alt="" width="100" height="49"><span data-voile-libelle>Contatti</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <img class="ouverture-logo" src="/assets/images/logo-480.webp" alt="" width="180" height="88">
+  <p class="ouverture-ligne">Olio e olive taggiasche · Mendrisio</p>
+  <span class="goccia" data-ouverture-objet></span>
+</div>
+<a class="evitement" href="#contenu">Vai al contenuto</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Home" aria-label="Natural-Iter, Home">
+      <img src="/assets/images/logo-240.webp" alt="" width="82" height="40">
+    </a>
+    <nav data-nav aria-label="Navigazione principale">
+      <ul><li><a href="/prodotti" data-libelle="Prodotti">Prodotti</a></li><li><a href="/chi-siamo" data-libelle="Chi siamo">Chi siamo</a></li><li><a href="/shop" data-libelle="Shop">Shop</a></li><li><a href="/contatti" data-libelle="Contatti" aria-current="page">Contatti</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton bouton--entete" href="/shop" data-libelle="Shop">Acquista</a>
+      <button type="button" class="carrello-bottone" data-panier-ouvrir data-envol-cible aria-label="Carrello"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.3 11.1a2 2 0 0 1-2 1.9H8.3a2 2 0 0 1-2-1.9Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="pet-compte est-vide" data-panier-compte>0</span></button>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Chiudi"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Chiudi</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Home">Home</a></li><li style="--i:1"><a href="/prodotti" class="menu-lien" data-libelle="Prodotti">Prodotti</a></li><li style="--i:2"><a href="/chi-siamo" class="menu-lien" data-libelle="Chi siamo">Chi siamo</a></li><li style="--i:3"><a href="/shop" class="menu-lien" data-libelle="Shop">Shop</a></li><li style="--i:4"><a href="/contatti" class="menu-lien" data-libelle="Contatti" aria-current="page">Contatti</a></li><li style="--i:5"><a href="/shop#buono-regalo" class="menu-lien menu-lien--piccolo" data-libelle="Shop">Buono regalo</a></li></ul>
+  <p class="menu-contatti"><a class="bouton" href="tel:+41797037805">Chiama +41 79 703 78 05</a></p>
+  <p class="menu-nota">Spedizione gratuita in Svizzera da CHF 150</p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="apertura-contatti" id="inizio">
+  <div class="conteneur contatti-griglia">
+    <div class="contatti-testo">
+      <p class="sopra" data-anime="gsap">Contatti</p>
+      <h1 class="contatti-titolo" data-anime="gsap">Scrivici o <em>chiamaci</em></h1>
+      <p data-anime="gsap">Per un ordine, una quantità speciale, un listino per la ristorazione o una semplice domanda.</p>
+      <dl class="recapiti" data-anime="gsap">
+        <div data-info-cle><dt>Telefono</dt><dd><a href="tel:+41797037805" data-action-principale>+41 79 703 78 05</a></dd></div>
+        <div><dt>E-mail</dt><dd><a href="mailto:naturaliter@outlook.com">naturaliter@outlook.com</a></dd></div>
+        <div><dt>Indirizzo</dt><dd>Natural-Iter di Bassanini Giacomo<br>Via Vignalunga 7, 6850 Mendrisio</dd></div>
+      </dl>
+    </div>
+    <figure class="media contatti-media" data-grok data-iris-centre data-fx="parallaxe" data-fx-force="8" style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/mendrisiotto-mobile-640.webp 640w, /assets/images/grok/mendrisiotto-mobile-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 42vw">
+    <img src="/assets/images/grok/mendrisiotto-1280.webp" srcset="/assets/images/grok/mendrisiotto-640.webp 640w, /assets/images/grok/mendrisiotto-1280.webp 1280w, /assets/images/grok/mendrisiotto-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 42vw" alt="Colline del Mendrisiotto al tramonto" width="1280" height="1600" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustrazione generata</figcaption>
+</figure>
+  </div>
+</section>
+<section class="sezione dove" id="dove">
+  <div class="conteneur dove-griglia">
+    <figure class="dove-mappa">
+      <svg class="mappa mappa--compatta" viewBox="0 0 600 480" role="img" aria-label="Schema del tragitto dal Ponente Ligure a Mendrisio e delle consegne in Svizzera" data-fx="trace">
+  <rect class="mappa-terra" x="0" y="0" width="600" height="480" rx="18"/>
+  <path class="mappa-mare" d="M0 462 C 70 456 112 430 150 410 C 200 386 250 362 300 330 C 340 310 384 322 424 346 C 472 374 528 390 600 394 L600 462 Q600 480 582 480 L18 480 Q0 480 0 462 Z"/>
+  <g class="mappa-onde"><path d="M250 420 q14 -8 28 0 t28 0"/><path d="M380 440 q14 -8 28 0 t28 0"/><path d="M120 455 q14 -8 28 0 t28 0"/></g>
+  <path class="mappa-confine" d="M150 40 C 210 74 262 86 318 94 C 362 100 394 112 406 140 C 418 164 442 154 454 130 C 472 98 522 80 600 72"/>
+  <path class="mappa-percorso" data-fx-trait d="M150 404 C 186 344 248 292 298 246 C 348 200 392 168 422 138"/>
+  <g class="mappa-consegne">
+    <path data-fx-trait d="M428 122 C 418 92 398 62 368 34"/><path data-fx-trait d="M436 120 C 462 84 502 56 548 36"/><path data-fx-trait d="M422 126 C 378 104 318 84 258 64"/>
+  </g>
+  <circle class="mappa-punto" cx="150" cy="404" r="9"/><circle class="mappa-punto mappa-punto--casa" cx="424" cy="134" r="10"/>
+  <text class="mappa-testo" x="40" y="380">Ponente Ligure</text>
+  <text class="mappa-testo mappa-testo--piccolo mappa-testo--mare" x="300" y="410">Mar Ligure</text>
+  <text class="mappa-testo" x="444" y="170">Mendrisio</text>
+  <text class="mappa-testo mappa-testo--piccolo" x="470" y="58">Svizzera</text>
+  <text class="mappa-testo mappa-testo--piccolo" x="200" y="150">Italia</text>
+</svg>
+      <figcaption>Schema illustrativo, non in scala.</figcaption>
+    </figure>
+    <div class="dove-testo">
+      <h2 data-anime="lignes">La base è <em>a Mendrisio</em></h2>
+      <p data-anime>Da Mendrisio, dove ha sede la logistica, partono le spedizioni e le consegne regolari in tutta la Svizzera.</p>
+      <p class="partner" data-anime><strong>Partner di marketing</strong><br>Biofair - Naturapart GmbH, Via Vignalunga 7, 6850 Mendrisio<br><a href="tel:+41919666487">091 966 64 87</a> · <a href="mailto:info@naturapart.com">info@naturapart.com</a></p>
+    </div>
+  </div>
+</section>
+<section class="sezione scrivici fondo-salvia" id="scrivici">
+  <div class="conteneur scrivici-griglia">
+    <div class="scrivici-testo">
+      <h2 data-anime="lignes">Il tuo <em>messaggio</em></h2>
+      <p data-anime>Compila il modulo, oppure chiamaci o mandaci un&#39;e-mail.</p>
+      <div class="pro-riquadro" data-anime>
+        <h3>Per ristoranti e alberghi</h3>
+        <p>Listini prezzi e ordini di grandi quantità su richiesta: cartoni da 6 bottiglie, latte da 5 e 25 litri, olive e paté in formato da cucina.</p>
+      </div>
+    </div>
+    <form data-formulaire class="formulaire" action="#" novalidate data-anime>
+      <div class="champ"><label for="f-nome">Nome e cognome</label><input id="f-nome" name="nome" autocomplete="name" required></div>
+      <div class="champ-duo">
+        <div class="champ"><label for="f-email">E-mail</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+        <div class="champ"><label for="f-tel">Telefono (facoltativo)</label><input id="f-tel" name="tel" type="tel" autocomplete="tel"></div>
+      </div>
+      <div class="champ"><label for="f-sujet">Di che cosa si tratta?</label>
+        <select id="f-sujet" name="sujet"><option value="privato" selected>Un ordine o una domanda</option><option value="professionisti">Ristorante, albergo o rivenditore</option><option value="quantita">Quantità speciali</option><option value="buono">Buono regalo</option><option value="altro">Altro</option></select></div>
+      <div class="champ"><label for="f-messaggio">Messaggio</label><textarea id="f-messaggio" name="messaggio" rows="5" required></textarea></div>
+      <p class="mention-donnees">I dati servono solo a rispondere al tuo messaggio (nLPD). Informativa sulla privacy: da completare.</p>
+      <button type="submit" class="bouton">Invia</button>
+      <p data-message-envoi role="status" tabindex="-1" hidden></p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marca">
+      <img src="/assets/images/logo-240.webp" alt="Natural-Iter" width="123" height="60" loading="lazy">
+      <p>Natural-Iter di Bassanini Giacomo<br>Via Vignalunga 7<br>6850 Mendrisio</p>
+      <p><a href="tel:+41797037805">+41 79 703 78 05</a><br><a href="mailto:naturaliter@outlook.com">naturaliter@outlook.com</a></p>
+    </div>
+    <nav aria-label="Il sito">
+      <p class="pied-titolo">Il sito</p>
+      <ul><li><a href="/" data-libelle="Home">Home</a></li><li><a href="/prodotti" data-libelle="Prodotti">Prodotti</a></li><li><a href="/chi-siamo" data-libelle="Chi siamo">Chi siamo</a></li><li><a href="/shop" data-libelle="Shop">Shop</a></li><li><a href="/contatti" data-libelle="Contatti" aria-current="page">Contatti</a></li><li><a href="/shop#buono-regalo" data-libelle="Shop">Buono regalo</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titolo">Seguici</p>
+      <ul>
+        <li><a href="https://www.instagram.com/natural_iter/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61551024487038" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.facebook.com/Linfa-di-betulla-Waldmuus-2101944556770735/" target="_blank" rel="noopener">Waldmuus su Facebook</a></li>
+        <li><a href="#haut" data-sans-transition>Torna su</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="pied-titolo">Spedizione</p>
+      <p>Spedizione gratuita in Svizzera da CHF 150</p>
+      <p>Tutti i nostri prodotti sono senza ingredienti artificiali.</p>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Note legali · Informativa sulla privacy: da completare</p><p>Sito dimostrativo: ordini, pagamenti e invii sono simulati.</p><p>© Natural-Iter di Bassanini Giacomo</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+41797037805">Chiama</a>
+  <a class="bouton" href="/shop" data-libelle="Shop">Shop</a>
+</div>
+<div data-module="panier-en-tiroir" data-panier-tiroir>
+  <script type="application/json" data-panier-reglages>{"devise":"CHF","seuil_livraison":150,"frais_livraison":null,"tva":null,"cle":"natural-iter-carrello","prefixe":"NI"}</script>
+</div>
+</body>
+</html>

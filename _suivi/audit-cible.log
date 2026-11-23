@@ -1,0 +1,16 @@
+… fichiers
+  fait en 0 s
+… mesures
+  19/66
+  42/66
+  60/66
+  fait en 102 s
+… mesures:balayage
+  fait en 30 s
+… mouvement
+  fait en 96 s
+
+Échecs : 1 · À regarder : 5 · Non lancé : 0
+Relancer seulement ce qui a échoué : node _audit/audit.mjs --pages=/ --seulement=fichiers,mesures
+Rapport : /home/claude/natural-iter/natural-iter-maquette/_audit/rapport/rapport.md (passe 20261123-165455-standard-cible-partiel)
+CODE 1

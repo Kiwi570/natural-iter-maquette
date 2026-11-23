@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="it" data-v="1" data-pagina="shop">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shop · Natural-Iter</title>
+<meta name="description" content="Ordina olio taggiasco, olive, paté, linfa di betulla, aglio orsino, panettone e buoni regalo. Spedizione gratuita in Svizzera da CHF 150.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://natural-iter-maquette.vercel.app/shop">
+<style>:root{--fond:#f4eee2;--texte:#22291a;--voile-fond:#2c3420;--ouverture-fond:#2c3420;--menu-fond:#2c3420}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/young-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/modules.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f4eee2">
+<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Natural-Iter">
+<meta property="og:locale" content="it_CH">
+<meta property="og:title" content="Shop · Natural-Iter">
+<meta property="og:description" content="Ordina olio taggiasco, olive, paté, linfa di betulla, aglio orsino, panettone e buoni regalo. Spedizione gratuita in Svizzera da CHF 150.">
+<meta property="og:url" content="https://natural-iter-maquette.vercel.app/shop">
+<meta property="og:image" content="https://natural-iter-maquette.vercel.app/assets/partage/shop-it.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="La gamma Natural-Iter su un tavolo al tramonto">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Store","name":"Natural-Iter di Bassanini Giacomo","url":"https://natural-iter-maquette.vercel.app/","telephone":"+41797037805","email":"naturaliter@outlook.com","address":{"@type":"PostalAddress","streetAddress":"Via Vignalunga 7","postalCode":"6850","addressLocality":"Mendrisio","addressRegion":"TI","addressCountry":"CH"},"founder":"Jürg Raz","employee":{"@type":"Person","name":"Giacomo Bassanini"},"sameAs":["https://www.instagram.com/natural_iter/","https://www.facebook.com/profile.php?id=61551024487038"],"description":"Olio extravergine e olive taggiasche del Ponente Ligure; linfa di betulla e aglio orsino bio da raccolta selvatica certificata Bio Suisse (Waldmuus)."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="vague" aria-hidden="true"><svg class="voile-vague voile-vague--haut" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120 C 240 20 480 20 720 70 S 1200 130 1440 40 V 120 H 0 Z"/></svg><svg class="voile-vague voile-vague--bas" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 C 240 100 480 100 720 50 S 1200 -10 1440 80 V 0 H 0 Z"/></svg><div class="voile-contenu"><img src="/assets/images/logo-240.webp" alt="" width="100" height="49"><span data-voile-libelle>Shop</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <img class="ouverture-logo" src="/assets/images/logo-480.webp" alt="" width="180" height="88">
+  <p class="ouverture-ligne">Olio e olive taggiasche · Mendrisio</p>
+  <span class="goccia" data-ouverture-objet></span>
+</div>
+<a class="evitement" href="#contenu">Vai al contenuto</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Home" aria-label="Natural-Iter, Home">
+      <img src="/assets/images/logo-240.webp" alt="" width="82" height="40">
+    </a>
+    <nav data-nav aria-label="Navigazione principale">
+      <ul><li><a href="/prodotti" data-libelle="Prodotti">Prodotti</a></li><li><a href="/chi-siamo" data-libelle="Chi siamo">Chi siamo</a></li><li><a href="/shop" data-libelle="Shop" aria-current="page">Shop</a></li><li><a href="/contatti" data-libelle="Contatti">Contatti</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton bouton--entete" href="/shop" data-libelle="Shop">Acquista</a>
+      <button type="button" class="carrello-bottone" data-panier-ouvrir data-envol-cible aria-label="Carrello"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.3 11.1a2 2 0 0 1-2 1.9H8.3a2 2 0 0 1-2-1.9Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="pet-compte est-vide" data-panier-compte>0</span></button>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Chiudi"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Chiudi</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Home">Home</a></li><li style="--i:1"><a href="/prodotti" class="menu-lien" data-libelle="Prodotti">Prodotti</a></li><li style="--i:2"><a href="/chi-siamo" class="menu-lien" data-libelle="Chi siamo">Chi siamo</a></li><li style="--i:3"><a href="/shop" class="menu-lien" data-libelle="Shop" aria-current="page">Shop</a></li><li style="--i:4"><a href="/contatti" class="menu-lien" data-libelle="Contatti">Contatti</a></li><li style="--i:5"><a href="/shop#buono-regalo" class="menu-lien menu-lien--piccolo" data-libelle="Shop">Buono regalo</a></li></ul>
+  <p class="menu-contatti"><a class="bouton" href="tel:+41797037805">Chiama +41 79 703 78 05</a></p>
+  <p class="menu-nota">Spedizione gratuita in Svizzera da CHF 150</p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="apertura-shop" id="inizio">
+  <div class="conteneur shop-griglia">
+    <div class="shop-testo">
+      <p class="sopra" data-anime="gsap">Shop</p>
+      <h1 class="shop-titolo" data-anime="gsap">Lo shop di <em>Natural-Iter</em></h1>
+      <p data-anime="gsap">Olio, olive, paté e i prodotti del bosco ticinese. Per quantità diverse da quelle proposte, chiamaci o scrivici: per le confezioni multiple ci sono prezzi speciali.</p>
+      <p class="shop-azioni" data-anime="gsap"><a class="bouton" href="#catalogo" data-action-principale data-sans-transition>Vedi i prodotti</a><a href="/shop#buono-regalo" class="bouton bouton--contour" data-libelle="Shop">Buono regalo</a></p>
+    </div>
+    <div class="soglia" data-anime="gsap">
+      <p class="soglia-sopra">Spedizione gratuita in Svizzera da</p>
+      <p class="soglia-cifra" data-info-cle><span class="soglia-valuta">CHF</span> 150</p>
+      <div class="soglia-bottiglia" data-iris-centre data-effet="bottiglia-soglia" role="img" aria-label="Bottiglia che si riempie con il totale del carrello, fino alla spedizione gratuita">
+        <svg viewBox="0 0 520 150" aria-hidden="true" focusable="false">
+          <defs>
+            <clipPath id="sagoma"><path d="M18 40 Q18 22 36 22 L330 22 Q362 22 384 44 L402 58 L470 58 Q482 58 482 66 L482 84 Q482 92 470 92 L402 92 L384 106 Q362 128 330 128 L36 128 Q18 128 18 110 Z"/></clipPath>
+            <linearGradient id="olio-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d8b23a"/><stop offset="1" stop-color="#8a7a14"/></linearGradient>
+          </defs>
+          <g clip-path="url(#sagoma)">
+            <rect class="soglia-vetro" x="0" y="0" width="520" height="150"/>
+            <path class="soglia-olio" d="M0 150 L0 150 L520 150 L520 150 Z" fill="url(#olio-g)"/>
+          </g>
+          <path class="soglia-contorno" d="M18 40 Q18 22 36 22 L330 22 Q362 22 384 44 L402 58 L470 58 Q482 58 482 66 L482 84 Q482 92 470 92 L402 92 L384 106 Q362 128 330 128 L36 128 Q18 128 18 110 Z"/>
+          <rect class="soglia-tappo" x="482" y="54" width="26" height="42" rx="5"/>
+          <rect class="soglia-etichetta" x="120" y="44" width="150" height="62" rx="4"/>
+        </svg>
+      </div>
+      <p class="soglia-stato" data-soglia-stato aria-live="polite">Il tuo carrello è vuoto: la bottiglia si riempie a ogni prodotto.</p>
+    </div>
+  </div>
+</section>
+<section class="sezione catalogo cff" id="catalogo" data-module="catalogue-filtres-flip">
+  <div class="conteneur catalogo-testa">
+    <h2 data-anime="lignes">Tutti i <em>prodotti</em></h2>
+    <div class="cff__filtres">
+      <div class="cff__groupe" role="group" aria-label="Categorie" data-filtre-groupe="categoria">
+        <button type="button" data-valeur="tout" aria-pressed="true">Tutto</button>
+        <button type="button" data-valeur="olio" aria-pressed="false">Olio</button><button type="button" data-valeur="olive" aria-pressed="false">Olive e paté</button><button type="button" data-valeur="bosco" aria-pressed="false">Dal bosco ticinese</button><button type="button" data-valeur="grandi" aria-pressed="false">Grandi formati</button><button type="button" data-valeur="regali" aria-pressed="false">Regali e dolci</button>
+      </div>
+      <div class="catalogo-strumenti">
+        <label class="catalogo-cerca"><span class="visuellement-cache">Cerca un prodotto</span><input type="search" data-cerca placeholder="Cerca un prodotto" autocomplete="off"></label>
+        <label class="catalogo-tri"><span>Ordina</span>
+          <select data-tri><option value="ordre">In evidenza</option><option value="prezzo-asc">Prezzo crescente</option><option value="prezzo-desc">Prezzo decrescente</option></select></label>
+        <p class="catalogo-conta" aria-live="polite"><b data-compte>20</b> <span data-compte-mot>prodotti</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="conteneur cff__grille catalogo-griglia" data-grille>
+    <article class="prodotto cff__fiche" id="p-olio-75" data-panier-produit data-categoria="olio" data-prezzo="49" data-nome="Olio extravergine taggiasco 75 cl">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/olio-75-1600.webp" srcset="/assets/images/olio-75-800.webp 800w, /assets/images/olio-75-1600.webp 1600w" sizes="(max-width: 760px) 46vw, 24vw" alt="Bottiglia di olio extravergine taggiasco da 75 cl" width="1600" height="2001" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Olio</span></p>
+    <h3 class="prodotto-nome">Olio extravergine taggiasco</h3>
+    <p class="prodotto-formato">75 cl</p>
+    <p class="prodotto-descr">Estratto a freddo poche ore dopo la raccolta, filtrato e messo in vetro scuro. Armonioso, leggermente fruttato, poco amaro.</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 49.00</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="olio-75" data-nom="Olio extravergine taggiasco 75 cl" data-prix="49" aria-label="Aggiungi Olio extravergine taggiasco 75 cl">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto cff__fiche" id="p-olio-25" data-panier-produit data-categoria="olio" data-prezzo="18.5" data-nome="Olio extravergine taggiasco 25 cl">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/olio-25-1600.webp" srcset="/assets/images/olio-25-800.webp 800w, /assets/images/olio-25-1600.webp 1600w" sizes="(max-width: 760px) 46vw, 24vw" alt="Bottiglia di olio extravergine taggiasco da 25 cl" width="1600" height="2001" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Olio</span></p>
+    <h3 class="prodotto-nome">Olio extravergine taggiasco</h3>
+    <p class="prodotto-formato">25 cl</p>
+    <p class="prodotto-descr">Lo stesso olio in formato piccolo: da tenere in cucina o da regalare.</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 18.50</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="olio-25" data-nom="Olio extravergine taggiasco 25 cl" data-prix="18.5" aria-label="Aggiungi Olio extravergine taggiasco 25 cl">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto cff__fiche" id="p-olio-limone" data-panier-produit data-categoria="olio" data-prezzo="22" data-nome="Olio al limone 25 cl">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/olio-limone-800.webp" srcset="/assets/images/olio-limone-800.webp 800w" sizes="(max-width: 760px) 46vw, 24vw" alt="Olio al limone da 25 cl con limoni freschi" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Olio</span></p>
+    <h3 class="prodotto-nome">Olio al limone</h3>
+    <p class="prodotto-formato">25 cl</p>
+    <p class="prodotto-descr">Olive fresche molite insieme a limoni freschi di Liguria.</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 22.00</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="olio-limone" data-nom="Olio al limone 25 cl" data-prix="22" aria-label="Aggiungi Olio al limone 25 cl">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto cff__fiche" id="p-olive-salamoia" data-panier-produit data-categoria="olive" data-prezzo="11" data-nome="Olive taggiasche in salamoia 210 g">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/olive-salamoia-800.webp" srcset="/assets/images/olive-salamoia-800.webp 800w" sizes="(max-width: 760px) 46vw, 24vw" alt="Vasetto di olive taggiasche in salamoia" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Olive e paté</span></p>
+    <h3 class="prodotto-nome">Olive taggiasche in salamoia</h3>
+    <p class="prodotto-formato">210 g</p>
+    <p class="prodotto-descr">Intere, in salamoia alle erbe selvatiche, dopo almeno sei mesi di fermentazione.</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 11.00</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="olive-salamoia" data-nom="Olive taggiasche in salamoia 210 g" data-prix="11" aria-label="Aggiungi Olive taggiasche in salamoia 210 g">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto cff__fiche" id="p-olive-snocciolate" data-panier-produit data-categoria="olive" data-prezzo="15" data-nome="Olive taggiasche snocciolate in olio 180 g">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/olive-snocciolate-800.webp" srcset="/assets/images/olive-snocciolate-800.webp 800w" sizes="(max-width: 760px) 46vw, 24vw" alt="Vasetto di olive taggiasche snocciolate in olio" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Olive e paté</span></p>
+    <h3 class="prodotto-nome">Olive taggiasche snocciolate in olio</h3>
+    <p class="prodotto-formato">180 g</p>
+    <p class="prodotto-descr">Snocciolate e conservate sott&#39;olio, pronte per l&#39;aperitivo o la pasta.</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 15.00</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="olive-snocciolate" data-nom="Olive taggiasche snocciolate in olio 180 g" data-prix="15" aria-label="Aggiungi Olive taggiasche snocciolate in olio 180 g">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto cff__fiche" id="p-pate" data-panier-produit data-categoria="olive" data-prezzo="8.5" data-nome="Paté di olive taggiasche 90 g">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pate-800.webp" srcset="/assets/images/pate-800.webp 800w" sizes="(max-width: 760px) 46vw, 24vw" alt="Paté di olive taggiasche spalmato sul pane" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Olive e paté</span></p>
+    <h3 class="prodotto-nome">Paté di olive taggiasche</h3>
+    <p class="prodotto-formato">90 g</p>
+    <p class="prodotto-descr">Da spalmare sul pane tostato o da sciogliere in un sugo.</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 8.50</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="pate" data-nom="Paté di olive taggiasche 90 g" data-prix="8.5" aria-label="Aggiungi Paté di olive taggiasche 90 g">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto cff__fiche" id="p-linfa" data-panier-produit data-categoria="bosco" data-prezzo="18.1" data-nome="Linfa di betulla bio 500 ml">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/linfa-1600.webp" srcset="/assets/images/linfa-800.webp 800w, /assets/images/linfa-1600.webp 1600w" sizes="(max-width: 760px) 46vw, 24vw" alt="Bottiglia di linfa di betulla bio in un bosco di betulle" width="1600" height="2000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span class="prodotto-marchio">Waldmuus · Bio Suisse</span></p>
+    <h3 class="prodotto-nome">Linfa di betulla bio</h3>
+    <p class="prodotto-formato">500 ml</p>
+    <p class="prodotto-descr">Dai boschi di Miglieglia, pura e pastorizzata. Sapore delicato, leggermente dolciastro, con una punta di acidulo.</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 18.10</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="linfa" data-nom="Linfa di betulla bio 500 ml" data-prix="18.1" aria-label="Aggiungi Linfa di betulla bio 500 ml">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto cff__fiche" id="p-linfa-multipack" data-panier-produit data-categoria="bosco" data-prezzo="55" data-nome="Linfa di betulla bio, multipack 3+1 4 × 500 ml">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/linfa-multipack-800.webp" srcset="/assets/images/linfa-multipack-800.webp 800w" sizes="(max-width: 760px) 46vw, 24vw" alt="Multipack di linfa di betulla bio" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span class="prodotto-marchio">Waldmuus · Bio Suisse</span></p>
+    <h3 class="prodotto-nome">Linfa di betulla bio, multipack 3+1</h3>
+    <p class="prodotto-formato">4 × 500 ml</p>
+    <p class="prodotto-descr">Quattro bottiglie da 500 ml: tre più una.</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 55.00</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="linfa-multipack" data-nom="Linfa di betulla bio, multipack 3+1 4 × 500 ml" data-prix="55" aria-label="Aggiungi Linfa di betulla bio, multipack 3+1 4 × 500 ml">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto cff__fiche" id="p-aglio-orsino" data-panier-produit data-categoria="bosco" data-prezzo="14.5" data-nome="Aglio orsino bio in olio e Sel des Alpes 145 g">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/aglio-orsino-1600.webp" srcset="/assets/images/aglio-orsino-800.webp 800w, /assets/images/aglio-orsino-1600.webp 1600w" sizes="(max-width: 760px) 46vw, 24vw" alt="Vasetto di aglio orsino bio in olio" width="1600" height="2001" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span class="prodotto-marchio">Waldmuus · Bio Suisse</span></p>
+    <h3 class="prodotto-nome">Aglio orsino bio in olio e Sel des Alpes</h3>
+    <p class="prodotto-formato">145 g</p>
+    <p class="prodotto-descr">In olio di girasole bio e Sel des Alpes. Sul pane, nelle insalate, come base per pesti e salse: non va cotto.</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 14.50</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="aglio-orsino" data-nom="Aglio orsino bio in olio e Sel des Alpes 145 g" data-prix="14.5" aria-label="Aggiungi Aglio orsino bio in olio e Sel des Alpes 145 g">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto cff__fiche" id="p-cartone-6" data-panier-produit data-categoria="grandi" data-prezzo="204" data-nome="Cartone di olio taggiasco 6 × 75 cl">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/cartone-6-1600.webp" srcset="/assets/images/cartone-6-800.webp 800w, /assets/images/cartone-6-1600.webp 1600w" sizes="(max-width: 760px) 46vw, 24vw" alt="Cartone da sei bottiglie da 75 cl" width="1600" height="2001" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Grandi formati</span></p>
+    <h3 class="prodotto-nome">Cartone di olio taggiasco</h3>
+    <p class="prodotto-formato">6 × 75 cl</p>
+    <p class="prodotto-descr">Sei bottiglie da 75 cl: CHF 34.00 a bottiglia.</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 204.00</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="cartone-6" data-nom="Cartone di olio taggiasco 6 × 75 cl" data-prix="204" aria-label="Aggiungi Cartone di olio taggiasco 6 × 75 cl">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto cff__fiche" id="p-cartone-12" data-panier-produit data-categoria="grandi" data-prezzo="396" data-nome="Due cartoni di olio taggiasco 12 × 75 cl">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/cartone-12-1600.webp" srcset="/assets/images/cartone-12-800.webp 800w, /assets/images/cartone-12-1600.webp 1600w" sizes="(max-width: 760px) 46vw, 24vw" alt="Due cartoni da sei bottiglie" width="1600" height="2001" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Grandi formati</span></p>
+    <h3 class="prodotto-nome">Due cartoni di olio taggiasco</h3>
+    <p class="prodotto-formato">12 × 75 cl</p>
+    <p class="prodotto-descr">Dodici bottiglie da 75 cl: CHF 33.00 a bottiglia.</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 396.00</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="cartone-12" data-nom="Due cartoni di olio taggiasco 12 × 75 cl" data-prix="396" aria-label="Aggiungi Due cartoni di olio taggiasco 12 × 75 cl">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto cff__fiche" id="p-cartone-18" data-panier-produit data-categoria="grandi" data-prezzo="576" data-nome="Tre cartoni di olio taggiasco 18 × 75 cl">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/cartone-18-1600.webp" srcset="/assets/images/cartone-18-800.webp 800w, /assets/images/cartone-18-1600.webp 1600w" sizes="(max-width: 760px) 46vw, 24vw" alt="Tre cartoni da sei bottiglie" width="1600" height="2001" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Grandi formati</span></p>
+    <h3 class="prodotto-nome">Tre cartoni di olio taggiasco</h3>
+    <p class="prodotto-formato">18 × 75 cl</p>
+    <p class="prodotto-descr">Diciotto bottiglie da 75 cl: CHF 32.00 a bottiglia.</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 576.00</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="cartone-18" data-nom="Tre cartoni di olio taggiasco 18 × 75 cl" data-prix="576" aria-label="Aggiungi Tre cartoni di olio taggiasco 18 × 75 cl">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto cff__fiche" id="p-latta-5" data-panier-produit data-categoria="grandi" data-prezzo="200" data-nome="Latta di olio extravergine taggiasco 5 L">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/latta-5-1600.webp" srcset="/assets/images/latta-5-800.webp 800w, /assets/images/latta-5-1600.webp 1600w" sizes="(max-width: 760px) 46vw, 24vw" alt="Latta da 5 litri di olio extravergine taggiasco" width="1600" height="2001" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Grandi formati</span></p>
+    <h3 class="prodotto-nome">Latta di olio extravergine taggiasco</h3>
+    <p class="prodotto-formato">5 L</p>
+    <p class="prodotto-descr">Per chi cucina molto, a casa o al ristorante.</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 200.00</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="latta-5" data-nom="Latta di olio extravergine taggiasco 5 L" data-prix="200" aria-label="Aggiungi Latta di olio extravergine taggiasco 5 L">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto cff__fiche" id="p-latta-25" data-panier-produit data-categoria="grandi" data-prezzo="900" data-nome="Latta di olio extravergine taggiasco 25 L">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/latta-25-1600.webp" srcset="/assets/images/latta-25-800.webp 800w, /assets/images/latta-25-1600.webp 1600w" sizes="(max-width: 760px) 46vw, 24vw" alt="Fusto da 25 litri e latta da 5 litri di olio extravergine" width="1600" height="2000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Grandi formati</span></p>
+    <h3 class="prodotto-nome">Latta di olio extravergine taggiasco</h3>
+    <p class="prodotto-formato">25 L</p>
+    <p class="prodotto-descr">Il formato della ristorazione.</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 900.00</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="latta-25" data-nom="Latta di olio extravergine taggiasco 25 L" data-prix="900" aria-label="Aggiungi Latta di olio extravergine taggiasco 25 L">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto cff__fiche" id="p-pate-1500" data-panier-produit data-categoria="grandi olive" data-prezzo="62" data-nome="Paté di olive taggiasche 1,5 kg">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pate-1500-1600.webp" srcset="/assets/images/pate-1500-800.webp 800w, /assets/images/pate-1500-1600.webp 1600w" sizes="(max-width: 760px) 46vw, 24vw" alt="Vaso da 1,5 kg di paté di olive taggiasche" width="1600" height="2001" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Olive e paté</span></p>
+    <h3 class="prodotto-nome">Paté di olive taggiasche</h3>
+    <p class="prodotto-formato">1,5 kg</p>
+    <p class="prodotto-descr">Il paté in formato da cucina professionale.</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 62.00</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="pate-1500" data-nom="Paté di olive taggiasche 1,5 kg" data-prix="62" aria-label="Aggiungi Paté di olive taggiasche 1,5 kg">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto cff__fiche" id="p-snocciolate-1500" data-panier-produit data-categoria="grandi olive" data-prezzo="66" data-nome="Olive taggiasche snocciolate in olio 1,5 kg">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/snocciolate-1500-1600.webp" srcset="/assets/images/snocciolate-1500-800.webp 800w, /assets/images/snocciolate-1500-1600.webp 1600w" sizes="(max-width: 760px) 46vw, 24vw" alt="Vaso da 1,5 kg di olive taggiasche snocciolate" width="1600" height="2001" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Olive e paté</span></p>
+    <h3 class="prodotto-nome">Olive taggiasche snocciolate in olio</h3>
+    <p class="prodotto-formato">1,5 kg</p>
+    <p class="prodotto-descr">Le olive snocciolate in formato grande.</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 66.00</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="snocciolate-1500" data-nom="Olive taggiasche snocciolate in olio 1,5 kg" data-prix="66" aria-label="Aggiungi Olive taggiasche snocciolate in olio 1,5 kg">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto cff__fiche" id="p-salamoia-3500" data-panier-produit data-categoria="grandi olive" data-prezzo="66" data-nome="Olive taggiasche in salamoia 3,5 kg">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/salamoia-3500-800.webp" srcset="/assets/images/salamoia-3500-800.webp 800w" sizes="(max-width: 760px) 46vw, 24vw" alt="Secchio da 3,5 kg di olive taggiasche in salamoia" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Olive e paté</span></p>
+    <h3 class="prodotto-nome">Olive taggiasche in salamoia</h3>
+    <p class="prodotto-formato">3,5 kg</p>
+    <p class="prodotto-descr">Olive intere alle erbe selvatiche, in secchio.</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 66.00</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="salamoia-3500" data-nom="Olive taggiasche in salamoia 3,5 kg" data-prix="66" aria-label="Aggiungi Olive taggiasche in salamoia 3,5 kg">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto cff__fiche" id="p-panettone" data-panier-produit data-categoria="regali" data-prezzo="67.5" data-nome="Panettone al cioccolato bianco 30 % 800 g o 1600 g">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/panettone-1600.webp" srcset="/assets/images/panettone-800.webp 800w, /assets/images/panettone-1600.webp 1600w" sizes="(max-width: 760px) 46vw, 24vw" alt="Panettone al cioccolato bianco tagliato, con le confezioni dorate" width="1600" height="2000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span class="prodotto-etichetta">Natale</span><span>Regali e dolci</span></p>
+    <h3 class="prodotto-nome">Panettone al cioccolato bianco 30 %</h3>
+    <p class="prodotto-formato">800 g o 1600 g</p>
+    <p class="prodotto-descr">Fatto in esclusiva per Natural-Iter da un maestro pasticcere ticinese, con il 30 % di cioccolato bianco nell&#39;impasto. In vendita da novembre a febbraio.</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix><small>da</small> CHF 67.50 <s aria-label="invece di CHF 72.00">CHF 72.00</s></p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="panettone" data-nom="Panettone al cioccolato bianco 30 % 800 g o 1600 g" data-prix="67.5" aria-label="Aggiungi Panettone al cioccolato bianco 30 % 800 g o 1600 g">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto cff__fiche" id="p-anisbrotli" data-panier-produit data-categoria="regali" data-prezzo="12.5" data-nome="Anisbrötli 450 o 700">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/anisbrotli-800.webp" srcset="/assets/images/anisbrotli-800.webp 800w" sizes="(max-width: 760px) 46vw, 24vw" alt="Anisbrötli in una scatola dorata" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Regali e dolci</span></p>
+    <h3 class="prodotto-nome">Anisbrötli</h3>
+    <p class="prodotto-formato">450 o 700</p>
+    <p class="prodotto-descr">Biscotti all&#39;anice della tradizione svizzera.</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix><small>da</small> CHF 12.50</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="anisbrotli" data-nom="Anisbrötli 450 o 700" data-prix="12.5" aria-label="Aggiungi Anisbrötli 450 o 700">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto cff__fiche" id="p-confezione-regalo" data-panier-produit data-categoria="regali" data-prezzo="80" data-nome="Confezione regalo Cassetta in legno">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/confezione-regalo-800.webp" srcset="/assets/images/confezione-regalo-800.webp 800w" sizes="(max-width: 760px) 46vw, 24vw" alt="Confezione regalo in legno con bottiglia e vasetti" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Regali e dolci</span></p>
+    <h3 class="prodotto-nome">Confezione regalo</h3>
+    <p class="prodotto-formato">Cassetta in legno</p>
+    <p class="prodotto-descr">Una cassetta in legno con prodotti Natural-Iter, pronta da regalare.</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 80.00</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="confezione-regalo" data-nom="Confezione regalo Cassetta in legno" data-prix="80" aria-label="Aggiungi Confezione regalo Cassetta in legno">Aggiungi</button>
+    </div>
+  </div>
+</article>
+    <p class="cff__vide" data-vide hidden>Nessun prodotto corrisponde alla ricerca. <button type="button" class="bouton bouton--piccolo" data-reinit>Mostra tutto</button></p>
+  </div>
+  <p class="conteneur catalogo-nota" data-anime>Prezzi in franchi svizzeri. Panettone: sconto del 15 % da 2 pezzi e del 20 % da 3, calcolato alla conferma.</p>
+</section>
+<section class="sezione quantita fondo-oliva" id="quantita">
+  <div class="conteneur quantita-griglia">
+    <h2 data-anime="lignes">Quantità diverse? <em>Scrivici</em></h2>
+    <div>
+      <p data-anime>Per quantità diverse da quelle dello shop, per i listini della ristorazione o per un ordine da consegnare: offriamo prezzi speciali per le confezioni multiple.</p>
+      <p class="finale-azioni" data-anime><a href="/contatti?sujet=quantita#scrivici" class="bouton" data-libelle="Contatti">Scrivici</a><a class="bouton bouton--contour-chiaro" href="tel:+41797037805">Chiama +41 79 703 78 05</a></p>
+    </div>
+  </div>
+</section>
+<section class="sezione ccq buono" id="buono-regalo" data-module="carte-cadeau-qui-se-compose" data-cachet="NI" aria-labelledby="ccq-titre">
+  <div class="ccq__grille conteneur">
+    <div class="ccq__tete">
+      <p class="sopra" data-anime>Buono regalo</p>
+      <h2 id="ccq-titre" data-anime="lignes">Un regalo che sa <em>di Liguria</em></h2>
+      <p data-anime>Il buono regalo digitale di Natural-Iter: scegli l&#39;importo, da CHF 25 a CHF 200 o un importo libero, e aggiungi un messaggio.</p>
+    </div>
+    <div class="ccq__scene" aria-hidden="true" data-effet="buono">
+      <div class="ccq__plateau"><div class="ccq__paquet"><div class="ccq__carte">
+        <svg class="ccq__cadre" viewBox="0 0 160 100" preserveAspectRatio="none"><rect x="3.2" y="3.2" width="153.6" height="93.6" rx="5" ry="5" pathLength="1"/></svg>
+        <div class="ccq__carte-haut">
+          <span class="ccq__logo"><img src="/assets/images/logo-240.webp" alt="" width="82" height="40"></span>
+          <span class="ccq__noms"><span class="ccq__type">Buono regalo</span></span>
+          <span class="ccq__quantite" data-ccq-quantite hidden>× 1</span>
+        </div>
+        <div class="ccq__carte-bas">
+          <p class="ccq__montant"><span class="ccq__devise">CHF</span> <span data-ccq-montant>50</span></p>
+          <div class="ccq__dedicace"><p class="ccq__pour" data-ccq-pour></p><p class="ccq__mot" data-ccq-mot></p><p class="ccq__de" data-ccq-de></p></div>
+        </div>
+        <span class="ccq__reflet"></span>
+      </div></div></div>
+      <p class="ccq__ticket" data-ccq-ticket>Un buono da CHF 50</p>
+    </div>
+    <form class="ccq__form" action="/contatti?sujet=buono#scrivici" method="get" novalidate>
+      <fieldset class="ccq__champ"><legend class="ccq__libelle">Importo</legend>
+        <div class="ccq__puces">
+          <label class="ccq__puce"><input type="radio" name="montant" value="25"><span>CHF 25</span></label><label class="ccq__puce"><input type="radio" name="montant" value="50" checked><span>CHF 50</span></label><label class="ccq__puce"><input type="radio" name="montant" value="100"><span>CHF 100</span></label><label class="ccq__puce"><input type="radio" name="montant" value="150"><span>CHF 150</span></label><label class="ccq__puce"><input type="radio" name="montant" value="200"><span>CHF 200</span></label>
+          <label class="ccq__puce"><input type="radio" name="montant" value="libre"><span>Altro importo</span></label>
+          <span class="ccq__libre"><input type="number" name="montant_libre" min="10" max="1000" aria-label="Importo libero, in franchi (da 10 a 1000)" aria-describedby="ccq-erreur-montant"><span aria-hidden="true">CHF</span></span>
+        </div>
+        <p class="ccq__erreur" id="ccq-erreur-montant" data-ccq-erreur="montant" aria-live="polite"></p>
+      </fieldset>
+      <div class="ccq__champ"><label class="ccq__libelle" for="ccq-qte">Numero di buoni</label>
+        <div class="ccq__qte"><button type="button" data-ccq-moins aria-label="Un buono in meno">−</button><input type="number" id="ccq-qte" name="quantite" value="1" min="1" max="10"><button type="button" data-ccq-plus aria-label="Un buono in più">+</button></div></div>
+      <div class="ccq__deux">
+        <div class="ccq__champ"><label class="ccq__libelle" for="ccq-pour">Per</label><input id="ccq-pour" name="pour" autocomplete="off" maxlength="30"></div>
+        <div class="ccq__champ"><label class="ccq__libelle" for="ccq-de">Da parte di</label><input id="ccq-de" name="de" autocomplete="name" maxlength="30"></div>
+      </div>
+      <div class="ccq__champ"><label class="ccq__libelle" for="ccq-mot">Messaggio</label><textarea id="ccq-mot" name="mot" rows="3" maxlength="120"></textarea><p class="ccq__aide"><span data-ccq-reste>120</span> caratteri al massimo</p></div>
+      <p class="ccq__total"><span>Totale</span><output data-ccq-total>CHF 50</output></p>
+      <p class="socle-sr" aria-live="polite" data-ccq-annonce></p>
+      <div class="ccq__actions"><button type="submit" class="bouton ccq__offrir">Regala questo buono</button>
+        <button type="button" class="bouton bouton--contour" data-ccq-reprendre hidden>Componi un altro buono</button></div>
+      <p class="ccq__statut" role="status" data-ccq-statut hidden></p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marca">
+      <img src="/assets/images/logo-240.webp" alt="Natural-Iter" width="123" height="60" loading="lazy">
+      <p>Natural-Iter di Bassanini Giacomo<br>Via Vignalunga 7<br>6850 Mendrisio</p>
+      <p><a href="tel:+41797037805">+41 79 703 78 05</a><br><a href="mailto:naturaliter@outlook.com">naturaliter@outlook.com</a></p>
+    </div>
+    <nav aria-label="Il sito">
+      <p class="pied-titolo">Il sito</p>
+      <ul><li><a href="/" data-libelle="Home">Home</a></li><li><a href="/prodotti" data-libelle="Prodotti">Prodotti</a></li><li><a href="/chi-siamo" data-libelle="Chi siamo">Chi siamo</a></li><li><a href="/shop" data-libelle="Shop" aria-current="page">Shop</a></li><li><a href="/contatti" data-libelle="Contatti">Contatti</a></li><li><a href="/shop#buono-regalo" data-libelle="Shop">Buono regalo</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titolo">Seguici</p>
+      <ul>
+        <li><a href="https://www.instagram.com/natural_iter/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61551024487038" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.facebook.com/Linfa-di-betulla-Waldmuus-2101944556770735/" target="_blank" rel="noopener">Waldmuus su Facebook</a></li>
+        <li><a href="#haut" data-sans-transition>Torna su</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="pied-titolo">Spedizione</p>
+      <p>Spedizione gratuita in Svizzera da CHF 150</p>
+      <p>Tutti i nostri prodotti sono senza ingredienti artificiali.</p>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Note legali · Informativa sulla privacy: da completare</p><p>Sito dimostrativo: ordini, pagamenti e invii sono simulati.</p><p>© Natural-Iter di Bassanini Giacomo</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+41797037805">Chiama</a>
+  <a class="bouton" href="/shop" data-libelle="Shop">Shop</a>
+</div>
+<div data-module="panier-en-tiroir" data-panier-tiroir>
+  <script type="application/json" data-panier-reglages>{"devise":"CHF","seuil_livraison":150,"frais_livraison":null,"tva":null,"cle":"natural-iter-carrello","prefixe":"NI"}</script>
+</div>
+</body>
+</html>

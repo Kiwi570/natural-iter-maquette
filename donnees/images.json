@@ -1,0 +1,2874 @@
+{
+  "logo": {
+    "nom": "logo",
+    "source": "recu/logo-natural-iter.png",
+    "role": "logo",
+    "alt": "Natural-Iter",
+    "grok": false,
+    "mention": null,
+    "beaute": null,
+    "empreinte": "d4a8ce776f2c9201",
+    "ratio": null,
+    "largeurs": [
+      240,
+      480
+    ],
+    "mobile": null,
+    "cadrage": null,
+    "sujet": null,
+    "zones_calmes": null,
+    "zone_texte": null,
+    "recadrage": null,
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "logo-240.webp",
+      "logo-480.webp"
+    ],
+    "poids": {
+      "logo-240.webp": 8324,
+      "logo-480.webp": 18222
+    },
+    "media": "c.media({ nom: 'logo', alt: \"Natural-Iter\", sizes: '240px' })"
+  },
+  "grok/fasce": {
+    "nom": "grok/fasce",
+    "source": "recu/grok/g-fasce.jpg",
+    "role": "ouverture",
+    "alt": "Fasce di ulivi sostenute da muretti a secco nel Ponente Ligure",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "4a3360f267aad737",
+    "ratio": "4:5",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "48% 42%"
+    },
+    "cadrage": "48% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.37,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.01,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 119,
+      "width": 1320,
+      "height": 1650,
+      "source": [
+        1320,
+        1967
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,45 fois (source de 1320 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/fasce-640.webp",
+      "grok/fasce-1280.webp",
+      "grok/fasce-1920.webp",
+      "grok/fasce-mobile-640.webp",
+      "grok/fasce-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/fasce-640.webp": 103500,
+      "grok/fasce-1280.webp": 248656,
+      "grok/fasce-1920.webp": 293370,
+      "grok/fasce-mobile-640.webp": 117820,
+      "grok/fasce-mobile-1080.webp": 229606
+    },
+    "media": "c.media({ nom: 'grok/fasce', alt: \"Fasce di ulivi sostenute da muretti a secco nel Ponente Ligure\", cadrage: '48% 50%', cadrageMobile: '48% 42%', sizes: '100vw', priorite: true })"
+  },
+  "grok/muretto": {
+    "nom": "grok/muretto",
+    "source": "recu/grok/g-muretto.jpg",
+    "role": "section-fond",
+    "alt": "Muretto a secco e tronco di un vecchio ulivo su una fascia ligure",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "1028d07a2841286f",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 43%"
+    },
+    "cadrage": "49% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 12,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/muretto-640.webp",
+      "grok/muretto-1280.webp",
+      "grok/muretto-1920.webp",
+      "grok/muretto-mobile-640.webp",
+      "grok/muretto-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/muretto-640.webp": 56194,
+      "grok/muretto-1280.webp": 141084,
+      "grok/muretto-1920.webp": 217588,
+      "grok/muretto-mobile-640.webp": 90632,
+      "grok/muretto-mobile-1080.webp": 160808
+    },
+    "media": "c.media({ nom: 'grok/muretto', alt: \"Muretto a secco e tronco di un vecchio ulivo su una fascia ligure\", cadrage: '49% 50%', cadrageMobile: '50% 43%', sizes: '100vw' })"
+  },
+  "grok/raccolta": {
+    "nom": "grok/raccolta",
+    "source": "recu/grok/g-raccolta.jpg",
+    "role": "galerie",
+    "alt": "Olive taggiasche appena cadute sulla rete di raccolta",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "f35e1a4f41800eb2",
+    "ratio": "4:5",
+    "largeurs": [
+      1024,
+      1168,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "52% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 60,
+      "width": 1320,
+      "height": 1650,
+      "source": [
+        1320,
+        1967
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,21 fois (source de 1320 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/raccolta-1024.webp",
+      "grok/raccolta-1168.webp",
+      "grok/raccolta-1600.webp"
+    ],
+    "poids": {
+      "grok/raccolta-1024.webp": 148142,
+      "grok/raccolta-1168.webp": 171686,
+      "grok/raccolta-1600.webp": 239174
+    },
+    "media": "c.media({ nom: 'grok/raccolta', alt: \"Olive taggiasche appena cadute sulla rete di raccolta\", cadrage: '52% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "grok/frantoio": {
+    "nom": "grok/frantoio",
+    "source": "recu/grok/g-frantoio.jpg",
+    "role": "galerie",
+    "alt": "Olio appena estratto che scende in una vasca d'acciaio",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 3,
+    "empreinte": "ab8d4f2755285f30",
+    "ratio": "4:5",
+    "largeurs": [
+      1024,
+      1168,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "56% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0.4,
+      "l": 95.5,
+      "h": 99.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.12,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.07,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.01,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 178,
+      "width": 1320,
+      "height": 1650,
+      "source": [
+        1320,
+        1967
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,21 fois (source de 1320 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/frantoio-1024.webp",
+      "grok/frantoio-1168.webp",
+      "grok/frantoio-1600.webp"
+    ],
+    "poids": {
+      "grok/frantoio-1024.webp": 68586,
+      "grok/frantoio-1168.webp": 81412,
+      "grok/frantoio-1600.webp": 119270
+    },
+    "media": "c.media({ nom: 'grok/frantoio', alt: \"Olio appena estratto che scende in una vasca d'acciaio\", cadrage: '56% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "grok/bosco": {
+    "nom": "grok/bosco",
+    "source": "recu/grok/g-bosco.jpg",
+    "role": "section-fond",
+    "alt": "Bosco di betulle in Ticino all'inizio della primavera",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "8061eac43b490274",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 49%"
+    },
+    "cadrage": "48% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 76,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/bosco-640.webp",
+      "grok/bosco-1280.webp",
+      "grok/bosco-1920.webp",
+      "grok/bosco-mobile-640.webp",
+      "grok/bosco-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/bosco-640.webp": 72902,
+      "grok/bosco-1280.webp": 202262,
+      "grok/bosco-1920.webp": 265530,
+      "grok/bosco-mobile-640.webp": 126014,
+      "grok/bosco-mobile-1080.webp": 226966
+    },
+    "media": "c.media({ nom: 'grok/bosco', alt: \"Bosco di betulle in Ticino all'inizio della primavera\", cadrage: '48% 50%', cadrageMobile: '50% 49%', sizes: '100vw' })"
+  },
+  "grok/tavola": {
+    "nom": "grok/tavola",
+    "source": "recu/grok/g-tavola.jpg",
+    "role": "section-fond",
+    "alt": "Tavola apparecchiata con pane, olio d'oliva e limoni",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "a01bd883f2661385",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 47%"
+    },
+    "cadrage": "59% 50%",
+    "sujet": {
+      "x": 3.1,
+      "y": 0,
+      "l": 93.8,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.22,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 55,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/tavola-640.webp",
+      "grok/tavola-1280.webp",
+      "grok/tavola-1920.webp",
+      "grok/tavola-mobile-640.webp",
+      "grok/tavola-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/tavola-640.webp": 48058,
+      "grok/tavola-1280.webp": 125170,
+      "grok/tavola-1920.webp": 194068,
+      "grok/tavola-mobile-640.webp": 74132,
+      "grok/tavola-mobile-1080.webp": 132896
+    },
+    "media": "c.media({ nom: 'grok/tavola', alt: \"Tavola apparecchiata con pane, olio d'oliva e limoni\", cadrage: '59% 50%', cadrageMobile: '50% 47%', sizes: '100vw' })"
+  },
+  "grok/pagina-404": {
+    "nom": "grok/pagina-404",
+    "source": "recu/grok/g-404.jpg",
+    "role": "404",
+    "alt": "Una scala da raccolta appoggiata a un ulivo, la rete vuota",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "f1939491c337433b",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": null,
+    "cadrage": "54% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.13,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.01,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 55,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/pagina-404-640.webp",
+      "grok/pagina-404-1280.webp",
+      "grok/pagina-404-1920.webp"
+    ],
+    "poids": {
+      "grok/pagina-404-640.webp": 53320,
+      "grok/pagina-404-1280.webp": 154762,
+      "grok/pagina-404-1920.webp": 242160
+    },
+    "media": "c.media({ nom: 'grok/pagina-404', alt: \"Una scala da raccolta appoggiata a un ulivo, la rete vuota\", cadrage: '54% 50%', sizes: '100vw', ratio: '16 / 9' })"
+  },
+  "grok/reti": {
+    "nom": "grok/reti",
+    "source": "recu/grok/g-reti.jpg",
+    "role": "section-fond",
+    "alt": "Reti di raccolta stese sotto gli ulivi sulle fasce",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "fbb05d488de66cac",
+    "ratio": "21:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 41%"
+    },
+    "cadrage": "46% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.08,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 97,
+      "width": 1600,
+      "height": 686,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/reti-640.webp",
+      "grok/reti-1280.webp",
+      "grok/reti-1920.webp",
+      "grok/reti-mobile-640.webp",
+      "grok/reti-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/reti-640.webp": 49700,
+      "grok/reti-1280.webp": 145690,
+      "grok/reti-1920.webp": 228844,
+      "grok/reti-mobile-640.webp": 104384,
+      "grok/reti-mobile-1080.webp": 188814
+    },
+    "media": "c.media({ nom: 'grok/reti', alt: \"Reti di raccolta stese sotto gli ulivi sulle fasce\", cadrage: '46% 50%', cadrageMobile: '50% 41%', sizes: '100vw' })"
+  },
+  "grok/limoni": {
+    "nom": "grok/limoni",
+    "source": "recu/grok/g-limoni.jpg",
+    "role": "galerie",
+    "alt": "Limoni liguri freschi con foglie e rametti d'ulivo",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "96042c7020a95ff0",
+    "ratio": "4:5",
+    "largeurs": [
+      1024,
+      1168,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "49% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 98.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.04,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 99,
+      "width": 1320,
+      "height": 1650,
+      "source": [
+        1320,
+        1967
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,21 fois (source de 1320 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/limoni-1024.webp",
+      "grok/limoni-1168.webp",
+      "grok/limoni-1600.webp"
+    ],
+    "poids": {
+      "grok/limoni-1024.webp": 144734,
+      "grok/limoni-1168.webp": 170484,
+      "grok/limoni-1600.webp": 241576
+    },
+    "media": "c.media({ nom: 'grok/limoni', alt: \"Limoni liguri freschi con foglie e rametti d'ulivo\", cadrage: '49% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "grok/salamoia": {
+    "nom": "grok/salamoia",
+    "source": "recu/grok/g-salamoia.jpg",
+    "role": "galerie",
+    "alt": "Olive taggiasche in salamoia con erbe selvatiche",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "edc633e6fc2aeac2",
+    "ratio": "4:5",
+    "largeurs": [
+      1024,
+      1168,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "45% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.01,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 277,
+      "width": 1320,
+      "height": 1650,
+      "source": [
+        1320,
+        1967
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,21 fois (source de 1320 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/salamoia-1024.webp",
+      "grok/salamoia-1168.webp",
+      "grok/salamoia-1600.webp"
+    ],
+    "poids": {
+      "grok/salamoia-1024.webp": 142860,
+      "grok/salamoia-1168.webp": 163978,
+      "grok/salamoia-1600.webp": 235212
+    },
+    "media": "c.media({ nom: 'grok/salamoia', alt: \"Olive taggiasche in salamoia con erbe selvatiche\", cadrage: '45% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "grok/aglio-bosco": {
+    "nom": "grok/aglio-bosco",
+    "source": "recu/grok/g-aglio.jpg",
+    "role": "vignette",
+    "alt": "Foglie e fiori di aglio orsino nel bosco",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "9e7a7332f0300110",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "55% 58%",
+    "sujet": {
+      "x": 0,
+      "y": 22.7,
+      "l": 100,
+      "h": 68.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.47,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.07,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.02,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.01,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 168,
+      "top": 0,
+      "width": 1432,
+      "height": 1074,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/aglio-bosco-640.webp",
+      "grok/aglio-bosco-800.webp"
+    ],
+    "poids": {
+      "grok/aglio-bosco-640.webp": 55104,
+      "grok/aglio-bosco-800.webp": 74830
+    },
+    "media": "c.media({ nom: 'grok/aglio-bosco', alt: \"Foglie e fiori di aglio orsino nel bosco\", cadrage: '55% 58%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "grok/mulattiera": {
+    "nom": "grok/mulattiera",
+    "source": "recu/grok/g-mulattiera.jpg",
+    "role": "section-fond",
+    "alt": "Una mulattiera in pietra che sale tra le fasce di ulivi",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "7d4cb2f85ac35d28",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 46%"
+    },
+    "cadrage": "51% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.07,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 44,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/mulattiera-640.webp",
+      "grok/mulattiera-1280.webp",
+      "grok/mulattiera-1920.webp",
+      "grok/mulattiera-mobile-640.webp",
+      "grok/mulattiera-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/mulattiera-640.webp": 64276,
+      "grok/mulattiera-1280.webp": 186576,
+      "grok/mulattiera-1920.webp": 288610,
+      "grok/mulattiera-mobile-640.webp": 114236,
+      "grok/mulattiera-mobile-1080.webp": 204604
+    },
+    "media": "c.media({ nom: 'grok/mulattiera', alt: \"Una mulattiera in pietra che sale tra le fasce di ulivi\", cadrage: '51% 50%', cadrageMobile: '50% 46%', sizes: '100vw' })"
+  },
+  "grok/potatura": {
+    "nom": "grok/potatura",
+    "source": "recu/grok/g-potatura.jpg",
+    "role": "vignette",
+    "alt": "Rami potati ai piedi di un vecchio ulivo, un muretto in ricostruzione",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "307d511f80b969b8",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 51%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 95.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 84,
+      "top": 0,
+      "width": 1432,
+      "height": 1074,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/potatura-640.webp",
+      "grok/potatura-800.webp"
+    ],
+    "poids": {
+      "grok/potatura-640.webp": 101524,
+      "grok/potatura-800.webp": 145048
+    },
+    "media": "c.media({ nom: 'grok/potatura', alt: \"Rami potati ai piedi di un vecchio ulivo, un muretto in ricostruzione\", cadrage: '50% 51%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "grok/mendrisiotto": {
+    "nom": "grok/mendrisiotto",
+    "source": "recu/grok/g-mendrisiotto.jpg",
+    "role": "section-fond",
+    "alt": "Colline del Mendrisiotto al tramonto",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "3c14b161473916e7",
+    "ratio": "4:5",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "49% 42%"
+    },
+    "cadrage": "49% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.47,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.14,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.04,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 60,
+      "width": 1320,
+      "height": 1650,
+      "source": [
+        1320,
+        1967
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,45 fois (source de 1320 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/mendrisiotto-640.webp",
+      "grok/mendrisiotto-1280.webp",
+      "grok/mendrisiotto-1920.webp",
+      "grok/mendrisiotto-mobile-640.webp",
+      "grok/mendrisiotto-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/mendrisiotto-640.webp": 68060,
+      "grok/mendrisiotto-1280.webp": 160640,
+      "grok/mendrisiotto-1920.webp": 252940,
+      "grok/mendrisiotto-mobile-640.webp": 75890,
+      "grok/mendrisiotto-mobile-1080.webp": 149982
+    },
+    "media": "c.media({ nom: 'grok/mendrisiotto', alt: \"Colline del Mendrisiotto al tramonto\", cadrage: '49% 50%', cadrageMobile: '49% 42%', sizes: '100vw' })"
+  },
+  "olio-75": {
+    "nom": "olio-75",
+    "source": "recu/olio-oliva-extravergine-taggiasco.jpg",
+    "role": "produit",
+    "alt": "Bottiglia di olio extravergine taggiasco da 75 cl",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "59a4b40224beb784",
+    "ratio": "4:5",
+    "largeurs": [
+      800,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "48% 50%",
+    "sujet": {
+      "x": 32.4,
+      "y": 1.1,
+      "l": 33,
+      "h": 96.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.33,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.24,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.22,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.17,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 45,
+      "width": 1086,
+      "height": 1358,
+      "source": [
+        1086,
+        1448
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1086 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,47 fois (source de 1086 px après recadrage)"
+    ],
+    "fichiers": [
+      "olio-75-800.webp",
+      "olio-75-1600.webp"
+    ],
+    "poids": {
+      "olio-75-800.webp": 60588,
+      "olio-75-1600.webp": 135560
+    },
+    "media": "c.media({ nom: 'olio-75', alt: \"Bottiglia di olio extravergine taggiasco da 75 cl\", cadrage: '48% 50%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "olio-25": {
+    "nom": "olio-25",
+    "source": "recu/olio-oliva-extravergine-taggiasco-2.jpg",
+    "role": "produit",
+    "alt": "Bottiglia di olio extravergine taggiasco da 25 cl",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "4bfb8d6f204e3c4c",
+    "ratio": "4:5",
+    "largeurs": [
+      800,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "50% 47%",
+    "sujet": {
+      "x": 37.5,
+      "y": 5.7,
+      "l": 24.7,
+      "h": 81
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.41,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.27,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.25,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.23,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1086,
+      "height": 1358,
+      "source": [
+        1086,
+        1448
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1086 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,47 fois (source de 1086 px après recadrage)"
+    ],
+    "fichiers": [
+      "olio-25-800.webp",
+      "olio-25-1600.webp"
+    ],
+    "poids": {
+      "olio-25-800.webp": 65278,
+      "olio-25-1600.webp": 150080
+    },
+    "media": "c.media({ nom: 'olio-25', alt: \"Bottiglia di olio extravergine taggiasco da 25 cl\", cadrage: '50% 47%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "olio-limone": {
+    "nom": "olio-limone",
+    "source": "recu/zitronen-olivenol-25cl.jpg",
+    "role": "produit",
+    "alt": "Olio al limone da 25 cl con limoni freschi",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "dce018c53f1e9b59",
+    "ratio": "4:5",
+    "largeurs": [
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 3.5,
+      "l": 100,
+      "h": 83.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.07,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.04,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 77,
+      "top": 0,
+      "width": 1036,
+      "height": 1295,
+      "source": [
+        1214,
+        1295
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1600",
+      "1214 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "olio-limone-800.webp"
+    ],
+    "poids": {
+      "olio-limone-800.webp": 73958
+    },
+    "media": "c.media({ nom: 'olio-limone', alt: \"Olio al limone da 25 cl con limoni freschi\", sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "olive-salamoia": {
+    "nom": "olive-salamoia",
+    "source": "recu/olive-taggiasche-salamoia-210g.jpg",
+    "role": "produit",
+    "alt": "Vasetto di olive taggiasche in salamoia",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "33ba86c3576da588",
+    "ratio": "4:5",
+    "largeurs": [
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 53%",
+    "sujet": {
+      "x": 28,
+      "y": 18.5,
+      "l": 43.3,
+      "h": 64.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.24,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.21,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.2,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 123,
+      "top": 0,
+      "width": 972,
+      "height": 1215,
+      "source": [
+        1295,
+        1215
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1600"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "olive-salamoia-800.webp"
+    ],
+    "poids": {
+      "olive-salamoia-800.webp": 84634
+    },
+    "media": "c.media({ nom: 'olive-salamoia', alt: \"Vasetto di olive taggiasche in salamoia\", cadrage: '50% 53%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "olive-snocciolate": {
+    "nom": "olive-snocciolate",
+    "source": "recu/olive-taggiasche-snocciolate-olio.jpg",
+    "role": "produit",
+    "alt": "Vasetto di olive taggiasche snocciolate in olio",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "6f9b0f5a41322927",
+    "ratio": "4:5",
+    "largeurs": [
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 55%",
+    "sujet": {
+      "x": 4.6,
+      "y": 11.3,
+      "l": 83.6,
+      "h": 80.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.41,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.36,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.13,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.03,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 51,
+      "top": 0,
+      "width": 954,
+      "height": 1192,
+      "source": [
+        1319,
+        1192
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1600"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "olive-snocciolate-800.webp"
+    ],
+    "poids": {
+      "olive-snocciolate-800.webp": 78314
+    },
+    "media": "c.media({ nom: 'olive-snocciolate', alt: \"Vasetto di olive taggiasche snocciolate in olio\", cadrage: '50% 55%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "pate": {
+    "nom": "pate",
+    "source": "recu/olivenpate-90g-pate-di.jpg",
+    "role": "produit",
+    "alt": "Paté di olive taggiasche spalmato sul pane",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "e1c60127018eec33",
+    "ratio": "4:5",
+    "largeurs": [
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 52%",
+    "sujet": {
+      "x": 0,
+      "y": 11.4,
+      "l": 90.3,
+      "h": 88.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.13,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.09,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.02,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 362,
+      "top": 0,
+      "width": 869,
+      "height": 1086,
+      "source": [
+        1448,
+        1086
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1600"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "pate-800.webp"
+    ],
+    "poids": {
+      "pate-800.webp": 89982
+    },
+    "media": "c.media({ nom: 'pate', alt: \"Paté di olive taggiasche spalmato sul pane\", cadrage: '50% 52%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "cartone-6": {
+    "nom": "cartone-6",
+    "source": "recu/karton-6-flaschen-75cl.jpg",
+    "role": "produit",
+    "alt": "Cartone da sei bottiglie da 75 cl",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "7679661044fcfa53",
+    "ratio": "4:5",
+    "largeurs": [
+      800,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "51% 50%",
+    "sujet": {
+      "x": 26,
+      "y": 18.5,
+      "l": 50.3,
+      "h": 63.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.21,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.19,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.19,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.17,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 74,
+      "width": 1086,
+      "height": 1358,
+      "source": [
+        1086,
+        1448
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1086 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,47 fois (source de 1086 px après recadrage)"
+    ],
+    "fichiers": [
+      "cartone-6-800.webp",
+      "cartone-6-1600.webp"
+    ],
+    "poids": {
+      "cartone-6-800.webp": 105508,
+      "cartone-6-1600.webp": 240292
+    },
+    "media": "c.media({ nom: 'cartone-6', alt: \"Cartone da sei bottiglie da 75 cl\", cadrage: '51% 50%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "cartone-12": {
+    "nom": "cartone-12",
+    "source": "recu/2-karton-12-flaschen.jpg",
+    "role": "produit",
+    "alt": "Due cartoni da sei bottiglie",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "e8da4b6344876912",
+    "ratio": "4:5",
+    "largeurs": [
+      800,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "52% 50%",
+    "sujet": {
+      "x": 8.9,
+      "y": 18,
+      "l": 81.4,
+      "h": 69.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.12,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.07,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.06,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.05,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 88,
+      "width": 1086,
+      "height": 1358,
+      "source": [
+        1086,
+        1448
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1086 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,47 fois (source de 1086 px après recadrage)"
+    ],
+    "fichiers": [
+      "cartone-12-800.webp",
+      "cartone-12-1600.webp"
+    ],
+    "poids": {
+      "cartone-12-800.webp": 79176,
+      "cartone-12-1600.webp": 183388
+    },
+    "media": "c.media({ nom: 'cartone-12', alt: \"Due cartoni da sei bottiglie\", cadrage: '52% 50%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "cartone-18": {
+    "nom": "cartone-18",
+    "source": "recu/3-karton-18-flaschen.jpg",
+    "role": "produit",
+    "alt": "Tre cartoni da sei bottiglie",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "0b1f86068f61dac7",
+    "ratio": "4:5",
+    "largeurs": [
+      800,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "50% 48%",
+    "sujet": {
+      "x": 5.7,
+      "y": 23.9,
+      "l": 90.5,
+      "h": 51.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.22,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.09,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.08,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.06,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1086,
+      "height": 1358,
+      "source": [
+        1086,
+        1448
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1086 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,47 fois (source de 1086 px après recadrage)"
+    ],
+    "fichiers": [
+      "cartone-18-800.webp",
+      "cartone-18-1600.webp"
+    ],
+    "poids": {
+      "cartone-18-800.webp": 73390,
+      "cartone-18-1600.webp": 165754
+    },
+    "media": "c.media({ nom: 'cartone-18', alt: \"Tre cartoni da sei bottiglie\", cadrage: '50% 48%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "pate-1500": {
+    "nom": "pate-1500",
+    "source": "recu/1-5kg-pate-di.jpg",
+    "role": "produit",
+    "alt": "Vaso da 1,5 kg di paté di olive taggiasche",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "20b83399807868b0",
+    "ratio": "4:5",
+    "largeurs": [
+      800,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "49% 50%",
+    "sujet": {
+      "x": 13.8,
+      "y": 1.1,
+      "l": 80.3,
+      "h": 98.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.06,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.03,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 45,
+      "width": 1086,
+      "height": 1358,
+      "source": [
+        1086,
+        1448
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1086 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,47 fois (source de 1086 px après recadrage)"
+    ],
+    "fichiers": [
+      "pate-1500-800.webp",
+      "pate-1500-1600.webp"
+    ],
+    "poids": {
+      "pate-1500-800.webp": 125756,
+      "pate-1500-1600.webp": 280910
+    },
+    "media": "c.media({ nom: 'pate-1500', alt: \"Vaso da 1,5 kg di paté di olive taggiasche\", cadrage: '49% 50%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "snocciolate-1500": {
+    "nom": "snocciolate-1500",
+    "source": "recu/1-5kg-olive-taggiasche.jpg",
+    "role": "produit",
+    "alt": "Vaso da 1,5 kg di olive taggiasche snocciolate",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "1af03b369c302644",
+    "ratio": "4:5",
+    "largeurs": [
+      800,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "53% 53%",
+    "sujet": {
+      "x": 19.8,
+      "y": 5.2,
+      "l": 65.9,
+      "h": 88.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.15,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.09,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.05,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.04,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 90,
+      "width": 1086,
+      "height": 1358,
+      "source": [
+        1086,
+        1448
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1086 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,47 fois (source de 1086 px après recadrage)"
+    ],
+    "fichiers": [
+      "snocciolate-1500-800.webp",
+      "snocciolate-1500-1600.webp"
+    ],
+    "poids": {
+      "snocciolate-1500-800.webp": 118014,
+      "snocciolate-1500-1600.webp": 259758
+    },
+    "media": "c.media({ nom: 'snocciolate-1500', alt: \"Vaso da 1,5 kg di olive taggiasche snocciolate\", cadrage: '53% 53%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "salamoia-3500": {
+    "nom": "salamoia-3500",
+    "source": "recu/3-5kg-olive-taggiasche.jpg",
+    "role": "produit",
+    "alt": "Secchio da 3,5 kg di olive taggiasche in salamoia",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "604e304de2002f60",
+    "ratio": "4:5",
+    "largeurs": [
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 55%",
+    "sujet": {
+      "x": 9.1,
+      "y": 13.6,
+      "l": 85,
+      "h": 74.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.19,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.17,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.15,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.1,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 347,
+      "top": 0,
+      "width": 869,
+      "height": 1086,
+      "source": [
+        1448,
+        1086
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1600"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "salamoia-3500-800.webp"
+    ],
+    "poids": {
+      "salamoia-3500-800.webp": 67262
+    },
+    "media": "c.media({ nom: 'salamoia-3500', alt: \"Secchio da 3,5 kg di olive taggiasche in salamoia\", cadrage: '50% 55%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "latta-5": {
+    "nom": "latta-5",
+    "source": "recu/5l-olio-oliva-extravergine.jpg",
+    "role": "produit",
+    "alt": "Latta da 5 litri di olio extravergine taggiasco",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "25c8823fbbcdc90c",
+    "ratio": "4:5",
+    "largeurs": [
+      800,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "35% 53%",
+    "sujet": {
+      "x": 0.4,
+      "y": 14.7,
+      "l": 77,
+      "h": 76.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.14,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.11,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.07,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.01,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 90,
+      "width": 1086,
+      "height": 1358,
+      "source": [
+        1086,
+        1448
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1086 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,47 fois (source de 1086 px après recadrage)"
+    ],
+    "fichiers": [
+      "latta-5-800.webp",
+      "latta-5-1600.webp"
+    ],
+    "poids": {
+      "latta-5-800.webp": 101754,
+      "latta-5-1600.webp": 233864
+    },
+    "media": "c.media({ nom: 'latta-5', alt: \"Latta da 5 litri di olio extravergine taggiasco\", cadrage: '35% 53%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "latta-25": {
+    "nom": "latta-25",
+    "source": "recu/5l-olio-oliva-extravergine-2.jpg",
+    "role": "produit",
+    "alt": "Fusto da 25 litri e latta da 5 litri di olio extravergine",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "151c5b0c180d12de",
+    "ratio": "4:5",
+    "largeurs": [
+      800,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "60% 51%",
+    "sujet": {
+      "x": 0.2,
+      "y": 7.8,
+      "l": 99.7,
+      "h": 85.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.32,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.12,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.12,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.1,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 125,
+      "width": 1500,
+      "height": 1875,
+      "source": [
+        1500,
+        2000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,07 fois (source de 1500 px après recadrage)"
+    ],
+    "fichiers": [
+      "latta-25-800.webp",
+      "latta-25-1600.webp"
+    ],
+    "poids": {
+      "latta-25-800.webp": 33598,
+      "latta-25-1600.webp": 79934
+    },
+    "media": "c.media({ nom: 'latta-25', alt: \"Fusto da 25 litri e latta da 5 litri di olio extravergine\", cadrage: '60% 51%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "linfa": {
+    "nom": "linfa",
+    "source": "recu/linfa-di-betulla-bio-2.jpg",
+    "role": "produit",
+    "alt": "Bottiglia di linfa di betulla bio in un bosco di betulle",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "ecdbed6b8590c995",
+    "ratio": "4:5",
+    "largeurs": [
+      800,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "50% 44%",
+    "sujet": {
+      "x": 34.6,
+      "y": 2.8,
+      "l": 31.2,
+      "h": 87.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.16,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.14,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.12,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 86,
+      "top": 0,
+      "width": 1152,
+      "height": 1440,
+      "source": [
+        1408,
+        1440
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,39 fois (source de 1152 px après recadrage)"
+    ],
+    "fichiers": [
+      "linfa-800.webp",
+      "linfa-1600.webp"
+    ],
+    "poids": {
+      "linfa-800.webp": 185002,
+      "linfa-1600.webp": 288238
+    },
+    "media": "c.media({ nom: 'linfa', alt: \"Bottiglia di linfa di betulla bio in un bosco di betulle\", cadrage: '50% 44%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "linfa-multipack": {
+    "nom": "linfa-multipack",
+    "source": "recu/multipack-3-1-linfa.jpg",
+    "role": "produit",
+    "alt": "Multipack di linfa di betulla bio",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "d0907905ccb123c5",
+    "ratio": "4:5",
+    "largeurs": [
+      800
+    ],
+    "mobile": null,
+    "cadrage": "46% 47%",
+    "sujet": {
+      "x": 0.2,
+      "y": 17.4,
+      "l": 99.7,
+      "h": 66.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.12,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.09,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.07,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.06,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 105,
+      "top": 0,
+      "width": 1042,
+      "height": 1303,
+      "source": [
+        1207,
+        1303
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1600",
+      "1207 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "linfa-multipack-800.webp"
+    ],
+    "poids": {
+      "linfa-multipack-800.webp": 149038
+    },
+    "media": "c.media({ nom: 'linfa-multipack', alt: \"Multipack di linfa di betulla bio\", cadrage: '46% 47%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "aglio-orsino": {
+    "nom": "aglio-orsino",
+    "source": "recu/aglio-orsino-bio-olio.jpg",
+    "role": "produit",
+    "alt": "Vasetto di aglio orsino bio in olio",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "796587d429600e61",
+    "ratio": "4:5",
+    "largeurs": [
+      800,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "43% 50%",
+    "sujet": {
+      "x": 8.6,
+      "y": 22.7,
+      "l": 57.5,
+      "h": 60.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.25,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.24,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.2,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.08,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 2,
+      "width": 1086,
+      "height": 1358,
+      "source": [
+        1086,
+        1448
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1086 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,47 fois (source de 1086 px après recadrage)"
+    ],
+    "fichiers": [
+      "aglio-orsino-800.webp",
+      "aglio-orsino-1600.webp"
+    ],
+    "poids": {
+      "aglio-orsino-800.webp": 87274,
+      "aglio-orsino-1600.webp": 195246
+    },
+    "media": "c.media({ nom: 'aglio-orsino', alt: \"Vasetto di aglio orsino bio in olio\", cadrage: '43% 50%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "panettone": {
+    "nom": "panettone",
+    "source": "recu/panettone-cioccolato-bianco-30-2.png",
+    "role": "produit",
+    "alt": "Panettone al cioccolato bianco tagliato, con le confezioni dorate",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "a781bd27221e21f1",
+    "ratio": "4:5",
+    "largeurs": [
+      800,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "50% 55%",
+    "sujet": {
+      "x": 0,
+      "y": 10.4,
+      "l": 100,
+      "h": 83.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.05,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 294,
+      "top": 0,
+      "width": 1413,
+      "height": 1766,
+      "source": [
+        2000,
+        1766
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,13 fois (source de 1413 px après recadrage)"
+    ],
+    "fichiers": [
+      "panettone-800.webp",
+      "panettone-1600.webp"
+    ],
+    "poids": {
+      "panettone-800.webp": 107082,
+      "panettone-1600.webp": 225704
+    },
+    "media": "c.media({ nom: 'panettone', alt: \"Panettone al cioccolato bianco tagliato, con le confezioni dorate\", cadrage: '50% 55%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "anisbrotli": {
+    "nom": "anisbrotli",
+    "source": "recu/anisbrotli.jpg",
+    "role": "produit",
+    "alt": "Anisbrötli in una scatola dorata",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "c291c815ec98a7b0",
+    "ratio": "4:5",
+    "largeurs": [
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 49%",
+    "sujet": {
+      "x": 0,
+      "y": 28,
+      "l": 100,
+      "h": 43.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.27,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.22,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.15,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.15,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 86,
+      "top": 0,
+      "width": 1028,
+      "height": 1285,
+      "source": [
+        1224,
+        1285
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1600",
+      "1224 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "anisbrotli-800.webp"
+    ],
+    "poids": {
+      "anisbrotli-800.webp": 62324
+    },
+    "media": "c.media({ nom: 'anisbrotli', alt: \"Anisbrötli in una scatola dorata\", cadrage: '50% 49%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "confezione-regalo": {
+    "nom": "confezione-regalo",
+    "source": "recu/confezione-regalo-geschenkverpackung-6.jpg",
+    "role": "produit",
+    "alt": "Confezione regalo in legno con bottiglia e vasetti",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "7d7847238fa534be",
+    "ratio": "4:5",
+    "largeurs": [
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 44%",
+    "sujet": {
+      "x": 0,
+      "y": 27.5,
+      "l": 100,
+      "h": 38.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.69,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.47,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.41,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.39,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 221,
+      "top": 0,
+      "width": 869,
+      "height": 1086,
+      "source": [
+        1395,
+        1086
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1600"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "confezione-regalo-800.webp"
+    ],
+    "poids": {
+      "confezione-regalo-800.webp": 50446
+    },
+    "media": "c.media({ nom: 'confezione-regalo', alt: \"Confezione regalo in legno con bottiglia e vasetti\", cadrage: '50% 44%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "uliveto-reti": {
+    "nom": "uliveto-reti",
+    "source": "recu/uliveto-reti-ritaglio.jpg",
+    "role": "vignette",
+    "alt": "Uliveto con le reti di raccolta stese, foto Natural-Iter",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "cb0d343664a84e02",
+    "ratio": "4:5",
+    "largeurs": [
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "53% 27%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 96.2,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 576,
+      "height": 720,
+      "source": [
+        576,
+        720
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "576 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,39 fois (source de 576 px après recadrage)"
+    ],
+    "fichiers": [
+      "uliveto-reti-640.webp",
+      "uliveto-reti-800.webp"
+    ],
+    "poids": {
+      "uliveto-reti-640.webp": 132438,
+      "uliveto-reti-800.webp": 175804
+    },
+    "media": "c.media({ nom: 'uliveto-reti', alt: \"Uliveto con le reti di raccolta stese, foto Natural-Iter\", cadrage: '53% 27%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 5' })"
+  },
+  "jurg-anni-80": {
+    "nom": "jurg-anni-80",
+    "source": "recu/natural-iter-2.jpg",
+    "role": "galerie",
+    "alt": "Jürg Raz alla fine degli anni Ottanta, seduto davanti a un muretto a secco",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "8a236aab9bbb7bb0",
+    "ratio": "1:1",
+    "largeurs": [
+      1024,
+      1168,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "50% 67%",
+    "sujet": {
+      "x": 34.4,
+      "y": 32.1,
+      "l": 36.2,
+      "h": 64.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.23,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.18,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.09,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 500,
+      "width": 1500,
+      "height": 1500,
+      "source": [
+        1500,
+        2000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,07 fois (source de 1500 px après recadrage)"
+    ],
+    "fichiers": [
+      "jurg-anni-80-1024.webp",
+      "jurg-anni-80-1168.webp",
+      "jurg-anni-80-1600.webp"
+    ],
+    "poids": {
+      "jurg-anni-80-1024.webp": 160674,
+      "jurg-anni-80-1168.webp": 188370,
+      "jurg-anni-80-1600.webp": 258482
+    },
+    "media": "c.media({ nom: 'jurg-anni-80', alt: \"Jürg Raz alla fine degli anni Ottanta, seduto davanti a un muretto a secco\", cadrage: '50% 67%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '1 / 1' })"
+  },
+  "jurg-2000": {
+    "nom": "jurg-2000",
+    "source": "recu/natural-iter-3.jpg",
+    "role": "galerie",
+    "alt": "Jürg all'inizio degli anni Duemila tra i fusti",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "51563e433f848334",
+    "ratio": "3:2",
+    "largeurs": [
+      1024,
+      1168,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "52% 40%",
+    "sujet": {
+      "x": 28.6,
+      "y": 15.6,
+      "l": 58.7,
+      "h": 84.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.15,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.14,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1420,
+      "height": 947,
+      "source": [
+        1420,
+        1264
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,13 fois (source de 1420 px après recadrage)"
+    ],
+    "fichiers": [
+      "jurg-2000-1024.webp",
+      "jurg-2000-1168.webp",
+      "jurg-2000-1600.webp"
+    ],
+    "poids": {
+      "jurg-2000-1024.webp": 84576,
+      "jurg-2000-1168.webp": 103796,
+      "jurg-2000-1600.webp": 151344
+    },
+    "media": "c.media({ nom: 'jurg-2000', alt: \"Jürg all'inizio degli anni Duemila tra i fusti\", cadrage: '52% 40%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "giacomo": {
+    "nom": "giacomo",
+    "source": "recu/natural-iter.jpg",
+    "role": "portrait",
+    "alt": "Giacomo Bassanini",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "4c27cc317318f994",
+    "ratio": "1:1",
+    "largeurs": [
+      480
+    ],
+    "mobile": null,
+    "cadrage": "50% 38%",
+    "sujet": {
+      "x": 12.9,
+      "y": 8.2,
+      "l": 74.5,
+      "h": 79.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.17,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.13,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.05,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.01,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 70,
+      "top": 0,
+      "width": 1500,
+      "height": 1500,
+      "source": [
+        2000,
+        1500
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "giacomo-480.webp"
+    ],
+    "poids": {
+      "giacomo-480.webp": 38804
+    },
+    "media": "c.media({ nom: 'giacomo', alt: \"Giacomo Bassanini\", cadrage: '50% 38%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '1 / 1' })"
+  },
+  "gamma": {
+    "nom": "gamma",
+    "source": "recu/natural-iter-di-bassanini.jpg",
+    "role": "vignette",
+    "alt": "La gamma Natural-Iter su un tavolo al tramonto",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "e311c4a63f7916b2",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "44% 50%",
+    "sujet": {
+      "x": 6.6,
+      "y": 1.1,
+      "l": 81.4,
+      "h": 95.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.08,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.07,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.06,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.02,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 194,
+      "width": 1254,
+      "height": 941,
+      "source": [
+        1254,
+        1254
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1254 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "gamma-640.webp",
+      "gamma-800.webp"
+    ],
+    "poids": {
+      "gamma-640.webp": 53880,
+      "gamma-800.webp": 77286
+    },
+    "media": "c.media({ nom: 'gamma', alt: \"La gamma Natural-Iter su un tavolo al tramonto\", cadrage: '44% 50%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  }
+}

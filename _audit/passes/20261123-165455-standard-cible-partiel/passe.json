@@ -1,0 +1,17 @@
+{
+ "id": "20261123-165455-standard-cible-partiel",
+ "date": "2026-11-23T16:58:43.512Z",
+ "niveau": "standard",
+ "pages": "/,/404,/chi-siamo,/contatti,/prodotti,/shop",
+ "etapes": [
+  "fichiers",
+  "mesures",
+  "mouvement"
+ ],
+ "version": "1",
+ "echecs": 1,
+ "aRegarder": 5,
+ "nonLances": 0,
+ "manquants": 0,
+ "statut": "échecs"
+}

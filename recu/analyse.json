@@ -1,0 +1,3286 @@
+{
+  "dossier": "/home/claude/natural-iter/natural-iter-maquette/recu",
+  "date": "2026-11-23T16:06:02.112Z",
+  "detection": "mesures sharp seulement",
+  "planches": [
+    "planche.jpg",
+    "planche-2.jpg",
+    "planche-3.jpg"
+  ],
+  "legende_planche": "cadre jaune : sujet ; croix rouge : cadrage ; fond rose : à vérifier",
+  "doublons": [],
+  "images": [
+    {
+      "fichier": "logo-clair.png",
+      "nom": "logo-clair",
+      "drapeau": "logo",
+      "largeur": 1474,
+      "hauteur": 881,
+      "ratio": "1.67",
+      "ratio_valeur": 1.673,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 68675,
+      "transparence": true,
+      "sujet": {
+        "x": 18.8,
+        "y": 20,
+        "l": 62.5,
+        "h": 55,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        48
+      ],
+      "cadrage_css": "50% 48%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.61,
+          "ton": "clair",
+          "recouvre_sujet": 0.18
+        },
+        {
+          "cote": "haut",
+          "score": 0.57,
+          "ton": "clair",
+          "recouvre_sujet": 0.27
+        },
+        {
+          "cote": "droite",
+          "score": 0.46,
+          "ton": "clair",
+          "recouvre_sujet": 0.29
+        },
+        {
+          "cote": "gauche",
+          "score": 0.43,
+          "ton": "clair",
+          "recouvre_sujet": 0.29
+        }
+      ],
+      "qualite": {
+        "nettete": 38.4,
+        "bruit": 0.05,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "220e1f1b0f0f1622",
+      "drapeaux": [
+        "logo"
+      ]
+    },
+    {
+      "fichier": "logo-ita-2x-clair.png",
+      "nom": "logo-ita-2x-clair",
+      "drapeau": "logo",
+      "largeur": 64,
+      "hauteur": 64,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "png",
+      "poids": 2462,
+      "transparence": true,
+      "sujet": {
+        "x": 3.1,
+        "y": 9.4,
+        "l": 93.8,
+        "h": 84.4,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        53,
+        50
+      ],
+      "cadrage_css": "53% 50%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.37,
+          "ton": "clair",
+          "recouvre_sujet": 0.69
+        },
+        {
+          "cote": "bas",
+          "score": 0.34,
+          "ton": "clair",
+          "recouvre_sujet": 0.77
+        },
+        {
+          "cote": "gauche",
+          "score": 0.32,
+          "ton": "clair",
+          "recouvre_sujet": 0.78
+        },
+        {
+          "cote": "droite",
+          "score": 0.29,
+          "ton": "clair",
+          "recouvre_sujet": 0.78
+        }
+      ],
+      "qualite": {
+        "nettete": 38.4,
+        "bruit": 0.56,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "3333717171713333",
+      "drapeaux": [
+        "logo"
+      ]
+    },
+    {
+      "fichier": "natural-iter-di-bassanini.jpg",
+      "nom": "natural-iter-di-bassanini",
+      "drapeau": "autre",
+      "largeur": 1254,
+      "hauteur": 1254,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "jpeg",
+      "poids": 1806838,
+      "transparence": false,
+      "sujet": {
+        "x": 3.1,
+        "y": 0,
+        "l": 96.9,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        61,
+        44
+      ],
+      "cadrage_css": "61% 44%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.88
+        }
+      ],
+      "qualite": {
+        "nettete": 42.8,
+        "bruit": 1.3,
+        "compression": 0.98,
+        "faible": true,
+        "raisons": [
+          "1254 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "1d9bf38386939b98",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "natural-iter-di-bassanini-2.jpg",
+      "nom": "natural-iter-di-bassanini-2",
+      "drapeau": "autre",
+      "largeur": 1280,
+      "hauteur": 720,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 452244,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 96.9,
+        "h": 83.3,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        52,
+        21
+      ],
+      "cadrage_css": "52% 21%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.15,
+          "ton": "moyen",
+          "recouvre_sujet": 0.51
+        },
+        {
+          "cote": "droite",
+          "score": 0.03,
+          "ton": "moyen",
+          "recouvre_sujet": 0.77
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.83
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        }
+      ],
+      "qualite": {
+        "nettete": 74.2,
+        "bruit": 2.8,
+        "compression": 1.07,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "a2bc4c2a88d89e3e",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "olive-taggiasche-salamoia-210g.jpg",
+      "nom": "olive-taggiasche-salamoia-210g",
+      "drapeau": "produit",
+      "largeur": 1295,
+      "hauteur": 1215,
+      "ratio": "1.07",
+      "ratio_valeur": 1.066,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 1663667,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 96.7,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        61,
+        48
+      ],
+      "cadrage_css": "61% 48%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.91
+        }
+      ],
+      "qualite": {
+        "nettete": 28.8,
+        "bruit": 1.19,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "addf9fcce8698d09",
+      "drapeaux": [
+        "produit"
+      ]
+    },
+    {
+      "fichier": "anisbrotli.jpg",
+      "nom": "anisbrotli",
+      "drapeau": "produit",
+      "largeur": 1224,
+      "hauteur": 1285,
+      "ratio": "0.95",
+      "ratio_valeur": 0.953,
+      "orientation": "carre",
+      "format": "jpeg",
+      "poids": 1463925,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 3.1,
+        "l": 96.8,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        54
+      ],
+      "cadrage_css": "51% 54%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.03,
+          "ton": "clair",
+          "recouvre_sujet": 0.88
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.97
+        }
+      ],
+      "qualite": {
+        "nettete": 19.3,
+        "bruit": 1.02,
+        "compression": 1.01,
+        "faible": true,
+        "raisons": [
+          "1224 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "d8d8b433698eecb8",
+      "drapeaux": [
+        "produit",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "panettone-cioccolato-bianco-30.jpg",
+      "nom": "panettone-cioccolato-bianco-30",
+      "drapeau": "produit",
+      "largeur": 1334,
+      "hauteur": 1179,
+      "ratio": "1.13",
+      "ratio_valeur": 1.131,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 2185848,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 96.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        44
+      ],
+      "cadrage_css": "50% 44%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.9
+        }
+      ],
+      "qualite": {
+        "nettete": 45,
+        "bruit": 1.77,
+        "compression": 0.99,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "9492b39bbaba99db",
+      "drapeaux": [
+        "produit"
+      ]
+    },
+    {
+      "fichier": "confezione-regalo-geschenkverpackung.jpg",
+      "nom": "confezione-regalo-geschenkverpackung",
+      "drapeau": "produit",
+      "largeur": 1121,
+      "hauteur": 1403,
+      "ratio": "4:5",
+      "ratio_valeur": 0.799,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 1615221,
+      "transparence": false,
+      "sujet": {
+        "x": 15.4,
+        "y": 0,
+        "l": 80.8,
+        "h": 78.1,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        52,
+        32
+      ],
+      "cadrage_css": "52% 32%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.6,
+          "ton": "sombre",
+          "recouvre_sujet": 0.3
+        },
+        {
+          "cote": "droite",
+          "score": 0.36,
+          "ton": "sombre",
+          "recouvre_sujet": 0.71
+        },
+        {
+          "cote": "gauche",
+          "score": 0.35,
+          "ton": "sombre",
+          "recouvre_sujet": 0.48
+        },
+        {
+          "cote": "haut",
+          "score": 0.19,
+          "ton": "moyen",
+          "recouvre_sujet": 0.81
+        }
+      ],
+      "qualite": {
+        "nettete": 45.5,
+        "bruit": 1.65,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1121 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "c0e066dfe3e7eff1",
+      "drapeaux": [
+        "produit",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "multipack-3-1-linfa.jpg",
+      "nom": "multipack-3-1-linfa",
+      "drapeau": "produit",
+      "largeur": 1207,
+      "hauteur": 1303,
+      "ratio": "0.93",
+      "ratio_valeur": 0.926,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 2029263,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 96.7,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        54
+      ],
+      "cadrage_css": "49% 54%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.92
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        }
+      ],
+      "qualite": {
+        "nettete": 57.2,
+        "bruit": 1.67,
+        "compression": 1.01,
+        "faible": true,
+        "raisons": [
+          "1207 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "a5e08cc464755cb5",
+      "drapeaux": [
+        "produit",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "olio-oliva-extravergine-taggiasco.jpg",
+      "nom": "olio-oliva-extravergine-taggiasco",
+      "drapeau": "produit",
+      "largeur": 1086,
+      "hauteur": 1448,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 1513762,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        51
+      ],
+      "cadrage_css": "51% 51%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.03,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.91
+        }
+      ],
+      "qualite": {
+        "nettete": 24.7,
+        "bruit": 1.02,
+        "compression": 1.01,
+        "faible": true,
+        "raisons": [
+          "1086 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "362e0e35374e4e4c",
+      "drapeaux": [
+        "produit",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "olio-oliva-extravergine-taggiasco-2.jpg",
+      "nom": "olio-oliva-extravergine-taggiasco-2",
+      "drapeau": "produit",
+      "largeur": 1086,
+      "hauteur": 1448,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 1539298,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        42,
+        48
+      ],
+      "cadrage_css": "42% 48%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.09,
+          "ton": "sombre",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.91
+        }
+      ],
+      "qualite": {
+        "nettete": 25.8,
+        "bruit": 1.18,
+        "compression": 0.99,
+        "faible": true,
+        "raisons": [
+          "1086 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "022f8c70754c6d2c",
+      "drapeaux": [
+        "produit",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "1-5kg-olive-taggiasche.jpg",
+      "nom": "1-5kg-olive-taggiasche",
+      "drapeau": "produit",
+      "largeur": 1086,
+      "hauteur": 1448,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 1808781,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        61,
+        40
+      ],
+      "cadrage_css": "61% 40%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.91
+        }
+      ],
+      "qualite": {
+        "nettete": 36.8,
+        "bruit": 1.15,
+        "compression": 1.01,
+        "faible": true,
+        "raisons": [
+          "1086 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "ffc70e1e7cfc9ecc",
+      "drapeaux": [
+        "produit",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "olivenpate-90g-pate-di.jpg",
+      "nom": "olivenpate-90g-pate-di",
+      "drapeau": "produit",
+      "largeur": 1448,
+      "hauteur": 1086,
+      "ratio": "4:3",
+      "ratio_valeur": 1.333,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 1731077,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        47
+      ],
+      "cadrage_css": "47% 47%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 39.8,
+        "bruit": 1.38,
+        "compression": 0.99,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "04a18666ad286758",
+      "drapeaux": [
+        "produit"
+      ]
+    },
+    {
+      "fichier": "3-karton-18-flaschen.jpg",
+      "nom": "3-karton-18-flaschen",
+      "drapeau": "produit",
+      "largeur": 1086,
+      "hauteur": 1448,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 1516634,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        46
+      ],
+      "cadrage_css": "50% 46%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 28.3,
+        "bruit": 1.12,
+        "compression": 0.98,
+        "faible": true,
+        "raisons": [
+          "1086 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "b1b1a4a686a6fc65",
+      "drapeaux": [
+        "produit",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "2-karton-12-flaschen.jpg",
+      "nom": "2-karton-12-flaschen",
+      "drapeau": "produit",
+      "largeur": 1086,
+      "hauteur": 1448,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 1598234,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        53,
+        50
+      ],
+      "cadrage_css": "53% 50%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.91
+        }
+      ],
+      "qualite": {
+        "nettete": 35,
+        "bruit": 1.26,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1086 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "3772cccecccc6c6e",
+      "drapeaux": [
+        "produit",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "karton-6-flaschen-75cl.jpg",
+      "nom": "karton-6-flaschen-75cl",
+      "drapeau": "produit",
+      "largeur": 1086,
+      "hauteur": 1448,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 1796779,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        44
+      ],
+      "cadrage_css": "50% 44%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 42.4,
+        "bruit": 1.43,
+        "compression": 1.01,
+        "faible": true,
+        "raisons": [
+          "1086 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "ffc37998b999d9e2",
+      "drapeaux": [
+        "produit",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "3-5kg-olive-taggiasche.jpg",
+      "nom": "3-5kg-olive-taggiasche",
+      "drapeau": "produit",
+      "largeur": 1448,
+      "hauteur": 1086,
+      "ratio": "4:3",
+      "ratio_valeur": 1.333,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 1674756,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        44
+      ],
+      "cadrage_css": "51% 44%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 37.1,
+        "bruit": 1.28,
+        "compression": 0.98,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "daf86cf9fc6cfc9d",
+      "drapeaux": [
+        "produit"
+      ]
+    },
+    {
+      "fichier": "1-5kg-pate-di.jpg",
+      "nom": "1-5kg-pate-di",
+      "drapeau": "produit",
+      "largeur": 1086,
+      "hauteur": 1448,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 1845252,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        55,
+        41
+      ],
+      "cadrage_css": "55% 41%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.91
+        }
+      ],
+      "qualite": {
+        "nettete": 41.7,
+        "bruit": 1.28,
+        "compression": 0.99,
+        "faible": true,
+        "raisons": [
+          "1086 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "3a1c1e9df9ad099b",
+      "drapeaux": [
+        "produit",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "5l-olio-oliva-extravergine.jpg",
+      "nom": "5l-olio-oliva-extravergine",
+      "drapeau": "produit",
+      "largeur": 1086,
+      "hauteur": 1448,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 1766986,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        41
+      ],
+      "cadrage_css": "50% 41%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.91
+        }
+      ],
+      "qualite": {
+        "nettete": 42.1,
+        "bruit": 1.32,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1086 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "60d2c78747478761",
+      "drapeaux": [
+        "produit",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "aglio-orsino-bio-olio.jpg",
+      "nom": "aglio-orsino-bio-olio",
+      "drapeau": "produit",
+      "largeur": 1086,
+      "hauteur": 1448,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 1578444,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        43,
+        50
+      ],
+      "cadrage_css": "43% 50%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.91
+        }
+      ],
+      "qualite": {
+        "nettete": 40.8,
+        "bruit": 1.24,
+        "compression": 0.99,
+        "faible": true,
+        "raisons": [
+          "1086 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "8c8ec260361491f8",
+      "drapeaux": [
+        "produit",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "multipack-3-1-linfa-2.jpg",
+      "nom": "multipack-3-1-linfa-2",
+      "drapeau": "produit",
+      "largeur": 1086,
+      "hauteur": 1448,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 1633987,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        56
+      ],
+      "cadrage_css": "50% 56%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 32.2,
+        "bruit": 1.31,
+        "compression": 0.98,
+        "faible": true,
+        "raisons": [
+          "1086 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "a4c636b29270b919",
+      "drapeaux": [
+        "produit",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "olive-taggiasche-snocciolate-olio.jpg",
+      "nom": "olive-taggiasche-snocciolate-olio",
+      "drapeau": "produit",
+      "largeur": 1319,
+      "hauteur": 1192,
+      "ratio": "1.11",
+      "ratio_valeur": 1.107,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 1535280,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 75,
+        "h": 96.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        38,
+        46
+      ],
+      "cadrage_css": "38% 46%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.34,
+          "ton": "moyen",
+          "recouvre_sujet": 0.36
+        },
+        {
+          "cote": "haut",
+          "score": 0.24,
+          "ton": "clair",
+          "recouvre_sujet": 0.75
+        },
+        {
+          "cote": "bas",
+          "score": 0.05,
+          "ton": "moyen",
+          "recouvre_sujet": 0.68
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        }
+      ],
+      "qualite": {
+        "nettete": 30.2,
+        "bruit": 1.16,
+        "compression": 1.03,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "004e0d293c371e1f",
+      "drapeaux": [
+        "produit"
+      ]
+    },
+    {
+      "fichier": "zitronen-olivenol-25cl.jpg",
+      "nom": "zitronen-olivenol-25cl",
+      "drapeau": "produit",
+      "largeur": 1214,
+      "hauteur": 1295,
+      "ratio": "0.94",
+      "ratio_valeur": 0.937,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 1628097,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 96.7,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        44,
+        52
+      ],
+      "cadrage_css": "44% 52%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.02,
+          "ton": "sombre",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.88
+        }
+      ],
+      "qualite": {
+        "nettete": 28,
+        "bruit": 1.19,
+        "compression": 0.97,
+        "faible": true,
+        "raisons": [
+          "1214 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "25138ecc11cc4c20",
+      "drapeaux": [
+        "produit",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "natural-iter.jpg",
+      "nom": "natural-iter",
+      "drapeau": "autre",
+      "largeur": 2000,
+      "hauteur": 1500,
+      "ratio": "4:3",
+      "ratio_valeur": 1.333,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 506868,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        35
+      ],
+      "cadrage_css": "47% 35%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.88
+        }
+      ],
+      "qualite": {
+        "nettete": 46,
+        "bruit": 0.86,
+        "compression": 1.16,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "e5e52da9e9e3a3e1",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "natural-iter-2.jpg",
+      "nom": "natural-iter-2",
+      "drapeau": "autre",
+      "largeur": 1500,
+      "hauteur": 2000,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 600846,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        49
+      ],
+      "cadrage_css": "51% 49%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 41.6,
+        "bruit": 0.83,
+        "compression": 0.99,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "c8cc2d6b5a3d3b0b",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "natural-iter-3.jpg",
+      "nom": "natural-iter-3",
+      "drapeau": "autre",
+      "largeur": 1420,
+      "hauteur": 1264,
+      "ratio": "1.12",
+      "ratio_valeur": 1.123,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 575989,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 96.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        56,
+        57
+      ],
+      "cadrage_css": "56% 57%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.9
+        }
+      ],
+      "qualite": {
+        "nettete": 34.7,
+        "bruit": 1.42,
+        "compression": 0.99,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "3573799c343b3b38",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "panettone-cioccolato-bianco-30-2.png",
+      "nom": "panettone-cioccolato-bianco-30-2",
+      "drapeau": "produit",
+      "largeur": 2000,
+      "hauteur": 1766,
+      "ratio": "1.13",
+      "ratio_valeur": 1.133,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 5869456,
+      "transparence": true,
+      "sujet": {
+        "x": 3.1,
+        "y": 3.4,
+        "l": 96.9,
+        "h": 93.1,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        48
+      ],
+      "cadrage_css": "51% 48%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.02,
+          "ton": "sombre",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.86
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.93
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 34.3,
+        "bruit": 0.51,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "b4b696b6babab879",
+      "drapeaux": [
+        "produit"
+      ]
+    },
+    {
+      "fichier": "panettone-cioccolato-bianco-30-3.png",
+      "nom": "panettone-cioccolato-bianco-30-3",
+      "drapeau": "produit",
+      "largeur": 2000,
+      "hauteur": 2000,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "png",
+      "poids": 1104424,
+      "transparence": false,
+      "sujet": {
+        "x": 6.3,
+        "y": 6.3,
+        "l": 87.5,
+        "h": 87.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        51
+      ],
+      "cadrage_css": "49% 51%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.04,
+          "ton": "sombre",
+          "recouvre_sujet": 0.72
+        },
+        {
+          "cote": "haut",
+          "score": 0.03,
+          "ton": "sombre",
+          "recouvre_sujet": 0.72
+        },
+        {
+          "cote": "gauche",
+          "score": 0.02,
+          "ton": "sombre",
+          "recouvre_sujet": 0.74
+        },
+        {
+          "cote": "droite",
+          "score": 0.02,
+          "ton": "sombre",
+          "recouvre_sujet": 0.74
+        }
+      ],
+      "qualite": {
+        "nettete": 99.8,
+        "bruit": 0.43,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "8884909898b48a82",
+      "drapeaux": [
+        "produit"
+      ]
+    },
+    {
+      "fichier": "panettone-cioccolato-bianco-30-4.webp",
+      "nom": "panettone-cioccolato-bianco-30-4",
+      "drapeau": "produit",
+      "largeur": 2000,
+      "hauteur": 2000,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 459148,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 3.1,
+        "l": 100,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        50
+      ],
+      "cadrage_css": "47% 50%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 34.1,
+        "bruit": 1.12,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "1c8c9dc2d4d9c9c2",
+      "drapeaux": [
+        "produit"
+      ]
+    },
+    {
+      "fichier": "panettone-cioccolato-bianco-30-5.webp",
+      "nom": "panettone-cioccolato-bianco-30-5",
+      "drapeau": "produit",
+      "largeur": 2000,
+      "hauteur": 2000,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 444398,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        38
+      ],
+      "cadrage_css": "49% 38%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 21.4,
+        "bruit": 0.8,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "110989c3bb1b5b61",
+      "drapeaux": [
+        "produit"
+      ]
+    },
+    {
+      "fichier": "miniatura-panettone-cioccolato-bianco.jpg",
+      "nom": "miniatura-panettone-cioccolato-bianco",
+      "drapeau": "produit",
+      "largeur": 2000,
+      "hauteur": 1125,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 178597,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        40
+      ],
+      "cadrage_css": "50% 40%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.2,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "gauche",
+          "score": 0.19,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0.18,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0.12,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 53.2,
+        "bruit": 0.65,
+        "compression": 1.11,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "dcccccccccccccd4",
+      "drapeaux": [
+        "produit"
+      ]
+    },
+    {
+      "fichier": "panettone-cioccolato-bianco-30-6.png",
+      "nom": "panettone-cioccolato-bianco-30-6",
+      "drapeau": "produit",
+      "largeur": 1060,
+      "hauteur": 1560,
+      "ratio": "2:3",
+      "ratio_valeur": 0.679,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 1788877,
+      "transparence": false,
+      "sujet": {
+        "x": 4.5,
+        "y": 3.1,
+        "l": 90.9,
+        "h": 93.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        46
+      ],
+      "cadrage_css": "50% 46%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.83
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.83
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.83
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.83
+        }
+      ],
+      "qualite": {
+        "nettete": 71.4,
+        "bruit": 1.03,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1060 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "f27070f0d4d4da3c",
+      "drapeaux": [
+        "produit",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "panettone-cioccolato-bianco-30-7.png",
+      "nom": "panettone-cioccolato-bianco-30-7",
+      "drapeau": "produit",
+      "largeur": 1168,
+      "hauteur": 1038,
+      "ratio": "1.13",
+      "ratio_valeur": 1.125,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 1831681,
+      "transparence": false,
+      "sujet": {
+        "x": 18.8,
+        "y": 13.8,
+        "l": 59.4,
+        "h": 75.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        38,
+        52
+      ],
+      "cadrage_css": "38% 52%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.58,
+          "ton": "clair",
+          "recouvre_sujet": 0.35
+        },
+        {
+          "cote": "haut",
+          "score": 0.45,
+          "ton": "clair",
+          "recouvre_sujet": 0.36
+        },
+        {
+          "cote": "bas",
+          "score": 0.35,
+          "ton": "clair",
+          "recouvre_sujet": 0.42
+        },
+        {
+          "cote": "gauche",
+          "score": 0.23,
+          "ton": "clair",
+          "recouvre_sujet": 0.4
+        }
+      ],
+      "qualite": {
+        "nettete": 36.2,
+        "bruit": 1.14,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1168 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "c81c1b393b331346",
+      "drapeaux": [
+        "produit",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "panettone-cioccolato-bianco-30-8.png",
+      "nom": "panettone-cioccolato-bianco-30-8",
+      "drapeau": "produit",
+      "largeur": 1101,
+      "hauteur": 972,
+      "ratio": "1.13",
+      "ratio_valeur": 1.133,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 2339872,
+      "transparence": false,
+      "sujet": {
+        "x": 9.4,
+        "y": 10.3,
+        "l": 81.3,
+        "h": 82.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        50
+      ],
+      "cadrage_css": "48% 50%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.17,
+          "ton": "clair",
+          "recouvre_sujet": 0.57
+        },
+        {
+          "cote": "bas",
+          "score": 0.13,
+          "ton": "moyen",
+          "recouvre_sujet": 0.65
+        },
+        {
+          "cote": "droite",
+          "score": 0.11,
+          "ton": "clair",
+          "recouvre_sujet": 0.64
+        },
+        {
+          "cote": "gauche",
+          "score": 0.07,
+          "ton": "moyen",
+          "recouvre_sujet": 0.63
+        }
+      ],
+      "qualite": {
+        "nettete": 57.1,
+        "bruit": 1.46,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1101 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "09476b233b3b191f",
+      "drapeaux": [
+        "produit",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "confezione-regalo-geschenkverpackung-2.jpg",
+      "nom": "confezione-regalo-geschenkverpackung-2",
+      "drapeau": "produit",
+      "largeur": 1126,
+      "hauteur": 2000,
+      "ratio": "9:16",
+      "ratio_valeur": 0.563,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 441613,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 3.1,
+        "l": 83.3,
+        "h": 87.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        43,
+        50
+      ],
+      "cadrage_css": "43% 50%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.27,
+          "ton": "moyen",
+          "recouvre_sujet": 0.51
+        },
+        {
+          "cote": "bas",
+          "score": 0.09,
+          "ton": "moyen",
+          "recouvre_sujet": 0.61
+        },
+        {
+          "cote": "haut",
+          "score": 0.02,
+          "ton": "moyen",
+          "recouvre_sujet": 0.76
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.88
+        }
+      ],
+      "qualite": {
+        "nettete": 60.3,
+        "bruit": 1.17,
+        "compression": 0.98,
+        "faible": true,
+        "raisons": [
+          "1126 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "869ba79f9b939bcf",
+      "drapeaux": [
+        "produit",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "confezione-regalo-geschenkverpackung-3.jpg",
+      "nom": "confezione-regalo-geschenkverpackung-3",
+      "drapeau": "produit",
+      "largeur": 2000,
+      "hauteur": 1153,
+      "ratio": "16:9",
+      "ratio_valeur": 1.735,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 651899,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 94.7,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        48
+      ],
+      "cadrage_css": "50% 48%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.95
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.95
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.85
+        }
+      ],
+      "qualite": {
+        "nettete": 78,
+        "bruit": 1.64,
+        "compression": 1.08,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "9092693d15559555",
+      "drapeaux": [
+        "produit"
+      ]
+    },
+    {
+      "fichier": "confezione-regalo-geschenkverpackung-4.jpg",
+      "nom": "confezione-regalo-geschenkverpackung-4",
+      "drapeau": "produit",
+      "largeur": 1739,
+      "hauteur": 2000,
+      "ratio": "0.87",
+      "ratio_valeur": 0.87,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 633933,
+      "transparence": false,
+      "sujet": {
+        "x": 3.6,
+        "y": 3.1,
+        "l": 92.9,
+        "h": 93.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        52,
+        49
+      ],
+      "cadrage_css": "52% 49%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.85
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.86
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.85
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.85
+        }
+      ],
+      "qualite": {
+        "nettete": 34.5,
+        "bruit": 0.79,
+        "compression": 0.99,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "0707071717274f2f",
+      "drapeaux": [
+        "produit"
+      ]
+    },
+    {
+      "fichier": "confezione-regalo-geschenkverpackung-5.jpg",
+      "nom": "confezione-regalo-geschenkverpackung-5",
+      "drapeau": "produit",
+      "largeur": 1086,
+      "hauteur": 1448,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 1615553,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        51
+      ],
+      "cadrage_css": "48% 51%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 57.2,
+        "bruit": 1.4,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1086 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "352112211b92d3f1",
+      "drapeaux": [
+        "produit",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "confezione-regalo-geschenkverpackung-6.jpg",
+      "nom": "confezione-regalo-geschenkverpackung-6",
+      "drapeau": "produit",
+      "largeur": 1395,
+      "hauteur": 1086,
+      "ratio": "1.28",
+      "ratio_valeur": 1.285,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 1542633,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 96,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        39
+      ],
+      "cadrage_css": "47% 39%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.39,
+          "ton": "sombre",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "gauche",
+          "score": 0.18,
+          "ton": "sombre",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0.18,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0.16,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 38.4,
+        "bruit": 1.25,
+        "compression": 0.97,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "60709e97adddbebe",
+      "drapeaux": [
+        "produit"
+      ]
+    },
+    {
+      "fichier": "olio-oliva-extravergine-taggiasco-3.jpg",
+      "nom": "olio-oliva-extravergine-taggiasco-3",
+      "drapeau": "produit",
+      "largeur": 1912,
+      "hauteur": 2000,
+      "ratio": "0.96",
+      "ratio_valeur": 0.956,
+      "orientation": "carre",
+      "format": "jpeg",
+      "poids": 205293,
+      "transparence": false,
+      "sujet": {
+        "x": 19.4,
+        "y": 15.6,
+        "l": 58.1,
+        "h": 78.1,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        56
+      ],
+      "cadrage_css": "49% 56%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.48,
+          "ton": "clair",
+          "recouvre_sujet": 0.32
+        },
+        {
+          "cote": "droite",
+          "score": 0.42,
+          "ton": "clair",
+          "recouvre_sujet": 0.34
+        },
+        {
+          "cote": "gauche",
+          "score": 0.38,
+          "ton": "clair",
+          "recouvre_sujet": 0.4
+        },
+        {
+          "cote": "bas",
+          "score": 0.25,
+          "ton": "clair",
+          "recouvre_sujet": 0.48
+        }
+      ],
+      "qualite": {
+        "nettete": 30.1,
+        "bruit": 0.48,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "0c4c8e968e16232b",
+      "drapeaux": [
+        "produit"
+      ]
+    },
+    {
+      "fichier": "olio-oliva-extravergine-taggiasco-4.jpg",
+      "nom": "olio-oliva-extravergine-taggiasco-4",
+      "drapeau": "produit",
+      "largeur": 1927,
+      "hauteur": 2000,
+      "ratio": "0.96",
+      "ratio_valeur": 0.964,
+      "orientation": "carre",
+      "format": "jpeg",
+      "poids": 108421,
+      "transparence": false,
+      "sujet": {
+        "x": 35.5,
+        "y": 6.3,
+        "l": 25.8,
+        "h": 87.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        55
+      ],
+      "cadrage_css": "49% 55%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.84,
+          "ton": "clair",
+          "recouvre_sujet": 0.03
+        },
+        {
+          "cote": "gauche",
+          "score": 0.72,
+          "ton": "clair",
+          "recouvre_sujet": 0.1
+        },
+        {
+          "cote": "bas",
+          "score": 0.56,
+          "ton": "clair",
+          "recouvre_sujet": 0.21
+        },
+        {
+          "cote": "haut",
+          "score": 0.53,
+          "ton": "clair",
+          "recouvre_sujet": 0.21
+        }
+      ],
+      "qualite": {
+        "nettete": 14,
+        "bruit": 0.26,
+        "compression": 0.94,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "48484d4d4d4d4d4d",
+      "drapeaux": [
+        "produit",
+        "calme droite/gauche"
+      ]
+    },
+    {
+      "fichier": "olio-oliva-extravergine-taggiasco-5.jpg",
+      "nom": "olio-oliva-extravergine-taggiasco-5",
+      "drapeau": "produit",
+      "largeur": 1086,
+      "hauteur": 1448,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 1118424,
+      "transparence": false,
+      "sujet": {
+        "x": 12.5,
+        "y": 9.4,
+        "l": 50,
+        "h": 90.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        56
+      ],
+      "cadrage_css": "47% 56%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.83,
+          "ton": "moyen",
+          "recouvre_sujet": 0.06
+        },
+        {
+          "cote": "gauche",
+          "score": 0.56,
+          "ton": "moyen",
+          "recouvre_sujet": 0.62
+        },
+        {
+          "cote": "haut",
+          "score": 0.56,
+          "ton": "moyen",
+          "recouvre_sujet": 0.37
+        },
+        {
+          "cote": "bas",
+          "score": 0.5,
+          "ton": "moyen",
+          "recouvre_sujet": 0.5
+        }
+      ],
+      "qualite": {
+        "nettete": 24,
+        "bruit": 0.99,
+        "compression": 1.13,
+        "faible": true,
+        "raisons": [
+          "1086 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "000c0c14c44ccc82",
+      "drapeaux": [
+        "produit",
+        "petite",
+        "calme droite"
+      ]
+    },
+    {
+      "fichier": "1-5kg-pate-di-2.jpg",
+      "nom": "1-5kg-pate-di-2",
+      "drapeau": "produit",
+      "largeur": 1848,
+      "hauteur": 1356,
+      "ratio": "4:3",
+      "ratio_valeur": 1.363,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 488763,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        55,
+        50
+      ],
+      "cadrage_css": "55% 50%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.88
+        }
+      ],
+      "qualite": {
+        "nettete": 42.2,
+        "bruit": 0.83,
+        "compression": 0.96,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "0b0d2527a9115397",
+      "drapeaux": [
+        "produit"
+      ]
+    },
+    {
+      "fichier": "3-5kg-olive-taggiasche-2.jpg",
+      "nom": "3-5kg-olive-taggiasche-2",
+      "drapeau": "produit",
+      "largeur": 1500,
+      "hauteur": 2000,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 249409,
+      "transparence": false,
+      "sujet": {
+        "x": 4.2,
+        "y": 15.6,
+        "l": 91.7,
+        "h": 81.3,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        62,
+        54
+      ],
+      "cadrage_css": "62% 54%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.44,
+          "ton": "clair",
+          "recouvre_sujet": 0.73
+        },
+        {
+          "cote": "haut",
+          "score": 0.38,
+          "ton": "clair",
+          "recouvre_sujet": 0.51
+        },
+        {
+          "cote": "bas",
+          "score": 0.16,
+          "ton": "moyen",
+          "recouvre_sujet": 0.84
+        },
+        {
+          "cote": "droite",
+          "score": 0.14,
+          "ton": "moyen",
+          "recouvre_sujet": 0.73
+        }
+      ],
+      "qualite": {
+        "nettete": 43.1,
+        "bruit": 0.5,
+        "compression": 0.98,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "bf07070387c34b4d",
+      "drapeaux": [
+        "produit"
+      ]
+    },
+    {
+      "fichier": "5l-olio-oliva-extravergine-2.jpg",
+      "nom": "5l-olio-oliva-extravergine-2",
+      "drapeau": "produit",
+      "largeur": 1500,
+      "hauteur": 2000,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 188470,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 3.1,
+        "l": 100,
+        "h": 93.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        54,
+        46
+      ],
+      "cadrage_css": "54% 46%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.22,
+          "ton": "clair",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "droite",
+          "score": 0.08,
+          "ton": "moyen",
+          "recouvre_sujet": 0.94
+        },
+        {
+          "cote": "gauche",
+          "score": 0.07,
+          "ton": "clair",
+          "recouvre_sujet": 0.94
+        },
+        {
+          "cote": "bas",
+          "score": 0.07,
+          "ton": "clair",
+          "recouvre_sujet": 0.91
+        }
+      ],
+      "qualite": {
+        "nettete": 32.6,
+        "bruit": 0.39,
+        "compression": 0.99,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "20454d4545454763",
+      "drapeaux": [
+        "produit"
+      ]
+    },
+    {
+      "fichier": "linfa-di-betulla-bio.jpg",
+      "nom": "linfa-di-betulla-bio",
+      "drapeau": "produit",
+      "largeur": 2000,
+      "hauteur": 1500,
+      "ratio": "4:3",
+      "ratio_valeur": 1.333,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 293921,
+      "transparence": false,
+      "sujet": {
+        "x": 21.9,
+        "y": 25,
+        "l": 56.3,
+        "h": 66.7,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        54,
+        56
+      ],
+      "cadrage_css": "54% 56%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.64,
+          "ton": "clair",
+          "recouvre_sujet": 0.16
+        },
+        {
+          "cote": "gauche",
+          "score": 0.54,
+          "ton": "clair",
+          "recouvre_sujet": 0.3
+        },
+        {
+          "cote": "droite",
+          "score": 0.41,
+          "ton": "clair",
+          "recouvre_sujet": 0.3
+        },
+        {
+          "cote": "bas",
+          "score": 0.32,
+          "ton": "clair",
+          "recouvre_sujet": 0.43
+        }
+      ],
+      "qualite": {
+        "nettete": 60.4,
+        "bruit": 0.88,
+        "compression": 1.12,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "929b9b131b5b43c3",
+      "drapeaux": [
+        "produit"
+      ]
+    },
+    {
+      "fichier": "linfa-di-betulla-bio-2.jpg",
+      "nom": "linfa-di-betulla-bio-2",
+      "drapeau": "produit",
+      "largeur": 1408,
+      "hauteur": 1440,
+      "ratio": "1:1",
+      "ratio_valeur": 0.978,
+      "orientation": "carre",
+      "format": "jpeg",
+      "poids": 874791,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 96.9,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        48
+      ],
+      "cadrage_css": "49% 48%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.92
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        }
+      ],
+      "qualite": {
+        "nettete": 54.1,
+        "bruit": 1.27,
+        "compression": 1.18,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "363626e62686b4a6",
+      "drapeaux": [
+        "produit"
+      ]
+    },
+    {
+      "fichier": "anisbrotli-2.jpg",
+      "nom": "anisbrotli-2",
+      "drapeau": "produit",
+      "largeur": 1075,
+      "hauteur": 1463,
+      "ratio": "3:4",
+      "ratio_valeur": 0.735,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 1499507,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.8,
+        "h": 93.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        39,
+        39
+      ],
+      "cadrage_css": "39% 39%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.21,
+          "ton": "clair",
+          "recouvre_sujet": 0.79
+        },
+        {
+          "cote": "droite",
+          "score": 0.13,
+          "ton": "moyen",
+          "recouvre_sujet": 0.84
+        },
+        {
+          "cote": "haut",
+          "score": 0.01,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.94
+        }
+      ],
+      "qualite": {
+        "nettete": 24.5,
+        "bruit": 1.24,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1075 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "d216761239030c80",
+      "drapeaux": [
+        "produit",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "logo-natural-iter.png",
+      "nom": "logo-natural-iter",
+      "drapeau": null,
+      "largeur": 914,
+      "hauteur": 447,
+      "ratio": "2:1",
+      "ratio_valeur": 2.045,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 34027,
+      "transparence": true,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        47
+      ],
+      "cadrage_css": "50% 47%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 56,
+        "bruit": 0.11,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "914 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "0f71882b8b8c4533",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "uliveto-reti-ritaglio.jpg",
+      "nom": "uliveto-reti-ritaglio",
+      "drapeau": null,
+      "largeur": 576,
+      "hauteur": 720,
+      "ratio": "4:5",
+      "ratio_valeur": 0.8,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 203668,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 96.2,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        53,
+        27
+      ],
+      "cadrage_css": "53% 27%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 79.7,
+        "bruit": 2.93,
+        "compression": 0.99,
+        "faible": true,
+        "raisons": [
+          "576 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "4c2c199ccdc08726",
+      "drapeaux": [
+        "petite"
+      ]
+    }
+  ]
+}

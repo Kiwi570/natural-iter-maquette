@@ -1,0 +1,42 @@
+… fichiers
+  fait en 0 s
+… grille
+  fait en 32 s
+… mesures
+  19/66
+  42/66
+  60/66
+  fait en 104 s
+… mesures:balayage
+  fait en 31 s
+… films
+  fait en 138 s
+… bords
+  fait en 65 s
+… parcours:intro
+  fait en 58 s
+… parcours:menu
+  fait en 4 s
+… parcours:liens
+  fait en 135 s
+… parcours:hauteur
+  fait en 34 s
+… parcours:projet
+  fait en 0 s
+… ecran
+  fait en 13 s
+… fluidite
+  fait en 179 s
+… mouvement
+  fait en 95 s
+… vitesse
+  fait en 21 s
+… captures
+  fait en 134 s
+… safari
+  fait en 0 s
+
+Échecs : 61 · À regarder : 69 · Non lancé : 1
+Relancer seulement ce qui a échoué : node _audit/audit.mjs --seulement=fichiers,mesures,parcours
+Rapport : /home/claude/natural-iter/natural-iter-maquette/_audit/rapport/rapport.md (passe 20261123-161655-standard)
+CODE 1

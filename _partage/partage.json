@@ -1,0 +1,186 @@
+{
+  "avertissements": [],
+  "cartes": [
+    {
+      "page": "accueil",
+      "langue": "it",
+      "fichier": "assets/partage/accueil-it.jpg",
+      "gabarit": "droite",
+      "image": "grok/fasce-1280.webp",
+      "poids": 116997,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 573,
+        "h": 630
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 202,
+          "l": 480,
+          "h": 258
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "chi-siamo",
+      "langue": "it",
+      "fichier": "assets/partage/chi-siamo-it.jpg",
+      "gabarit": "droite",
+      "image": "jurg-anni-80-1600.webp",
+      "poids": 112413,
+      "sujet": {
+        "x": 787,
+        "y": 202,
+        "l": 228,
+        "h": 405
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 235,
+          "l": 480,
+          "h": 193
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        },
+        {
+          "x": 600,
+          "y": 0,
+          "l": 90,
+          "h": 630
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "contatti",
+      "langue": "it",
+      "fichier": "assets/partage/contatti-it.jpg",
+      "gabarit": "droite",
+      "image": "grok/mendrisiotto-1280.webp",
+      "poids": 78601,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 573,
+        "h": 630
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "prodotti",
+      "langue": "it",
+      "fichier": "assets/partage/prodotti-it.jpg",
+      "gabarit": "droite",
+      "image": "grok/reti-1280.webp",
+      "poids": 100431,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 630
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 235,
+          "l": 480,
+          "h": 193
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "shop",
+      "langue": "it",
+      "fichier": "assets/partage/shop-it.jpg",
+      "gabarit": "droite",
+      "image": "gamma-800.webp",
+      "poids": 100890,
+      "sujet": {
+        "x": 600,
+        "y": 7,
+        "l": 600,
+        "h": 600
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 170,
+          "l": 480,
+          "h": 322
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    }
+  ]
+}

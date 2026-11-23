@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="it" data-v="1" data-pagina="accueil">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Natural-Iter · Olio extravergine e olive taggiasche, Mendrisio</title>
+<meta name="description" content="Olio extravergine taggiasco del Ponente Ligure, olive, paté e prodotti bio del bosco ticinese. Spedizione gratuita in Svizzera da CHF 150.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://natural-iter-maquette.vercel.app/">
+<style>:root{--fond:#f4eee2;--texte:#22291a;--voile-fond:#2c3420;--ouverture-fond:#2c3420;--menu-fond:#2c3420}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/young-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/modules.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f4eee2">
+<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Natural-Iter">
+<meta property="og:locale" content="it_CH">
+<meta property="og:title" content="Natural-Iter · Olio extravergine e olive taggiasche, Mendrisio">
+<meta property="og:description" content="Olio extravergine taggiasco del Ponente Ligure, olive, paté e prodotti bio del bosco ticinese. Spedizione gratuita in Svizzera da CHF 150.">
+<meta property="og:url" content="https://natural-iter-maquette.vercel.app/">
+<meta property="og:image" content="https://natural-iter-maquette.vercel.app/assets/partage/accueil-it.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Natural-Iter, olio taggiasco dalle fasce liguri alla tavola svizzera">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Store","name":"Natural-Iter di Bassanini Giacomo","url":"https://natural-iter-maquette.vercel.app/","telephone":"+41797037805","email":"naturaliter@outlook.com","address":{"@type":"PostalAddress","streetAddress":"Via Vignalunga 7","postalCode":"6850","addressLocality":"Mendrisio","addressRegion":"TI","addressCountry":"CH"},"founder":"Jürg Raz","employee":{"@type":"Person","name":"Giacomo Bassanini"},"sameAs":["https://www.instagram.com/natural_iter/","https://www.facebook.com/profile.php?id=61551024487038"],"description":"Olio extravergine e olive taggiasche del Ponente Ligure; linfa di betulla e aglio orsino bio da raccolta selvatica certificata Bio Suisse (Waldmuus)."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="vague" aria-hidden="true"><svg class="voile-vague voile-vague--haut" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120 C 240 20 480 20 720 70 S 1200 130 1440 40 V 120 H 0 Z"/></svg><svg class="voile-vague voile-vague--bas" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 C 240 100 480 100 720 50 S 1200 -10 1440 80 V 0 H 0 Z"/></svg><div class="voile-contenu"><img src="/assets/images/logo-240.webp" alt="" width="100" height="49"><span data-voile-libelle>Home</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <img class="ouverture-logo" src="/assets/images/logo-480.webp" alt="" width="180" height="88">
+  <p class="ouverture-ligne">Olio e olive taggiasche · Mendrisio</p>
+  <span class="goccia" data-ouverture-objet></span>
+</div>
+<a class="evitement" href="#contenu">Vai al contenuto</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Home" aria-label="Natural-Iter, Home" aria-current="page">
+      <img src="/assets/images/logo-240.webp" alt="" width="82" height="40">
+    </a>
+    <nav data-nav aria-label="Navigazione principale">
+      <ul><li><a href="/prodotti" data-libelle="Prodotti">Prodotti</a></li><li><a href="/chi-siamo" data-libelle="Chi siamo">Chi siamo</a></li><li><a href="/shop" data-libelle="Shop">Shop</a></li><li><a href="/contatti" data-libelle="Contatti">Contatti</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton bouton--entete" href="/shop" data-libelle="Shop">Acquista</a>
+      <button type="button" class="carrello-bottone" data-panier-ouvrir data-envol-cible aria-label="Carrello"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.3 11.1a2 2 0 0 1-2 1.9H8.3a2 2 0 0 1-2-1.9Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="pet-compte est-vide" data-panier-compte>0</span></button>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Chiudi"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Chiudi</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Home" aria-current="page">Home</a></li><li style="--i:1"><a href="/prodotti" class="menu-lien" data-libelle="Prodotti">Prodotti</a></li><li style="--i:2"><a href="/chi-siamo" class="menu-lien" data-libelle="Chi siamo">Chi siamo</a></li><li style="--i:3"><a href="/shop" class="menu-lien" data-libelle="Shop">Shop</a></li><li style="--i:4"><a href="/contatti" class="menu-lien" data-libelle="Contatti">Contatti</a></li><li style="--i:5"><a href="/shop#buono-regalo" class="menu-lien menu-lien--piccolo" data-libelle="Shop">Buono regalo</a></li></ul>
+  <p class="menu-contatti"><a class="bouton" href="tel:+41797037805">Chiama +41 79 703 78 05</a></p>
+  <p class="menu-nota">Spedizione gratuita in Svizzera da CHF 150</p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="apertura" id="inizio">
+  <div class="apertura-testo">
+    <p class="sopra" data-anime="gsap">Olio extravergine · Ponente Ligure</p>
+    <h1 class="apertura-titolo">
+      <span class="apertura-riga">Olio</span>
+      <span class="olio-parola" data-iris-centre data-effet="olio-titolo" data-testo="taggiasco">taggiasco</span>
+      <span class="apertura-sotto">dalle fasce liguri alla tavola svizzera</span>
+    </h1>
+    <p class="apertura-intro" data-anime="gsap">Olive raccolte in parte ancora acerbe e molite a freddo poche ore dopo la raccolta, sotto i 25 °C. Un olio armonioso, leggermente fruttato, poco amaro.</p>
+    <div class="apertura-azioni" data-anime="gsap">
+      <a href="/shop" class="bouton" data-libelle="Shop" data-action-principale data-survol="magnetique">Vai allo shop</a>
+      <a href="/prodotti" class="bouton bouton--contour" data-libelle="Prodotti">Scopri i prodotti</a>
+    </div>
+    <p class="apertura-info" data-info-cle data-anime="gsap"><span class="punto-giallo" aria-hidden="true"></span>Spedizione gratuita in Svizzera da CHF 150</p>
+  </div>
+  <div class="apertura-scena">
+    <figure class="media apertura-media" data-grok data-fx="parallaxe" data-fx-force="8" style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/fasce-mobile-640.webp 640w, /assets/images/grok/fasce-mobile-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 52vw">
+    <img src="/assets/images/grok/fasce-1280.webp" srcset="/assets/images/grok/fasce-640.webp 640w, /assets/images/grok/fasce-1280.webp 1280w, /assets/images/grok/fasce-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 52vw" alt="Fasce di ulivi sostenute da muretti a secco nel Ponente Ligure, il mare sullo sfondo" width="1280" height="1600" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustrazione generata</figcaption>
+</figure>
+    <figure class="apertura-bottiglia" data-superpose data-anime="gsap">
+      <img src="/assets/images/bottiglia-75-900.webp" srcset="/assets/images/bottiglia-75-560.webp 243w, /assets/images/bottiglia-75-900.webp 389w, /assets/images/bottiglia-75-1300.webp 562w" sizes="(max-width: 760px) 30vw, 13vw" alt="Bottiglia da 75 cl di olio extravergine Natural-Iter" width="389" height="1440" fetchpriority="high" decoding="async">
+    </figure>
+    <div class="cartellino" data-superpose data-anime="gsap" data-panier-produit>
+      <p class="cartellino-nome">Olio extravergine taggiasco, 75 cl</p>
+      <p class="cartellino-prezzo" data-prix>CHF 49.00</p>
+      <button type="button" class="bouton bouton--piccolo" data-panier-ajouter="olio-75" data-nom="Olio extravergine taggiasco 75 cl" data-prix="49" data-image="/assets/images/olio-75-800.webp" aria-label="Aggiungi Olio extravergine taggiasco 75 cl">Aggiungi</button>
+    </div>
+  </div>
+</section>
+<section class="sezione vetrina" id="prodotti">
+  <div class="conteneur sezione-testa">
+    <div>
+      <p class="sopra" data-anime>I nostri prodotti</p>
+      <h2 data-anime="lignes">Sei sapori del <em>Ponente</em></h2>
+    </div>
+    <p class="sezione-testa-lato" data-anime>Olio, olive e paté dalla stessa oliva, la taggiasca. Per quantità diverse da quelle dello shop, chiamaci o scrivici: per le confezioni multiple ci sono prezzi speciali. <a href="/shop" class="freccia" data-libelle="Shop">Tutto lo shop</a></p>
+  </div>
+  <div class="conteneur vetrina-griglia" data-anime="cascade" data-scorri data-vetrina tabindex="0" role="region" aria-label="Prodotti in evidenza, scorrimento orizzontale">
+    <article class="prodotto " id="p-olio-75" data-panier-produit data-categoria="olio" data-prezzo="49" data-nome="Olio extravergine taggiasco 75 cl">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/olio-75-1600.webp" srcset="/assets/images/olio-75-800.webp 800w, /assets/images/olio-75-1600.webp 1600w" sizes="(max-width: 760px) 76vw, 24vw" alt="Bottiglia di olio extravergine taggiasco da 75 cl" width="1600" height="2001" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Olio</span></p>
+    <h3 class="prodotto-nome">Olio extravergine taggiasco</h3>
+    <p class="prodotto-formato">75 cl</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 49.00</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="olio-75" data-nom="Olio extravergine taggiasco 75 cl" data-prix="49" aria-label="Aggiungi Olio extravergine taggiasco 75 cl">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto " id="p-olio-25" data-panier-produit data-categoria="olio" data-prezzo="18.5" data-nome="Olio extravergine taggiasco 25 cl">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/olio-25-1600.webp" srcset="/assets/images/olio-25-800.webp 800w, /assets/images/olio-25-1600.webp 1600w" sizes="(max-width: 760px) 76vw, 24vw" alt="Bottiglia di olio extravergine taggiasco da 25 cl" width="1600" height="2001" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Olio</span></p>
+    <h3 class="prodotto-nome">Olio extravergine taggiasco</h3>
+    <p class="prodotto-formato">25 cl</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 18.50</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="olio-25" data-nom="Olio extravergine taggiasco 25 cl" data-prix="18.5" aria-label="Aggiungi Olio extravergine taggiasco 25 cl">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto " id="p-olio-limone" data-panier-produit data-categoria="olio" data-prezzo="22" data-nome="Olio al limone 25 cl">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/olio-limone-800.webp" srcset="/assets/images/olio-limone-800.webp 800w" sizes="(max-width: 760px) 76vw, 24vw" alt="Olio al limone da 25 cl con limoni freschi" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Olio</span></p>
+    <h3 class="prodotto-nome">Olio al limone</h3>
+    <p class="prodotto-formato">25 cl</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 22.00</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="olio-limone" data-nom="Olio al limone 25 cl" data-prix="22" aria-label="Aggiungi Olio al limone 25 cl">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto " id="p-olive-salamoia" data-panier-produit data-categoria="olive" data-prezzo="11" data-nome="Olive taggiasche in salamoia 210 g">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/olive-salamoia-800.webp" srcset="/assets/images/olive-salamoia-800.webp 800w" sizes="(max-width: 760px) 76vw, 24vw" alt="Vasetto di olive taggiasche in salamoia" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Olive e paté</span></p>
+    <h3 class="prodotto-nome">Olive taggiasche in salamoia</h3>
+    <p class="prodotto-formato">210 g</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 11.00</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="olive-salamoia" data-nom="Olive taggiasche in salamoia 210 g" data-prix="11" aria-label="Aggiungi Olive taggiasche in salamoia 210 g">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto " id="p-olive-snocciolate" data-panier-produit data-categoria="olive" data-prezzo="15" data-nome="Olive taggiasche snocciolate in olio 180 g">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/olive-snocciolate-800.webp" srcset="/assets/images/olive-snocciolate-800.webp 800w" sizes="(max-width: 760px) 76vw, 24vw" alt="Vasetto di olive taggiasche snocciolate in olio" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Olive e paté</span></p>
+    <h3 class="prodotto-nome">Olive taggiasche snocciolate in olio</h3>
+    <p class="prodotto-formato">180 g</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 15.00</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="olive-snocciolate" data-nom="Olive taggiasche snocciolate in olio 180 g" data-prix="15" aria-label="Aggiungi Olive taggiasche snocciolate in olio 180 g">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto " id="p-pate" data-panier-produit data-categoria="olive" data-prezzo="8.5" data-nome="Paté di olive taggiasche 90 g">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pate-800.webp" srcset="/assets/images/pate-800.webp 800w" sizes="(max-width: 760px) 76vw, 24vw" alt="Paté di olive taggiasche spalmato sul pane" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Olive e paté</span></p>
+    <h3 class="prodotto-nome">Paté di olive taggiasche</h3>
+    <p class="prodotto-formato">90 g</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 8.50</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="pate" data-nom="Paté di olive taggiasche 90 g" data-prix="8.5" aria-label="Aggiungi Paté di olive taggiasche 90 g">Aggiungi</button>
+    </div>
+  </div>
+</article>
+  </div>
+  <div class="conteneur vetrina-comandi">
+    <p class="scorri-nota" aria-hidden="true">Scorri per vedere tutti i prodotti</p>
+    <div class="vetrina-avanzamento" aria-hidden="true"><span></span></div>
+    <div class="vetrina-frecce">
+      <button type="button" data-vetrina-prec aria-label="Prodotti precedenti"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button type="button" data-vetrina-succ aria-label="Prodotti successivi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+  </div>
+</section>
+<section class="sezione taggiasca fondo-salvia" id="taggiasca">
+  <div class="conteneur taggiasca-griglia">
+    <div class="taggiasca-immagini">
+      <figure class="media taggiasca-media" data-grok data-fx="zoom" style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/muretto-mobile-640.webp 640w, /assets/images/grok/muretto-mobile-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 55vw">
+    <img src="/assets/images/grok/muretto-1280.webp" srcset="/assets/images/grok/muretto-640.webp 640w, /assets/images/grok/muretto-1280.webp 1280w, /assets/images/grok/muretto-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 55vw" alt="Muretto a secco e vecchio ulivo su una fascia ligure" width="1280" height="720" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustrazione generata</figcaption>
+</figure>
+      <figure class="media taggiasca-reale" data-superpose data-fx="vitesse" data-fx-force="2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/uliveto-reti-800.webp" srcset="/assets/images/uliveto-reti-640.webp 640w, /assets/images/uliveto-reti-800.webp 800w" sizes="(max-width: 760px) 40vw, 16vw" alt="Uliveto con le reti di raccolta stese sotto gli alberi" width="800" height="1000" loading="lazy" decoding="async">
+  </picture><figcaption class="media-legende">Le reti stese sotto gli ulivi. Foto Natural-Iter</figcaption>
+</figure>
+    </div>
+    <div class="taggiasca-testo">
+      <p class="sopra" data-anime>L&#39;oliva taggiasca</p>
+      <h2 data-anime="lignes">Piccola, coltivata <em>sulle fasce</em></h2>
+      <p data-anime>La taggiasca cresce nel Ponente Ligure, la parte occidentale della Liguria che guarda il mare. È un&#39;oliva dal frutto piccolo, coltivata da sempre su terrazze strette sostenute da muretti a secco, dove quasi tutto il lavoro si fa a mano.</p>
+      <ul class="fatti" data-anime="cascade">
+        <li><strong>Ponente Ligure</strong><span>La riviera di ponente, tra il mare e le colline.</span></li>
+        <li><strong>Fasce e muretti a secco</strong><span>Terrazze strappate al pendio, pietra su pietra.</span></li>
+        <li><strong>Quasi tutto a mano</strong><span>Sulle fasce il lavoro si fa ancora in gran parte a mano.</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="muretto-fascia" data-effet="muretto"><svg class="muretto" viewBox="0 0 1440 120" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false"><path class="pietra" d="M3.7 7.0 L72.6 6.1 Q76.6 6.1 76.6 10.1 L76.9 24.5 Q76.9 28.5 72.9 28.5 L4.9 28.1 Q0.9 28.1 0.9 24.1 L-0.3 11.0 Q-0.3 7.0 3.7 7.0 Z" fill="#a99e85" style="--x:0.027;--r:3"/><path class="pietra" d="M85.5 7.2 L128.9 5.4 Q132.9 5.4 132.9 9.4 L132.1 24.9 Q132.1 28.9 128.1 28.9 L85.5 28.6 Q81.5 28.6 81.5 24.6 L81.5 11.2 Q81.5 7.2 85.5 7.2 Z" fill="#ddd5c3" style="--x:0.074;--r:3"/><path class="pietra" d="M143.0 4.8 L191.3 6.2 Q195.3 6.2 195.3 10.2 L197.9 23.8 Q197.9 27.8 193.9 27.8 L140.9 29.1 Q136.9 29.1 136.9 25.1 L139.0 8.8 Q139.0 4.8 143.0 4.8 Z" fill="#ddd5c3" style="--x:0.116;--r:3"/><path class="pietra" d="M207.1 7.1 L248.0 6.3 Q252.0 6.3 252.0 10.3 L251.1 25.0 Q251.1 29.0 247.1 29.0 L207.1 28.2 Q203.1 28.2 203.1 24.2 L203.1 11.1 Q203.1 7.1 207.1 7.1 Z" fill="#c7bca4" style="--x:0.157;--r:3"/><path class="pietra" d="M259.2 10.5 L352.7 9.1 Q356.7 9.1 356.7 13.1 L354.0 24.7 Q354.0 28.7 350.0 28.7 L255.6 29.2 Q251.6 29.2 251.6 25.2 L255.2 14.5 Q255.2 10.5 259.2 10.5 Z" fill="#cbc2ad" style="--x:0.212;--r:3"/><path class="pietra" d="M360.7 9.3 L425.5 9.0 Q429.5 9.0 429.5 13.0 L428.1 24.5 Q428.1 28.5 424.1 28.5 L365.0 28.4 Q361.0 28.4 361.0 24.4 L356.7 13.3 Q356.7 9.3 360.7 9.3 Z" fill="#bfb6a0" style="--x:0.273;--r:3"/><path class="pietra" d="M436.8 6.6 L541.7 5.5 Q545.7 5.5 545.7 9.5 L544.8 25.0 Q544.8 29.0 540.8 29.0 L433.3 28.3 Q429.3 28.3 429.3 24.3 L432.8 10.6 Q432.8 6.6 436.8 6.6 Z" fill="#ddd5c3" style="--x:0.340;--r:3"/><path class="pietra" d="M553.1 6.6 L615.3 7.0 Q619.3 7.0 619.3 11.0 L621.2 25.1 Q621.2 29.1 617.2 29.1 L553.1 29.2 Q549.1 29.2 549.1 25.2 L549.1 10.6 Q549.1 6.6 553.1 6.6 Z" fill="#bfb6a0" style="--x:0.407;--r:3"/><path class="pietra" d="M628.3 8.2 L721.0 7.3 Q725.0 7.3 725.0 11.3 L723.3 24.5 Q723.3 28.5 719.3 28.5 L627.7 29.2 Q623.7 29.2 623.7 25.2 L624.3 12.2 Q624.3 8.2 628.3 8.2 Z" fill="#ddd5c3" style="--x:0.468;--r:3"/><path class="pietra" d="M730.5 6.4 L834.6 4.7 Q838.6 4.7 838.6 8.7 L839.2 24.3 Q839.2 28.3 835.2 28.3 L734.1 28.5 Q730.1 28.5 730.1 24.5 L726.5 10.4 Q726.5 6.4 730.5 6.4 Z" fill="#ddd5c3" style="--x:0.544;--r:3"/><path class="pietra" d="M847.1 5.9 L895.5 5.6 Q899.5 5.6 899.5 9.6 L899.9 25.0 Q899.9 29.0 895.9 29.0 L845.3 27.8 Q841.3 27.8 841.3 23.8 L843.1 9.9 Q843.1 5.9 847.1 5.9 Z" fill="#d6ccb7" style="--x:0.605;--r:3"/><path class="pietra" d="M907.7 8.1 L944.2 7.6 Q948.2 7.6 948.2 11.6 L951.6 24.5 Q951.6 28.5 947.6 28.5 L910.0 28.0 Q906.0 28.0 906.0 24.0 L903.7 12.1 Q903.7 8.1 907.7 8.1 Z" fill="#a99e85" style="--x:0.644;--r:3"/><path class="pietra" d="M956.0 5.7 L1028.4 5.6 Q1032.4 5.6 1032.4 9.6 L1030.8 24.5 Q1030.8 28.5 1026.8 28.5 L957.2 27.9 Q953.2 27.9 953.2 23.9 L952.0 9.7 Q952.0 5.7 956.0 5.7 Z" fill="#a99e85" style="--x:0.689;--r:3"/><path class="pietra" d="M1040.1 6.3 L1135.6 6.7 Q1139.6 6.7 1139.6 10.7 L1136.2 24.6 Q1136.2 28.6 1132.2 28.6 L1039.2 28.0 Q1035.2 28.0 1035.2 24.0 L1036.1 10.3 Q1036.1 6.3 1040.1 6.3 Z" fill="#ddd5c3" style="--x:0.755;--r:3"/><path class="pietra" d="M1144.5 7.3 L1250.1 7.0 Q1254.1 7.0 1254.1 11.0 L1251.1 24.2 Q1251.1 28.2 1247.1 28.2 L1144.9 28.2 Q1140.9 28.2 1140.9 24.2 L1140.5 11.3 Q1140.5 7.3 1144.5 7.3 Z" fill="#bfb6a0" style="--x:0.831;--r:3"/><path class="pietra" d="M1260.0 7.3 L1345.3 7.9 Q1349.3 7.9 1349.3 11.9 L1347.1 24.9 Q1347.1 28.9 1343.1 28.9 L1261.8 27.8 Q1257.8 27.8 1257.8 23.8 L1256.0 11.3 Q1256.0 7.3 1260.0 7.3 Z" fill="#cbc2ad" style="--x:0.905;--r:3"/><path class="pietra" d="M1355.1 8.4 L1429.9 8.6 Q1433.9 8.6 1433.9 12.6 L1430.3 24.0 Q1430.3 28.0 1426.3 28.0 L1356.9 28.5 Q1352.9 28.5 1352.9 24.5 L1351.1 12.4 Q1351.1 8.4 1355.1 8.4 Z" fill="#bfb6a0" style="--x:0.967;--r:3"/><path class="pietra" d="M1438.0 7.0 L1529.7 8.1 Q1533.7 8.1 1533.7 12.1 L1532.2 23.9 Q1532.2 27.9 1528.2 27.9 L1439.4 29.2 Q1435.4 29.2 1435.4 25.2 L1434.0 11.0 Q1434.0 7.0 1438.0 7.0 Z" fill="#cbc2ad" style="--x:1.031;--r:3"/><path class="pietra" d="M4.9 38.1 L79.3 37.3 Q83.3 37.3 83.3 41.3 L86.0 54.7 Q86.0 58.7 82.0 58.7 L1.3 58.6 Q-2.7 58.6 -2.7 54.6 L0.9 42.1 Q0.9 38.1 4.9 38.1 Z" fill="#b9ae95" style="--x:0.029;--r:2"/><path class="pietra" d="M89.6 38.9 L175.3 39.5 Q179.3 39.5 179.3 43.5 L178.8 54.0 Q178.8 58.0 174.8 58.0 L90.5 58.9 Q86.5 58.9 86.5 54.9 L85.6 42.9 Q85.6 38.9 89.6 38.9 Z" fill="#cbc2ad" style="--x:0.092;--r:2"/><path class="pietra" d="M187.2 37.8 L225.9 38.1 Q229.9 38.1 229.9 42.1 L229.1 53.9 Q229.1 57.9 225.1 57.9 L185.6 58.9 Q181.6 58.9 181.6 54.9 L183.2 41.8 Q183.2 37.8 187.2 37.8 Z" fill="#bfb6a0" style="--x:0.143;--r:2"/><path class="pietra" d="M240.5 38.9 L314.0 39.2 Q318.0 39.2 318.0 43.2 L316.7 54.8 Q316.7 58.8 312.7 58.8 L240.3 58.0 Q236.3 58.0 236.3 54.0 L236.5 42.9 Q236.5 38.9 240.5 38.9 Z" fill="#bfb6a0" style="--x:0.191;--r:2"/><path class="pietra" d="M326.4 36.6 L361.4 36.8 Q365.4 36.8 365.4 40.8 L360.7 53.8 Q360.7 57.8 356.7 57.8 L324.0 57.8 Q320.0 57.8 320.0 53.8 L322.4 40.6 Q322.4 36.6 326.4 36.6 Z" fill="#ddd5c3" style="--x:0.237;--r:2"/><path class="pietra" d="M371.1 36.4 L447.7 37.8 Q451.7 37.8 451.7 41.8 L451.3 53.8 Q451.3 57.8 447.3 57.8 L373.2 58.4 Q369.2 58.4 369.2 54.4 L367.1 40.4 Q367.1 36.4 371.1 36.4 Z" fill="#bfb6a0" style="--x:0.285;--r:2"/><path class="pietra" d="M463.2 35.7 L521.1 36.1 Q525.1 36.1 525.1 40.1 L524.2 55.2 Q524.2 59.2 520.2 59.2 L461.8 57.9 Q457.8 57.9 457.8 53.9 L459.2 39.7 Q459.2 35.7 463.2 35.7 Z" fill="#ddd5c3" style="--x:0.341;--r:2"/><path class="pietra" d="M531.3 36.8 L611.5 36.8 Q615.5 36.8 615.5 40.8 L618.9 54.8 Q618.9 58.8 614.9 58.8 L530.9 58.5 Q526.9 58.5 526.9 54.5 L527.3 40.8 Q527.3 36.8 531.3 36.8 Z" fill="#b9ae95" style="--x:0.398;--r:2"/><path class="pietra" d="M623.4 39.8 L706.4 40.1 Q710.4 40.1 710.4 44.1 L708.9 53.9 Q708.9 57.9 704.9 57.9 L624.9 59.2 Q620.9 59.2 620.9 55.2 L619.4 43.8 Q619.4 39.8 623.4 39.8 Z" fill="#a99e85" style="--x:0.462;--r:2"/><path class="pietra" d="M715.5 37.5 L807.8 38.1 Q811.8 38.1 811.8 42.1 L809.9 54.5 Q809.9 58.5 805.9 58.5 L716.6 58.8 Q712.6 58.8 712.6 54.8 L711.5 41.5 Q711.5 37.5 715.5 37.5 Z" fill="#b9ae95" style="--x:0.528;--r:2"/><path class="pietra" d="M815.5 38.4 L880.9 39.0 Q884.9 39.0 884.9 43.0 L884.6 54.9 Q884.6 58.9 880.6 58.9 L816.7 58.4 Q812.7 58.4 812.7 54.4 L811.5 42.4 Q811.5 38.4 815.5 38.4 Z" fill="#bfb6a0" style="--x:0.589;--r:2"/><path class="pietra" d="M892.1 35.1 L937.1 34.9 Q941.1 34.9 941.1 38.9 L939.4 54.8 Q939.4 58.8 935.4 58.8 L893.4 59.0 Q889.4 59.0 889.4 55.0 L888.1 39.1 Q888.1 35.1 892.1 35.1 Z" fill="#d6ccb7" style="--x:0.635;--r:2"/><path class="pietra" d="M946.2 38.5 L1003.3 40.0 Q1007.3 40.0 1007.3 44.0 L1007.3 54.9 Q1007.3 58.9 1003.3 58.9 L947.0 58.4 Q943.0 58.4 943.0 54.4 L942.2 42.5 Q942.2 38.5 946.2 38.5 Z" fill="#a99e85" style="--x:0.678;--r:2"/><path class="pietra" d="M1016.9 38.1 L1051.7 39.2 Q1055.7 39.2 1055.7 43.2 L1054.3 54.8 Q1054.3 58.8 1050.3 58.8 L1016.3 58.4 Q1012.3 58.4 1012.3 54.4 L1012.9 42.1 Q1012.9 38.1 1016.9 38.1 Z" fill="#a99e85" style="--x:0.719;--r:2"/><path class="pietra" d="M1063.9 38.5 L1163.8 38.4 Q1167.8 38.4 1167.8 42.4 L1163.6 54.0 Q1163.6 58.0 1159.6 58.0 L1062.1 57.9 Q1058.1 57.9 1058.1 53.9 L1059.9 42.5 Q1059.9 38.5 1063.9 38.5 Z" fill="#d6ccb7" style="--x:0.773;--r:2"/><path class="pietra" d="M1174.4 39.7 L1213.6 39.5 Q1217.6 39.5 1217.6 43.5 L1216.2 55.2 Q1216.2 59.2 1212.2 59.2 L1172.2 58.9 Q1168.2 58.9 1168.2 54.9 L1170.4 43.7 Q1170.4 39.7 1174.4 39.7 Z" fill="#cbc2ad" style="--x:0.829;--r:2"/><path class="pietra" d="M1226.2 37.9 L1320.9 38.9 Q1324.9 38.9 1324.9 42.9 L1320.7 54.2 Q1320.7 58.2 1316.7 58.2 L1228.6 57.8 Q1224.6 57.8 1224.6 53.8 L1222.2 41.9 Q1222.2 37.9 1226.2 37.9 Z" fill="#ddd5c3" style="--x:0.884;--r:2"/><path class="pietra" d="M1333.0 38.8 L1428.4 39.2 Q1432.4 39.2 1432.4 43.2 L1431.7 54.4 Q1431.7 58.4 1427.7 58.4 L1331.8 58.9 Q1327.8 58.9 1327.8 54.9 L1329.0 42.8 Q1329.0 38.8 1333.0 38.8 Z" fill="#bfb6a0" style="--x:0.959;--r:2"/><path class="pietra" d="M1440.6 37.4 L1495.9 37.1 Q1499.9 37.1 1499.9 41.1 L1503.2 53.9 Q1503.2 57.9 1499.2 57.9 L1444.3 57.9 Q1440.3 57.9 1440.3 53.9 L1436.6 41.4 Q1436.6 37.4 1440.6 37.4 Z" fill="#ddd5c3" style="--x:1.020;--r:2"/><path class="pietra" d="M-1.1 65.3 L39.0 65.5 Q43.0 65.5 43.0 69.5 L44.8 84.9 Q44.8 88.9 40.8 88.9 L0.1 88.2 Q-3.9 88.2 -3.9 84.2 L-5.1 69.3 Q-5.1 65.3 -1.1 65.3 Z" fill="#ddd5c3" style="--x:0.013;--r:1"/><path class="pietra" d="M52.5 65.7 L105.1 63.8 Q109.1 63.8 109.1 67.8 L106.7 84.7 Q106.7 88.7 102.7 88.7 L50.6 88.5 Q46.6 88.5 46.6 84.5 L48.5 69.7 Q48.5 65.7 52.5 65.7 Z" fill="#a99e85" style="--x:0.054;--r:1"/><path class="pietra" d="M118.6 67.6 L196.7 68.3 Q200.7 68.3 200.7 72.3 L199.4 84.3 Q199.4 88.3 195.4 88.3 L115.5 87.9 Q111.5 87.9 111.5 83.9 L114.6 71.6 Q114.6 67.6 118.6 67.6 Z" fill="#ddd5c3" style="--x:0.109;--r:1"/><path class="pietra" d="M208.3 67.0 L307.5 67.4 Q311.5 67.4 311.5 71.4 L314.9 84.8 Q314.9 88.8 310.9 88.8 L208.5 87.9 Q204.5 87.9 204.5 83.9 L204.3 71.0 Q204.3 67.0 208.3 67.0 Z" fill="#ddd5c3" style="--x:0.180;--r:1"/><path class="pietra" d="M322.7 66.5 L425.5 66.0 Q429.5 66.0 429.5 70.0 L430.4 85.1 Q430.4 89.1 426.4 89.1 L322.6 88.3 Q318.6 88.3 318.6 84.3 L318.7 70.5 Q318.7 66.5 322.7 66.5 Z" fill="#a99e85" style="--x:0.259;--r:1"/><path class="pietra" d="M435.3 68.5 L541.0 68.4 Q545.0 68.4 545.0 72.4 L543.5 83.9 Q543.5 87.9 539.5 87.9 L438.3 88.6 Q434.3 88.6 434.3 84.6 L431.3 72.5 Q431.3 68.5 435.3 68.5 Z" fill="#cbc2ad" style="--x:0.340;--r:1"/><path class="pietra" d="M552.1 66.6 L654.4 67.8 Q658.4 67.8 658.4 71.8 L658.2 85.1 Q658.2 89.1 654.2 89.1 L553.6 88.4 Q549.6 88.4 549.6 84.4 L548.1 70.6 Q548.1 66.6 552.1 66.6 Z" fill="#c7bca4" style="--x:0.420;--r:1"/><path class="pietra" d="M666.9 69.3 L755.4 69.0 Q759.4 69.0 759.4 73.0 L760.7 84.2 Q760.7 88.2 756.7 88.2 L666.6 88.6 Q662.6 88.6 662.6 84.6 L662.9 73.3 Q662.9 69.3 666.9 69.3 Z" fill="#ddd5c3" style="--x:0.494;--r:1"/><path class="pietra" d="M770.2 64.4 L816.6 65.6 Q820.6 65.6 820.6 69.6 L819.1 85.0 Q819.1 89.0 815.1 89.0 L767.2 88.9 Q763.2 88.9 763.2 84.9 L766.2 68.4 Q766.2 64.4 770.2 64.4 Z" fill="#ddd5c3" style="--x:0.551;--r:1"/><path class="pietra" d="M828.4 65.9 L885.2 65.3 Q889.2 65.3 889.2 69.3 L886.0 84.5 Q886.0 88.5 882.0 88.5 L830.9 88.4 Q826.9 88.4 826.9 84.4 L824.4 69.9 Q824.4 65.9 828.4 65.9 Z" fill="#a99e85" style="--x:0.595;--r:1"/><path class="pietra" d="M895.5 68.6 L994.9 68.7 Q998.9 68.7 998.9 72.7 L995.3 84.7 Q995.3 88.7 991.3 88.7 L897.6 88.0 Q893.6 88.0 893.6 84.0 L891.5 72.6 Q891.5 68.6 895.5 68.6 Z" fill="#c7bca4" style="--x:0.656;--r:1"/><path class="pietra" d="M1004.2 65.3 L1106.1 65.7 Q1110.1 65.7 1110.1 69.7 L1107.9 84.9 Q1107.9 88.9 1103.9 88.9 L1006.4 88.8 Q1002.4 88.8 1002.4 84.8 L1000.2 69.3 Q1000.2 65.3 1004.2 65.3 Z" fill="#c7bca4" style="--x:0.733;--r:1"/><path class="pietra" d="M1117.4 65.0 L1171.3 64.4 Q1175.3 64.4 1175.3 68.4 L1174.1 84.3 Q1174.1 88.3 1170.1 88.3 L1115.1 88.8 Q1111.1 88.8 1111.1 84.8 L1113.4 69.0 Q1113.4 65.0 1117.4 65.0 Z" fill="#c7bca4" style="--x:0.794;--r:1"/><path class="pietra" d="M1184.0 68.9 L1234.4 67.6 Q1238.4 67.6 1238.4 71.6 L1241.6 85.1 Q1241.6 89.1 1237.6 89.1 L1182.3 88.0 Q1178.3 88.0 1178.3 84.0 L1180.0 72.9 Q1180.0 68.9 1184.0 68.9 Z" fill="#c7bca4" style="--x:0.840;--r:1"/><path class="pietra" d="M1250.5 67.2 L1293.6 66.4 Q1297.6 66.4 1297.6 70.4 L1299.2 85.0 Q1299.2 89.0 1295.2 89.0 L1250.9 88.1 Q1246.9 88.1 1246.9 84.1 L1246.5 71.2 Q1246.5 67.2 1250.5 67.2 Z" fill="#bfb6a0" style="--x:0.883;--r:1"/><path class="pietra" d="M1307.6 67.1 L1342.3 68.4 Q1346.3 68.4 1346.3 72.4 L1347.6 84.8 Q1347.6 88.8 1343.6 88.8 L1304.1 88.6 Q1300.1 88.6 1300.1 84.6 L1303.6 71.1 Q1303.6 67.1 1307.6 67.1 Z" fill="#ddd5c3" style="--x:0.920;--r:1"/><path class="pietra" d="M1358.5 66.9 L1447.4 67.3 Q1451.4 67.3 1451.4 71.3 L1449.0 84.7 Q1449.0 88.7 1445.0 88.7 L1354.5 88.0 Q1350.5 88.0 1350.5 84.0 L1354.5 70.9 Q1354.5 66.9 1358.5 66.9 Z" fill="#bfb6a0" style="--x:0.973;--r:1"/><path class="pietra" d="M-19.0 99.1 L76.9 99.1 Q80.9 99.1 80.9 103.1 L80.8 114.8 Q80.8 118.8 76.8 118.8 L-20.3 118.4 Q-24.3 118.4 -24.3 114.4 L-23.0 103.1 Q-23.0 99.1 -19.0 99.1 Z" fill="#c7bca4" style="--x:0.020;--r:0"/><path class="pietra" d="M89.3 97.8 L196.3 98.8 Q200.3 98.8 200.3 102.8 L196.7 114.1 Q196.7 118.1 192.7 118.1 L88.2 118.9 Q84.2 118.9 84.2 114.9 L85.3 101.8 Q85.3 97.8 89.3 97.8 Z" fill="#c7bca4" style="--x:0.098;--r:0"/><path class="pietra" d="M208.3 97.9 L276.7 97.9 Q280.7 97.9 280.7 101.9 L278.3 114.5 Q278.3 118.5 274.3 118.5 L204.1 118.7 Q200.1 118.7 200.1 114.7 L204.3 101.9 Q204.3 97.9 208.3 97.9 Z" fill="#ddd5c3" style="--x:0.167;--r:0"/><path class="pietra" d="M287.1 99.1 L388.8 97.8 Q392.8 97.8 392.8 101.8 L392.3 114.4 Q392.3 118.4 388.3 118.4 L288.1 119.2 Q284.1 119.2 284.1 115.2 L283.1 103.1 Q283.1 99.1 287.1 99.1 Z" fill="#d6ccb7" style="--x:0.235;--r:0"/><path class="pietra" d="M400.6 96.9 L447.4 95.3 Q451.4 95.3 451.4 99.3 L450.4 114.3 Q450.4 118.3 446.4 118.3 L397.8 118.8 Q393.8 118.8 393.8 114.8 L396.6 100.9 Q396.6 96.9 400.6 96.9 Z" fill="#ddd5c3" style="--x:0.293;--r:0"/><path class="pietra" d="M454.9 96.1 L547.6 94.7 Q551.6 94.7 551.6 98.7 L552.5 114.8 Q552.5 118.8 548.5 118.8 L456.7 117.9 Q452.7 117.9 452.7 113.9 L450.9 100.1 Q450.9 96.1 454.9 96.1 Z" fill="#a99e85" style="--x:0.349;--r:0"/><path class="pietra" d="M560.2 95.8 L614.5 95.2 Q618.5 95.2 618.5 99.2 L615.6 114.4 Q615.6 118.4 611.6 118.4 L559.2 118.4 Q555.2 118.4 555.2 114.4 L556.2 99.8 Q556.2 95.8 560.2 95.8 Z" fill="#cbc2ad" style="--x:0.408;--r:0"/><path class="pietra" d="M624.8 98.4 L682.6 97.5 Q686.6 97.5 686.6 101.5 L683.2 114.1 Q683.2 118.1 679.2 118.1 L626.6 118.6 Q622.6 118.6 622.6 114.6 L620.8 102.4 Q620.8 98.4 624.8 98.4 Z" fill="#c7bca4" style="--x:0.454;--r:0"/><path class="pietra" d="M695.2 98.1 L734.6 98.3 Q738.6 98.3 738.6 102.3 L740.3 114.2 Q740.3 118.2 736.3 118.2 L690.4 119.0 Q686.4 119.0 686.4 115.0 L691.2 102.1 Q691.2 98.1 695.2 98.1 Z" fill="#a99e85" style="--x:0.496;--r:0"/><path class="pietra" d="M744.8 95.4 L805.3 94.7 Q809.3 94.7 809.3 98.7 L809.0 114.5 Q809.0 118.5 805.0 118.5 L748.9 118.7 Q744.9 118.7 744.9 114.7 L740.8 99.4 Q740.8 95.4 744.8 95.4 Z" fill="#ddd5c3" style="--x:0.539;--r:0"/><path class="pietra" d="M818.4 96.8 L855.5 96.0 Q859.5 96.0 859.5 100.0 L860.4 114.0 Q860.4 118.0 856.4 118.0 L816.6 117.9 Q812.6 117.9 812.6 113.9 L814.4 100.8 Q814.4 96.8 818.4 96.8 Z" fill="#ddd5c3" style="--x:0.581;--r:0"/><path class="pietra" d="M867.4 96.3 L954.1 95.1 Q958.1 95.1 958.1 99.1 L959.7 114.5 Q959.7 118.5 955.7 118.5 L866.7 118.2 Q862.7 118.2 862.7 114.2 L863.4 100.3 Q863.4 96.3 867.4 96.3 Z" fill="#cbc2ad" style="--x:0.633;--r:0"/><path class="pietra" d="M967.7 93.7 L1066.9 95.6 Q1070.9 95.6 1070.9 99.6 L1068.8 114.6 Q1068.8 118.6 1064.8 118.6 L967.1 118.6 Q963.1 118.6 963.1 114.6 L963.7 97.7 Q963.7 93.7 967.7 93.7 Z" fill="#a99e85" style="--x:0.706;--r:0"/><path class="pietra" d="M1075.4 97.7 L1120.9 97.2 Q1124.9 97.2 1124.9 101.2 L1126.7 114.9 Q1126.7 118.9 1122.7 118.9 L1076.0 117.8 Q1072.0 117.8 1072.0 113.8 L1071.4 101.7 Q1071.4 97.7 1075.4 97.7 Z" fill="#b9ae95" style="--x:0.763;--r:0"/><path class="pietra" d="M1130.6 96.7 L1169.3 96.4 Q1173.3 96.4 1173.3 100.4 L1173.3 114.8 Q1173.3 118.8 1169.3 118.8 L1134.3 118.0 Q1130.3 118.0 1130.3 114.0 L1126.6 100.7 Q1126.6 96.7 1130.6 96.7 Z" fill="#b9ae95" style="--x:0.799;--r:0"/><path class="pietra" d="M1182.4 98.2 L1221.4 99.3 Q1225.4 99.3 1225.4 103.3 L1226.9 114.7 Q1226.9 118.7 1222.9 118.7 L1179.9 118.3 Q1175.9 118.3 1175.9 114.3 L1178.4 102.2 Q1178.4 98.2 1182.4 98.2 Z" fill="#c7bca4" style="--x:0.834;--r:0"/><path class="pietra" d="M1234.3 97.9 L1285.1 99.0 Q1289.1 99.0 1289.1 103.0 L1292.8 114.9 Q1292.8 118.9 1288.8 118.9 L1234.9 118.7 Q1230.9 118.7 1230.9 114.7 L1230.3 101.9 Q1230.3 97.9 1234.3 97.9 Z" fill="#c7bca4" style="--x:0.876;--r:0"/><path class="pietra" d="M1300.2 98.2 L1345.5 97.8 Q1349.5 97.8 1349.5 101.8 L1352.0 115.2 Q1352.0 119.2 1348.0 119.2 L1301.3 117.9 Q1297.3 117.9 1297.3 113.9 L1296.2 102.2 Q1296.2 98.2 1300.2 98.2 Z" fill="#bfb6a0" style="--x:0.919;--r:0"/><path class="pietra" d="M1358.2 98.5 L1429.7 99.5 Q1433.7 99.5 1433.7 103.5 L1431.9 113.8 Q1431.9 117.8 1427.9 117.8 L1359.5 118.4 Q1355.5 118.4 1355.5 114.4 L1354.2 102.5 Q1354.2 98.5 1358.2 98.5 Z" fill="#c7bca4" style="--x:0.968;--r:0"/><path class="pietra" d="M1439.2 98.7 L1542.3 97.8 Q1546.3 97.8 1546.3 101.8 L1547.8 114.8 Q1547.8 118.8 1543.8 118.8 L1437.9 118.0 Q1433.9 118.0 1433.9 114.0 L1435.2 102.7 Q1435.2 98.7 1439.2 98.7 Z" fill="#bfb6a0" style="--x:1.036;--r:0"/></svg></div>
+</section>
+<section class="sezione filiera fondo-oliva" id="filiera">
+  <div class="conteneur sezione-testa">
+    <div>
+      <p class="sopra" data-anime>Dall&#39;oliva alla bottiglia</p>
+      <h2 data-anime="lignes">Poche ore tra l'albero e il <em>frantoio</em></h2>
+    </div>
+    <p class="sezione-testa-lato" data-anime>«Nella nostra produzione viene messa la qualità prima di tutto»: ogni passaggio serve a conservare il profumo dell&#39;oliva.</p>
+  </div>
+  <ol class="conteneur passi" data-anime="cascade" tabindex="0" aria-label="Dall&#39;oliva alla bottiglia">
+    <li class="passo">
+      <figure class="media passo-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/raccolta-1600.webp" srcset="/assets/images/grok/raccolta-1024.webp 1024w, /assets/images/grok/raccolta-1168.webp 1168w, /assets/images/grok/raccolta-1600.webp 1600w" sizes="(max-width: 760px) 80vw, 24vw" alt="Olive taggiasche appena cadute sulla rete di raccolta" width="1600" height="2000" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustrazione generata</figcaption>
+</figure>
+      <p class="passo-numero">01</p><h3>Raccolta precoce</h3><p>Le olive si raccolgono quando sono in parte ancora acerbe.</p>
+    </li>
+    <li class="passo">
+      <figure class="media passo-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/frantoio-1600.webp" srcset="/assets/images/grok/frantoio-1024.webp 1024w, /assets/images/grok/frantoio-1168.webp 1168w, /assets/images/grok/frantoio-1600.webp 1600w" sizes="(max-width: 760px) 80vw, 24vw" alt="Olio appena estratto che scende in una vasca d&#39;acciaio" width="1600" height="2000" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustrazione generata</figcaption>
+</figure>
+      <p class="passo-numero">02</p><h3>Subito al frantoio</h3><p>L&#39;olio viene estratto poche ore dopo la raccolta, solo con metodi meccanici.</p>
+    </li>
+    <li class="passo passo--termometro">
+      <div class="passo-media passo-disegno" data-visuel data-effet="termometro"><svg class="termometro" viewBox="0 0 120 300" aria-hidden="true" focusable="false">
+  <defs><clipPath id="tubo"><rect x="44" y="30" width="32" height="225" rx="16"/><circle cx="60" cy="262" r="28"/></clipPath></defs>
+  <rect class="termometro-vetro" x="44" y="30" width="32" height="225" rx="16"/>
+  <circle class="termometro-vetro" cx="60" cy="262" r="28"/>
+  <g clip-path="url(#tubo)">
+    <rect class="termometro-colonna" x="40" y="60" width="40" height="240"/>
+    <circle class="termometro-colonna" cx="60" cy="262" r="30"/>
+  </g>
+  <g class="termometro-scala">
+    <line x1="80" y1="70" x2="92" y2="70"/><line x1="80" y1="110" x2="92" y2="110"/>
+    <line class="termometro-soglia" x1="20" y1="150" x2="100" y2="150"/>
+    <line x1="80" y1="190" x2="92" y2="190"/><line x1="80" y1="230" x2="92" y2="230"/>
+  </g>
+</svg><p class="termometro-etichetta">25 °C</p></div>
+      <p class="passo-numero">03</p><h3>Sotto i 25 °C</h3><p>La molitura avviene a freddo: la temperatura resta sotto i 25 °C.</p>
+    </li>
+    <li class="passo">
+      <figure class="media passo-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/olio-25-1600.webp" srcset="/assets/images/olio-25-800.webp 800w, /assets/images/olio-25-1600.webp 1600w" sizes="(max-width: 760px) 80vw, 24vw" alt="Bottiglia da 25 cl di olio extravergine taggiasco" width="1600" height="2001" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <p class="passo-numero">04</p><h3>Filtrato, in vetro scuro</h3><p>Filtrato subito dopo l&#39;estrazione e imbottigliato in vetro scuro, al riparo dalla luce.</p>
+    </li>
+  </ol>
+  <p class="conteneur filiera-link" data-anime><a href="/prodotti" class="bouton bouton--contour-chiaro" data-libelle="Prodotti">Come nascono olio e olive</a></p>
+</section>
+<section class="sezione bosco" id="bosco">
+  <figure class="media bosco-fondo" data-grok data-fx="parallaxe" data-fx-force="12" style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/bosco-mobile-640.webp 640w, /assets/images/grok/bosco-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/grok/bosco-1280.webp" srcset="/assets/images/grok/bosco-640.webp 640w, /assets/images/grok/bosco-1280.webp 1280w, /assets/images/grok/bosco-1920.webp 1920w" sizes="100vw" alt="Bosco di betulle in Ticino all&#39;inizio della primavera, aglio orsino in fiore" width="1280" height="720" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustrazione generata</figcaption>
+</figure>
+  <div class="conteneur bosco-griglia">
+    <div class="bosco-pannello">
+      <p class="sopra" data-anime>Dal bosco ticinese · Waldmuus</p>
+      <h2 data-anime="lignes">Linfa di betulla e aglio orsino, <em>raccolti</em> nel bosco</h2>
+      <p data-anime>Accanto all&#39;olio, Giacomo produce alimenti biologici da raccolta selvatica certificata Bio Suisse, con il marchio Waldmuus: la linfa di betulla dei boschi di Miglieglia e l&#39;aglio orsino in olio e Sel des Alpes.</p>
+      <p class="bio-bollino" data-anime><span>Bio Suisse</span>Raccolta selvatica certificata</p>
+    </div>
+    <div class="bosco-prodotti" data-anime="cascade">
+      <article class="prodotto prodotto--chiaro" id="p-linfa" data-panier-produit data-categoria="bosco" data-prezzo="18.1" data-nome="Linfa di betulla bio 500 ml">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/linfa-1600.webp" srcset="/assets/images/linfa-800.webp 800w, /assets/images/linfa-1600.webp 1600w" sizes="(max-width: 760px) 72vw, 30vw" alt="Bottiglia di linfa di betulla bio in un bosco di betulle" width="1600" height="2000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span class="prodotto-marchio">Waldmuus · Bio Suisse</span></p>
+    <h3 class="prodotto-nome">Linfa di betulla bio</h3>
+    <p class="prodotto-formato">500 ml</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 18.10</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="linfa" data-nom="Linfa di betulla bio 500 ml" data-prix="18.1" aria-label="Aggiungi Linfa di betulla bio 500 ml">Aggiungi</button>
+    </div>
+  </div>
+</article>
+      <article class="prodotto prodotto--chiaro" id="p-aglio-orsino" data-panier-produit data-categoria="bosco" data-prezzo="14.5" data-nome="Aglio orsino bio in olio e Sel des Alpes 145 g">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/aglio-orsino-1600.webp" srcset="/assets/images/aglio-orsino-800.webp 800w, /assets/images/aglio-orsino-1600.webp 1600w" sizes="(max-width: 760px) 72vw, 30vw" alt="Vasetto di aglio orsino bio in olio" width="1600" height="2001" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span class="prodotto-marchio">Waldmuus · Bio Suisse</span></p>
+    <h3 class="prodotto-nome">Aglio orsino bio in olio e Sel des Alpes</h3>
+    <p class="prodotto-formato">145 g</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 14.50</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="aglio-orsino" data-nom="Aglio orsino bio in olio e Sel des Alpes 145 g" data-prix="14.5" aria-label="Aggiungi Aglio orsino bio in olio e Sel des Alpes 145 g">Aggiungi</button>
+    </div>
+  </div>
+</article>
+    </div>
+  </div>
+</section>
+<section class="sezione stagione" id="panettone">
+  <div class="conteneur stagione-griglia">
+    <figure class="media stagione-media" data-anime="rideau" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/panettone-1600.webp" srcset="/assets/images/panettone-800.webp 800w, /assets/images/panettone-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 44vw" alt="Panettone al cioccolato bianco tagliato, con le confezioni dorate" width="1600" height="2000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <div class="stagione-testo" data-panier-produit>
+      <p class="sopra" data-anime>In questo periodo · Natale</p>
+      <h2 data-anime="lignes">Il panettone al <em>cioccolato bianco</em></h2>
+      <p data-anime>Una storia lunga trent&#39;anni: un panettone nato per essere condiviso e regalato, preparato per vent&#39;anni da un maestro pasticcere solo per questa famiglia. Oggi un nuovo maestro ne ha raccolto l&#39;eredità, in esclusiva per Natural-Iter: il panettone a Natale, la colomba a Pasqua.</p>
+      <ul class="stagione-punti" data-anime="cascade">
+        <li>Il 30 % del peso è cioccolato bianco, lavorato direttamente nell&#39;impasto.</li>
+        <li>In vendita al dettaglio da novembre a febbraio, nei formati da 800 g e 1600 g.</li>
+        <li>Sconto del 15 % da 2 pezzi e del 20 % da 3; oltre 10 panettoni, su ordinazione tutto l&#39;anno.</li>
+      </ul>
+      <div class="stagione-acquisto" data-anime>
+        <p class="prodotto-prezzo prodotto-prezzo--grande" data-prix><small>da</small> CHF 67.50 <s aria-label="invece di CHF 72.00">CHF 72.00</s></p>
+        <button type="button" class="bouton" data-panier-ajouter="panettone" data-nom="Panettone al cioccolato bianco 30 %" data-prix="67.50" data-image="/assets/images/panettone-800.webp" aria-label="Aggiungi Panettone al cioccolato bianco 30 %">Aggiungi</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sezione storia fondo-salvia" id="storia">
+  <div class="conteneur storia-griglia">
+    <div class="storia-foto">
+      <figure class="media storia-foto-1" data-fx="vitesse" data-fx-force="3" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/jurg-anni-80-1600.webp" srcset="/assets/images/jurg-anni-80-1024.webp 1024w, /assets/images/jurg-anni-80-1168.webp 1168w, /assets/images/jurg-anni-80-1600.webp 1600w" sizes="(max-width: 760px) 62vw, 26vw" alt="Jürg Raz alla fine degli anni Ottanta, seduto davanti a un muretto a secco" width="1600" height="1600" loading="lazy" decoding="async">
+  </picture><figcaption class="media-legende">Jürg Raz, fine anni Ottanta</figcaption>
+</figure>
+      <figure class="media storia-foto-2" data-superpose data-fx="vitesse" data-fx-force="4" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/jurg-2000-1600.webp" srcset="/assets/images/jurg-2000-1024.webp 1024w, /assets/images/jurg-2000-1168.webp 1168w, /assets/images/jurg-2000-1600.webp 1600w" sizes="(max-width: 760px) 56vw, 22vw" alt="Jürg all&#39;inizio degli anni Duemila, accanto ai fusti" width="1600" height="1067" loading="lazy" decoding="async">
+  </picture><figcaption class="media-legende">Jürg, inizio anni Duemila</figcaption>
+</figure>
+    </div>
+    <div class="storia-testo">
+      <p class="sopra" data-anime>La nostra storia</p>
+      <h2 data-anime="lignes">Da Jürg a Giacomo, <em>la stessa strada</em></h2>
+      <p data-anime>Negli anni Ottanta Jürg Raz, maestro elementare dell&#39;Oberland bernese, si trasferisce in Liguria a vent&#39;anni. Compra uliveti abbandonati nel Ponente Ligure e li riporta in produzione: muretti a secco, potature, raccolte.</p>
+      <p data-anime>Dalla fine degli anni Novanta porta i suoi prodotti in Svizzera, ad alberghi e ristoranti di alto livello. Nel 2021 affida l&#39;azienda all&#39;amico di lunga data Giacomo Bassanini, che oggi fa la spola tra Liguria e Ticino.</p>
+      <p class="numero-grande" data-anime><span>più di</span><strong data-compteur="40">40</strong><span>anni di lavoro</span></p>
+      <p data-anime><a href="/chi-siamo" class="bouton bouton--contour" data-libelle="Chi siamo">Leggi la nostra storia</a></p>
+    </div>
+  </div>
+</section>
+<section class="sezione pro fondo-oliva" id="professionisti">
+  <div class="conteneur pro-griglia">
+    <div class="pro-testo">
+      <p class="sopra" data-anime>Per ristoranti, alberghi e grandi quantità</p>
+      <h2 data-anime="lignes">Cartoni, latte e <em>formati da cucina</em></h2>
+      <p data-anime>Dalla fine degli anni Novanta Natural-Iter rifornisce alberghi e ristoranti; oggi Giacomo consegna regolarmente in tutta la Svizzera. Per i listini e per quantità diverse da quelle dello shop, scrivici.</p>
+      <p data-anime><a href="/contatti?sujet=professionisti#scrivici" class="bouton" data-libelle="Contatti">Chiedi il listino</a></p>
+    </div>
+    <ul class="pro-formati" data-anime="cascade">
+      <li><span class="pro-formato">6 × 75 cl</span><span class="pro-nome">Cartone di olio taggiasco</span><span class="pro-prezzo">CHF 204.00</span></li><li><span class="pro-formato">12 × 75 cl</span><span class="pro-nome">Due cartoni di olio taggiasco</span><span class="pro-prezzo">CHF 396.00</span></li><li><span class="pro-formato">18 × 75 cl</span><span class="pro-nome">Tre cartoni di olio taggiasco</span><span class="pro-prezzo">CHF 576.00</span></li><li><span class="pro-formato">5 L</span><span class="pro-nome">Latta di olio extravergine taggiasco</span><span class="pro-prezzo">CHF 200.00</span></li><li><span class="pro-formato">25 L</span><span class="pro-nome">Latta di olio extravergine taggiasco</span><span class="pro-prezzo">CHF 900.00</span></li><li><span class="pro-formato">3,5 kg</span><span class="pro-nome">Olive taggiasche in salamoia</span><span class="pro-prezzo">CHF 66.00</span></li>
+    </ul>
+  </div>
+  <div class="conteneur buono-striscia" data-anime>
+    <p><strong>Buono regalo.</strong> Da CHF 25 a CHF 200, o l&#39;importo che preferisci.</p>
+    <a href="/shop#buono-regalo" class="bouton bouton--contour-chiaro" data-libelle="Shop">Componi il buono</a>
+  </div>
+</section>
+<section class="sezione finale" id="finale">
+  <figure class="media finale-fondo" data-grok data-fx="parallaxe" data-fx-force="10" style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/tavola-mobile-640.webp 640w, /assets/images/grok/tavola-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/grok/tavola-1280.webp" srcset="/assets/images/grok/tavola-640.webp 640w, /assets/images/grok/tavola-1280.webp 1280w, /assets/images/grok/tavola-1920.webp 1920w" sizes="100vw" alt="Tavola in pietra con pane, una ciotola d&#39;olio e limoni" width="1280" height="720" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustrazione generata</figcaption>
+</figure>
+  <div class="conteneur finale-pannello"><div class="finale-carta">
+    <h2 data-anime="lignes">Porta la Liguria <em>a tavola</em></h2>
+    <p data-anime>Spedizione gratuita in Svizzera da CHF 150. Per quantità diverse da quelle dello shop, chiamaci o scrivici.</p>
+    <p class="finale-azioni" data-anime>
+      <a href="/shop" class="bouton" data-libelle="Shop" data-survol="magnetique">Vai allo shop</a>
+      <a class="bouton bouton--contour" href="tel:+41797037805">Chiama +41 79 703 78 05</a>
+    </p>
+  </div></div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marca">
+      <img src="/assets/images/logo-240.webp" alt="Natural-Iter" width="123" height="60" loading="lazy">
+      <p>Natural-Iter di Bassanini Giacomo<br>Via Vignalunga 7<br>6850 Mendrisio</p>
+      <p><a href="tel:+41797037805">+41 79 703 78 05</a><br><a href="mailto:naturaliter@outlook.com">naturaliter@outlook.com</a></p>
+    </div>
+    <nav aria-label="Il sito">
+      <p class="pied-titolo">Il sito</p>
+      <ul><li><a href="/" data-libelle="Home" aria-current="page">Home</a></li><li><a href="/prodotti" data-libelle="Prodotti">Prodotti</a></li><li><a href="/chi-siamo" data-libelle="Chi siamo">Chi siamo</a></li><li><a href="/shop" data-libelle="Shop">Shop</a></li><li><a href="/contatti" data-libelle="Contatti">Contatti</a></li><li><a href="/shop#buono-regalo" data-libelle="Shop">Buono regalo</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titolo">Seguici</p>
+      <ul>
+        <li><a href="https://www.instagram.com/natural_iter/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61551024487038" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.facebook.com/Linfa-di-betulla-Waldmuus-2101944556770735/" target="_blank" rel="noopener">Waldmuus su Facebook</a></li>
+        <li><a href="#haut" data-sans-transition>Torna su</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="pied-titolo">Spedizione</p>
+      <p>Spedizione gratuita in Svizzera da CHF 150</p>
+      <p>Tutti i nostri prodotti sono senza ingredienti artificiali.</p>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Note legali · Informativa sulla privacy: da completare</p><p>Sito dimostrativo: ordini, pagamenti e invii sono simulati.</p><p>© Natural-Iter di Bassanini Giacomo</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+41797037805">Chiama</a>
+  <a class="bouton" href="/shop" data-libelle="Shop">Shop</a>
+</div>
+<div data-module="panier-en-tiroir" data-panier-tiroir>
+  <script type="application/json" data-panier-reglages>{"devise":"CHF","seuil_livraison":150,"frais_livraison":null,"tva":null,"cle":"natural-iter-carrello","prefixe":"NI"}</script>
+</div>
+</body>
+</html>

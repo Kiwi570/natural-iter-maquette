@@ -1,0 +1,32 @@
+{
+  "categorie": [
+    { "id": "olio", "nome": "Olio" },
+    { "id": "olive", "nome": "Olive e paté" },
+    { "id": "bosco", "nome": "Dal bosco ticinese" },
+    { "id": "grandi", "nome": "Grandi formati" },
+    { "id": "regali", "nome": "Regali e dolci" }
+  ],
+  "lista": [
+    { "id": "olio-75", "nome": "Olio extravergine taggiasco", "formato": "75 cl", "prezzo": 49.00, "categoria": "olio", "immagine": "olio-75", "testo": "Estratto a freddo poche ore dopo la raccolta, filtrato e messo in vetro scuro. Armonioso, leggermente fruttato, poco amaro.", "vetrina": true },
+    { "id": "olio-25", "nome": "Olio extravergine taggiasco", "formato": "25 cl", "prezzo": 18.50, "categoria": "olio", "immagine": "olio-25", "testo": "Lo stesso olio in formato piccolo: da tenere in cucina o da regalare.", "vetrina": true },
+    { "id": "olio-limone", "nome": "Olio al limone", "formato": "25 cl", "prezzo": 22.00, "categoria": "olio", "immagine": "olio-limone", "testo": "Olive fresche molite insieme a limoni freschi di Liguria.", "vetrina": true },
+    { "id": "olive-salamoia", "nome": "Olive taggiasche in salamoia", "formato": "210 g", "prezzo": 11.00, "categoria": "olive", "immagine": "olive-salamoia", "testo": "Intere, in salamoia alle erbe selvatiche, dopo almeno sei mesi di fermentazione.", "vetrina": true },
+    { "id": "olive-snocciolate", "nome": "Olive taggiasche snocciolate in olio", "formato": "180 g", "prezzo": 15.00, "categoria": "olive", "immagine": "olive-snocciolate", "testo": "Snocciolate e conservate sott'olio, pronte per l'aperitivo o la pasta.", "vetrina": true },
+    { "id": "pate", "nome": "Paté di olive taggiasche", "formato": "90 g", "prezzo": 8.50, "categoria": "olive", "immagine": "pate", "testo": "Da spalmare sul pane tostato o da sciogliere in un sugo.", "vetrina": true },
+    { "id": "linfa", "nome": "Linfa di betulla bio", "formato": "500 ml", "prezzo": 18.10, "categoria": "bosco", "immagine": "linfa", "testo": "Dai boschi di Miglieglia, pura e pastorizzata. Sapore delicato, leggermente dolciastro, con una punta di acidulo.", "marchio": "Waldmuus · Bio Suisse" },
+    { "id": "linfa-multipack", "nome": "Linfa di betulla bio, multipack 3+1", "formato": "4 × 500 ml", "prezzo": 55.00, "categoria": "bosco", "immagine": "linfa-multipack", "testo": "Quattro bottiglie da 500 ml: tre più una.", "marchio": "Waldmuus · Bio Suisse" },
+    { "id": "aglio-orsino", "nome": "Aglio orsino bio in olio e Sel des Alpes", "formato": "145 g", "prezzo": 14.50, "categoria": "bosco", "immagine": "aglio-orsino", "testo": "In olio di girasole bio e Sel des Alpes. Sul pane, nelle insalate, come base per pesti e salse: non va cotto.", "marchio": "Waldmuus · Bio Suisse" },
+    { "id": "cartone-6", "nome": "Cartone di olio taggiasco", "formato": "6 × 75 cl", "prezzo": 204.00, "categoria": "grandi", "immagine": "cartone-6", "testo": "Sei bottiglie da 75 cl: CHF 34.00 a bottiglia." },
+    { "id": "cartone-12", "nome": "Due cartoni di olio taggiasco", "formato": "12 × 75 cl", "prezzo": 396.00, "categoria": "grandi", "immagine": "cartone-12", "testo": "Dodici bottiglie da 75 cl: CHF 33.00 a bottiglia." },
+    { "id": "cartone-18", "nome": "Tre cartoni di olio taggiasco", "formato": "18 × 75 cl", "prezzo": 576.00, "categoria": "grandi", "immagine": "cartone-18", "testo": "Diciotto bottiglie da 75 cl: CHF 32.00 a bottiglia." },
+    { "id": "latta-5", "nome": "Latta di olio extravergine taggiasco", "formato": "5 L", "prezzo": 200.00, "categoria": "grandi", "immagine": "latta-5", "testo": "Per chi cucina molto, a casa o al ristorante." },
+    { "id": "latta-25", "nome": "Latta di olio extravergine taggiasco", "formato": "25 L", "prezzo": 900.00, "categoria": "grandi", "immagine": "latta-25", "testo": "Il formato della ristorazione." },
+    { "id": "pate-1500", "nome": "Paté di olive taggiasche", "formato": "1,5 kg", "prezzo": 62.00, "categoria": "grandi olive", "immagine": "pate-1500", "testo": "Il paté in formato da cucina professionale." },
+    { "id": "snocciolate-1500", "nome": "Olive taggiasche snocciolate in olio", "formato": "1,5 kg", "prezzo": 66.00, "categoria": "grandi olive", "immagine": "snocciolate-1500", "testo": "Le olive snocciolate in formato grande." },
+    { "id": "salamoia-3500", "nome": "Olive taggiasche in salamoia", "formato": "3,5 kg", "prezzo": 66.00, "categoria": "grandi olive", "immagine": "salamoia-3500", "testo": "Olive intere alle erbe selvatiche, in secchio." },
+    { "id": "panettone", "nome": "Panettone al cioccolato bianco 30 %", "formato": "800 g o 1600 g", "prezzo": 67.50, "prezzoPrima": 72.00, "da": true, "categoria": "regali", "immagine": "panettone", "testo": "Fatto in esclusiva per Natural-Iter da un maestro pasticcere ticinese, con il 30 % di cioccolato bianco nell'impasto. In vendita da novembre a febbraio.", "etichetta": "Natale", "vetrina": false },
+    { "id": "anisbrotli", "nome": "Anisbrötli", "formato": "450 o 700", "prezzo": 12.50, "da": true, "categoria": "regali", "immagine": "anisbrotli", "testo": "Biscotti all'anice della tradizione svizzera." },
+    { "id": "confezione-regalo", "nome": "Confezione regalo", "formato": "Cassetta in legno", "prezzo": 80.00, "categoria": "regali", "immagine": "confezione-regalo", "testo": "Una cassetta in legno con prodotti Natural-Iter, pronta da regalare." }
+  ],
+  "buono": [25, 50, 100, 150, 200]
+}

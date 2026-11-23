@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="it" data-v="1" data-pagina="prodotti">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>I prodotti · Natural-Iter</title>
+<meta name="description" content="Olio extravergine taggiasco, olio al limone, olive in salamoia, snocciolate e paté; linfa di betulla e aglio orsino bio Waldmuus.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://natural-iter-maquette.vercel.app/prodotti">
+<style>:root{--fond:#f4eee2;--texte:#22291a;--voile-fond:#2c3420;--ouverture-fond:#2c3420;--menu-fond:#2c3420}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/young-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/modules.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f4eee2">
+<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Natural-Iter">
+<meta property="og:locale" content="it_CH">
+<meta property="og:title" content="I prodotti · Natural-Iter">
+<meta property="og:description" content="Olio extravergine taggiasco, olio al limone, olive in salamoia, snocciolate e paté; linfa di betulla e aglio orsino bio Waldmuus.">
+<meta property="og:url" content="https://natural-iter-maquette.vercel.app/prodotti">
+<meta property="og:image" content="https://natural-iter-maquette.vercel.app/assets/partage/prodotti-it.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Reti di raccolta sotto gli ulivi del Ponente Ligure">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Store","name":"Natural-Iter di Bassanini Giacomo","url":"https://natural-iter-maquette.vercel.app/","telephone":"+41797037805","email":"naturaliter@outlook.com","address":{"@type":"PostalAddress","streetAddress":"Via Vignalunga 7","postalCode":"6850","addressLocality":"Mendrisio","addressRegion":"TI","addressCountry":"CH"},"founder":"Jürg Raz","employee":{"@type":"Person","name":"Giacomo Bassanini"},"sameAs":["https://www.instagram.com/natural_iter/","https://www.facebook.com/profile.php?id=61551024487038"],"description":"Olio extravergine e olive taggiasche del Ponente Ligure; linfa di betulla e aglio orsino bio da raccolta selvatica certificata Bio Suisse (Waldmuus)."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="vague" aria-hidden="true"><svg class="voile-vague voile-vague--haut" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120 C 240 20 480 20 720 70 S 1200 130 1440 40 V 120 H 0 Z"/></svg><svg class="voile-vague voile-vague--bas" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 C 240 100 480 100 720 50 S 1200 -10 1440 80 V 0 H 0 Z"/></svg><div class="voile-contenu"><img src="/assets/images/logo-240.webp" alt="" width="100" height="49"><span data-voile-libelle>Prodotti</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <img class="ouverture-logo" src="/assets/images/logo-480.webp" alt="" width="180" height="88">
+  <p class="ouverture-ligne">Olio e olive taggiasche · Mendrisio</p>
+  <span class="goccia" data-ouverture-objet></span>
+</div>
+<a class="evitement" href="#contenu">Vai al contenuto</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Home" aria-label="Natural-Iter, Home">
+      <img src="/assets/images/logo-240.webp" alt="" width="82" height="40">
+    </a>
+    <nav data-nav aria-label="Navigazione principale">
+      <ul><li><a href="/prodotti" data-libelle="Prodotti" aria-current="page">Prodotti</a></li><li><a href="/chi-siamo" data-libelle="Chi siamo">Chi siamo</a></li><li><a href="/shop" data-libelle="Shop">Shop</a></li><li><a href="/contatti" data-libelle="Contatti">Contatti</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton bouton--entete" href="/shop" data-libelle="Shop">Acquista</a>
+      <button type="button" class="carrello-bottone" data-panier-ouvrir data-envol-cible aria-label="Carrello"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.3 11.1a2 2 0 0 1-2 1.9H8.3a2 2 0 0 1-2-1.9Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="pet-compte est-vide" data-panier-compte>0</span></button>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Chiudi"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Chiudi</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Home">Home</a></li><li style="--i:1"><a href="/prodotti" class="menu-lien" data-libelle="Prodotti" aria-current="page">Prodotti</a></li><li style="--i:2"><a href="/chi-siamo" class="menu-lien" data-libelle="Chi siamo">Chi siamo</a></li><li style="--i:3"><a href="/shop" class="menu-lien" data-libelle="Shop">Shop</a></li><li style="--i:4"><a href="/contatti" class="menu-lien" data-libelle="Contatti">Contatti</a></li><li style="--i:5"><a href="/shop#buono-regalo" class="menu-lien menu-lien--piccolo" data-libelle="Shop">Buono regalo</a></li></ul>
+  <p class="menu-contatti"><a class="bouton" href="tel:+41797037805">Chiama +41 79 703 78 05</a></p>
+  <p class="menu-nota">Spedizione gratuita in Svizzera da CHF 150</p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="apertura-titolo-banda" id="inizio">
+  <div class="conteneur banda-testa">
+    <p class="sopra" data-anime="gsap">I prodotti</p>
+    <h1 class="banda-titolo" data-anime="gsap"><span data-iris-centre>Dall'oliva <em>all'olio</em></span></h1>
+    <div class="banda-lato" data-anime="gsap">
+      <p>Olio extravergine, olive da tavola e paté da un&#39;unica oliva, la taggiasca del Ponente Ligure. E dal bosco ticinese, linfa di betulla e aglio orsino bio.</p>
+      <p class="banda-azioni"><a href="/shop" class="bouton" data-libelle="Shop" data-action-principale>Vai allo shop</a><span class="apertura-info" data-info-cle><span class="punto-giallo" aria-hidden="true"></span>Spedizione gratuita in Svizzera da CHF 150</span></p>
+    </div>
+  </div>
+  <figure class="media banda-media" data-grok data-fx="parallaxe" data-fx-force="10" data-effet="banda" data-anime="gsap" style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/reti-mobile-640.webp 640w, /assets/images/grok/reti-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/grok/reti-1280.webp" srcset="/assets/images/grok/reti-640.webp 640w, /assets/images/grok/reti-1280.webp 1280w, /assets/images/grok/reti-1920.webp 1920w" sizes="100vw" alt="Reti di raccolta stese sotto gli ulivi sulle fasce liguri" width="1280" height="549" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustrazione generata</figcaption>
+</figure>
+</section>
+<section class="sezione olio-sezione" id="olio">
+  <div class="conteneur olio-griglia">
+    <div class="olio-testo">
+      <p class="sopra" data-anime>L&#39;olio extravergine</p>
+      <h2 data-anime="lignes">Armonioso, leggermente <em>fruttato</em></h2>
+      <p data-anime>Estratto poche ore dopo la raccolta con soli metodi meccanici a freddo, filtrato subito e conservato in vetro scuro. È un olio molto profumato, fruttato e armonioso, con poca amarezza.</p>
+      <ul class="gusto" data-anime="cascade">
+        <li>Molto profumato</li><li>Leggermente fruttato</li><li>Armonioso</li><li>Poco amaro</li>
+      </ul>
+      <h3 class="formati-titolo" data-anime>I formati</h3>
+      <ul class="formati" data-anime="cascade">
+        <li><span class="formati-f">25 cl</span><span class="formati-p">CHF 18.50</span></li><li><span class="formati-f">75 cl</span><span class="formati-p">CHF 49.00</span></li><li><span class="formati-f">5 L</span><span class="formati-p">CHF 200.00</span></li><li><span class="formati-f">25 L</span><span class="formati-p">CHF 900.00</span></li>
+      </ul>
+    </div>
+    <div class="olio-foto">
+      <figure class="olio-vetrina" data-effet="bottiglia-vetrina">
+        <img src="/assets/images/bottiglia-75-1300.webp" srcset="/assets/images/bottiglia-75-560.webp 243w, /assets/images/bottiglia-75-900.webp 389w, /assets/images/bottiglia-75-1300.webp 562w" sizes="(max-width: 760px) 40vw, 16vw" alt="Bottiglia da 75 cl di olio extravergine taggiasco Natural-Iter" width="562" height="1300" loading="lazy" decoding="async">
+      </figure>
+    </div>
+  </div>
+</section>
+<section class="sezione limone fondo-salvia" id="limone">
+  <div class="conteneur limone-griglia">
+    <figure class="media limone-media" data-grok data-anime="rideau" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/limoni-1600.webp" srcset="/assets/images/grok/limoni-1024.webp 1024w, /assets/images/grok/limoni-1168.webp 1168w, /assets/images/grok/limoni-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 36vw" alt="Limoni liguri freschi con foglie e rametti d&#39;ulivo" width="1600" height="2000" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustrazione generata</figcaption>
+</figure>
+    <div class="limone-testo">
+      <p class="sopra" data-anime>L&#39;olio al limone</p>
+      <h2 data-anime="lignes">Olive e limoni, <em>moliti insieme</em></h2>
+      <p data-anime>Olive fresche e limoni freschi di Liguria passano insieme nel frantoio: il profumo del limone nasce con l&#39;olio.</p>
+    </div>
+    <div data-anime="cascade" class="limone-prodotto"><article class="prodotto " id="p-olio-limone" data-panier-produit data-categoria="olio" data-prezzo="22" data-nome="Olio al limone 25 cl">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/olio-limone-800.webp" srcset="/assets/images/olio-limone-800.webp 800w" sizes="(max-width: 760px) 72vw, 30vw" alt="Olio al limone da 25 cl con limoni freschi" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Olio</span></p>
+    <h3 class="prodotto-nome">Olio al limone</h3>
+    <p class="prodotto-formato">25 cl</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 22.00</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="olio-limone" data-nom="Olio al limone 25 cl" data-prix="22" aria-label="Aggiungi Olio al limone 25 cl">Aggiungi</button>
+    </div>
+  </div>
+</article></div>
+  </div>
+</section>
+<section class="sezione olive-sezione fondo-oliva" id="olive">
+  <div class="conteneur sezione-testa">
+    <div>
+      <p class="sopra" data-anime>Le olive da tavola</p>
+      <h2 data-anime="lignes">Almeno sei mesi <em>di pazienza</em></h2>
+    </div>
+    <div class="sezione-testa-lato">
+      <p class="numero-grande numero-grande--chiaro" data-anime><strong data-compteur="6">6</strong><span>mesi di fermentazione, come minimo</span></p>
+      <p data-anime>Le olive vengono deamarizzate e fermentate per almeno sei mesi, poi aromatizzate con le erbe in salamoia. Si trovano intere in salamoia, snocciolate sott&#39;olio o in paté.</p>
+    </div>
+  </div>
+  <div class="conteneur olive-griglia">
+    <figure class="media olive-media" data-grok data-fx="zoom" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/salamoia-1600.webp" srcset="/assets/images/grok/salamoia-1024.webp 1024w, /assets/images/grok/salamoia-1168.webp 1168w, /assets/images/grok/salamoia-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 30vw" alt="Olive taggiasche in salamoia con erbe selvatiche" width="1600" height="2000" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustrazione generata</figcaption>
+</figure>
+    <div class="olive-prodotti" data-anime="cascade" data-scorri>
+      <article class="prodotto prodotto--chiaro" id="p-olive-salamoia" data-panier-produit data-categoria="olive" data-prezzo="11" data-nome="Olive taggiasche in salamoia 210 g">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/olive-salamoia-800.webp" srcset="/assets/images/olive-salamoia-800.webp 800w" sizes="(max-width: 760px) 72vw, 20vw" alt="Vasetto di olive taggiasche in salamoia" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Olive e paté</span></p>
+    <h3 class="prodotto-nome">Olive taggiasche in salamoia</h3>
+    <p class="prodotto-formato">210 g</p>
+    <p class="prodotto-descr">Intere, in salamoia alle erbe selvatiche, dopo almeno sei mesi di fermentazione.</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 11.00</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="olive-salamoia" data-nom="Olive taggiasche in salamoia 210 g" data-prix="11" aria-label="Aggiungi Olive taggiasche in salamoia 210 g">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto prodotto--chiaro" id="p-olive-snocciolate" data-panier-produit data-categoria="olive" data-prezzo="15" data-nome="Olive taggiasche snocciolate in olio 180 g">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/olive-snocciolate-800.webp" srcset="/assets/images/olive-snocciolate-800.webp 800w" sizes="(max-width: 760px) 72vw, 20vw" alt="Vasetto di olive taggiasche snocciolate in olio" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Olive e paté</span></p>
+    <h3 class="prodotto-nome">Olive taggiasche snocciolate in olio</h3>
+    <p class="prodotto-formato">180 g</p>
+    <p class="prodotto-descr">Snocciolate e conservate sott&#39;olio, pronte per l&#39;aperitivo o la pasta.</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 15.00</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="olive-snocciolate" data-nom="Olive taggiasche snocciolate in olio 180 g" data-prix="15" aria-label="Aggiungi Olive taggiasche snocciolate in olio 180 g">Aggiungi</button>
+    </div>
+  </div>
+</article><article class="prodotto prodotto--chiaro" id="p-pate" data-panier-produit data-categoria="olive" data-prezzo="8.5" data-nome="Paté di olive taggiasche 90 g">
+  <figure class="media prodotto-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/pate-800.webp" srcset="/assets/images/pate-800.webp 800w" sizes="(max-width: 760px) 72vw, 20vw" alt="Paté di olive taggiasche spalmato sul pane" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  <div class="prodotto-testo">
+    <p class="prodotto-sopra"><span>Olive e paté</span></p>
+    <h3 class="prodotto-nome">Paté di olive taggiasche</h3>
+    <p class="prodotto-formato">90 g</p>
+    <p class="prodotto-descr">Da spalmare sul pane tostato o da sciogliere in un sugo.</p>
+    <div class="prodotto-riga">
+      <p class="prodotto-prezzo" data-prix>CHF 8.50</p>
+      <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="pate" data-nom="Paté di olive taggiasche 90 g" data-prix="8.5" aria-label="Aggiungi Paté di olive taggiasche 90 g">Aggiungi</button>
+    </div>
+  </div>
+</article>
+    </div>
+  </div>
+</section>
+<section class="sezione waldmuus" id="waldmuus">
+  <div class="conteneur sezione-testa">
+    <div>
+      <p class="sopra" data-anime>Dal bosco ticinese · Waldmuus</p>
+      <h2 data-anime="lignes">Raccolta selvatica, <em>certificata</em></h2>
+    </div>
+    <p class="sezione-testa-lato" data-anime>Con il marchio Waldmuus, Giacomo raccoglie nei boschi ticinesi alimenti biologici da raccolta selvatica certificata Bio Suisse.</p>
+  </div>
+  <div class="conteneur waldmuus-griglia">
+    <article class="waldmuus-voce">
+      <figure class="media waldmuus-media" data-anime="rideau" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/linfa-1600.webp" srcset="/assets/images/linfa-800.webp 800w, /assets/images/linfa-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 26vw" alt="Bottiglia di linfa di betulla Waldmuus in un bosco di betulle" width="1600" height="2000" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <div data-panier-produit>
+        <h3 data-anime="lignes">Linfa di betulla</h3>
+        <p data-anime>Dai boschi di Miglieglia. Linfa di betulla pura, pastorizzata, da raccolta selvatica certificata. Ha un sapore molto delicato, leggermente dolciastro, con una punta di acidulo.</p>
+        <p class="waldmuus-acquisto" data-anime><span class="prodotto-prezzo" data-prix>CHF 18.10 · 500 ml</span> <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="linfa" data-nom="Linfa di betulla bio 500 ml" data-prix="18.10" data-image="/assets/images/linfa-800.webp" aria-label="Aggiungi Linfa di betulla bio 500 ml">Aggiungi</button></p>
+      </div>
+    </article>
+    <article class="waldmuus-voce">
+      <figure class="media waldmuus-media" data-grok data-anime="rideau" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/aglio-bosco-800.webp" srcset="/assets/images/grok/aglio-bosco-640.webp 640w, /assets/images/grok/aglio-bosco-800.webp 800w" sizes="(max-width: 760px) 100vw, 26vw" alt="Foglie e fiori di aglio orsino nel bosco" width="800" height="600" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustrazione generata</figcaption>
+</figure>
+      <div data-panier-produit>
+        <h3 data-anime="lignes">Aglio orsino</h3>
+        <p data-anime>In olio di girasole bio e Sel des Alpes. Da spalmare sul pane, per condire insalate e creme o come base per pesti e salse. Meglio non cuocerlo.</p>
+        <p class="waldmuus-acquisto" data-anime><span class="prodotto-prezzo" data-prix>CHF 14.50 · 145 g</span> <button type="button" class="bouton bouton--aggiungi" data-panier-ajouter="aglio-orsino" data-nom="Aglio orsino bio in olio e Sel des Alpes 145 g" data-prix="14.50" data-image="/assets/images/aglio-orsino-800.webp" aria-label="Aggiungi Aglio orsino bio 145 g">Aggiungi</button></p>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="sezione senza fondo-salvia" id="senza">
+  <div class="conteneur senza-griglia">
+    <h2 data-anime="lettres">Senza ingredienti <em>artificiali</em></h2>
+    <div>
+      <p data-anime>Tutti i prodotti Natural-Iter sono senza ingredienti artificiali. Li trovi nello shop, con spedizione gratuita in Svizzera da CHF 150.</p>
+      <p data-anime><a href="/shop" class="bouton" data-libelle="Shop">Vai allo shop</a></p>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marca">
+      <img src="/assets/images/logo-240.webp" alt="Natural-Iter" width="123" height="60" loading="lazy">
+      <p>Natural-Iter di Bassanini Giacomo<br>Via Vignalunga 7<br>6850 Mendrisio</p>
+      <p><a href="tel:+41797037805">+41 79 703 78 05</a><br><a href="mailto:naturaliter@outlook.com">naturaliter@outlook.com</a></p>
+    </div>
+    <nav aria-label="Il sito">
+      <p class="pied-titolo">Il sito</p>
+      <ul><li><a href="/" data-libelle="Home">Home</a></li><li><a href="/prodotti" data-libelle="Prodotti" aria-current="page">Prodotti</a></li><li><a href="/chi-siamo" data-libelle="Chi siamo">Chi siamo</a></li><li><a href="/shop" data-libelle="Shop">Shop</a></li><li><a href="/contatti" data-libelle="Contatti">Contatti</a></li><li><a href="/shop#buono-regalo" data-libelle="Shop">Buono regalo</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titolo">Seguici</p>
+      <ul>
+        <li><a href="https://www.instagram.com/natural_iter/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61551024487038" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.facebook.com/Linfa-di-betulla-Waldmuus-2101944556770735/" target="_blank" rel="noopener">Waldmuus su Facebook</a></li>
+        <li><a href="#haut" data-sans-transition>Torna su</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="pied-titolo">Spedizione</p>
+      <p>Spedizione gratuita in Svizzera da CHF 150</p>
+      <p>Tutti i nostri prodotti sono senza ingredienti artificiali.</p>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Note legali · Informativa sulla privacy: da completare</p><p>Sito dimostrativo: ordini, pagamenti e invii sono simulati.</p><p>© Natural-Iter di Bassanini Giacomo</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+41797037805">Chiama</a>
+  <a class="bouton" href="/shop" data-libelle="Shop">Shop</a>
+</div>
+<div data-module="panier-en-tiroir" data-panier-tiroir>
+  <script type="application/json" data-panier-reglages>{"devise":"CHF","seuil_livraison":150,"frais_livraison":null,"tva":null,"cle":"natural-iter-carrello","prefixe":"NI"}</script>
+</div>
+</body>
+</html>

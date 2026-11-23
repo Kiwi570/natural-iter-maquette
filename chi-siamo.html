@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="it" data-v="1" data-pagina="chi-siamo">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chi siamo · Natural-Iter</title>
+<meta name="description" content="Da Jürg Raz, che negli anni Ottanta riportò in vita uliveti abbandonati in Liguria, a Giacomo Bassanini, tra Liguria e Ticino.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://natural-iter-maquette.vercel.app/chi-siamo">
+<style>:root{--fond:#f4eee2;--texte:#22291a;--voile-fond:#2c3420;--ouverture-fond:#2c3420;--menu-fond:#2c3420}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/young-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/modules.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f4eee2">
+<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Natural-Iter">
+<meta property="og:locale" content="it_CH">
+<meta property="og:title" content="Chi siamo · Natural-Iter">
+<meta property="og:description" content="Da Jürg Raz, che negli anni Ottanta riportò in vita uliveti abbandonati in Liguria, a Giacomo Bassanini, tra Liguria e Ticino.">
+<meta property="og:url" content="https://natural-iter-maquette.vercel.app/chi-siamo">
+<meta property="og:image" content="https://natural-iter-maquette.vercel.app/assets/partage/chi-siamo-it.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Jürg Raz alla fine degli anni Ottanta davanti a un muretto a secco">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Store","name":"Natural-Iter di Bassanini Giacomo","url":"https://natural-iter-maquette.vercel.app/","telephone":"+41797037805","email":"naturaliter@outlook.com","address":{"@type":"PostalAddress","streetAddress":"Via Vignalunga 7","postalCode":"6850","addressLocality":"Mendrisio","addressRegion":"TI","addressCountry":"CH"},"founder":"Jürg Raz","employee":{"@type":"Person","name":"Giacomo Bassanini"},"sameAs":["https://www.instagram.com/natural_iter/","https://www.facebook.com/profile.php?id=61551024487038"],"description":"Olio extravergine e olive taggiasche del Ponente Ligure; linfa di betulla e aglio orsino bio da raccolta selvatica certificata Bio Suisse (Waldmuus)."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="vague" aria-hidden="true"><svg class="voile-vague voile-vague--haut" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120 C 240 20 480 20 720 70 S 1200 130 1440 40 V 120 H 0 Z"/></svg><svg class="voile-vague voile-vague--bas" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 C 240 100 480 100 720 50 S 1200 -10 1440 80 V 0 H 0 Z"/></svg><div class="voile-contenu"><img src="/assets/images/logo-240.webp" alt="" width="100" height="49"><span data-voile-libelle>Chi siamo</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <img class="ouverture-logo" src="/assets/images/logo-480.webp" alt="" width="180" height="88">
+  <p class="ouverture-ligne">Olio e olive taggiasche · Mendrisio</p>
+  <span class="goccia" data-ouverture-objet></span>
+</div>
+<a class="evitement" href="#contenu">Vai al contenuto</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Home" aria-label="Natural-Iter, Home">
+      <img src="/assets/images/logo-240.webp" alt="" width="82" height="40">
+    </a>
+    <nav data-nav aria-label="Navigazione principale">
+      <ul><li><a href="/prodotti" data-libelle="Prodotti">Prodotti</a></li><li><a href="/chi-siamo" data-libelle="Chi siamo" aria-current="page">Chi siamo</a></li><li><a href="/shop" data-libelle="Shop">Shop</a></li><li><a href="/contatti" data-libelle="Contatti">Contatti</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton bouton--entete" href="/shop" data-libelle="Shop">Acquista</a>
+      <button type="button" class="carrello-bottone" data-panier-ouvrir data-envol-cible aria-label="Carrello"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.3 11.1a2 2 0 0 1-2 1.9H8.3a2 2 0 0 1-2-1.9Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="pet-compte est-vide" data-panier-compte>0</span></button>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Chiudi"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Chiudi</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Home">Home</a></li><li style="--i:1"><a href="/prodotti" class="menu-lien" data-libelle="Prodotti">Prodotti</a></li><li style="--i:2"><a href="/chi-siamo" class="menu-lien" data-libelle="Chi siamo" aria-current="page">Chi siamo</a></li><li style="--i:3"><a href="/shop" class="menu-lien" data-libelle="Shop">Shop</a></li><li style="--i:4"><a href="/contatti" class="menu-lien" data-libelle="Contatti">Contatti</a></li><li style="--i:5"><a href="/shop#buono-regalo" class="menu-lien menu-lien--piccolo" data-libelle="Shop">Buono regalo</a></li></ul>
+  <p class="menu-contatti"><a class="bouton" href="tel:+41797037805">Chiama +41 79 703 78 05</a></p>
+  <p class="menu-nota">Spedizione gratuita in Svizzera da CHF 150</p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="apertura-archivio" id="inizio">
+  <div class="conteneur archivio-griglia">
+    <div class="archivio-testo">
+      <p class="sopra" data-anime="gsap">Chi siamo</p>
+      <h1 class="archivio-titolo" data-anime="gsap">Più di quarant'anni <em>sulle fasce</em></h1>
+      <p data-anime="gsap">Natural-Iter nasce dal lavoro di Jürg Raz sugli uliveti del Ponente Ligure. Dal 2021 la porta avanti Giacomo Bassanini, tra la Liguria e il Ticino.</p>
+      <p class="archivio-azioni" data-anime="gsap"><a href="/prodotti" class="bouton" data-libelle="Prodotti" data-action-principale>Scopri i prodotti</a><span class="apertura-info" data-info-cle><span class="punto-giallo" aria-hidden="true"></span>Dal Ponente Ligure a Mendrisio</span></p>
+    </div>
+    <div class="archivio-foto" data-iris-centre data-effet="archivio">
+      <figure class="media archivio-media" data-anime="gsap" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/jurg-anni-80-1600.webp" srcset="/assets/images/jurg-anni-80-1024.webp 1024w, /assets/images/jurg-anni-80-1168.webp 1168w, /assets/images/jurg-anni-80-1600.webp 1600w" sizes="(max-width: 760px) 86vw, 40vw" alt="Jürg Raz alla fine degli anni Ottanta, seduto davanti a un muretto a secco" width="1600" height="1600" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="media-legende">Jürg Raz, fine anni Ottanta</figcaption>
+</figure>
+    </div>
+  </div>
+</section>
+<section class="sezione frt fondo-salvia" id="radici" data-module="frise-tracee">
+  <div class="conteneur frt__testa">
+    <p class="sopra" data-anime>Le radici</p>
+    <h2 data-anime="lignes">Una storia in <em>quattro tappe</em></h2>
+    <div class="frt__chiffres">
+      <p class="frt__chiffre"><span class="frt__prima">più di</span><span class="frt__n" data-compte="40">40</span><span class="frt__l">anni di lavoro</span></p>
+      <p class="frt__chiffre"><span class="frt__n" data-compte="5">5</span><span class="frt__l">lingue parlate da Giacomo</span></p>
+    </div>
+  </div>
+  <ol class="conteneur frt__frise">
+    <svg class="frt__trait" viewBox="0 0 4 100" preserveAspectRatio="none" aria-hidden="true"><path d="M2 0 L2 100"/></svg>
+    <li class="frt__etape">
+      <p class="frt__annee">Anni &#39;80</p>
+      <div class="frt__corps"><h3>Jürg in Liguria</h3><p>A vent&#39;anni Jürg Raz, maestro elementare dell&#39;Oberland bernese, si trasferisce in Liguria. Compra uliveti abbandonati nel Ponente Ligure e li riporta in produzione, ricostruendo muretti a secco e potando gli alberi.</p></div>
+      <div class="frt__visuel"><figure class="media frt__media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/potatura-800.webp" srcset="/assets/images/grok/potatura-640.webp 640w, /assets/images/grok/potatura-800.webp 800w" sizes="(max-width: 760px) 80vw, 24vw" alt="Rami potati ai piedi di un vecchio ulivo, un muretto in ricostruzione" width="800" height="600" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustrazione generata</figcaption>
+</figure></div>
+    </li><li class="frt__etape">
+      <p class="frt__annee">Fine anni &#39;90</p>
+      <div class="frt__corps"><h3>Il ritorno in Svizzera</h3><p>Jürg torna in Svizzera per vendere i suoi prodotti e conquista in poco tempo alberghi e ristoranti di alto livello.</p></div>
+      <div class="frt__visuel"><figure class="media frt__media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/jurg-2000-1600.webp" srcset="/assets/images/jurg-2000-1024.webp 1024w, /assets/images/jurg-2000-1168.webp 1168w, /assets/images/jurg-2000-1600.webp 1600w" sizes="(max-width: 760px) 80vw, 24vw" alt="Jürg all&#39;inizio degli anni Duemila, accanto ai fusti" width="1600" height="1067" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+    </li><li class="frt__etape">
+      <p class="frt__annee">2021</p>
+      <div class="frt__corps"><h3>Il passaggio a Giacomo</h3><p>Dopo più di quarant&#39;anni di lavoro Jürg va in pensione e affida l&#39;azienda all&#39;amico di lunga data Giacomo Bassanini, che la rileva nell&#39;ottobre 2021.</p></div>
+      <div class="frt__visuel frt__visuel--testo" data-visuel><p>Ottobre 2021</p></div>
+    </li><li class="frt__etape">
+      <p class="frt__annee">Oggi</p>
+      <div class="frt__corps"><h3>Tra Liguria e Ticino</h3><p>Giacomo fa la spola tra la Liguria e il Ticino, dove ha la base logistica, e consegna regolarmente in tutta la Svizzera.</p></div>
+      <div class="frt__visuel"><figure class="media frt__media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/uliveto-reti-800.webp" srcset="/assets/images/uliveto-reti-640.webp 640w, /assets/images/uliveto-reti-800.webp 800w" sizes="(max-width: 760px) 80vw, 24vw" alt="Uliveto con le reti di raccolta stese, foto Natural-Iter" width="800" height="1000" loading="lazy" decoding="async">
+  </picture>
+</figure></div>
+    </li>
+  </ol>
+</section>
+<section class="sezione giacomo" id="giacomo">
+  <div class="conteneur giacomo-griglia">
+    <div class="giacomo-ritratto">
+      <figure class="media giacomo-media" data-fx="zoom" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/giacomo-480.webp" srcset="/assets/images/giacomo-480.webp 480w" sizes="(max-width: 760px) 50vw, 20vw" alt="Giacomo Bassanini" width="480" height="480" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+    <div class="giacomo-testo">
+      <p class="sopra" data-anime>Il successore</p>
+      <h2 data-anime="lignes">Giacomo Bassanini, <em>chimico</em> di formazione</h2>
+      <p data-anime>Chimico, ha lavorato nell&#39;industria farmaceutica e poi insegnato per undici anni in una scuola professionale. Nell&#39;ottobre 2021 ha rilevato Natural-Iter.</p>
+      <p data-anime>Vive in Ticino, dove ha sede la logistica, e con il marchio Waldmuus raccoglie linfa di betulla e aglio orsino. Parla e scrive cinque lingue: puoi scrivergli nella tua.</p>
+      <ul class="lingue" data-anime="cascade" aria-label="Lingue parlate da Giacomo">
+        <li lang="it">Italiano</li><li lang="de">Deutsch</li><li lang="fr">Français</li><li lang="en">English</li><li lang="es">Español</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="sezione tragitto fondo-oliva" id="tragitto">
+  <div class="conteneur tragitto-griglia">
+    <div class="tragitto-testo">
+      <p class="sopra" data-anime>Il tragitto</p>
+      <h2 data-anime="lignes">Dal Ponente Ligure <em>a Mendrisio</em></h2>
+      <p data-anime>Le olive crescono sulle fasce del Ponente Ligure; olio e olive arrivano a Mendrisio, da dove partono le consegne per tutta la Svizzera.</p>
+      <figure class="media tragitto-media" data-grok data-fx="parallaxe" style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/mulattiera-mobile-640.webp 640w, /assets/images/grok/mulattiera-mobile-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 34vw">
+    <img src="/assets/images/grok/mulattiera-1280.webp" srcset="/assets/images/grok/mulattiera-640.webp 640w, /assets/images/grok/mulattiera-1280.webp 1280w, /assets/images/grok/mulattiera-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 34vw" alt="Una mulattiera in pietra che sale tra le fasce di ulivi" width="1280" height="720" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustrazione generata</figcaption>
+</figure>
+    </div>
+    <figure class="tragitto-mappa">
+      <svg class="mappa" viewBox="0 0 600 480" role="img" aria-label="Schema del tragitto dal Ponente Ligure a Mendrisio e delle consegne in Svizzera" data-fx="trace">
+  <rect class="mappa-terra" x="0" y="0" width="600" height="480" rx="18"/>
+  <path class="mappa-mare" d="M0 462 C 70 456 112 430 150 410 C 200 386 250 362 300 330 C 340 310 384 322 424 346 C 472 374 528 390 600 394 L600 462 Q600 480 582 480 L18 480 Q0 480 0 462 Z"/>
+  <g class="mappa-onde"><path d="M250 420 q14 -8 28 0 t28 0"/><path d="M380 440 q14 -8 28 0 t28 0"/><path d="M120 455 q14 -8 28 0 t28 0"/></g>
+  <path class="mappa-confine" d="M150 40 C 210 74 262 86 318 94 C 362 100 394 112 406 140 C 418 164 442 154 454 130 C 472 98 522 80 600 72"/>
+  <path class="mappa-percorso" data-fx-trait d="M150 404 C 186 344 248 292 298 246 C 348 200 392 168 422 138"/>
+  <g class="mappa-consegne">
+    <path data-fx-trait d="M428 122 C 418 92 398 62 368 34"/><path data-fx-trait d="M436 120 C 462 84 502 56 548 36"/><path data-fx-trait d="M422 126 C 378 104 318 84 258 64"/>
+  </g>
+  <circle class="mappa-punto" cx="150" cy="404" r="9"/><circle class="mappa-punto mappa-punto--casa" cx="424" cy="134" r="10"/>
+  <text class="mappa-testo" x="40" y="380">Ponente Ligure</text>
+  <text class="mappa-testo mappa-testo--piccolo mappa-testo--mare" x="300" y="410">Mar Ligure</text>
+  <text class="mappa-testo" x="444" y="170">Mendrisio</text>
+  <text class="mappa-testo mappa-testo--piccolo" x="470" y="58">Svizzera</text>
+  <text class="mappa-testo mappa-testo--piccolo" x="200" y="150">Italia</text>
+</svg>
+      <figcaption>Schema illustrativo, non in scala.</figcaption>
+    </figure>
+  </div>
+</section>
+<section class="sezione fine-pagina" id="fine">
+  <div class="conteneur fine-griglia">
+    <h2 data-anime="lignes">Il lavoro di quarant'anni, <em>a casa tua</em></h2>
+    <div>
+      <p data-anime>Olio, olive e paté, linfa di betulla e aglio orsino: tutto si ordina online, con spedizione gratuita in Svizzera da CHF 150.</p>
+      <p class="finale-azioni" data-anime><a href="/shop" class="bouton" data-libelle="Shop">Vai allo shop</a><a href="/contatti" class="bouton bouton--contour" data-libelle="Contatti">Scrivici</a></p>
+    </div>
+  </div>
+  <div class="muretto-fascia muretto-fascia--fine" data-effet="muretto"><svg class="muretto" viewBox="0 0 1440 90" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false"><path class="pietra" d="M6.2 5.8 L39.6 5.3 Q43.6 5.3 43.6 9.3 L46.4 24.7 Q46.4 28.7 42.4 28.7 L6.0 29.0 Q2.0 29.0 2.0 25.0 L2.2 9.8 Q2.2 5.8 6.2 5.8 Z" fill="#bfb6a0" style="--x:0.017;--r:2"/><path class="pietra" d="M52.5 7.7 L95.9 7.7 Q99.9 7.7 99.9 11.7 L101.8 24.6 Q101.8 28.6 97.8 28.6 L54.4 28.9 Q50.4 28.9 50.4 24.9 L48.5 11.7 Q48.5 7.7 52.5 7.7 Z" fill="#ddd5c3" style="--x:0.052;--r:2"/><path class="pietra" d="M106.3 5.8 L169.5 7.0 Q173.5 7.0 173.5 11.0 L173.9 25.2 Q173.9 29.2 169.9 29.2 L108.3 27.8 Q104.3 27.8 104.3 23.8 L102.3 9.8 Q102.3 5.8 106.3 5.8 Z" fill="#d6ccb7" style="--x:0.097;--r:2"/><path class="pietra" d="M184.0 7.0 L288.1 7.0 Q292.1 7.0 292.1 11.0 L291.5 24.6 Q291.5 28.6 287.5 28.6 L184.4 28.2 Q180.4 28.2 180.4 24.2 L180.0 11.0 Q180.0 7.0 184.0 7.0 Z" fill="#bfb6a0" style="--x:0.163;--r:2"/><path class="pietra" d="M297.8 6.6 L380.0 7.5 Q384.0 7.5 384.0 11.5 L388.7 24.5 Q388.7 28.5 384.7 28.5 L297.7 28.1 Q293.7 28.1 293.7 24.1 L293.8 10.6 Q293.8 6.6 297.8 6.6 Z" fill="#cbc2ad" style="--x:0.236;--r:2"/><path class="pietra" d="M396.4 7.5 L443.9 8.0 Q447.9 8.0 447.9 12.0 L448.2 24.3 Q448.2 28.3 444.2 28.3 L395.3 28.3 Q391.3 28.3 391.3 24.3 L392.4 11.5 Q392.4 7.5 396.4 7.5 Z" fill="#d6ccb7" style="--x:0.291;--r:2"/><path class="pietra" d="M455.3 8.5 L496.5 8.2 Q500.5 8.2 500.5 12.2 L496.4 24.0 Q496.4 28.0 492.4 28.0 L455.3 28.7 Q451.3 28.7 451.3 24.7 L451.3 12.5 Q451.3 8.5 455.3 8.5 Z" fill="#c7bca4" style="--x:0.330;--r:2"/><path class="pietra" d="M504.5 9.0 L578.2 8.9 Q582.2 8.9 582.2 12.9 L585.2 24.5 Q585.2 28.5 581.2 28.5 L508.9 28.8 Q504.9 28.8 504.9 24.8 L500.5 13.0 Q500.5 9.0 504.5 9.0 Z" fill="#bfb6a0" style="--x:0.377;--r:2"/><path class="pietra" d="M588.6 5.3 L658.8 6.6 Q662.8 6.6 662.8 10.6 L661.0 24.5 Q661.0 28.5 657.0 28.5 L590.2 28.0 Q586.2 28.0 586.2 24.0 L584.6 9.3 Q584.6 5.3 588.6 5.3 Z" fill="#ddd5c3" style="--x:0.433;--r:2"/><path class="pietra" d="M669.8 7.3 L729.9 7.4 Q733.9 7.4 733.9 11.4 L733.5 24.9 Q733.5 28.9 729.5 28.9 L668.2 28.4 Q664.2 28.4 664.2 24.4 L665.8 11.3 Q665.8 7.3 669.8 7.3 Z" fill="#bfb6a0" style="--x:0.486;--r:2"/><path class="pietra" d="M741.7 8.0 L790.6 8.7 Q794.6 8.7 794.6 12.7 L797.3 24.4 Q797.3 28.4 793.3 28.4 L744.2 27.9 Q740.2 27.9 740.2 23.9 L737.7 12.0 Q737.7 8.0 741.7 8.0 Z" fill="#b9ae95" style="--x:0.532;--r:2"/><path class="pietra" d="M803.9 6.7 L842.8 7.2 Q846.8 7.2 846.8 11.2 L844.7 24.2 Q844.7 28.2 840.7 28.2 L802.8 29.2 Q798.8 29.2 798.8 25.2 L799.9 10.7 Q799.9 6.7 803.9 6.7 Z" fill="#ddd5c3" style="--x:0.571;--r:2"/><path class="pietra" d="M856.5 8.9 L937.5 8.9 Q941.5 8.9 941.5 12.9 L941.8 24.6 Q941.8 28.6 937.8 28.6 L856.8 28.9 Q852.8 28.9 852.8 24.9 L852.5 12.9 Q852.5 8.9 856.5 8.9 Z" fill="#b9ae95" style="--x:0.622;--r:2"/><path class="pietra" d="M948.9 7.7 L1031.2 5.8 Q1035.2 5.8 1035.2 9.8 L1034.5 23.9 Q1034.5 27.9 1030.5 27.9 L952.1 28.6 Q948.1 28.6 948.1 24.6 L944.9 11.7 Q944.9 7.7 948.9 7.7 Z" fill="#b9ae95" style="--x:0.687;--r:2"/><path class="pietra" d="M1044.1 8.6 L1110.5 9.6 Q1114.5 9.6 1114.5 13.6 L1117.0 25.2 Q1117.0 29.2 1113.0 29.2 L1042.5 28.7 Q1038.5 28.7 1038.5 24.7 L1040.1 12.6 Q1040.1 8.6 1044.1 8.6 Z" fill="#cbc2ad" style="--x:0.747;--r:2"/><path class="pietra" d="M1124.1 5.7 L1214.2 5.5 Q1218.2 5.5 1218.2 9.5 L1218.7 24.8 Q1218.7 28.8 1214.7 28.8 L1123.3 28.4 Q1119.3 28.4 1119.3 24.4 L1120.1 9.7 Q1120.1 5.7 1124.1 5.7 Z" fill="#cbc2ad" style="--x:0.812;--r:2"/><path class="pietra" d="M1228.4 3.4 L1270.0 4.8 Q1274.0 4.8 1274.0 8.8 L1274.2 25.2 Q1274.2 29.2 1270.2 29.2 L1230.8 28.7 Q1226.8 28.7 1226.8 24.7 L1224.4 7.4 Q1224.4 3.4 1228.4 3.4 Z" fill="#bfb6a0" style="--x:0.868;--r:2"/><path class="pietra" d="M1284.2 8.8 L1373.8 9.3 Q1377.8 9.3 1377.8 13.3 L1375.7 24.7 Q1375.7 28.7 1371.7 28.7 L1284.4 28.6 Q1280.4 28.6 1280.4 24.6 L1280.2 12.8 Q1280.2 8.8 1284.2 8.8 Z" fill="#d6ccb7" style="--x:0.922;--r:2"/><path class="pietra" d="M1382.5 9.2 L1492.1 8.9 Q1496.1 8.9 1496.1 12.9 L1494.6 24.3 Q1494.6 28.3 1490.6 28.3 L1385.9 28.3 Q1381.9 28.3 1381.9 24.3 L1378.5 13.2 Q1378.5 9.2 1382.5 9.2 Z" fill="#ddd5c3" style="--x:0.998;--r:2"/><path class="pietra" d="M-3.2 36.3 L41.1 34.9 Q45.1 34.9 45.1 38.9 L44.1 53.8 Q44.1 57.8 40.1 57.8 L-4.9 58.3 Q-8.9 58.3 -8.9 54.3 L-7.2 40.3 Q-7.2 36.3 -3.2 36.3 Z" fill="#d6ccb7" style="--x:0.013;--r:1"/><path class="pietra" d="M52.9 36.4 L135.2 37.5 Q139.2 37.5 139.2 41.5 L140.4 53.9 Q140.4 57.9 136.4 57.9 L55.4 58.5 Q51.4 58.5 51.4 54.5 L48.9 40.4 Q48.9 36.4 52.9 36.4 Z" fill="#ddd5c3" style="--x:0.066;--r:1"/><path class="pietra" d="M149.2 37.4 L195.6 35.7 Q199.6 35.7 199.6 39.7 L202.5 54.2 Q202.5 58.2 198.5 58.2 L146.0 58.9 Q142.0 58.9 142.0 54.9 L145.2 41.4 Q145.2 37.4 149.2 37.4 Z" fill="#ddd5c3" style="--x:0.120;--r:1"/><path class="pietra" d="M211.2 38.9 L272.3 38.0 Q276.3 38.0 276.3 42.0 L273.9 53.8 Q273.9 57.8 269.9 57.8 L210.3 58.8 Q206.3 58.8 206.3 54.8 L207.2 42.9 Q207.2 38.9 211.2 38.9 Z" fill="#b9ae95" style="--x:0.167;--r:1"/><path class="pietra" d="M285.1 38.5 L362.0 37.5 Q366.0 37.5 366.0 41.5 L365.1 54.0 Q365.1 58.0 361.1 58.0 L286.2 58.6 Q282.2 58.6 282.2 54.6 L281.1 42.5 Q281.1 38.5 285.1 38.5 Z" fill="#ddd5c3" style="--x:0.225;--r:1"/><path class="pietra" d="M377.1 40.2 L479.3 39.8 Q483.3 39.8 483.3 43.8 L483.6 54.0 Q483.6 58.0 479.6 58.0 L377.4 58.5 Q373.4 58.5 373.4 54.5 L373.1 44.2 Q373.1 40.2 377.1 40.2 Z" fill="#bfb6a0" style="--x:0.296;--r:1"/><path class="pietra" d="M489.2 38.0 L524.2 37.9 Q528.2 37.9 528.2 41.9 L530.0 54.7 Q530.0 58.7 526.0 58.7 L491.0 58.0 Q487.0 58.0 487.0 54.0 L485.2 42.0 Q485.2 38.0 489.2 38.0 Z" fill="#c7bca4" style="--x:0.352;--r:1"/><path class="pietra" d="M535.2 35.2 L633.4 35.9 Q637.4 35.9 637.4 39.9 L635.7 54.3 Q635.7 58.3 631.7 58.3 L535.1 58.6 Q531.1 58.6 531.1 54.6 L531.2 39.2 Q531.2 35.2 535.2 35.2 Z" fill="#d6ccb7" style="--x:0.406;--r:1"/><path class="pietra" d="M643.4 34.3 L699.4 34.1 Q703.4 34.1 703.4 38.1 L704.3 54.1 Q704.3 58.1 700.3 58.1 L643.5 57.9 Q639.5 57.9 639.5 53.9 L639.4 38.3 Q639.4 34.3 643.4 34.3 Z" fill="#a99e85" style="--x:0.466;--r:1"/><path class="pietra" d="M712.2 35.1 L785.3 34.2 Q789.3 34.2 789.3 38.2 L787.9 54.8 Q787.9 58.8 783.9 58.8 L709.3 58.9 Q705.3 58.9 705.3 54.9 L708.2 39.1 Q708.2 35.1 712.2 35.1 Z" fill="#a99e85" style="--x:0.519;--r:1"/><path class="pietra" d="M795.8 38.5 L888.9 38.6 Q892.9 38.6 892.9 42.6 L894.8 55.1 Q894.8 59.1 890.8 59.1 L799.0 59.2 Q795.0 59.2 795.0 55.2 L791.8 42.5 Q791.8 38.5 795.8 38.5 Z" fill="#ddd5c3" style="--x:0.586;--r:1"/><path class="pietra" d="M904.9 36.9 L939.2 36.6 Q943.2 36.6 943.2 40.6 L943.6 55.0 Q943.6 59.0 939.6 59.0 L902.4 58.6 Q898.4 58.6 898.4 54.6 L900.9 40.9 Q900.9 36.9 904.9 36.9 Z" fill="#cbc2ad" style="--x:0.640;--r:1"/><path class="pietra" d="M952.7 37.6 L1042.3 37.1 Q1046.3 37.1 1046.3 41.1 L1046.1 55.1 Q1046.1 59.1 1042.1 59.1 L950.1 58.1 Q946.1 58.1 946.1 54.1 L948.7 41.6 Q948.7 37.6 952.7 37.6 Z" fill="#bfb6a0" style="--x:0.692;--r:1"/><path class="pietra" d="M1053.2 37.8 L1138.5 35.6 Q1142.5 35.6 1142.5 39.6 L1140.5 54.3 Q1140.5 58.3 1136.5 58.3 L1052.7 58.9 Q1048.7 58.9 1048.7 54.9 L1049.2 41.8 Q1049.2 37.8 1053.2 37.8 Z" fill="#ddd5c3" style="--x:0.761;--r:1"/><path class="pietra" d="M1149.7 35.6 L1192.4 36.3 Q1196.4 36.3 1196.4 40.3 L1196.8 54.9 Q1196.8 58.9 1192.8 58.9 L1150.7 58.8 Q1146.7 58.8 1146.7 54.8 L1145.7 39.6 Q1145.7 35.6 1149.7 35.6 Z" fill="#c7bca4" style="--x:0.814;--r:1"/><path class="pietra" d="M1204.3 34.2 L1261.1 33.5 Q1265.1 33.5 1265.1 37.5 L1263.2 54.3 Q1263.2 58.3 1259.2 58.3 L1207.0 57.9 Q1203.0 57.9 1203.0 53.9 L1200.3 38.2 Q1200.3 34.2 1204.3 34.2 Z" fill="#b9ae95" style="--x:0.856;--r:1"/><path class="pietra" d="M1273.0 37.0 L1366.0 37.1 Q1370.0 37.1 1370.0 41.1 L1369.8 54.4 Q1369.8 58.4 1365.8 58.4 L1273.7 58.6 Q1269.7 58.6 1269.7 54.6 L1269.0 41.0 Q1269.0 37.0 1273.0 37.0 Z" fill="#ddd5c3" style="--x:0.916;--r:1"/><path class="pietra" d="M1381.5 39.1 L1483.2 38.9 Q1487.2 38.9 1487.2 42.9 L1488.4 54.4 Q1488.4 58.4 1484.4 58.4 L1380.9 58.6 Q1376.9 58.6 1376.9 54.6 L1377.5 43.1 Q1377.5 39.1 1381.5 39.1 Z" fill="#cbc2ad" style="--x:0.995;--r:1"/><path class="pietra" d="M5.7 67.3 L51.1 65.9 Q55.1 65.9 55.1 69.9 L57.9 84.8 Q57.9 88.8 53.9 88.8 L4.1 89.0 Q0.1 89.0 0.1 85.0 L1.7 71.3 Q1.7 67.3 5.7 67.3 Z" fill="#c7bca4" style="--x:0.020;--r:0"/><path class="pietra" d="M67.5 66.5 L172.2 67.3 Q176.2 67.3 176.2 71.3 L174.8 85.2 Q174.8 89.2 170.8 89.2 L64.2 88.8 Q60.2 88.8 60.2 84.8 L63.5 70.5 Q63.5 66.5 67.5 66.5 Z" fill="#a99e85" style="--x:0.083;--r:0"/><path class="pietra" d="M184.3 66.8 L243.2 68.4 Q247.2 68.4 247.2 72.4 L247.2 84.1 Q247.2 88.1 243.2 88.1 L183.2 89.2 Q179.2 89.2 179.2 85.2 L180.3 70.8 Q180.3 66.8 184.3 66.8 Z" fill="#a99e85" style="--x:0.148;--r:0"/><path class="pietra" d="M255.9 68.3 L312.2 67.5 Q316.2 67.5 316.2 71.5 L315.1 85.2 Q315.1 89.2 311.1 89.2 L256.3 88.8 Q252.3 88.8 252.3 84.8 L251.9 72.3 Q251.9 68.3 255.9 68.3 Z" fill="#bfb6a0" style="--x:0.197;--r:0"/><path class="pietra" d="M324.5 67.0 L375.9 66.5 Q379.9 66.5 379.9 70.5 L379.5 84.7 Q379.5 88.7 375.5 88.7 L325.6 88.5 Q321.6 88.5 321.6 84.5 L320.5 71.0 Q320.5 67.0 324.5 67.0 Z" fill="#bfb6a0" style="--x:0.243;--r:0"/><path class="pietra" d="M385.5 65.3 L451.1 65.1 Q455.1 65.1 455.1 69.1 L453.9 84.0 Q453.9 88.0 449.9 88.0 L384.2 88.9 Q380.2 88.9 380.2 84.9 L381.5 69.3 Q381.5 65.3 385.5 65.3 Z" fill="#bfb6a0" style="--x:0.290;--r:0"/><path class="pietra" d="M462.2 67.9 L563.7 68.3 Q567.7 68.3 567.7 72.3 L566.9 85.0 Q566.9 89.0 562.9 89.0 L460.9 88.8 Q456.9 88.8 456.9 84.8 L458.2 71.9 Q458.2 67.9 462.2 67.9 Z" fill="#ddd5c3" style="--x:0.355;--r:0"/><path class="pietra" d="M574.9 65.9 L662.4 65.7 Q666.4 65.7 666.4 69.7 L668.6 84.4 Q668.6 88.4 664.6 88.4 L575.6 88.2 Q571.6 88.2 571.6 84.2 L570.9 69.9 Q570.9 65.9 574.9 65.9 Z" fill="#d6ccb7" style="--x:0.430;--r:0"/><path class="pietra" d="M674.1 64.7 L777.6 64.2 Q781.6 64.2 781.6 68.2 L780.9 85.0 Q780.9 89.0 776.9 89.0 L673.8 88.8 Q669.8 88.8 669.8 84.8 L670.1 68.7 Q670.1 64.7 674.1 64.7 Z" fill="#d6ccb7" style="--x:0.505;--r:0"/><path class="pietra" d="M792.9 68.0 L840.9 67.7 Q844.9 67.7 844.9 71.7 L845.6 84.7 Q845.6 88.7 841.6 88.7 L791.8 88.4 Q787.8 88.4 787.8 84.4 L788.9 72.0 Q788.9 68.0 792.9 68.0 Z" fill="#c7bca4" style="--x:0.567;--r:0"/><path class="pietra" d="M855.3 69.2 L898.1 69.1 Q902.1 69.1 902.1 73.1 L904.9 84.6 Q904.9 88.6 900.9 88.6 L852.8 87.9 Q848.8 87.9 848.8 83.9 L851.3 73.2 Q851.3 69.2 855.3 69.2 Z" fill="#cbc2ad" style="--x:0.609;--r:0"/><path class="pietra" d="M912.2 66.6 L1017.2 67.6 Q1021.2 67.6 1021.2 71.6 L1021.1 83.9 Q1021.1 87.9 1017.1 87.9 L912.6 89.1 Q908.6 89.1 908.6 85.1 L908.2 70.6 Q908.2 66.6 912.2 66.6 Z" fill="#b9ae95" style="--x:0.669;--r:0"/><path class="pietra" d="M1028.6 67.0 L1087.3 66.3 Q1091.3 66.3 1091.3 70.3 L1089.5 84.4 Q1089.5 88.4 1085.5 88.4 L1026.0 87.9 Q1022.0 87.9 1022.0 83.9 L1024.6 71.0 Q1024.6 67.0 1028.6 67.0 Z" fill="#bfb6a0" style="--x:0.734;--r:0"/><path class="pietra" d="M1098.8 68.9 L1171.3 68.5 Q1175.3 68.5 1175.3 72.5 L1175.6 85.1 Q1175.6 89.1 1171.6 89.1 L1100.7 89.0 Q1096.7 89.0 1096.7 85.0 L1094.8 72.9 Q1094.8 68.9 1098.8 68.9 Z" fill="#a99e85" style="--x:0.789;--r:0"/><path class="pietra" d="M1183.2 68.5 L1247.6 70.3 Q1251.6 70.3 1251.6 74.3 L1252.7 84.3 Q1252.7 88.3 1248.7 88.3 L1181.3 89.0 Q1177.3 89.0 1177.3 85.0 L1179.2 72.5 Q1179.2 68.5 1183.2 68.5 Z" fill="#bfb6a0" style="--x:0.844;--r:0"/><path class="pietra" d="M1259.1 65.8 L1334.5 65.3 Q1338.5 65.3 1338.5 69.3 L1339.6 84.9 Q1339.6 88.9 1335.6 88.9 L1259.1 88.0 Q1255.1 88.0 1255.1 84.0 L1255.1 69.8 Q1255.1 65.8 1259.1 65.8 Z" fill="#d6ccb7" style="--x:0.902;--r:0"/><path class="pietra" d="M1350.8 69.4 L1405.0 69.5 Q1409.0 69.5 1409.0 73.5 L1410.3 84.8 Q1410.3 88.8 1406.3 88.8 L1351.1 88.0 Q1347.1 88.0 1347.1 84.0 L1346.8 73.4 Q1346.8 69.4 1350.8 69.4 Z" fill="#a99e85" style="--x:0.956;--r:0"/><path class="pietra" d="M1417.4 65.6 L1496.2 66.8 Q1500.2 66.8 1500.2 70.8 L1498.6 84.4 Q1498.6 88.4 1494.6 88.4 L1419.4 88.3 Q1415.4 88.3 1415.4 84.3 L1413.4 69.6 Q1413.4 65.6 1417.4 65.6 Z" fill="#d6ccb7" style="--x:1.011;--r:0"/></svg></div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marca">
+      <img src="/assets/images/logo-240.webp" alt="Natural-Iter" width="123" height="60" loading="lazy">
+      <p>Natural-Iter di Bassanini Giacomo<br>Via Vignalunga 7<br>6850 Mendrisio</p>
+      <p><a href="tel:+41797037805">+41 79 703 78 05</a><br><a href="mailto:naturaliter@outlook.com">naturaliter@outlook.com</a></p>
+    </div>
+    <nav aria-label="Il sito">
+      <p class="pied-titolo">Il sito</p>
+      <ul><li><a href="/" data-libelle="Home">Home</a></li><li><a href="/prodotti" data-libelle="Prodotti">Prodotti</a></li><li><a href="/chi-siamo" data-libelle="Chi siamo" aria-current="page">Chi siamo</a></li><li><a href="/shop" data-libelle="Shop">Shop</a></li><li><a href="/contatti" data-libelle="Contatti">Contatti</a></li><li><a href="/shop#buono-regalo" data-libelle="Shop">Buono regalo</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titolo">Seguici</p>
+      <ul>
+        <li><a href="https://www.instagram.com/natural_iter/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61551024487038" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.facebook.com/Linfa-di-betulla-Waldmuus-2101944556770735/" target="_blank" rel="noopener">Waldmuus su Facebook</a></li>
+        <li><a href="#haut" data-sans-transition>Torna su</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="pied-titolo">Spedizione</p>
+      <p>Spedizione gratuita in Svizzera da CHF 150</p>
+      <p>Tutti i nostri prodotti sono senza ingredienti artificiali.</p>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Note legali · Informativa sulla privacy: da completare</p><p>Sito dimostrativo: ordini, pagamenti e invii sono simulati.</p><p>© Natural-Iter di Bassanini Giacomo</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+41797037805">Chiama</a>
+  <a class="bouton" href="/shop" data-libelle="Shop">Shop</a>
+</div>
+<div data-module="panier-en-tiroir" data-panier-tiroir>
+  <script type="application/json" data-panier-reglages>{"devise":"CHF","seuil_livraison":150,"frais_livraison":null,"tva":null,"cle":"natural-iter-carrello","prefixe":"NI"}</script>
+</div>
+</body>
+</html>

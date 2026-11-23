@@ -1,0 +1,452 @@
+[
+ {
+  "source": "recu/logo-natural-iter.png",
+  "nom": "logo",
+  "role": "logo",
+  "alt": "Natural-Iter"
+ },
+ {
+  "source": "recu/grok/g-fasce.jpg",
+  "nom": "grok/fasce",
+  "role": "ouverture",
+  "ratio": "4:5",
+  "mobile": "4:5",
+  "page": "accueil",
+  "emplacement": "Ouverture de l'accueil, colonne de droite (bouteille posée devant)",
+  "priorite": "Indispensable",
+  "gabarit": "lieu",
+  "alt": "Fasce di ulivi sostenute da muretti a secco nel Ponente Ligure",
+  "scene": "Vertical view of narrow olive terraces in the hills of the Ponente Ligure (western Liguria, Italy), each terrace held by an old dry-stone wall, silvery old olive trees in rows stepping down the slope, the Ligurian sea as a pale haze far below, real scale of a small family grove, terraces sharp and detailed in the lower half",
+  "beaute": 5
+ },
+ {
+  "source": "recu/grok/g-muretto.jpg",
+  "nom": "grok/muretto",
+  "role": "section-fond",
+  "mobile": "4:5",
+  "page": "accueil",
+  "emplacement": "Section L'oliva taggiasca (grande image)",
+  "priorite": "Indispensable",
+  "gabarit": "lieu",
+  "zone_texte": "gauche",
+  "alt": "Muretto a secco e tronco di un vecchio ulivo su una fascia ligure",
+  "scene": "Close three-quarter view of an old dry-stone terrace wall in western Liguria, the twisted silver trunk of an old olive tree growing just above it, green harvest nets rolled up at its foot, small stones fitted by hand, the left third of the frame calm (sky or soft foliage)",
+  "beaute": 4,
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ]
+ },
+ {
+  "source": "recu/grok/g-raccolta.jpg",
+  "nom": "grok/raccolta",
+  "role": "galerie",
+  "ratio": "4:5",
+  "page": "accueil",
+  "emplacement": "La filiera, étape 1 : la récolte",
+  "priorite": "Indispensable",
+  "consigne_scene": "Close-up of small Taggiasca olives, a mix of green, violet and nearly black, freshly fallen on a green harvest net spread under olive branches, a few silver-green leaves among them",
+  "alt": "Olive taggiasche appena cadute sulla rete di raccolta",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/g-frantoio.jpg",
+  "nom": "grok/frantoio",
+  "role": "galerie",
+  "ratio": "4:5",
+  "page": "accueil",
+  "emplacement": "La filiera, étape 2 : le moulin",
+  "priorite": "Indispensable",
+  "consigne_scene": "Inside a small, clean modern olive mill, a thin stream of fresh cloudy golden-green olive oil pouring from a plain stainless steel spout into a plain stainless steel tank, cool clean light with one warm reflection, no brand on any machine",
+  "alt": "Olio appena estratto che scende in una vasca d'acciaio",
+  "beaute": 3
+ },
+ {
+  "source": "recu/grok/g-bosco.jpg",
+  "nom": "grok/bosco",
+  "role": "section-fond",
+  "mobile": "4:5",
+  "page": "accueil",
+  "emplacement": "Section Dal bosco ticinese (Waldmuus), fond",
+  "priorite": "Indispensable",
+  "gabarit": "lieu",
+  "zone_texte": "gauche",
+  "alt": "Bosco di betulle in Ticino all'inizio della primavera",
+  "scene": "A small birch wood on a hillside of the Malcantone in Ticino (southern Switzerland) in early spring, slender white trunks, fresh pale green leaves just opening, a dense carpet of wild garlic with white star-shaped flowers on the ground, soft morning light filtering through, the left third of the frame calm",
+  "beaute": 4,
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ]
+ },
+ {
+  "source": "recu/grok/g-tavola.jpg",
+  "nom": "grok/tavola",
+  "role": "section-fond",
+  "mobile": "4:5",
+  "page": "accueil",
+  "emplacement": "Appel final de l'accueil (fond)",
+  "priorite": "Indispensable",
+  "gabarit": "lieu",
+  "zone_texte": "gauche",
+  "alt": "Tavola apparecchiata con pane, olio d'oliva e limoni",
+  "scene": "A rustic stone table in the courtyard of an old Ticino stone house at the end of the day, a shallow white ceramic dish of golden-green olive oil, a sliced loaf of country bread, a few lemons with leaves, an olive sprig on a linen cloth, no bottle anywhere, the left half of the frame calm (plain stone wall)",
+  "beaute": 4,
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ]
+ },
+ {
+  "source": "recu/grok/g-404.jpg",
+  "nom": "grok/pagina-404",
+  "role": "404",
+  "ratio": "16:9",
+  "page": "404",
+  "emplacement": "Page 404, en tête",
+  "priorite": "Conseillée",
+  "consigne_scene": "A single wooden olive-harvest ladder leaning against an old olive tree on an empty terrace in western Liguria at dusk, a green harvest net spread on the ground with one lonely olive in the middle, gentle humour, the upper half calm sky",
+  "alt": "Una scala da raccolta appoggiata a un ulivo, la rete vuota",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/g-reti.jpg",
+  "nom": "grok/reti",
+  "role": "section-fond",
+  "ratio": "21:9",
+  "mobile": "4:5",
+  "page": "prodotti",
+  "emplacement": "Page I prodotti : bandeau sous le grand titre",
+  "priorite": "Indispensable",
+  "gabarit": "lieu",
+  "alt": "Reti di raccolta stese sotto gli ulivi sulle fasce",
+  "scene": "Wide panoramic view of green harvest nets spread under rows of old olive trees on stepped dry-stone terraces in western Liguria, early morning light, a few wooden crates on the terrace, real scale of a small family grove, the subject spread across the whole width",
+  "beaute": 5,
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ]
+ },
+ {
+  "source": "recu/grok/g-limoni.jpg",
+  "nom": "grok/limoni",
+  "role": "galerie",
+  "ratio": "4:5",
+  "page": "prodotti",
+  "emplacement": "Page I prodotti : l'huile au citron",
+  "priorite": "Conseillée",
+  "consigne_scene": "Fresh Ligurian lemons with their dark green leaves, one lemon cut in half, a few olive sprigs, on a pale linen cloth on an old wooden table, morning light, no bottle, no jar",
+  "alt": "Limoni liguri freschi con foglie e rametti d'ulivo",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/g-salamoia.jpg",
+  "nom": "grok/salamoia",
+  "role": "galerie",
+  "ratio": "4:5",
+  "page": "prodotti",
+  "emplacement": "Page I prodotti : les olives de table",
+  "priorite": "Conseillée",
+  "consigne_scene": "Small Taggiasca olives in brine with wild herbs (bay leaves, thyme, rosemary) in a glazed terracotta bowl on an olive-wood board, a sprig of thyme beside it, soft side light, no jar, no lid",
+  "alt": "Olive taggiasche in salamoia con erbe selvatiche",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/g-aglio.jpg",
+  "nom": "grok/aglio-bosco",
+  "role": "vignette",
+  "ratio": "4:3",
+  "page": "prodotti",
+  "emplacement": "Page I prodotti : l'ail des ours (Waldmuus)",
+  "priorite": "Facultative",
+  "consigne_scene": "Close-up of wild garlic leaves and white star-shaped flowers on a damp forest floor in a Ticino wood in spring, dew drops, soft diffuse light",
+  "alt": "Foglie e fiori di aglio orsino nel bosco",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/g-mulattiera.jpg",
+  "nom": "grok/mulattiera",
+  "role": "section-fond",
+  "mobile": "4:5",
+  "page": "chi-siamo",
+  "emplacement": "Page Chi siamo : section Liguria – Ticino (fond)",
+  "priorite": "Indispensable",
+  "gabarit": "lieu",
+  "zone_texte": "gauche",
+  "alt": "Una mulattiera in pietra che sale tra le fasce di ulivi",
+  "scene": "An old stone mule track winding up between olive terraces and dry-stone walls in the hills of western Liguria, soft wooded hills on the horizon, late light, nobody on the path, the left third of the frame calm",
+  "beaute": 5,
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ]
+ },
+ {
+  "source": "recu/grok/g-potatura.jpg",
+  "nom": "grok/potatura",
+  "role": "vignette",
+  "ratio": "4:3",
+  "page": "chi-siamo",
+  "emplacement": "Page Chi siamo : frise, années 1980 (remise en état des oliveraies)",
+  "priorite": "Conseillée",
+  "consigne_scene": "Freshly pruned olive branches piled at the foot of an old gnarled olive tree on a narrow terrace, a dry-stone wall being rebuilt with a few loose stones beside it, a pruning saw resting on the wall, soft late light",
+  "alt": "Rami potati ai piedi di un vecchio ulivo, un muretto in ricostruzione",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/g-mendrisiotto.jpg",
+  "nom": "grok/mendrisiotto",
+  "role": "section-fond",
+  "ratio": "4:5",
+  "mobile": "4:5",
+  "page": "contatti",
+  "emplacement": "Page Contatti : ouverture, colonne de droite",
+  "priorite": "Indispensable",
+  "gabarit": "lieu",
+  "alt": "Colline del Mendrisiotto al tramonto",
+  "scene": "Vertical view of the rolling hills of southern Ticino (Mendrisiotto) at dusk, small vineyards and woods, a few stone houses with warm lit windows, a gentle wooded hill ridge in the background, no famous building, calm sky in the upper third",
+  "beaute": 4,
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ]
+ },
+ {
+  "source": "recu/olio-oliva-extravergine-taggiasco.jpg",
+  "nom": "olio-75",
+  "role": "produit",
+  "ratio": "4:5",
+  "beaute": 4,
+  "alt": "Bottiglia di olio extravergine taggiasco da 75 cl"
+ },
+ {
+  "source": "recu/olio-oliva-extravergine-taggiasco-2.jpg",
+  "nom": "olio-25",
+  "role": "produit",
+  "ratio": "4:5",
+  "beaute": 4,
+  "alt": "Bottiglia di olio extravergine taggiasco da 25 cl"
+ },
+ {
+  "source": "recu/zitronen-olivenol-25cl.jpg",
+  "nom": "olio-limone",
+  "role": "produit",
+  "ratio": "4:5",
+  "beaute": 4,
+  "alt": "Olio al limone da 25 cl con limoni freschi"
+ },
+ {
+  "source": "recu/olive-taggiasche-salamoia-210g.jpg",
+  "nom": "olive-salamoia",
+  "role": "produit",
+  "ratio": "4:5",
+  "beaute": 4,
+  "alt": "Vasetto di olive taggiasche in salamoia"
+ },
+ {
+  "source": "recu/olive-taggiasche-snocciolate-olio.jpg",
+  "nom": "olive-snocciolate",
+  "role": "produit",
+  "ratio": "4:5",
+  "cadrage": [
+   40,
+   55
+  ],
+  "beaute": 4,
+  "alt": "Vasetto di olive taggiasche snocciolate in olio"
+ },
+ {
+  "source": "recu/olivenpate-90g-pate-di.jpg",
+  "nom": "pate",
+  "role": "produit",
+  "ratio": "4:5",
+  "cadrage": [
+   55,
+   52
+  ],
+  "beaute": 4,
+  "alt": "Paté di olive taggiasche spalmato sul pane"
+ },
+ {
+  "source": "recu/karton-6-flaschen-75cl.jpg",
+  "nom": "cartone-6",
+  "role": "produit",
+  "ratio": "4:5",
+  "beaute": 3,
+  "alt": "Cartone da sei bottiglie da 75 cl"
+ },
+ {
+  "source": "recu/2-karton-12-flaschen.jpg",
+  "nom": "cartone-12",
+  "role": "produit",
+  "ratio": "4:5",
+  "beaute": 3,
+  "alt": "Due cartoni da sei bottiglie"
+ },
+ {
+  "source": "recu/3-karton-18-flaschen.jpg",
+  "nom": "cartone-18",
+  "role": "produit",
+  "ratio": "4:5",
+  "beaute": 3,
+  "alt": "Tre cartoni da sei bottiglie"
+ },
+ {
+  "source": "recu/1-5kg-pate-di.jpg",
+  "nom": "pate-1500",
+  "role": "produit",
+  "ratio": "4:5",
+  "beaute": 3,
+  "alt": "Vaso da 1,5 kg di paté di olive taggiasche"
+ },
+ {
+  "source": "recu/1-5kg-olive-taggiasche.jpg",
+  "nom": "snocciolate-1500",
+  "role": "produit",
+  "ratio": "4:5",
+  "beaute": 3,
+  "alt": "Vaso da 1,5 kg di olive taggiasche snocciolate"
+ },
+ {
+  "source": "recu/3-5kg-olive-taggiasche.jpg",
+  "nom": "salamoia-3500",
+  "role": "produit",
+  "ratio": "4:5",
+  "beaute": 3,
+  "alt": "Secchio da 3,5 kg di olive taggiasche in salamoia"
+ },
+ {
+  "source": "recu/5l-olio-oliva-extravergine.jpg",
+  "nom": "latta-5",
+  "role": "produit",
+  "ratio": "4:5",
+  "cadrage": [
+   35,
+   56
+  ],
+  "beaute": 3,
+  "alt": "Latta da 5 litri di olio extravergine taggiasco"
+ },
+ {
+  "source": "recu/5l-olio-oliva-extravergine-2.jpg",
+  "nom": "latta-25",
+  "role": "produit",
+  "ratio": "4:5",
+  "cadrage": [
+   60,
+   54
+  ],
+  "beaute": 3,
+  "alt": "Fusto da 25 litri e latta da 5 litri di olio extravergine"
+ },
+ {
+  "source": "recu/linfa-di-betulla-bio-2.jpg",
+  "nom": "linfa",
+  "role": "produit",
+  "ratio": "4:5",
+  "beaute": 4,
+  "alt": "Bottiglia di linfa di betulla bio in un bosco di betulle"
+ },
+ {
+  "source": "recu/multipack-3-1-linfa.jpg",
+  "nom": "linfa-multipack",
+  "role": "produit",
+  "ratio": "4:5",
+  "beaute": 3,
+  "alt": "Multipack di linfa di betulla bio"
+ },
+ {
+  "source": "recu/aglio-orsino-bio-olio.jpg",
+  "nom": "aglio-orsino",
+  "role": "produit",
+  "ratio": "4:5",
+  "beaute": 4,
+  "alt": "Vasetto di aglio orsino bio in olio"
+ },
+ {
+  "source": "recu/panettone-cioccolato-bianco-30-2.png",
+  "nom": "panettone",
+  "role": "produit",
+  "ratio": "4:5",
+  "cadrage": [
+   50,
+   55
+  ],
+  "beaute": 4,
+  "alt": "Panettone al cioccolato bianco tagliato, con le confezioni dorate"
+ },
+ {
+  "source": "recu/anisbrotli.jpg",
+  "nom": "anisbrotli",
+  "role": "produit",
+  "ratio": "4:5",
+  "beaute": 3,
+  "alt": "Anisbrötli in una scatola dorata"
+ },
+ {
+  "source": "recu/confezione-regalo-geschenkverpackung-6.jpg",
+  "nom": "confezione-regalo",
+  "role": "produit",
+  "ratio": "4:5",
+  "beaute": 3,
+  "alt": "Confezione regalo in legno con bottiglia e vasetti"
+ },
+ {
+  "source": "recu/uliveto-reti-ritaglio.jpg",
+  "nom": "uliveto-reti",
+  "role": "vignette",
+  "ratio": "4:5",
+  "beaute": 3,
+  "alt": "Uliveto con le reti di raccolta stese, foto Natural-Iter"
+ },
+ {
+  "source": "recu/natural-iter-2.jpg",
+  "nom": "jurg-anni-80",
+  "role": "galerie",
+  "ratio": "1:1",
+  "cadrage": [
+   50,
+   75
+  ],
+  "beaute": 4,
+  "alt": "Jürg Raz alla fine degli anni Ottanta, seduto davanti a un muretto a secco"
+ },
+ {
+  "source": "recu/natural-iter-3.jpg",
+  "nom": "jurg-2000",
+  "role": "galerie",
+  "ratio": "3:2",
+  "cadrage": [
+   52,
+   30
+  ],
+  "beaute": 3,
+  "alt": "Jürg all'inizio degli anni Duemila tra i fusti"
+ },
+ {
+  "source": "recu/natural-iter.jpg",
+  "nom": "giacomo",
+  "role": "portrait",
+  "ratio": "1:1",
+  "cadrage": [
+   41,
+   38
+  ],
+  "beaute": 3,
+  "alt": "Giacomo Bassanini"
+ },
+ {
+  "source": "recu/natural-iter-di-bassanini.jpg",
+  "nom": "gamma",
+  "role": "vignette",
+  "ratio": "4:3",
+  "beaute": 3,
+  "alt": "La gamma Natural-Iter su un tavolo al tramonto"
+ }
+]

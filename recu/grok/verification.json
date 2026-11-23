@@ -1,0 +1,266 @@
+{
+  "date": "2026-11-23T15:56:13.784Z",
+  "plan": "/home/claude/natural-iter/natural-iter-maquette/plan-images.json",
+  "attendus": 14,
+  "recus": 14,
+  "planches": [
+    "planche.jpg"
+  ],
+  "inconnus": [],
+  "manquants": [],
+  "a_regenerer": [],
+  "images": [
+    {
+      "nom": "grok/fasce",
+      "attendu": "g-fasce.jpg",
+      "fichier": "g-fasce.jpg",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 784,
+      "hauteur": 1168,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/muretto",
+      "attendu": "g-muretto.jpg",
+      "fichier": "g-muretto.jpg",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1168,
+      "hauteur": 784,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/raccolta",
+      "attendu": "g-raccolta.jpg",
+      "fichier": "g-raccolta.jpg",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 784,
+      "hauteur": 1168,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/frantoio",
+      "attendu": "g-frantoio.jpg",
+      "fichier": "g-frantoio.jpg",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 784,
+      "hauteur": 1168,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/bosco",
+      "attendu": "g-bosco.jpg",
+      "fichier": "g-bosco.jpg",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1168,
+      "hauteur": 784,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/tavola",
+      "attendu": "g-tavola.jpg",
+      "fichier": "g-tavola.jpg",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1168,
+      "hauteur": 784,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/pagina-404",
+      "attendu": "g-404.jpg",
+      "fichier": "g-404.jpg",
+      "priorite": "Conseillée",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1168,
+      "hauteur": 784,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/reti",
+      "attendu": "g-reti.jpg",
+      "fichier": "g-reti.jpg",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1168,
+      "hauteur": 784,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/limoni",
+      "attendu": "g-limoni.jpg",
+      "fichier": "g-limoni.jpg",
+      "priorite": "Conseillée",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 784,
+      "hauteur": 1168,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/salamoia",
+      "attendu": "g-salamoia.jpg",
+      "fichier": "g-salamoia.jpg",
+      "priorite": "Conseillée",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 784,
+      "hauteur": 1168,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/aglio-bosco",
+      "attendu": "g-aglio.jpg",
+      "fichier": "g-aglio.jpg",
+      "priorite": "Facultative",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1168,
+      "hauteur": 784,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/mulattiera",
+      "attendu": "g-mulattiera.jpg",
+      "fichier": "g-mulattiera.jpg",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1168,
+      "hauteur": 784,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/potatura",
+      "attendu": "g-potatura.jpg",
+      "fichier": "g-potatura.jpg",
+      "priorite": "Conseillée",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1168,
+      "hauteur": 784,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    },
+    {
+      "nom": "grok/mendrisiotto",
+      "attendu": "g-mendrisiotto.jpg",
+      "fichier": "g-mendrisiotto.jpg",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 784,
+      "hauteur": 1168,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      }
+    }
+  ]
+}

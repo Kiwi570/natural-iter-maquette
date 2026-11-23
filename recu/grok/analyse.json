@@ -1,0 +1,880 @@
+{
+  "dossier": "/home/claude/natural-iter/natural-iter-maquette/recu/grok",
+  "date": "2026-11-23T15:56:34.992Z",
+  "detection": "mesures sharp seulement",
+  "planches": [
+    "planche.jpg"
+  ],
+  "legende_planche": "cadre jaune : sujet ; croix rouge : cadrage ; fond rose : à vérifier",
+  "doublons": [],
+  "images": [
+    {
+      "fichier": "g-404.jpg",
+      "nom": "g-404",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 1074,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 496865,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        54,
+        47
+      ],
+      "cadrage_css": "54% 47%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.13,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "gauche",
+          "score": 0.01,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 84.8,
+        "bruit": 1.31,
+        "compression": 1.03,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "f2e3c5e3f26606c1",
+      "drapeaux": []
+    },
+    {
+      "fichier": "g-aglio.jpg",
+      "nom": "g-aglio",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 1074,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 388062,
+      "transparence": false,
+      "sujet": {
+        "x": 3.1,
+        "y": 22.7,
+        "l": 96.9,
+        "h": 68.2,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        60,
+        58
+      ],
+      "cadrage_css": "60% 58%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.47,
+          "ton": "sombre",
+          "recouvre_sujet": 0.34
+        },
+        {
+          "cote": "gauche",
+          "score": 0.07,
+          "ton": "sombre",
+          "recouvre_sujet": 0.63
+        },
+        {
+          "cote": "droite",
+          "score": 0.02,
+          "ton": "moyen",
+          "recouvre_sujet": 0.68
+        },
+        {
+          "cote": "bas",
+          "score": 0.01,
+          "ton": "sombre",
+          "recouvre_sujet": 0.72
+        }
+      ],
+      "qualite": {
+        "nettete": 32.7,
+        "bruit": 0.8,
+        "compression": 1.08,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "3c9cb1f9cad68e5a",
+      "drapeaux": []
+    },
+    {
+      "fichier": "g-bosco.jpg",
+      "nom": "g-bosco",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 1074,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 607106,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        49
+      ],
+      "cadrage_css": "48% 49%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 61,
+        "bruit": 1.61,
+        "compression": 1.02,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "c04000c0c4f0b08c",
+      "drapeaux": []
+    },
+    {
+      "fichier": "g-fasce.jpg",
+      "nom": "g-fasce",
+      "drapeau": null,
+      "largeur": 1320,
+      "hauteur": 1967,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 670891,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        48
+      ],
+      "cadrage_css": "48% 48%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.37,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "gauche",
+          "score": 0.01,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 51.9,
+        "bruit": 1.12,
+        "compression": 0.99,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "0038800634c32ee0",
+      "drapeaux": []
+    },
+    {
+      "fichier": "g-frantoio.jpg",
+      "nom": "g-frantoio",
+      "drapeau": null,
+      "largeur": 1320,
+      "hauteur": 1967,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 368179,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 9.4,
+        "l": 95.5,
+        "h": 90.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        56,
+        51
+      ],
+      "cadrage_css": "56% 51%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.12,
+          "ton": "moyen",
+          "recouvre_sujet": 0.7
+        },
+        {
+          "cote": "gauche",
+          "score": 0.07,
+          "ton": "moyen",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "bas",
+          "score": 0.01,
+          "ton": "sombre",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.8
+        }
+      ],
+      "qualite": {
+        "nettete": 14.6,
+        "bruit": 0.44,
+        "compression": 0.98,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "e8e07270704143d1",
+      "drapeaux": []
+    },
+    {
+      "fichier": "g-limoni.jpg",
+      "nom": "g-limoni",
+      "drapeau": null,
+      "largeur": 1320,
+      "hauteur": 1967,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 576433,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 87.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        47
+      ],
+      "cadrage_css": "49% 47%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.04,
+          "ton": "sombre",
+          "recouvre_sujet": 0.61
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.88
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.78
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 27.8,
+        "bruit": 0.87,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "6cbfb15ba3e0639b",
+      "drapeaux": []
+    },
+    {
+      "fichier": "g-mendrisiotto.jpg",
+      "nom": "g-mendrisiotto",
+      "drapeau": null,
+      "largeur": 1320,
+      "hauteur": 1967,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 539686,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        45
+      ],
+      "cadrage_css": "49% 45%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.47,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0.14,
+          "ton": "moyen",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "bas",
+          "score": 0.04,
+          "ton": "sombre",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 29.6,
+        "bruit": 0.79,
+        "compression": 1.01,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "fcf80e0778ecf2a0",
+      "drapeaux": []
+    },
+    {
+      "fichier": "g-mulattiera.jpg",
+      "nom": "g-mulattiera",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 1074,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 580355,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        46
+      ],
+      "cadrage_css": "51% 46%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.07,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 55.8,
+        "bruit": 1.48,
+        "compression": 1.03,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "010008082858b870",
+      "drapeaux": []
+    },
+    {
+      "fichier": "g-muretto.jpg",
+      "nom": "g-muretto",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 1074,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 458504,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        43
+      ],
+      "cadrage_css": "49% 43%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 49.1,
+        "bruit": 1.04,
+        "compression": 1.05,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "480032030af1eba6",
+      "drapeaux": []
+    },
+    {
+      "fichier": "g-potatura.jpg",
+      "nom": "g-potatura",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 1074,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 635689,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        51
+      ],
+      "cadrage_css": "50% 51%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 66.6,
+        "bruit": 1.64,
+        "compression": 1.04,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "c3c1c161a9141618",
+      "drapeaux": []
+    },
+    {
+      "fichier": "g-raccolta.jpg",
+      "nom": "g-raccolta",
+      "drapeau": null,
+      "largeur": 1320,
+      "hauteur": 1967,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 571821,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        52,
+        45
+      ],
+      "cadrage_css": "52% 45%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.86
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 30.1,
+        "bruit": 0.7,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "29e0c8682de3466e",
+      "drapeaux": []
+    },
+    {
+      "fichier": "g-reti.jpg",
+      "nom": "g-reti",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 1074,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 558515,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        46,
+        41
+      ],
+      "cadrage_css": "46% 41%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.08,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 57.8,
+        "bruit": 1.49,
+        "compression": 1.04,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "00001014fc8cf8fd",
+      "drapeaux": []
+    },
+    {
+      "fichier": "g-salamoia.jpg",
+      "nom": "g-salamoia",
+      "drapeau": null,
+      "largeur": 1320,
+      "hauteur": 1967,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 526810,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        45,
+        56
+      ],
+      "cadrage_css": "45% 56%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.01,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 37,
+        "bruit": 0.8,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "1098c80e074307c1",
+      "drapeaux": []
+    },
+    {
+      "fichier": "g-tavola.jpg",
+      "nom": "g-tavola",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 1074,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 429273,
+      "transparence": false,
+      "sujet": {
+        "x": 3.1,
+        "y": 0,
+        "l": 93.8,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        59,
+        47
+      ],
+      "cadrage_css": "59% 47%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.22,
+          "ton": "sombre",
+          "recouvre_sujet": 0.88
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.88
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.94
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.82
+        }
+      ],
+      "qualite": {
+        "nettete": 36.8,
+        "bruit": 0.9,
+        "compression": 1.06,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "f6f6f6e4f1db3c7f",
+      "drapeaux": []
+    }
+  ]
+}

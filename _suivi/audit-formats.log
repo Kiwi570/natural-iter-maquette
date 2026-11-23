@@ -1,0 +1,20 @@
+… mesures
+  14/234
+  40/234
+  69/234
+  91/234
+  121/234
+  147/234
+  169/234
+  198/234
+  214/234
+  fait en 296 s
+… mesures:balayage
+  fait en 47 s
+… ecran
+  fait en 13 s
+
+Échecs : 2 · À regarder : 5 · Non lancé : 0
+Relancer seulement ce qui a échoué : node _audit/audit.mjs --complet --pages=/,/chi-siamo --seulement=fichiers,mesures
+Rapport : /home/claude/natural-iter/natural-iter-maquette/_audit/rapport/rapport.md (passe 20261123-165843-complet-partiel)
+CODE 1

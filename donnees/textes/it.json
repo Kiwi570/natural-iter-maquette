@@ -1,0 +1,365 @@
+{
+  "commun": {
+    "navigation": "Navigazione principale",
+    "menu": "Menu",
+    "fermer": "Chiudi",
+    "actionEntete": "Acquista",
+    "actionBarra": "Shop",
+    "appeler": "Chiama",
+    "sommaire": "Il sito",
+    "maquette": "Sito dimostrativo: ordini, pagamenti e invii sono simulati.",
+    "evitement": "Vai al contenuto",
+    "mentionIa": "Illustrazione generata",
+    "pause": "Pausa",
+    "lecture": "Riprendi",
+    "introLigne": "Olio e olive taggiasche · Mendrisio",
+    "retourHaut": "Torna su",
+    "carrello": "Carrello",
+    "aggiungi": "Aggiungi",
+    "buono": "Buono regalo",
+    "seguici": "Seguici",
+    "waldmuusFb": "Waldmuus su Facebook",
+    "spedizioneTitolo": "Spedizione",
+    "spedizione": "Spedizione gratuita in Svizzera da CHF 150",
+    "senza": "Tutti i nostri prodotti sono senza ingredienti artificiali.",
+    "legali": "Note legali · Informativa sulla privacy: da completare",
+    "scorri": "Scorri per vedere tutti i prodotti"
+  },
+  "pages": {
+    "accueil": {
+      "titre": "Natural-Iter · Olio extravergine e olive taggiasche, Mendrisio",
+      "description": "Olio extravergine taggiasco del Ponente Ligure, olive, paté e prodotti bio del bosco ticinese. Spedizione gratuita in Svizzera da CHF 150.",
+      "nav": "Home",
+      "partageAlt": "Natural-Iter, olio taggiasco dalle fasce liguri alla tavola svizzera",
+      "accroche": "Olio taggiasco, dalle fasce liguri alla tavola svizzera"
+    },
+    "prodotti": {
+      "titre": "I prodotti · Natural-Iter",
+      "description": "Olio extravergine taggiasco, olio al limone, olive in salamoia, snocciolate e paté; linfa di betulla e aglio orsino bio Waldmuus.",
+      "nav": "Prodotti",
+      "partageAlt": "Reti di raccolta sotto gli ulivi del Ponente Ligure",
+      "accroche": "Dall'oliva all'olio, e dal bosco ticinese"
+    },
+    "chi-siamo": {
+      "titre": "Chi siamo · Natural-Iter",
+      "description": "Da Jürg Raz, che negli anni Ottanta riportò in vita uliveti abbandonati in Liguria, a Giacomo Bassanini, tra Liguria e Ticino.",
+      "nav": "Chi siamo",
+      "partageAlt": "Jürg Raz alla fine degli anni Ottanta davanti a un muretto a secco",
+      "accroche": "Più di quarant'anni sulle fasce"
+    },
+    "shop": {
+      "titre": "Shop · Natural-Iter",
+      "description": "Ordina olio taggiasco, olive, paté, linfa di betulla, aglio orsino, panettone e buoni regalo. Spedizione gratuita in Svizzera da CHF 150.",
+      "nav": "Shop",
+      "partageAlt": "La gamma Natural-Iter su un tavolo al tramonto",
+      "accroche": "Lo shop: spedizione gratuita in Svizzera da CHF 150"
+    },
+    "contatti": {
+      "titre": "Contatti · Natural-Iter, Mendrisio",
+      "description": "Telefono, e-mail e indirizzo di Natural-Iter a Mendrisio. Listini per ristoranti e alberghi, quantità speciali, buoni regalo.",
+      "nav": "Contatti",
+      "partageAlt": "Colline del Mendrisiotto al tramonto",
+      "accroche": "Scrivici o chiamaci"
+    },
+    "404": {
+      "titre": "Pagina non trovata · Natural-Iter",
+      "description": "Questa pagina non esiste o è stata spostata.",
+      "nav": "Pagina non trovata",
+      "partageAlt": "Pagina non trovata",
+      "accroche": "Pagina non trovata"
+    }
+  },
+  "accueil": {
+    "apertura": {
+      "sopra": "Olio extravergine · Ponente Ligure",
+      "riga1": "Olio",
+      "parola": "taggiasco",
+      "riga2": "dalle fasce liguri alla tavola svizzera",
+      "testo": "Olive raccolte in parte ancora acerbe e molite a freddo poche ore dopo la raccolta, sotto i 25 °C. Un olio armonioso, leggermente fruttato, poco amaro.",
+      "azione": "Vai allo shop",
+      "azione2": "Scopri i prodotti",
+      "alt": "Fasce di ulivi sostenute da muretti a secco nel Ponente Ligure, il mare sullo sfondo",
+      "bottigliaAlt": "Bottiglia da 75 cl di olio extravergine Natural-Iter",
+      "cartellino": "Olio extravergine taggiasco, 75 cl"
+    },
+    "vetrina": {
+      "sopra": "I nostri prodotti",
+      "titolo": "Sei sapori del <em>Ponente</em>",
+      "testo": "Olio, olive e paté dalla stessa oliva, la taggiasca. Per quantità diverse da quelle dello shop, chiamaci o scrivici: per le confezioni multiple ci sono prezzi speciali.",
+      "tutto": "Tutto lo shop",
+      "regione": "Prodotti in evidenza, scorrimento orizzontale",
+      "prec": "Prodotti precedenti",
+      "succ": "Prodotti successivi"
+    },
+    "taggiasca": {
+      "sopra": "L'oliva taggiasca",
+      "titolo": "Piccola, coltivata <em>sulle fasce</em>",
+      "testo": "La taggiasca cresce nel Ponente Ligure, la parte occidentale della Liguria che guarda il mare. È un'oliva dal frutto piccolo, coltivata da sempre su terrazze strette sostenute da muretti a secco, dove quasi tutto il lavoro si fa a mano.",
+      "f1t": "Ponente Ligure",
+      "f1": "La riviera di ponente, tra il mare e le colline.",
+      "f2t": "Fasce e muretti a secco",
+      "f2": "Terrazze strappate al pendio, pietra su pietra.",
+      "f3t": "Quasi tutto a mano",
+      "f3": "Sulle fasce il lavoro si fa ancora in gran parte a mano.",
+      "alt": "Muretto a secco e vecchio ulivo su una fascia ligure",
+      "altReale": "Uliveto con le reti di raccolta stese sotto gli alberi",
+      "legendaReale": "Le reti stese sotto gli ulivi. Foto Natural-Iter"
+    },
+    "filiera": {
+      "sopra": "Dall'oliva alla bottiglia",
+      "titolo": "Poche ore tra l'albero e il <em>frantoio</em>",
+      "testo": "«Nella nostra produzione viene messa la qualità prima di tutto»: ogni passaggio serve a conservare il profumo dell'oliva.",
+      "p1t": "Raccolta precoce",
+      "p1": "Le olive si raccolgono quando sono in parte ancora acerbe.",
+      "p2t": "Subito al frantoio",
+      "p2": "L'olio viene estratto poche ore dopo la raccolta, solo con metodi meccanici.",
+      "p3t": "Sotto i 25 °C",
+      "p3": "La molitura avviene a freddo: la temperatura resta sotto i 25 °C.",
+      "p4t": "Filtrato, in vetro scuro",
+      "p4": "Filtrato subito dopo l'estrazione e imbottigliato in vetro scuro, al riparo dalla luce.",
+      "soglia": "25 °C",
+      "alt1": "Olive taggiasche appena cadute sulla rete di raccolta",
+      "alt2": "Olio appena estratto che scende in una vasca d'acciaio",
+      "alt4": "Bottiglia da 25 cl di olio extravergine taggiasco",
+      "link": "Come nascono olio e olive"
+    },
+    "bosco": {
+      "sopra": "Dal bosco ticinese · Waldmuus",
+      "titolo": "Linfa di betulla e aglio orsino, <em>raccolti</em> nel bosco",
+      "testo": "Accanto all'olio, Giacomo produce alimenti biologici da raccolta selvatica certificata Bio Suisse, con il marchio Waldmuus: la linfa di betulla dei boschi di Miglieglia e l'aglio orsino in olio e Sel des Alpes.",
+      "bio": "Raccolta selvatica certificata",
+      "alt": "Bosco di betulle in Ticino all'inizio della primavera, aglio orsino in fiore"
+    },
+    "stagione": {
+      "sopra": "In questo periodo · Natale",
+      "titolo": "Il panettone al <em>cioccolato bianco</em>",
+      "testo": "Una storia lunga trent'anni: un panettone nato per essere condiviso e regalato, preparato per vent'anni da un maestro pasticcere solo per questa famiglia. Oggi un nuovo maestro ne ha raccolto l'eredità, in esclusiva per Natural-Iter: il panettone a Natale, la colomba a Pasqua.",
+      "punto1": "Il 30 % del peso è cioccolato bianco, lavorato direttamente nell'impasto.",
+      "punto2": "In vendita al dettaglio da novembre a febbraio, nei formati da 800 g e 1600 g.",
+      "punto3": "Sconto del 15 % da 2 pezzi e del 20 % da 3; oltre 10 panettoni, su ordinazione tutto l'anno.",
+      "alt": "Panettone al cioccolato bianco tagliato, con le confezioni dorate"
+    },
+    "storia": {
+      "sopra": "La nostra storia",
+      "titolo": "Da Jürg a Giacomo, <em>la stessa strada</em>",
+      "testo1": "Negli anni Ottanta Jürg Raz, maestro elementare dell'Oberland bernese, si trasferisce in Liguria a vent'anni. Compra uliveti abbandonati nel Ponente Ligure e li riporta in produzione: muretti a secco, potature, raccolte.",
+      "testo2": "Dalla fine degli anni Novanta porta i suoi prodotti in Svizzera, ad alberghi e ristoranti di alto livello. Nel 2021 affida l'azienda all'amico di lunga data Giacomo Bassanini, che oggi fa la spola tra Liguria e Ticino.",
+      "piuDi": "più di",
+      "anni": "anni di lavoro",
+      "link": "Leggi la nostra storia",
+      "alt1": "Jürg Raz alla fine degli anni Ottanta, seduto davanti a un muretto a secco",
+      "legenda1": "Jürg Raz, fine anni Ottanta",
+      "alt2": "Jürg all'inizio degli anni Duemila, accanto ai fusti",
+      "legenda2": "Jürg, inizio anni Duemila"
+    },
+    "pro": {
+      "sopra": "Per ristoranti, alberghi e grandi quantità",
+      "titolo": "Cartoni, latte e <em>formati da cucina</em>",
+      "testo": "Dalla fine degli anni Novanta Natural-Iter rifornisce alberghi e ristoranti; oggi Giacomo consegna regolarmente in tutta la Svizzera. Per i listini e per quantità diverse da quelle dello shop, scrivici.",
+      "azione": "Chiedi il listino",
+      "buonoTitolo": "Buono regalo.",
+      "buonoTesto": "Da CHF 25 a CHF 200, o l'importo che preferisci.",
+      "buonoAzione": "Componi il buono"
+    },
+    "finale": {
+      "titolo": "Porta la Liguria <em>a tavola</em>",
+      "testo": "Spedizione gratuita in Svizzera da CHF 150. Per quantità diverse da quelle dello shop, chiamaci o scrivici.",
+      "alt": "Tavola in pietra con pane, una ciotola d'olio e limoni"
+    }
+  },
+  "prodotti": {
+    "apertura": {
+      "sopra": "I prodotti",
+      "titolo": "Dall'oliva <em>all'olio</em>",
+      "testo": "Olio extravergine, olive da tavola e paté da un'unica oliva, la taggiasca del Ponente Ligure. E dal bosco ticinese, linfa di betulla e aglio orsino bio.",
+      "alt": "Reti di raccolta stese sotto gli ulivi sulle fasce liguri"
+    },
+    "olio": {
+      "sopra": "L'olio extravergine",
+      "titolo": "Armonioso, leggermente <em>fruttato</em>",
+      "testo": "Estratto poche ore dopo la raccolta con soli metodi meccanici a freddo, filtrato subito e conservato in vetro scuro. È un olio molto profumato, fruttato e armonioso, con poca amarezza.",
+      "g1": "Molto profumato",
+      "g2": "Leggermente fruttato",
+      "g3": "Armonioso",
+      "g4": "Poco amaro",
+      "formati": "I formati",
+      "alt": "Bottiglia da 75 cl di olio extravergine taggiasco Natural-Iter"
+    },
+    "limone": {
+      "sopra": "L'olio al limone",
+      "titolo": "Olive e limoni, <em>moliti insieme</em>",
+      "testo": "Olive fresche e limoni freschi di Liguria passano insieme nel frantoio: il profumo del limone nasce con l'olio.",
+      "alt": "Limoni liguri freschi con foglie e rametti d'ulivo"
+    },
+    "olive": {
+      "sopra": "Le olive da tavola",
+      "titolo": "Almeno sei mesi <em>di pazienza</em>",
+      "mesi": "mesi di fermentazione, come minimo",
+      "testo": "Le olive vengono deamarizzate e fermentate per almeno sei mesi, poi aromatizzate con le erbe in salamoia. Si trovano intere in salamoia, snocciolate sott'olio o in paté.",
+      "alt": "Olive taggiasche in salamoia con erbe selvatiche"
+    },
+    "waldmuus": {
+      "sopra": "Dal bosco ticinese · Waldmuus",
+      "titolo": "Raccolta selvatica, <em>certificata</em>",
+      "testo": "Con il marchio Waldmuus, Giacomo raccoglie nei boschi ticinesi alimenti biologici da raccolta selvatica certificata Bio Suisse.",
+      "linfaT": "Linfa di betulla",
+      "linfa": "Dai boschi di Miglieglia. Linfa di betulla pura, pastorizzata, da raccolta selvatica certificata. Ha un sapore molto delicato, leggermente dolciastro, con una punta di acidulo.",
+      "aglioT": "Aglio orsino",
+      "aglio": "In olio di girasole bio e Sel des Alpes. Da spalmare sul pane, per condire insalate e creme o come base per pesti e salse. Meglio non cuocerlo.",
+      "altLinfa": "Bottiglia di linfa di betulla Waldmuus in un bosco di betulle",
+      "altAglio": "Foglie e fiori di aglio orsino nel bosco"
+    },
+    "senza": {
+      "titolo": "Senza ingredienti <em>artificiali</em>",
+      "testo": "Tutti i prodotti Natural-Iter sono senza ingredienti artificiali. Li trovi nello shop, con spedizione gratuita in Svizzera da CHF 150."
+    }
+  },
+  "chi": {
+    "apertura": {
+      "sopra": "Chi siamo",
+      "titolo": "Più di quarant'anni <em>sulle fasce</em>",
+      "testo": "Natural-Iter nasce dal lavoro di Jürg Raz sugli uliveti del Ponente Ligure. Dal 2021 la porta avanti Giacomo Bassanini, tra la Liguria e il Ticino.",
+      "azione": "Scopri i prodotti",
+      "info": "Dal Ponente Ligure a Mendrisio"
+    },
+    "frise": {
+      "sopra": "Le radici",
+      "titolo": "Una storia in <em>quattro tappe</em>",
+      "lingue": "lingue parlate da Giacomo",
+      "t1a": "Anni '80",
+      "t1t": "Jürg in Liguria",
+      "t1": "A vent'anni Jürg Raz, maestro elementare dell'Oberland bernese, si trasferisce in Liguria. Compra uliveti abbandonati nel Ponente Ligure e li riporta in produzione, ricostruendo muretti a secco e potando gli alberi.",
+      "t1alt": "Rami potati ai piedi di un vecchio ulivo, un muretto in ricostruzione",
+      "t2a": "Fine anni '90",
+      "t2t": "Il ritorno in Svizzera",
+      "t2": "Jürg torna in Svizzera per vendere i suoi prodotti e conquista in poco tempo alberghi e ristoranti di alto livello.",
+      "t2alt": "Jürg all'inizio degli anni Duemila, accanto ai fusti",
+      "t3a": "2021",
+      "t3t": "Il passaggio a Giacomo",
+      "t3": "Dopo più di quarant'anni di lavoro Jürg va in pensione e affida l'azienda all'amico di lunga data Giacomo Bassanini, che la rileva nell'ottobre 2021.",
+      "t3data": "Ottobre 2021",
+      "t3alt": "Ottobre 2021",
+      "t4a": "Oggi",
+      "t4t": "Tra Liguria e Ticino",
+      "t4": "Giacomo fa la spola tra la Liguria e il Ticino, dove ha la base logistica, e consegna regolarmente in tutta la Svizzera.",
+      "t4alt": "Uliveto con le reti di raccolta stese, foto Natural-Iter"
+    },
+    "giacomo": {
+      "sopra": "Il successore",
+      "titolo": "Giacomo Bassanini, <em>chimico</em> di formazione",
+      "testo1": "Chimico, ha lavorato nell'industria farmaceutica e poi insegnato per undici anni in una scuola professionale. Nell'ottobre 2021 ha rilevato Natural-Iter.",
+      "testo2": "Vive in Ticino, dove ha sede la logistica, e con il marchio Waldmuus raccoglie linfa di betulla e aglio orsino. Parla e scrive cinque lingue: puoi scrivergli nella tua.",
+      "lingueAria": "Lingue parlate da Giacomo",
+      "alt": "Giacomo Bassanini"
+    },
+    "tragitto": {
+      "sopra": "Il tragitto",
+      "titolo": "Dal Ponente Ligure <em>a Mendrisio</em>",
+      "testo": "Le olive crescono sulle fasce del Ponente Ligure; olio e olive arrivano a Mendrisio, da dove partono le consegne per tutta la Svizzera.",
+      "alt": "Una mulattiera in pietra che sale tra le fasce di ulivi",
+      "mappaAria": "Schema del tragitto dal Ponente Ligure a Mendrisio e delle consegne in Svizzera",
+      "svizzera": "Svizzera",
+      "nota": "Schema illustrativo, non in scala."
+    },
+    "fine": {
+      "titolo": "Il lavoro di quarant'anni, <em>a casa tua</em>",
+      "testo": "Olio, olive e paté, linfa di betulla e aglio orsino: tutto si ordina online, con spedizione gratuita in Svizzera da CHF 150.",
+      "contatti": "Scrivici"
+    }
+  },
+  "shop": {
+    "apertura": {
+      "sopra": "Shop",
+      "titolo": "Lo shop di <em>Natural-Iter</em>",
+      "testo": "Olio, olive, paté e i prodotti del bosco ticinese. Per quantità diverse da quelle proposte, chiamaci o scrivici: per le confezioni multiple ci sono prezzi speciali.",
+      "azione": "Vedi i prodotti"
+    },
+    "soglia": {
+      "sopra": "Spedizione gratuita in Svizzera da",
+      "aria": "Bottiglia che si riempie con il totale del carrello, fino alla spedizione gratuita",
+      "vuoto": "Il tuo carrello è vuoto: la bottiglia si riempie a ogni prodotto."
+    },
+    "catalogo": {
+      "titolo": "Tutti i <em>prodotti</em>",
+      "categorie": "Categorie",
+      "tutto": "Tutto",
+      "cerca": "Cerca un prodotto",
+      "ordina": "Ordina",
+      "evidenza": "In evidenza",
+      "cresc": "Prezzo crescente",
+      "decresc": "Prezzo decrescente",
+      "prodotti": "prodotti",
+      "vuoto": "Nessun prodotto corrisponde alla ricerca.",
+      "reinit": "Mostra tutto",
+      "nota": "Prezzi in franchi svizzeri. Panettone: sconto del 15 % da 2 pezzi e del 20 % da 3, calcolato alla conferma."
+    },
+    "quantita": {
+      "titolo": "Quantità diverse? <em>Scrivici</em>",
+      "testo": "Per quantità diverse da quelle dello shop, per i listini della ristorazione o per un ordine da consegnare: offriamo prezzi speciali per le confezioni multiple.",
+      "azione": "Scrivici"
+    },
+    "buono": {
+      "sopra": "Buono regalo",
+      "titolo": "Un regalo che sa <em>di Liguria</em>",
+      "testo": "Il buono regalo digitale di Natural-Iter: scegli l'importo, da CHF 25 a CHF 200 o un importo libero, e aggiungi un messaggio.",
+      "tipo": "Buono regalo",
+      "ticket": "Un buono da CHF 50",
+      "importo": "Importo",
+      "altro": "Altro importo",
+      "libero": "Importo libero, in franchi (da 10 a 1000)",
+      "numero": "Numero di buoni",
+      "meno": "Un buono in meno",
+      "piu": "Un buono in più",
+      "per": "Per",
+      "da": "Da parte di",
+      "messaggio": "Messaggio",
+      "caratteri": "caratteri al massimo",
+      "totale": "Totale",
+      "regala": "Regala questo buono",
+      "altroBuono": "Componi un altro buono"
+    }
+  },
+  "contatti": {
+    "apertura": {
+      "sopra": "Contatti",
+      "titolo": "Scrivici o <em>chiamaci</em>",
+      "testo": "Per un ordine, una quantità speciale, un listino per la ristorazione o una semplice domanda.",
+      "telefono": "Telefono",
+      "email": "E-mail",
+      "indirizzo": "Indirizzo",
+      "alt": "Colline del Mendrisiotto al tramonto"
+    },
+    "modulo": {
+      "titolo": "Il tuo <em>messaggio</em>",
+      "testo": "Compila il modulo, oppure chiamaci o mandaci un'e-mail.",
+      "nome": "Nome e cognome",
+      "email": "E-mail",
+      "tel": "Telefono (facoltativo)",
+      "oggetto": "Di che cosa si tratta?",
+      "s1": "Un ordine o una domanda",
+      "s2": "Ristorante, albergo o rivenditore",
+      "s3": "Quantità speciali",
+      "s4": "Buono regalo",
+      "s5": "Altro",
+      "messaggio": "Messaggio",
+      "dati": "I dati servono solo a rispondere al tuo messaggio (nLPD). Informativa sulla privacy: da completare.",
+      "invia": "Invia"
+    },
+    "pro": {
+      "titolo": "Per ristoranti e alberghi",
+      "testo": "Listini prezzi e ordini di grandi quantità su richiesta: cartoni da 6 bottiglie, latte da 5 e 25 litri, olive e paté in formato da cucina."
+    },
+    "dove": {
+      "titolo": "La base è <em>a Mendrisio</em>",
+      "testo": "Da Mendrisio, dove ha sede la logistica, partono le spedizioni e le consegne regolari in tutta la Svizzera.",
+      "partner": "Partner di marketing"
+    }
+  },
+  "introvabile": {
+    "titolo": "Qui la raccolta <em>è finita</em>",
+    "testo": "La pagina che cerchi non esiste o è stata spostata. Torna all'inizio o passa dallo shop.",
+    "home": "Torna alla home",
+    "shop": "Vai allo shop",
+    "alt": "Una scala da raccolta appoggiata a un ulivo, la rete vuota"
+  }
+}

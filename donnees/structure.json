@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Natural-Iter di Bassanini Giacomo",
+  "url": "https://natural-iter-maquette.vercel.app/",
+  "telephone": "+41797037805",
+  "email": "naturaliter@outlook.com",
+  "address": { "@type": "PostalAddress", "streetAddress": "Via Vignalunga 7", "postalCode": "6850", "addressLocality": "Mendrisio", "addressRegion": "TI", "addressCountry": "CH" },
+  "founder": "Jürg Raz",
+  "employee": { "@type": "Person", "name": "Giacomo Bassanini" },
+  "sameAs": ["https://www.instagram.com/natural_iter/", "https://www.facebook.com/profile.php?id=61551024487038"],
+  "description": "Olio extravergine e olive taggiasche del Ponente Ligure; linfa di betulla e aglio orsino bio da raccolta selvatica certificata Bio Suisse (Waldmuus)."
+}
